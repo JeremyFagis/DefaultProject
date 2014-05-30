@@ -1,0 +1,185 @@
+///////////////////////////
+/// BASE
+///////////////////////////
+$font-lora: "Lora", "Helvetica Neue", "Helvetica";
+$font-oswald: "Oswald", "Helvetica Neue", "Helvetica";
+$background-color: #FFF;
+$base-font-family: $font-lora;
+$base-font-size: 16px;
+$base-line-height: $base-font-size * 1.6;
+$text-color: #666;
+$link-color: $text-color;
+$link-hover-color: darken($text-color, 25%);
+$container-max-width: 1000px;
+$base-margin: 20px;
+
+$color-primary: #428bca !default;
+$color-success: #5cb85c !default;
+$color-info: #5bc0de !default;
+$color-warning: #f0ad4e !default;
+$color-danger: #d9534f !default;
+
+
+///////////////////////////
+/// HEADINGS
+///////////////////////////
+$headings-font-family: $font-oswald;
+$headings-font-weight: 400;
+$headings-line-height: 1.4;
+$headings-color: $text-color;
+$headings-small-color: lighter($text-color, 30%);
+$headings-margin: $base-margin;
+
+$font-size-h1: 40px;
+$font-size-h2: 30px;
+$font-size-h3: 26px;
+$font-size-h4: 20px;
+$font-size-h5: 16px;
+$font-size-h6: 14px;
+
+
+///////////////////////////
+/// GRID
+///////////////////////////
+$grid-columns: 12;
+$grid-gutter-width: 30px;
+
+
+///////////////////////////
+/// MEDIA QUERIES
+///////////////////////////
+$screen-xs:                  480px;
+$screen-xs-min:              $screen-xs;
+$screen-phone:               $screen-xs-min;
+
+$screen-sm:                  768px;
+$screen-sm-min:              $screen-sm;
+$screen-tablet:              $screen-sm-min;
+
+$screen-md:                  992px;
+$screen-md-min:              $screen-md;
+$screen-desktop:             $screen-md-min;
+
+$screen-lg:                  1030px;
+$screen-lg-min:              $screen-lg;
+$screen-lg-desktop:          $screen-lg-min;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1);
+$screen-sm-max:              ($screen-md-min - 1);
+$screen-md-max:              ($screen-lg-min - 1);
+
+// Small screen / tablet
+$container-tablet:            ((720px + $grid-gutter-width));
+
+// Medium screen / desktop
+$container-desktop:           ((940px + $grid-gutter-width));
+
+// Large screen / wide desktop
+$container-lg-desktop:        ((1140px + $grid-gutter-width));
+
+
+
+///////////////////////////
+/// HEADER
+///////////////////////////
+$header-background: #bb2924;
+$header-color: #FFF;
+
+
+///////////////////////////
+/// FOOTER
+///////////////////////////
+$footer-background: #E5E5E5;
+$footer-color: darken($footer-background, 25%);
+
+
+///////////////////////////
+/// FORMS
+///////////////////////////
+$legend-color: $text-color;
+$legend-border-color: $text-color;
+
+$font-size-small: $base-font-size * 0.75;
+$font-size-large: $base-font-size * 1.5;
+
+$line-height-small: $base-line-height * 0.75;
+$line-height-large: $base-line-height * 1.5;
+
+$padding-base-vertical: 6px !default;
+$padding-base-horizontal: 12px !default;
+
+$padding-large-vertical: 10px !default;
+$padding-large-horizontal: 16px !default;
+
+$padding-small-vertical: 5px !default;
+$padding-small-horizontal: 10px !default;
+
+$padding-xs-vertical: 1px !default;
+$padding-xs-horizontal: 5px !default;
+
+
+$border-radius-base: 4px !default;
+$border-radius-large: 6px !default;
+$border-radius-small: 3px !default;
+
+$input-height-base: ceil($base-line-height + ($padding-base-vertical * 2) + 2) !default;
+$input-height-small: ceil($base-line-height*0.75 + ($padding-small-vertical * 2) + 2) !default;
+$input-height-large: ceil($base-line-height*1.5 + ($padding-large-vertical * 2) + 2) !default;
+
+$input-color: $text-color;
+$input-color-placeholder: lighter($text-color, 40%);
+$input-bg: #FFF;
+$input-border: #DDD;
+$input-border-focus: #BBB;
+$input-border-radius: $border-radius-base;
+$input-bg-disabled: #EEE;
+
+$state-success-text:             #3c763d !default;
+$state-success-bg:               #dff0d8 !default;
+$state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
+
+$state-info-text:                #31708f !default;
+$state-info-bg:                  #d9edf7 !default;
+$state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%) !default;
+
+$state-warning-text:             #8a6d3b !default;
+$state-warning-bg:               #fcf8e3 !default;
+$state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%) !default;
+
+$state-danger-text:              #a94442 !default;
+$state-danger-bg:                #f2dede !default;
+$state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
+
+
+
+
+///////////////////////////
+/// BUTTONS
+///////////////////////////
+$btn-default-color:              #333 !default;
+$btn-default-bg:                 #fff !default;
+$btn-default-border:             #ccc !default;
+
+$btn-primary-color:              #fff !default;
+$btn-primary-bg:                 $color-primary !default;
+$btn-primary-border:             darken($btn-primary-bg, 5%) !default;
+
+$btn-success-color:              #fff !default;
+$btn-success-bg:                 $color-success !default;
+$btn-success-border:             darken($btn-success-bg, 5%) !default;
+
+$btn-info-color:                 #fff !default;
+$btn-info-bg:                    $color-info !default;
+$btn-info-border:                darken($btn-info-bg, 5%) !default;
+
+$btn-warning-color:              #fff !default;
+$btn-warning-bg:                 $color-warning !default;
+$btn-warning-border:             darken($btn-warning-bg, 5%) !default;
+
+$btn-danger-color:               #fff !default;
+$btn-danger-bg:                  $color-danger !default;
+$btn-danger-border:              darken($btn-danger-bg, 5%) !default;
+
+$btn-link-disabled-color:        #CCC !default;
+
