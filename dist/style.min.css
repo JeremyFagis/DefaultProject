@@ -1140,6 +1140,9 @@ footer {
   background-image: none;
   border: 1px solid transparent;
   white-space: nowrap;
+  font-family: "Lora", "Helvetica Neue", "Helvetica";
+  font-size: 16px;
+  font-weight: normal;
   padding: 6px 12px;
   font-size: 16px;
   line-height: 25.6px;
@@ -1149,7 +1152,7 @@ footer {
   -ms-user-select: none;
   user-select: none; }
   .btn:hover, .btn:focus {
-    color: #333;
+    color: #666;
     text-decoration: none; }
   .btn:active, .btn.active {
     outline: 0;
@@ -1165,11 +1168,11 @@ footer {
     box-shadow: none; }
 
 .btn-default {
-  color: #333;
+  color: #666;
   background-color: #fff;
   border-color: #ccc; }
   .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
-    color: #333;
+    color: #666;
     background-color: #e6e6e6;
     border-color: #adadad; }
   .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
@@ -1179,7 +1182,7 @@ footer {
     border-color: #ccc; }
   .btn-default .badge {
     color: #fff;
-    background-color: #333; }
+    background-color: #666; }
 
 .btn-primary {
   color: #fff;
