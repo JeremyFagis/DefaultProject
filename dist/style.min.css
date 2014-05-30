@@ -411,6 +411,59 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+@font-face {
+  font-family: 'fontello';
+  src: url('../public/font/fontello.eot?7988104');
+  src: url('../public/font/fontello.eot?7988104#iefix') format('embedded-opentype'), url('../public/font/fontello.woff?7988104') format('woff'), url('../public/font/fontello.ttf?7988104') format('truetype'), url('../public/font/fontello.svg?7988104#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?7988104#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0.2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.icon-arrow-1:before {
+  content: '\e806'; }
+
+/* '' */
+.icon-arrow-2:before {
+  content: '\e807'; }
+
+/* '' */
+.icon-arrow-double:before {
+  content: '\e808'; }
+
+/* '' */
 .text-left {
   text-align: left; }
 
@@ -824,7 +877,7 @@ legend {
   border-bottom: 1px solid #666; }
 
 label {
-  display: inline-block;
+  display: block;
   max-width: 100%;
   margin-bottom: 5px;
   font-weight: bold; }
@@ -1317,6 +1370,57 @@ footer {
 
 input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="button"].btn-block {
   width: 100%; }
+
+.selector-wrapper {
+  position: relative;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: #FFF;
+  border: 1px solid #DDD;
+  border-radius: 4px;
+  width: auto;
+  vertical-align: middle; }
+  .selector-wrapper span {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    background-color: #FFF;
+    color: #666;
+    padding: 0 12px;
+    font-size: 16px;
+    line-height: 40px;
+    font-family: "Lora", "Helvetica Neue", "Helvetica";
+    position: relative;
+    vertical-align: middle; }
+  .selector-wrapper i {
+    line-height: 40px;
+    height: 40px;
+    width: auto;
+    text-align: center;
+    float: right;
+    display: inline-block;
+    padding: 0 8px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-left: 1px solid #DDD;
+    vertical-align: middle;
+    color: #666; }
+  .selector-wrapper select {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    border: none;
+    background: #FFF;
+    cursor: pointer;
+    font-size: 12px; }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Oswald", "Helvetica Neue", "Helvetica";

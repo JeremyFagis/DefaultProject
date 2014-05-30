@@ -3,6 +3,7 @@
 @charset "UTF-8";
 
 @import "base/reset";
+@import "base/font";
 @import "base/variables";
 
 @import "helpers/mixins";
@@ -13,5 +14,6 @@
 @import "layout";
 
 @import "components/buttons";
+@import "components/simpleSelector";
 
 @import "base/typography";

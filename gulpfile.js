@@ -53,11 +53,11 @@ gulp.task('scripts-prod', function() {
 });
 
 gulp.task('watch-dev', function() {
-  gulp.watch(jsDir + '*.js', ['scripts-dev']);
+  gulp.watch(jsDir + '**/*.js', ['scripts-dev']);
   gulp.watch(sassDir + '**/*.scss', ['sass-dev']);
 });
 gulp.task('watch-prod', function() {
-  gulp.watch(jsDir + '*.js', ['scripts-prod']);
+  gulp.watch(jsDir + '**/*.js', ['scripts-prod']);
   gulp.watch(sassDir + '**/*.scss', ['sass-prod']);
 });
 
