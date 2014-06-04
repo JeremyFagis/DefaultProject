@@ -1,8 +1,8 @@
 ///////////////////////////
 /// BASE
 ///////////////////////////
-$font-lora: "Lora", "Helvetica Neue", "Helvetica";
-$font-oswald: "Oswald", "Helvetica Neue", "Helvetica";
+$font-lora: "Lato", "Helvetica Neue", "Helvetica";
+$font-oswald: "Lato", "Helvetica Neue", "Helvetica";
 $background-color: #FFF;
 $base-font-family: $font-lora;
 $base-font-size: 16px;
@@ -24,7 +24,7 @@ $color-danger: #d9534f !default;
 /// HEADINGS
 ///////////////////////////
 $headings-font-family: $font-oswald;
-$headings-font-weight: 400;
+$headings-font-weight: 700;
 $headings-line-height: 1.4;
 $headings-color: $text-color;
 $headings-small-color: lighter($text-color, 30%);

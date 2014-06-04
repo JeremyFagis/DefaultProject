@@ -893,7 +893,7 @@ input[type="radio"], input[type="checkbox"] {
 
 input[type="file"] {
   display: block;
-  font-family: "Lora", "Helvetica Neue", "Helvetica"; }
+  font-family: "Lato", "Helvetica Neue", "Helvetica"; }
 
 input[type="range"] {
   display: block;
@@ -910,7 +910,7 @@ select[multiple], select[size] {
   font-size: 16px;
   line-height: 25.6px;
   color: #666;
-  font-family: "Lora", "Helvetica Neue", "Helvetica";
+  font-family: "Lato", "Helvetica Neue", "Helvetica";
   background-color: #FFF;
   background-image: none;
   border: 1px solid #DDD;
@@ -1159,7 +1159,7 @@ textarea.input-lg, select[multiple].input-lg {
 
 body {
   background: #FFF;
-  font-family: "Lora", "Helvetica Neue", "Helvetica";
+  font-family: "Lato", "Helvetica Neue", "Helvetica";
   font-size: 16px;
   line-height: 25.6px;
   color: #666; }
@@ -1172,7 +1172,7 @@ body {
 header {
   background: #bb2924;
   color: #FFF;
-  font-family: "Oswald", "Helvetica Neue", "Helvetica";
+  font-family: "Lato", "Helvetica Neue", "Helvetica";
   font-weight: 300;
   text-transform: uppercase;
   text-align: center;
@@ -1197,7 +1197,7 @@ footer {
   background-image: none;
   border: 1px solid transparent;
   white-space: nowrap;
-  font-family: "Lora", "Helvetica Neue", "Helvetica";
+  font-family: "Lato", "Helvetica Neue", "Helvetica";
   font-size: 16px;
   font-weight: normal;
   padding: 6px 12px;
@@ -1543,7 +1543,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
     padding: 0 12px;
     font-size: 16px;
     line-height: 40px;
-    font-family: "Lora", "Helvetica Neue", "Helvetica";
+    font-family: "Lato", "Helvetica Neue", "Helvetica";
     position: relative;
     vertical-align: middle; }
   .selector-wrapper i {
@@ -1583,7 +1583,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   font-size: 16px;
   line-height: 25.6px;
   color: #666;
-  font-family: "Lora", "Helvetica Neue", "Helvetica";
+  font-family: "Lato", "Helvetica Neue", "Helvetica";
   background-color: #FFF;
   background-image: none;
   border: 1px solid #DDD;
@@ -1683,8 +1683,8 @@ table td[class*="col-"], table th[class*="col-"] {
         border-bottom: 0; } }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Oswald", "Helvetica Neue", "Helvetica";
-  font-weight: 400;
+  font-family: "Lato", "Helvetica Neue", "Helvetica";
+  font-weight: 700;
   line-height: 1.4;
   color: #666; }
   h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .small, h5 small, h5 .small, h6 small, h6 .small, .h1 small, .h1 .small, .h2 small, .h2 .small, .h3 small, .h3 .small, .h4 small, .h4 .small, .h5 small, .h5 .small, .h6 small, .h6 .small {
