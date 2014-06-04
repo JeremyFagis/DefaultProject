@@ -468,6 +468,10 @@ table {
   content: '\e803'; }
 
 /* '' */
+.icon-github:before {
+  content: '\e804'; }
+
+/* '' */
 .text-left {
   text-align: left; }
 
