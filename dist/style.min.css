@@ -493,6 +493,12 @@ table {
   background-color: transparent;
   border: 0; }
 
+hr {
+  margin-top: 25.6px;
+  margin-bottom: 25.6px;
+  border: 0;
+  border-top: 1px solid #DDD; }
+
 .container {
   margin-right: auto;
   margin-left: auto;
