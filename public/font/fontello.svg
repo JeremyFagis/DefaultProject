@@ -6,9 +6,10 @@
 <font id="fontello" horiz-adv-x="1000" >
 <font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
 <missing-glyph horiz-adv-x="1000" />
-<glyph glyph-name="arrow-1" unicode="&#xe806;" d="m564 422l-234-224q-18-18-40-18t-40 18l-234 224q-16 16-16 41t16 41q38 38 78 0l196-188 196 188q40 38 78 0 16-16 16-41t-16-41z" horiz-adv-x="580" />
-<glyph glyph-name="arrow-2" unicode="&#xe807;" d="m460 550l-230-400-230 400 460 0z" horiz-adv-x="460" />
-<glyph glyph-name="arrow-double" unicode="&#xe808;" d="m230 850l230-364-460 0z m0-1000l-230 366 460 0z" horiz-adv-x="460" />
+<glyph glyph-name="arrow-1" unicode="&#xe800;" d="m564 422l-234-224q-18-18-40-18t-40 18l-234 224q-16 16-16 41t16 41q38 38 78 0l196-188 196 188q40 38 78 0 16-16 16-41t-16-41z" horiz-adv-x="580" />
+<glyph glyph-name="arrow-2" unicode="&#xe801;" d="m460 550l-230-400-230 400 460 0z" horiz-adv-x="460" />
+<glyph glyph-name="arrow-double" unicode="&#xe802;" d="m230 850l230-364-460 0z m0-1000l-230 366 460 0z" horiz-adv-x="460" />
+<glyph glyph-name="upload-cloud" unicode="&#xe803;" d="m760 494q100 0 170-68t70-166-70-166-170-68l-190 0 0 190 106 0-176 230-174-230 104 0 0-190-248 0q-74 0-128 52t-54 124q0 74 53 126t129 52q14 0 20-2-2 12-2 38 0 108 78 184t188 76q90 0 160-52t94-134q28 4 40 4z" horiz-adv-x="1000" />
 </font>
 </defs>
 </svg>
