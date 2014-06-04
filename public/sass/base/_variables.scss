@@ -14,11 +14,11 @@ $container-max-width: 1000px;
 $base-margin: 20px;
 $bold-font-weight: bold;
 
-$color-primary: #428bca !default;
-$color-success: #5cb85c !default;
-$color-info: #5bc0de !default;
-$color-warning: #f0ad4e !default;
-$color-danger: #d9534f !default;
+$color-primary: #346b9a !default;
+$color-success: #60a760 !default;
+$color-info: #56abc4 !default;
+$color-warning: #de9c3f !default;
+$color-danger: #ca5e5b !default;
 
 
 ///////////////////////////
@@ -136,20 +136,20 @@ $input-border-focus: #BBB;
 $input-border-radius: $border-radius-base;
 $input-bg-disabled: #EEE;
 
-$state-success-text:             #3c763d !default;
-$state-success-bg:               #dff0d8 !default;
+$state-success-text:             #FFF !default;
+$state-success-bg:               $color-success !default;
 $state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
 
-$state-info-text:                #31708f !default;
-$state-info-bg:                  #d9edf7 !default;
+$state-info-text:                #FFF !default;
+$state-info-bg:                  $color-info !default;
 $state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%) !default;
 
-$state-warning-text:             #8a6d3b !default;
-$state-warning-bg:               #fcf8e3 !default;
-$state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%) !default;
+$state-warning-text:             #FFF !default;
+$state-warning-bg:               $color-warning !default;
+$state-warning-border:           darken($state-warning-bg, 5%) !default;
 
-$state-danger-text:              #a94442 !default;
-$state-danger-bg:                #f2dede !default;
+$state-danger-text:              #FFF !default;
+$state-danger-bg:                $color-danger !default;
 $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
 
 
@@ -201,6 +201,34 @@ $table-bg-hover:                #f5f5f5 !default;
 $table-bg-active:               $table-bg-hover !default;
 
 $table-border-color:            #ddd !default;
+
+
+///////////////////////////
+/// ALERTS
+///////////////////////////
+
+//== Alerts
+//
+//## Define alert colors, border radius, and padding.
+$alert-padding:               15px 25px !default;
+$alert-border-radius:         $border-radius-base !default;
+$alert-link-font-weight:      $bold-font-weight !default;
+
+$alert-success-bg:            $state-success-bg !default;
+$alert-success-text:          $state-success-text !default;
+$alert-success-border:        $state-success-border !default;
+
+$alert-info-bg:               $state-info-bg !default;
+$alert-info-text:             $state-info-text !default;
+$alert-info-border:           $state-info-border !default;
+
+$alert-warning-bg:            $state-warning-bg !default;
+$alert-warning-text:          $state-warning-text !default;
+$alert-warning-border:        $state-warning-border !default;
+
+$alert-danger-bg:             $state-danger-bg !default;
+$alert-danger-text:           $state-danger-text !default;
+$alert-danger-border:         $state-danger-border !default;
 
 
 ///////////////////////////
