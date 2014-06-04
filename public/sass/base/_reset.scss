@@ -1,5 +1,10 @@
 
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-* { outline: none; }
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    behavior: url(/public/htc/boxsizing.htc);
+    outline: none;
+}
 
 @import "normalize";
