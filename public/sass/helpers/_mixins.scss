@@ -175,7 +175,6 @@
   border-color: $border;
 
   &:hover,
-  &:focus,
   &:active,
   &.active,
   .open > &.dropdown-toggle {
@@ -193,7 +192,6 @@
   fieldset[disabled] & {
     &,
     &:hover,
-    &:focus,
     &:active,
     &.active {
       background-color: $background;
