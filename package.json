@@ -1,12 +1,17 @@
 {
   "name": "Default-Project",
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Elao SCSS Framework",
   "main": "index.html",
+  "homepage": "https://github.com/JeremyFagis/DefaultProject",
+  "author": {
+    "name": "Jeremy FAGIS",
+    "email": "jeremy@fagis.fr",
+    "url": "http://fagis.fr"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.6.2",

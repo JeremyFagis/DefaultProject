@@ -6,12 +6,24 @@ var gulp = require('gulp'),
   plumber = require('gulp-plumber'),
   gutil = require('gulp-util'),
   watch = require('gulp-watch'),
-  minifyCSS = require('gulp-minify-css');
+  minifyCSS = require('gulp-minify-css')
+  header = require('gulp-header'),
+  meta   = require('./package.json');
 
 var jsDir   = 'public/js/',
     sassDir = 'public/sass/',
     distDir = 'dist',
-    jquerySrc = 'vendors/jquery-1.10.2.min.js'
+    jquerySrc = 'vendors/jquery-1.10.2.min.js',
+    banner = [
+      '/*!',
+      ' * =============================================================',
+      ' * <%= name %> v<%= version %> | <%= description %>',
+      ' * <%= homepage %>',
+      ' *',
+      ' * (c) 2014 <%= author.name %> <<%= author.email %>> | <%= author.url %>',
+      ' * =============================================================',
+      ' */\n\n'
+    ].join('\n');
 
 var onError = function (err) {
   gutil.beep();
@@ -41,6 +53,7 @@ gulp.task('scripts-dev', function() {
     .pipe(concat('main.js'))
     .pipe(gulp.dest(distDir))
     .pipe(rename('main.min.js'))
+    .pipe(header(banner, meta))
     .pipe(gulp.dest(distDir));
 });
 gulp.task('scripts-prod', function() {
@@ -49,6 +62,7 @@ gulp.task('scripts-prod', function() {
     .pipe(gulp.dest(distDir))
     .pipe(rename('main.min.js'))
     .pipe(uglify())
+    .pipe(header(banner, meta))
     .pipe(gulp.dest(distDir));
 });
 
