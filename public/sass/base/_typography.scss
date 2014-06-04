@@ -98,7 +98,7 @@ dd {
   line-height: $base-line-height;
 }
 dt {
-  font-weight: bold;
+  font-weight: $bold-font-weight;
 }
 dd {
   margin-left: 0; // Undo browser default
