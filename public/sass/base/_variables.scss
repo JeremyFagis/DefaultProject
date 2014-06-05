@@ -245,6 +245,19 @@ $tab-content-padding: 10px 0;
 
 
 ///////////////////////////
+/// TOOLTIPS
+///////////////////////////
+
+$zindex-tooltip: 1070 !default;
+$tooltip-max-width: 200px !default;
+$tooltip-color: #fff !default;
+$tooltip-bg: #000 !default;
+$tooltip-opacity: 80 !default;
+$tooltip-arrow-width: 5px !default;
+$tooltip-arrow-color: $tooltip-bg !default;
+
+
+///////////////////////////
 /// MISC
 ///////////////////////////
 $hr-border:                     #DDD;

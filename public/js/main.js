@@ -11,4 +11,6 @@ $(document).ready(function(){
 
     $('.collapse').collapse();
 
+    $('.has-tooltip').tooltip({ container: 'body' });
+
 });
