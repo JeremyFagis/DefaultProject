@@ -10,7 +10,8 @@
         defaults = {
             wrapperClass: "selector-wrapper",
             caretClass: 'icon-arrow-double'
-        };
+        },
+        isIE = !+'\v1';
 
     function Plugin ( element, options ) {
         this.element = element;
@@ -22,17 +23,19 @@
 
     Plugin.prototype = {
         init: function () {
-            var element = $(this.element);
-            var defaultText = element.data('default-text') || '---';
-            var value = element.find('option:selected').text() || defaultText;
-            element.wrap('<div class="' + this.settings.wrapperClass + '" />');
-            $('<span/>').text(value).prependTo(element.parent());
-            $('<i class="' + this.settings.caretClass + '"></i>').appendTo(element.parent());
-            element.on('change', function() {
-                var value = $(this).find('option:selected').text();
-                value = (value)? value : defaultText ;
-                $(this).prev('span').text(value);
-            });
+            if (!isIE) {
+                var element = $(this.element);
+                var defaultText = element.data('default-text') || '---';
+                var value = element.find('option:selected').text() || defaultText;
+                element.wrap('<div class="' + this.settings.wrapperClass + '" />');
+                $('<span/>').text(value).prependTo(element.parent());
+                $('<i class="' + this.settings.caretClass + '"></i>').appendTo(element.parent());
+                element.on('change', function() {
+                    var value = $(this).find('option:selected').text();
+                    value = (value)? value : defaultText ;
+                    $(this).prev('span').text(value);
+                });
+            }
         }
     };
 
