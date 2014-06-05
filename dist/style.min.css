@@ -2228,6 +2228,9 @@ textarea.input-lg, select[multiple].input-lg {
   top: 0;
   right: 15px; }
 
+html.lt-ie9 .form-control {
+  height: 54px; }
+
 body {
   background: #FFF;
   font-family: "Lato", "Helvetica Neue", "Helvetica";

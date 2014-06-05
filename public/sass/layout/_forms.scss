@@ -464,3 +464,11 @@ input[type="checkbox"],
     right: ($grid-gutter-width / 2);
   }
 }
+
+
+// IE 8 -
+html.lt-ie9 {
+  .form-control {
+    height: $input-height-base + ($padding-base-vertical * 2) + 2;
+  }
+}
