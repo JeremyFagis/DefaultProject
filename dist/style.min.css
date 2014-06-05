@@ -2898,4 +2898,8 @@ dd {
     font-size: 30px;
     line-height: 40px;
     padding: 50px 20px;
-    margin: 0 0 30px 0; } }
+    margin: 0 0 30px 0; }
+  footer {
+    text-align: center; }
+    footer .text-right {
+      text-align: center; } }
