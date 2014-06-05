@@ -1887,11 +1887,14 @@ textarea.input-lg, select[multiple].input-lg {
 .form-horizontal .form-control-static {
   padding-top: 7px;
   padding-bottom: 7px; }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .form-horizontal .control-label {
-    text-align: right;
-    margin-bottom: 0;
-    padding-top: 7px; } }
+    text-align: left;
+    float: none;
+    margin-bottom: 5px;
+    padding-bottom: 0; }
+  .form-horizontal .control-field {
+    padding-bottom: 0; } }
 .form-horizontal .has-feedback .form-control-feedback {
   top: 0;
   right: 15px; }
