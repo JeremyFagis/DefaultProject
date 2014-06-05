@@ -4,7 +4,7 @@
   background-color: $background;
   border-color: $border;
   color: $text-color;
-  a { color: $text-color; }
+  a, a:visited { color: $text-color; }
   hr {
     border-top-color: darken($border, 5%);
   }

@@ -2273,7 +2273,7 @@ footer {
   color: #a5a5a5;
   padding: 30px 0;
   margin-top: 30px; }
-  footer a {
+  footer a, footer a:visited {
     color: #a5a5a5; }
 
 .btn {
@@ -2798,7 +2798,7 @@ table td[class*="col-"], table th[class*="col-"] {
   background-color: #60a760;
   border-color: #609955;
   color: #FFF; }
-  .alert-success a {
+  .alert-success a, .alert-success a:visited {
     color: #FFF; }
   .alert-success hr {
     border-top-color: #57884c; }
@@ -2807,7 +2807,7 @@ table td[class*="col-"], table th[class*="col-"] {
   background-color: #56abc4;
   border-color: #40b1b7;
   color: #FFF; }
-  .alert-info a {
+  .alert-info a, .alert-info a:visited {
     color: #FFF; }
   .alert-info hr {
     border-top-color: #39a0a4; }
@@ -2816,7 +2816,7 @@ table td[class*="col-"], table th[class*="col-"] {
   background-color: #de9c3f;
   border-color: #da9129;
   color: #FFF; }
-  .alert-warning a {
+  .alert-warning a, .alert-warning a:visited {
     color: #FFF; }
   .alert-warning hr {
     border-top-color: #c88022; }
@@ -2825,7 +2825,7 @@ table td[class*="col-"], table th[class*="col-"] {
   background-color: #ca5e5b;
   border-color: #c4485c;
   color: #FFF; }
-  .alert-danger a {
+  .alert-danger a, .alert-danger a:visited {
     color: #FFF; }
   .alert-danger hr {
     border-top-color: #b73b50; }
