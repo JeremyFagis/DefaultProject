@@ -5,7 +5,7 @@ $font-lato: "Lato", "Helvetica Neue", "Helvetica";
 $background-color: #FFF;
 $base-font-family: $font-lato;
 $base-font-size: 16px;
-$base-line-height: $base-font-size * 1.6;
+$base-line-height: $base-font-size * 1.625; // 26px
 $text-color: #666;
 $link-color: $text-color;
 $link-hover-color: darken($text-color, 25%);
@@ -247,7 +247,6 @@ $tab-content-padding: 10px 0;
 ///////////////////////////
 /// TOOLTIPS
 ///////////////////////////
-
 $zindex-tooltip: 1070 !default;
 $tooltip-max-width: 200px !default;
 $tooltip-color: #fff !default;
@@ -256,6 +255,12 @@ $tooltip-opacity: 80 !default;
 $tooltip-arrow-width: 5px !default;
 $tooltip-arrow-color: $tooltip-bg !default;
 
+
+///////////////////////////
+/// INPUT GROUPS
+///////////////////////////
+$input-group-addon-bg: #EEE !default;
+$input-group-addon-border-color: $input-border !default;
 
 ///////////////////////////
 /// MISC
