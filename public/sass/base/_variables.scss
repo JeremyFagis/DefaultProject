@@ -1,10 +1,9 @@
 ///////////////////////////
 /// BASE
 ///////////////////////////
-$font-lora: "Lato", "Helvetica Neue", "Helvetica";
-$font-oswald: "Lato", "Helvetica Neue", "Helvetica";
+$font-lato: "Lato", "Helvetica Neue", "Helvetica";
 $background-color: #FFF;
-$base-font-family: $font-lora;
+$base-font-family: $font-lato;
 $base-font-size: 16px;
 $base-line-height: $base-font-size * 1.6;
 $text-color: #666;
@@ -24,7 +23,7 @@ $color-danger: #ca5e5b !default;
 ///////////////////////////
 /// HEADINGS
 ///////////////////////////
-$headings-font-family: $font-oswald;
+$headings-font-family: $font-lato;
 $headings-font-weight: 700;
 $headings-line-height: 1.4;
 $headings-color: $text-color;
@@ -57,11 +56,11 @@ $screen-sm:                  768px;
 $screen-sm-min:              $screen-sm;
 $screen-tablet:              $screen-sm-min;
 
-$screen-md:                  992px;
+$screen-md:                  900px;
 $screen-md-min:              $screen-md;
 $screen-desktop:             $screen-md-min;
 
-$screen-lg:                  1030px;
+$screen-lg:                  1024px;
 $screen-lg-min:              $screen-lg;
 $screen-lg-desktop:          $screen-lg-min;
 
