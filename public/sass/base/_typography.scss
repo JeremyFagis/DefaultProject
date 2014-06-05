@@ -18,6 +18,9 @@ h1, h2, h3, h4, h5, h6,
     line-height: 1;
     color: $headings-small-color;
   }
+  a {
+    color: $headings-color;
+  }
 }
 
 h1, .h1,
@@ -103,4 +106,12 @@ dt {
 dd {
   margin-left: 0; // Undo browser default
   margin-bottom: $base-margin;
+}
+
+
+// Links
+a {
+  &, &:visited {
+    color: $link-color;
+  }
 }

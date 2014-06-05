@@ -13,4 +13,13 @@ $(document).ready(function(){
 
     $('.has-tooltip').tooltip({ container: 'body' });
 
+    $(".fancybox").fancybox({
+        padding: 10,
+        nextEffect: 'fade',
+        prevEffect: 'fade',
+        helpers: {
+            title: { type: 'inside' }
+        }
+    });
+
 });
