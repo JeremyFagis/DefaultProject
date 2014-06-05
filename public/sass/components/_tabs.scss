@@ -59,11 +59,10 @@
     width: 100%;
 
     > li {
-      float: none;
+      float: left;
 
       > a {
         text-align: center;
-        margin-bottom: 5px;
       }
     }
 
@@ -71,6 +70,7 @@
       > li {
         display: table-cell;
         width: 1%;
+        float: none;
         > a {
           margin-bottom: -1px;
         }
