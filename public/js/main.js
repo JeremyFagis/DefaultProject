@@ -9,4 +9,6 @@ $(document).ready(function(){
         $(this).tab('show');
     });
 
+    $('.collapse').collapse();
+
 });

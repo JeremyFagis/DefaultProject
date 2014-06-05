@@ -1138,6 +1138,19 @@ hr {
 .pt100 {
   padding-top: 100px; }
 
+.collapse {
+  display: none; }
+  .collapse.in {
+    display: block; }
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.35s ease;
+  -o-transition: height 0.35s ease;
+  transition: height 0.35s ease; }
+
 .container {
   margin-right: auto;
   margin-left: auto;
