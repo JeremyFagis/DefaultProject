@@ -2217,14 +2217,13 @@ textarea.input-lg, select[multiple].input-lg {
 .form-horizontal .form-control-static {
   padding-top: 7px;
   padding-bottom: 7px; }
+.form-horizontal .control-label, .form-horizontal .control-field {
+  padding-bottom: 5px; }
 @media (max-width: 768px) {
   .form-horizontal .control-label {
     text-align: left;
     float: none;
-    margin-bottom: 5px;
-    padding-bottom: 0; }
-  .form-horizontal .control-field {
-    padding-bottom: 0; } }
+    margin-bottom: 5px; } }
 .form-horizontal .has-feedback .form-control-feedback {
   top: 0;
   right: 15px; }

@@ -440,6 +440,10 @@ input[type="checkbox"],
     padding-top: ($padding-base-vertical + 1);
     padding-bottom: ($padding-base-vertical + 1);
   }
+  .control-label,
+  .control-field {
+    padding-bottom: 5px;
+  }
 
   // Reset spacing and right align labels, but scope to media queries so that
   // labels on narrow viewports stack the same as a default form example.
@@ -448,10 +452,6 @@ input[type="checkbox"],
       text-align: left;
       float: none;
       margin-bottom: 5px;
-      padding-bottom: 0;
-    }
-    .control-field {
-      padding-bottom: 0;
     }
   }
 
