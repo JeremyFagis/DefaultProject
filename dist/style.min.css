@@ -2817,6 +2817,69 @@ table td[class*="col-"], table th[class*="col-"] {
   .alert-danger hr {
     border-top-color: #b73b50; }
 
+.nav-tabs {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  border-bottom: 1px solid #ddd;
+  *zoom: 1; }
+  .nav-tabs:before, .nav-tabs:after {
+    display: table;
+    content: ""; }
+  .nav-tabs:after {
+    clear: both; }
+  .nav-tabs > li {
+    float: left;
+    margin-bottom: -1px; }
+    .nav-tabs > li > a {
+      position: relative;
+      display: block;
+      padding: 10px 15px;
+      margin-right: 2px;
+      line-height: 25.6px;
+      border: 1px solid transparent;
+      border-radius: 4px 4px 0 0;
+      text-decoration: none;
+      color: #666; }
+      .nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
+        text-decoration: none;
+        background-color: #EEE; }
+      .nav-tabs > li > a:hover {
+        border-color: #EEE #EEE #ddd; }
+    .nav-tabs > li.disabled > a {
+      color: #E5E5E5; }
+      .nav-tabs > li.disabled > a:hover, .nav-tabs > li.disabled > a:focus {
+        color: #E5E5E5;
+        text-decoration: none;
+        background-color: transparent;
+        cursor: not-allowed;
+        border-color: transparent; }
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+      color: #AAA;
+      background-color: #FFF;
+      border: 1px solid #ddd;
+      border-bottom-color: transparent;
+      cursor: default; }
+  .nav-tabs.nav-justified {
+    width: 100%; }
+    .nav-tabs.nav-justified > li {
+      float: none; }
+      .nav-tabs.nav-justified > li > a {
+        text-align: center;
+        margin-bottom: 5px; }
+    @media (min-width: 768px) {
+      .nav-tabs.nav-justified > li {
+        display: table-cell;
+        width: 1%; }
+        .nav-tabs.nav-justified > li > a {
+          margin-bottom: -1px; } }
+
+.tab-content > .tab-pane {
+  display: none;
+  padding: 10px 0; }
+.tab-content > .active {
+  display: block; }
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Lato", "Helvetica Neue", "Helvetica";
   font-weight: 700;

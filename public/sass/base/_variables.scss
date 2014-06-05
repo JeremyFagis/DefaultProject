@@ -205,10 +205,6 @@ $table-border-color:            #ddd !default;
 ///////////////////////////
 /// ALERTS
 ///////////////////////////
-
-//== Alerts
-//
-//## Define alert colors, border radius, and padding.
 $alert-padding:               15px 25px !default;
 $alert-border-radius:         $border-radius-base !default;
 $alert-font-weight:           300 !default;
@@ -229,6 +225,23 @@ $alert-warning-border:        $state-warning-border !default;
 $alert-danger-bg:             $state-danger-bg !default;
 $alert-danger-text:           $state-danger-text !default;
 $alert-danger-border:         $state-danger-border !default;
+
+
+///////////////////////////
+/// NAVS
+///////////////////////////
+$nav-link-padding:                          10px 15px !default;
+$nav-link-hover-bg:                         #EEE !default;
+$nav-disabled-link-color:                   #E5E5E5 !default;
+$nav-open-link-hover-color:                 #fff !default;
+$nav-tabs-border-color:                     #ddd !default;
+$nav-tabs-link-hover-border-color:          #EEE !default;
+$nav-tabs-active-link-hover-bg:             $background-color !default;
+$nav-tabs-active-link-hover-color:          #AAA !default;
+$nav-tabs-active-link-hover-border-color:   #ddd !default;
+$nav-tabs-justified-link-border-color:            #ddd !default;
+$nav-tabs-justified-active-link-border-color:     $background-color!default;
+$tab-content-padding: 10px 0;
 
 
 ///////////////////////////
