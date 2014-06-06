@@ -11,7 +11,7 @@
             wrapperClass: "selector-wrapper",
             caretClass: 'icon-arrow-double'
         },
-        isIE = !+'\v1';
+        isIE = '\v'=='v';
 
     function Plugin ( element, options ) {
         this.element = element;

@@ -70,7 +70,7 @@ gulp.task('watch-dev', ['sass-dev', 'scripts-dev'], function() {
   gulp.watch(jsDir + '**/*.js', ['scripts-dev']);
   gulp.watch(sassDir + '**/*.scss', ['sass-dev']);
 });
-gulp.task('watch-prod', ['sass-dev', 'scripts-dev'], function() {
+gulp.task('watch-prod', ['sass-prod', 'scripts-prod'], function() {
   gulp.watch(jsDir + '**/*.js', ['scripts-prod']);
   gulp.watch(sassDir + '**/*.scss', ['sass-prod']);
 });
