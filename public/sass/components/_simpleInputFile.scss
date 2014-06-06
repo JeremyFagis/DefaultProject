@@ -15,6 +15,7 @@
   border: 1px solid $input-border;
   border-radius: $input-border-radius;
   @include transition(border-color ease-in-out .15s, box-shadow ease-in-out .15s);
+
   input {
     position: absolute;
     top: 0;
@@ -26,11 +27,13 @@
     @include opacity(0);
     cursor: pointer;
   }
+
   i {
     margin-right: 8px;
     font-size: 18px;
     line-height: $base-line-height;
   }
+
   span.filename {
     line-height: $input-height-base - $padding-base-vertical*2;
   }

@@ -3092,8 +3092,10 @@ table td[class*="col-"], table th[class*="col-"] {
   -webkit-overflow-scrolling: touch; }
 
 .fancybox-error {
-  color: #444;
-  font: 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", "Helvetica";
+  font-size: 16px;
+  line-height: 26px;
+  color: #666;
   margin: 0;
   padding: 15px;
   white-space: nowrap; }

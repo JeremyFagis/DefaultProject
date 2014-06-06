@@ -9,6 +9,7 @@
   border-radius: $input-border-radius;
   width: auto;
   vertical-align: middle;
+
   span {
     display: inline-block;
     overflow: hidden;
@@ -24,6 +25,7 @@
     position: relative;
     vertical-align: middle;
   }
+
   i {
     line-height: $input-height-base;
     height: $input-height-base;
@@ -37,6 +39,7 @@
     vertical-align: middle;
     color: $input-color;
   }
+
   select {
     top: 0; right: 0; bottom: 0; left: 0;
     position: absolute;

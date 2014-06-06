@@ -9,6 +9,7 @@ th {
 .table {
   width: 100%;
   margin-bottom: $base-margin;
+
   > thead,
   > tbody,
   > tfoot {
@@ -22,10 +23,12 @@ th {
       }
     }
   }
+
   > thead > tr > th {
     vertical-align: bottom;
     border-bottom: 2px solid $table-border-color;
   }
+
   > caption + thead,
   > colgroup + thead,
   > thead:first-child {
@@ -36,6 +39,7 @@ th {
       }
     }
   }
+
   > tbody + tbody {
     border-top: 2px solid $table-border-color;
   }
@@ -60,6 +64,7 @@ th {
 
 .table-bordered {
   border: 1px solid $table-border-color;
+
   > thead,
   > tbody,
   > tfoot {
@@ -70,6 +75,7 @@ th {
       }
     }
   }
+
   > thead > tr {
     > th,
     > td {
@@ -128,6 +134,7 @@ table {
     -ms-overflow-style: -ms-autohiding-scrollbar;
     border: 1px solid $table-border-color;
     -webkit-overflow-scrolling: touch;
+
     > .table {
       margin-bottom: 0;
       > thead,
@@ -141,8 +148,10 @@ table {
         }
       }
     }
+
     > .table-bordered {
       border: 0;
+
       > thead,
       > tbody,
       > tfoot {
@@ -157,6 +166,7 @@ table {
           }
         }
       }
+
       > tbody,
       > tfoot {
         > tr:last-child {

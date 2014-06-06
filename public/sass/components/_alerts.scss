@@ -4,17 +4,21 @@
   border: 1px solid transparent;
   border-radius: $alert-border-radius;
   font-weight: $alert-font-weight;
+
   h4 {
     margin-top: 0;
     color: inherit;
   }
+
   > p,
   > ul {
     margin-bottom: 0;
   }
+
   > p + p {
     margin-top: 5px;
   }
+
   a {
     font-weight: $alert-link-font-weight;
   }

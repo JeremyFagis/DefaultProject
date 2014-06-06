@@ -1,23 +1,19 @@
-//
-// Typography
-// --------------------------------------------------
-
-
 // Headings
 // -------------------------
-
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: $headings-font-family;
   font-weight: $headings-font-weight;
   line-height: $headings-line-height;
   color: $headings-color;
+
   small,
   .small {
     font-weight: normal;
     line-height: 1;
     color: $headings-small-color;
   }
+
   a {
     color: $headings-color;
   }
@@ -29,6 +25,7 @@ h3, .h3 {
   margin-top: $headings-margin;
   margin-bottom: ($headings-margin / 2);
   text-transform: uppercase;
+
   small,
   .small {
     font-size: 65%;
@@ -56,7 +53,6 @@ h6, .h6 { font-size: $font-size-h6; }
 
 // Body text
 // -------------------------
-
 p {
   margin: 0 0 $base-margin / 2;
 }
@@ -64,13 +60,12 @@ p {
 
 // Lists
 // -------------------------
-
-// Unordered and Ordered lists
 ul,
 ol {
   margin-top: 0;
   margin-bottom: $base-margin / 2;
   padding-left: $base-margin;
+
   ul,
   ol {
     margin-bottom: 0;
@@ -82,9 +77,11 @@ ul {
     list-style: none;
     padding-left: 0;
   }
+
   &.inline {
     list-style: none;
     padding-left: 0;
+
     li {
       display: inline-block;
     }
@@ -92,8 +89,9 @@ ul {
 }
 
 // Description Lists
+// -------------------------
 dl {
-  margin-top: 0; // Remove browser default
+  margin-top: 0;
   margin-bottom: $base-margin / 2;
 }
 dt,
@@ -104,12 +102,13 @@ dt {
   font-weight: $bold-font-weight;
 }
 dd {
-  margin-left: 0; // Undo browser default
+  margin-left: 0;
   margin-bottom: $base-margin;
 }
 
 
 // Links
+// -------------------------
 a {
   &, &:visited {
     color: $link-color;

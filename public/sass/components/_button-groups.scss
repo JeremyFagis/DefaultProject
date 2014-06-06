@@ -1,17 +1,15 @@
-//
 // Button groups
 // --------------------------------------------------
-
-// Make the div behave like a button
 .btn-group,
 .btn-group-vertical {
   position: relative;
   display: inline-block;
-  vertical-align: middle; // match .btn alignment given font-size hack above
+  vertical-align: middle;
+
   > .btn {
     position: relative;
     float: left;
-    // Bring the "active" button to the front
+
     &:hover,
     &:focus,
     &:active,
@@ -19,7 +17,6 @@
       z-index: 2;
     }
     &:focus {
-      // Remove focus outline when dropdown JS adds it after closing the menu
       outline: 0;
     }
   }
@@ -44,6 +41,7 @@
   .input-group {
     float: left;
   }
+
   > .btn,
   > .btn-group,
   > .input-group {
@@ -143,7 +141,6 @@
 
 // Vertical button groups
 // ----------------------
-
 .btn-group-vertical {
   > .btn,
   > .btn-group,
@@ -201,7 +198,6 @@
 
 // Justified button groups
 // ----------------------
-
 .btn-group-justified {
   display: table;
   width: 100%;

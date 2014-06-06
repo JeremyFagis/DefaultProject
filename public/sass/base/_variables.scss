@@ -64,20 +64,13 @@ $screen-lg:                  1024px;
 $screen-lg-min:              $screen-lg;
 $screen-lg-desktop:          $screen-lg-min;
 
-// So media queries don't overlap when required, provide a maximum
 $screen-xs-max:              ($screen-sm-min - 1);
 $screen-sm-max:              ($screen-md-min - 1);
 $screen-md-max:              ($screen-lg-min - 1);
 
-// Small screen / tablet
 $container-tablet:            ((720px + $grid-gutter-width));
-
-// Medium screen / desktop
 $container-desktop:           ((940px + $grid-gutter-width));
-
-// Large screen / wide desktop
 $container-lg-desktop:        ((1140px + $grid-gutter-width));
-
 
 
 ///////////////////////////
@@ -150,8 +143,6 @@ $state-warning-border:           darken($state-warning-bg, 5%) !default;
 $state-danger-text:              #FFF !default;
 $state-danger-bg:                $color-danger !default;
 $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
-
-
 
 
 ///////////////////////////
