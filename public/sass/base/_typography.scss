@@ -36,6 +36,7 @@ h5, .h5,
 h6, .h6 {
   margin-top: ($headings-margin / 2);
   margin-bottom: ($headings-margin / 2);
+  font-weight: $bold-font-weight;
 
   small,
   .small {

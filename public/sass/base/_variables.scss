@@ -1,12 +1,12 @@
 ///////////////////////////
 /// BASE
 ///////////////////////////
-$font-lato: "Lato", "Helvetica Neue", "Helvetica";
-$background-color: #FFF;
+$font-lato: "Raleway", "Helvetica Neue", "Helvetica";
+$background-color: #f6f7f3;
 $base-font-family: $font-lato;
 $base-font-size: 16px;
-$base-line-height: $base-font-size * 1.625; // 26px
-$text-color: #666;
+$base-line-height: $base-font-size * 1.75; // 26px
+$text-color: #75858C;
 $link-color: $text-color;
 $link-hover-color: darken($text-color, 25%);
 $container-max-width: 1000px;
@@ -83,8 +83,8 @@ $header-color: #FFF;
 ///////////////////////////
 /// FOOTER
 ///////////////////////////
-$footer-background: #E5E5E5;
-$footer-color: darken($footer-background, 25%);
+$footer-background: lighten(#75858C, 30%);
+$footer-color: darken($footer-background, 20%);
 
 
 ///////////////////////////
