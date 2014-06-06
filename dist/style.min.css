@@ -2278,6 +2278,23 @@ body {
   max-width: 1000px;
   margin: 0 auto; }
 
+#browsehappy {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #FFF;
+  z-index: 9999; }
+  #browsehappy #browsehappy-inner {
+    margin: 40px auto;
+    width: 500px;
+    background: #ccc;
+    color: #666;
+    border: 2px solid #AAA;
+    text-align: center;
+    padding: 20px; }
+
 header {
   background: #bb2924;
   color: #FFF;
