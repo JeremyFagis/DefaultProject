@@ -66,14 +66,14 @@ gulp.task('scripts-prod', function() {
     .pipe(gulp.dest(distDir));
 });
 
-gulp.task('watch-dev', function() {
+gulp.task('watch-dev', ['sass-dev', 'scripts-dev'], function() {
   gulp.watch(jsDir + '**/*.js', ['scripts-dev']);
   gulp.watch(sassDir + '**/*.scss', ['sass-dev']);
 });
-gulp.task('watch-prod', function() {
+gulp.task('watch-prod', ['sass-dev', 'scripts-dev'], function() {
   gulp.watch(jsDir + '**/*.js', ['scripts-prod']);
   gulp.watch(sassDir + '**/*.scss', ['sass-prod']);
 });
 
-gulp.task('dev', ['sass-dev', 'scripts-dev', 'watch-dev']);
-gulp.task('prod', ['sass-prod', 'scripts-prod', 'watch-prod']);
+gulp.task('dev', ['watch-dev']);
+gulp.task('prod', ['watch-prod']);
