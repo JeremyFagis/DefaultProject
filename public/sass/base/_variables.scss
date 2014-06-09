@@ -186,11 +186,11 @@ $table-cell-padding:            8px !default;
 $table-condensed-cell-padding:  5px !default;
 
 $table-bg:                      transparent !default;
-$table-bg-accent:               #f9f9f9 !default;
-$table-bg-hover:                #f5f5f5 !default;
+$table-bg-accent:               #e9eae7 !default;
+$table-bg-hover:                darken($table-bg-accent, 5%) !default;
 $table-bg-active:               $table-bg-hover !default;
 
-$table-border-color:            #ddd !default;
+$table-border-color:            $table-bg-hover !default;
 
 
 ///////////////////////////
@@ -222,16 +222,14 @@ $alert-danger-border:         $state-danger-border !default;
 /// NAVS
 ///////////////////////////
 $nav-link-padding:                          10px 15px !default;
-$nav-link-hover-bg:                         #EEE !default;
-$nav-disabled-link-color:                   #E5E5E5 !default;
+$nav-link-hover-bg:                         #e9eae7 !default;
+$nav-disabled-link-color:                   lighten($text-color, 35%) !default;
 $nav-open-link-hover-color:                 #fff !default;
-$nav-tabs-border-color:                     #ddd !default;
-$nav-tabs-link-hover-border-color:          #EEE !default;
+$nav-tabs-border-color:                     darken(#e9eae7, 10%) !default;
+$nav-tabs-link-hover-border-color:          transparent !default;
 $nav-tabs-active-link-hover-bg:             $background-color !default;
-$nav-tabs-active-link-hover-color:          #AAA !default;
-$nav-tabs-active-link-hover-border-color:   #ddd !default;
-$nav-tabs-justified-link-border-color:            #ddd !default;
-$nav-tabs-justified-active-link-border-color:     $background-color!default;
+$nav-tabs-active-link-hover-color:          lighten($text-color, 20%) !default;
+$nav-tabs-active-link-hover-border-color:   darken($nav-tabs-border-color, 5%) !default;
 $tab-content-padding: 10px 0;
 
 

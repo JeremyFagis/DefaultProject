@@ -2750,14 +2750,14 @@ th {
     padding: 8px;
     line-height: 28px;
     vertical-align: top;
-    border-top: 1px solid #ddd; }
+    border-top: 1px solid #ddded9; }
   .table > thead > tr > th {
     vertical-align: bottom;
-    border-bottom: 2px solid #ddd; }
+    border-bottom: 2px solid #ddded9; }
   .table > caption + thead > tr:first-child > th, .table > caption + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > td, .table > thead:first-child > tr:first-child > th, .table > thead:first-child > tr:first-child > td {
     border-top: 0; }
   .table > tbody + tbody {
-    border-top: 2px solid #ddd; }
+    border-top: 2px solid #ddded9; }
   .table .table {
     background-color: #f6f7f3; }
 
@@ -2765,17 +2765,17 @@ th {
   padding: 5px; }
 
 .table-bordered {
-  border: 1px solid #ddd; }
+  border: 1px solid #ddded9; }
   .table-bordered > thead > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > tfoot > tr > td {
-    border: 1px solid #ddd; }
+    border: 1px solid #ddded9; }
   .table-bordered > thead > tr > th, .table-bordered > thead > tr > td {
     border-bottom-width: 2px; }
 
 .table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th {
-  background-color: #f9f9f9; }
+  background-color: #e9eae7; }
 
 .table-hover > tbody > tr:hover > td, .table-hover > tbody > tr:hover > th {
-  background-color: #f5f5f5; }
+  background-color: #ddded9; }
 
 table col[class*="col-"] {
   position: static;
@@ -2794,7 +2794,7 @@ table td[class*="col-"], table th[class*="col-"] {
     overflow-y: hidden;
     overflow-x: scroll;
     -ms-overflow-style: -ms-autohiding-scrollbar;
-    border: 1px solid #ddd;
+    border: 1px solid #ddded9;
     -webkit-overflow-scrolling: touch; }
     .table-responsive > .table {
       margin-bottom: 0; }
@@ -2873,7 +2873,7 @@ table td[class*="col-"], table th[class*="col-"] {
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #d0d2cc;
   *zoom: 1; }
   .nav-tabs:before, .nav-tabs:after {
     display: table;
@@ -2895,21 +2895,21 @@ table td[class*="col-"], table th[class*="col-"] {
       color: #75858C; }
       .nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
         text-decoration: none;
-        background-color: #EEE; }
+        background-color: #e9eae7; }
       .nav-tabs > li > a:hover {
-        border-color: #EEE #EEE #ddd; }
+        border-color: transparent transparent #d0d2cc; }
     .nav-tabs > li.disabled > a {
-      color: #E5E5E5; }
+      color: #d6dbdd; }
       .nav-tabs > li.disabled > a:hover, .nav-tabs > li.disabled > a:focus {
-        color: #E5E5E5;
+        color: #d6dbdd;
         text-decoration: none;
         background-color: transparent;
         cursor: not-allowed;
         border-color: transparent; }
     .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-      color: #AAA;
+      color: #adb6ba;
       background-color: #f6f7f3;
-      border: 1px solid #ddd;
+      border: 1px solid #c4c6be;
       border-bottom-color: transparent;
       cursor: default; }
   .nav-tabs.nav-justified {
