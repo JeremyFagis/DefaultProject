@@ -123,8 +123,8 @@ $input-height-large: ceil($base-line-height*1.5 + ($padding-large-vertical * 2) 
 $input-color: $text-color;
 $input-color-placeholder: lighter($text-color, 40%);
 $input-bg: #FFF;
-$input-border: #DDD;
-$input-border-focus: #BBB;
+$input-border: darken(#e9eae7, 10%);
+$input-border-focus: darken($input-border, 15%);
 $input-border-radius: $border-radius-base;
 $input-bg-disabled: #EEE;
 
@@ -150,7 +150,7 @@ $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !
 ///////////////////////////
 $btn-default-color:              $text-color !default;
 $btn-default-bg:                 #fff !default;
-$btn-default-border:             #ccc !default;
+$btn-default-border:             darken(#e9eae7, 10%) !default;
 $btn-font-family:                $base-font-family;
 
 $btn-primary-color:              #fff !default;
