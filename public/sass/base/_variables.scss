@@ -1,9 +1,9 @@
 ///////////////////////////
 /// BASE
 ///////////////////////////
-$font-lato: "Raleway", "Helvetica Neue", "Helvetica";
+$text-font: "Raleway", "Helvetica Neue", "Helvetica";
 $background-color: #f6f7f3;
-$base-font-family: $font-lato;
+$base-font-family: $text-font;
 $base-font-size: 16px;
 $base-line-height: $base-font-size * 1.75; // 26px
 $text-color: #75858C;
@@ -23,7 +23,7 @@ $color-danger: #ca5e5b !default;
 ///////////////////////////
 /// HEADINGS
 ///////////////////////////
-$headings-font-family: $font-lato;
+$headings-font-family: $text-font;
 $headings-font-weight: 300;
 $headings-line-height: 1.4;
 $headings-color: $text-color;
