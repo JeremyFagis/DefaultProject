@@ -1,7 +1,5 @@
 var gulp        = require('gulp');
 var $           = require('gulp-load-plugins')();
-var browserSync = require('browser-sync');
-var reload      = browserSync.reload;
 var meta        = require('./package.json');
 
 var jsDir     = 'public/js/',
