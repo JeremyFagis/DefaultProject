@@ -23,3 +23,9 @@ $(document).ready(function(){
     });
 
 });
+
+$(window).load(function(){
+    if($('#loading').length > 0) {
+        $('#loading').fadeOut(400);
+    }
+});
