@@ -4,9 +4,9 @@ var browserSync = require('browser-sync');
 var reload      = browserSync.reload;
 var meta        = require('./package.json');
 
-var jsDir     = 'public/js/',
-    sassDir   = 'public/sass/',
-    distDir   = 'dist',
+var jsDir     = 'web/public/js/',
+    sassDir   = 'web/public/sass/',
+    distDir   = 'web/dist',
     jquerySrc = 'vendors/jquery-1.10.2.min.js',
     banner    = [
         '/*!',
