@@ -1,5 +1,7 @@
 var gulp        = require('gulp');
 var $           = require('gulp-load-plugins')();
+var browserSync = require('browser-sync');
+var reload      = browserSync.reload;
 var meta        = require('./package.json');
 
 var jsDir     = 'public/js/',
@@ -65,6 +67,19 @@ gulp.task('watch-dev', ['sass-dev', 'scripts-dev'], function() {
 gulp.task('watch-prod', ['sass-prod', 'scripts-prod'], function() {
     gulp.watch(jsDir + '**/*.js', ['scripts-prod']);
     gulp.watch(sassDir + '**/*.scss', ['sass-prod']);
+});
+
+gulp.task('serve', function () {
+    browserSync.init(null, {
+        server: {
+            baseDir: ['web']
+        },
+        notify: false
+    });
+
+    gulp.watch(['web/**/*.html'], reload);
+    gulp.watch(jsDir + '**/*.js', ['scripts-dev', reload]);
+    gulp.watch(sassDir + '**/*.scss', ['sass-dev', reload]);
 });
 
 gulp.task('dev', ['watch-dev']);
