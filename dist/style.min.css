@@ -2272,6 +2272,8 @@ body {
   font-size: 16px;
   line-height: 28px;
   color: #75858C; }
+  body.loading {
+    overflow: hidden; }
 
 .container {
   width: 100%;
@@ -2294,6 +2296,26 @@ body {
     border: 2px solid #AAA;
     text-align: center;
     padding: 20px; }
+
+#loading {
+  background: #c8cfd2;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9000;
+  width: 100%;
+  height: 100%; }
+  #loading p {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 35px;
+    color: #919ea3; }
 
 header {
   background: #bb2924;
@@ -2559,9 +2581,6 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 
 .btn-group .dropdown-toggle:active, .btn-group.open .dropdown-toggle {
   outline: 0; }
-
-
-
 
 .btn-group > .btn + .dropdown-toggle {
   padding-left: 8px;
@@ -3032,8 +3051,6 @@ table td[class*="col-"], table th[class*="col-"] {
     float: left;
     width: 100%;
     margin-bottom: 0; }
-
-
 
 .input-group-addon, .input-group-btn, .input-group .form-control {
   display: table-cell; }

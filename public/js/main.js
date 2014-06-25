@@ -26,6 +26,7 @@ $(document).ready(function(){
 
 $(window).load(function(){
     if($('#loading').length > 0) {
-        $('#loading').fadeOut(400);
+        $('#loading').delay(200).fadeOut(400);
+        $('body').removeClass('loading');
     }
 });
