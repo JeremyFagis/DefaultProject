@@ -35,7 +35,7 @@
 }
 
 .clearfix {
-  @include clearfix();
+    @include clearfix();
 }
 
 hr {
