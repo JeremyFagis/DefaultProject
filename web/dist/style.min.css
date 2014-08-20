@@ -505,6 +505,14 @@ table {
 .italic {
   font-style: italic; }
 
+.clearfix {
+  *zoom: 1; }
+  .clearfix:before, .clearfix:after {
+    display: table;
+    content: ""; }
+  .clearfix:after {
+    clear: both; }
+
 hr {
   margin-top: 28px;
   margin-bottom: 28px;
