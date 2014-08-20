@@ -53,6 +53,11 @@
     filter: alpha(opacity=$opacity);
 }
 
+@mixin antialiased() {
+    -moz-osx-font-smoothing: grayscale;
+     -webkit-font-smoothing: antialiased;
+}
+
 @mixin clearfix() {
     *zoom: 1;
 

@@ -80,8 +80,7 @@ select[size] {
 	border-radius: $input-border-radius;
 	@include transition(border-color ease-in-out .15s, box-shadow ease-in-out .15s);
 	-webkit-appearance: none; // Removed iOS inner shadow.
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+    @include antialiased();
 
 	// Customize the `:focus` state to imitate native WebKit styles.
 	@include form-control-focus();

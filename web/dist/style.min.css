@@ -2011,8 +2011,8 @@ select[multiple], select[size] {
   -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   -webkit-appearance: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; }
   .form-control:focus {
     border-color: #abafa3;
     outline: 0; }
@@ -2285,8 +2285,8 @@ body {
   font-size: 16px;
   line-height: 28px;
   color: #666;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; }
   body.loading {
     overflow: hidden; }
 
@@ -2374,7 +2374,9 @@ footer#footer {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none; }
+  user-select: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; }
   .btn:hover {
     color: #666;
     text-decoration: none; }
