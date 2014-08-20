@@ -1,32 +1,32 @@
 ///////////////////////////
 /// BASE
 ///////////////////////////
-$text-font: "Raleway", "Helvetica Neue", "Helvetica";
-$background-color: #f6f7f3;
+$text-font: "Lato", "Helvetica Neue", "Helvetica";
+$background-color: #F5F5F5;
 $base-font-family: $text-font;
 $base-font-size: 16px;
 $base-line-height: $base-font-size * 1.75; // 26px
-$text-color: #75858C;
+$text-color: #666;
 $link-color: $text-color;
 $link-hover-color: darken($text-color, 25%);
 $container-max-width: 1000px;
 $base-margin: 20px;
-$bold-font-weight: bold;
+$bold-font-weight: 700;
 
-$color-primary: #346b9a !default;
-$color-success: #60a760 !default;
-$color-info: #56abc4 !default;
-$color-warning: #de9c3f !default;
-$color-danger: #ca5e5b !default;
+$color-primary: #415C71 !default;
+$color-success: #5CAE50 !default;
+$color-info: #01B0D1 !default;
+$color-warning: #FBA026 !default;
+$color-danger: #D50F1F !default;
 
 
 ///////////////////////////
 /// HEADINGS
 ///////////////////////////
-$headings-font-family: $text-font;
-$headings-font-weight: 300;
+$headings-font-family: "Montserrat", "Helvetica Neue", "Helvetica";
+$headings-font-weight: 400;
 $headings-line-height: 1.4;
-$headings-color: $text-color;
+$headings-color: #444;
 $headings-small-color: lighter($text-color, 30%);
 $headings-margin: $base-margin;
 
@@ -83,8 +83,8 @@ $header-color: #FFF;
 ///////////////////////////
 /// FOOTER
 ///////////////////////////
-$footer-background: lighten(#75858C, 30%);
-$footer-color: darken($footer-background, 20%);
+$footer-background: darken($background-color, 15%);
+$footer-color: darken($footer-background, 30%);
 
 
 ///////////////////////////
@@ -186,8 +186,8 @@ $table-cell-padding:            8px !default;
 $table-condensed-cell-padding:  5px !default;
 
 $table-bg:                      transparent !default;
-$table-bg-accent:               #e9eae7 !default;
-$table-bg-hover:                darken($table-bg-accent, 5%) !default;
+$table-bg-accent:               darken($background-color, 5%) !default;
+$table-bg-hover:                darken($table-bg-accent, 3%) !default;
 $table-bg-active:               $table-bg-hover !default;
 
 $table-border-color:            $table-bg-hover !default;
@@ -198,7 +198,7 @@ $table-border-color:            $table-bg-hover !default;
 ///////////////////////////
 $alert-padding:               15px 25px !default;
 $alert-border-radius:         $border-radius-base !default;
-$alert-font-weight:           300 !default;
+$alert-font-weight:           400 !default;
 $alert-link-font-weight:      normal !default;
 
 $alert-success-bg:            $state-success-bg !default;
@@ -222,7 +222,7 @@ $alert-danger-border:         $state-danger-border !default;
 /// NAVS
 ///////////////////////////
 $nav-link-padding:                          10px 15px !default;
-$nav-link-hover-bg:                         #e9eae7 !default;
+$nav-link-hover-bg:                         darken($background-color, 5%) !default;
 $nav-disabled-link-color:                   lighten($text-color, 35%) !default;
 $nav-open-link-hover-color:                 #fff !default;
 $nav-tabs-border-color:                     darken(#e9eae7, 10%) !default;

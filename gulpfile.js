@@ -7,7 +7,7 @@ var meta        = require('./package.json');
 var jsDir     = 'web/public/js/',
     sassDir   = 'web/public/sass/',
     distDir   = 'web/dist',
-    jquerySrc = 'vendors/jquery-1.10.2.min.js',
+    jquerySrc = 'vendors/jquery-1.11.1.min.js',
     banner    = [
         '/*!',
         ' * =============================================================',
@@ -64,10 +64,6 @@ gulp.task('watch-dev', ['sass-dev', 'scripts-dev'], function() {
     gulp.watch(jsDir + '**/*.js', ['scripts-dev']);
     gulp.watch(sassDir + '**/*.scss', ['sass-dev']);
 });
-gulp.task('watch-prod', ['sass-prod', 'scripts-prod'], function() {
-    gulp.watch(jsDir + '**/*.js', ['scripts-prod']);
-    gulp.watch(sassDir + '**/*.scss', ['sass-prod']);
-});
 
 gulp.task('serve', function () {
     browserSync.init(null, {
@@ -83,4 +79,4 @@ gulp.task('serve', function () {
 });
 
 gulp.task('dev', ['watch-dev']);
-gulp.task('prod', ['watch-prod']);
+gulp.task('prod', ['sass-prod', 'scripts-prod']);
