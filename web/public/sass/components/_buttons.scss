@@ -12,12 +12,12 @@
     vertical-align: middle;
     cursor: pointer;
     background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-    border: 1px solid transparent;
+    border: $btn-border-width solid transparent;
     white-space: nowrap;
     font-family: $btn-font-family;
     font-size: $base-font-size;
     font-weight: normal;
-    @include button-size($padding-base-vertical, $padding-base-horizontal, $base-font-size, $base-line-height, $border-radius-base);
+    @include button-size($btn-default-padding-v, $btn-default-padding-h, $base-font-size, $base-line-height, $border-radius-base);
     @include user-select(none);
     @include antialiased();
 
@@ -30,7 +30,6 @@
     &.active {
         outline: 0;
         background-image: none;
-        @include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
     }
 
     &.disabled,
@@ -39,7 +38,6 @@
         cursor: not-allowed;
         pointer-events: none; // Future-proof disabling of clicks
         @include opacity(.65);
-        @include box-shadow(none);
     }
 }
 
@@ -110,13 +108,13 @@
 // Button Sizes
 // --------------------------------------------------
 .btn-lg {
-    @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $border-radius-large);
+    @include button-size($btn-lg-padding-v, $btn-lg-padding-h, $font-size-large, $line-height-large, $border-radius-large);
 }
 .btn-sm {
-    @include button-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $border-radius-small);
+    @include button-size($btn-sm-padding-v, $btn-sm-padding-h, $font-size-small, $line-height-small, $border-radius-small);
 }
 .btn-xs {
-    @include button-size($padding-xs-vertical, $padding-xs-horizontal, $font-size-small, $line-height-small, $border-radius-small);
+    @include button-size($btn-xs-padding-v, $btn-xs-padding-h, $font-size-small, $line-height-small, $border-radius-small);
 }
 
 

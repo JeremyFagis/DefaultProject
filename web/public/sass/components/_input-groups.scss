@@ -139,6 +139,15 @@
     // element above the siblings.
     > .btn {
         position: relative;
+        padding: $padding-base-vertical $padding-base-horizontal;
+
+        &.btn-lg {
+            padding: $padding-large-vertical $padding-large-horizontal;
+        }
+
+        &.btn-sm {
+            padding: $padding-small-vertical $padding-small-horizontal;
+        }
 
         + .btn {
             margin-left: -1px;

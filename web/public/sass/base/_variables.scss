@@ -1,8 +1,8 @@
 ///////////////////////////
 /// BASE
 ///////////////////////////
-$text-font: "Lato", "Helvetica Neue", "Helvetica";
-$background-color: #F5F5F5;
+$text-font: "Source Sans Pro", "Helvetica Neue", "Helvetica";
+$background-color: #F8F8F8;
 $base-font-family: $text-font;
 $base-font-size: 16px;
 $base-line-height: $base-font-size * 1.75; // 26px
@@ -13,21 +13,25 @@ $container-max-width: 1000px;
 $base-margin: 20px;
 $bold-font-weight: 700;
 
-$color-primary: #415C71 !default;
-$color-success: #5CAE50 !default;
-$color-info: #01B0D1 !default;
-$color-warning: #FBA026 !default;
-$color-danger: #D50F1F !default;
+$select-text-bg-color:   transparentize(#f34141, 0.2);
+$select-text-color:      #FFF;
+
+$color-primary: #3e76a1 !default;
+$color-success: #66c757 !default;
+$color-info: #40bed6 !default;
+$color-warning: #eea94d !default;
+$color-danger: #de4242 !default;
 
 
 ///////////////////////////
 /// HEADINGS
 ///////////////////////////
 $headings-font-family: "Montserrat", "Helvetica Neue", "Helvetica";
-$headings-font-weight: 400;
+$headings-font-weight: 700;
 $headings-line-height: 1.4;
+$headings-letter-spacing: -0.05em;
 $headings-color: #444;
-$headings-small-color: lighter($text-color, 30%);
+$headings-small-color: lighten($text-color, 30%);
 $headings-margin: $base-margin;
 
 $font-size-h1: 40px;
@@ -121,7 +125,7 @@ $input-height-small: ceil($base-line-height*0.75 + ($padding-small-vertical * 2)
 $input-height-large: ceil($base-line-height*1.5 + ($padding-large-vertical * 2) + 2) !default;
 
 $input-color: $text-color;
-$input-color-placeholder: lighter($text-color, 40%);
+$input-color-placeholder: lighten($text-color, 40%);
 $input-bg: #FFF;
 $input-border: darken(#e9eae7, 10%);
 $input-border-focus: darken($input-border, 15%);
@@ -177,6 +181,20 @@ $btn-link-disabled-color:        #CCC !default;
 
 $caret-width-base:               4px !default;
 $caret-width-large:              5px !default;
+
+$btn-border-width:               1px;
+
+$btn-default-padding-h:          20px;
+$btn-default-padding-v:          8px;
+
+$btn-lg-padding-h:               30px;
+$btn-lg-padding-v:               12px;
+
+$btn-sm-padding-h:               16px;
+$btn-sm-padding-v:               5px;
+
+$btn-xs-padding-h:               12px;
+$btn-xs-padding-v:               5px;
 
 
 ///////////////////////////

@@ -11,6 +11,15 @@ body {
     }
 }
 
+::selection {
+  background: $select-text-bg-color;
+  color: $select-text-color;
+}
+::-moz-selection {
+  background: $select-text-bg-color;
+  color: $select-text-color;
+}
+
 .container {
     width: 100%;
     max-width: $container-max-width;

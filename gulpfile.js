@@ -20,7 +20,7 @@ var jsDir     = 'web/public/js/',
     ].join('\n');
 
 var onError = function (err) {
-    $.gutil.beep();
+    $.util.beep();
     console.log(err.toString());
     this.emit('end');
 };
