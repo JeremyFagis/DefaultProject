@@ -1,7 +1,6 @@
 #ElaoStrap
 
 ## Installation
----
 
 Clone the project in your workspace
 
@@ -30,7 +29,6 @@ Your assets folder looks like this
 	
 
 ## Compilation
----
 
 	#  compilation (watch & minification)
 	$ gulp
@@ -43,7 +41,6 @@ Your assets folder looks like this
 	
 	
 ## Details
----
 
 ### Sass
 
