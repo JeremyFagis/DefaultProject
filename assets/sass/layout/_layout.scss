@@ -72,8 +72,9 @@ body {
 header#header {
     background: $header-background;
     color: $header-color;
-    font-family: $text-font;
-    font-weight: 100;
+    font-family: $headings-font-family;
+    font-weight: 200;
+    letter-spacing: $headings-letter-spacing;
     text-transform: uppercase;
     text-align: center;
     font-size: 60px;

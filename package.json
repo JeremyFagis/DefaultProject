@@ -13,9 +13,7 @@
       "bootstrap.transition": "./node_modules/bootstrap-sass/assets/javascripts/bootstrap/transition.js",
       "bootstrap.collapse"  : "./node_modules/bootstrap-sass/assets/javascripts/bootstrap/collapse.js",
       "bootstrap.tab"       : "./node_modules/bootstrap-sass/assets/javascripts/bootstrap/tab.js",
-      "bootstrap.tooltip"   : "./node_modules/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js",
-      "simpleSelector"      : "./assets/js/vendors/jquery.simple-selector.js",
-      "simpleInputFile"     : "./assets/js/vendors/jquery.simple-input-file.js"
+      "bootstrap.tooltip"   : "./node_modules/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"
   },
   "browserify-shim": {
       "bootstrap.transition": {

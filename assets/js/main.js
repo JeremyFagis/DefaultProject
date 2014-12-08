@@ -2,16 +2,13 @@ var $                = require('jquery'),
     tab              = require('bootstrap.tab'),
     collapse         = require('bootstrap.collapse'),
     tooltip          = require('bootstrap.tooltip'),
-    simpleSelector   = require('simpleSelector'),
-    simpleInputFile  = require('simpleInputFile');
-
-require('./vendors/dropify');
+    simpleSelector   = require('./vendors/jquery.simple-selector'),
+    dropify          = require('./vendors/dropify');
 
 $(document).ready(function(){
 
     $(".selector").simpleSelector();
 
-    // $('input[type="file"]').simpleInputFile();
     $('input[type="file"]').dropify();
 
     $('.nav-tabs li:not(.disabled) a').click(function (e) {
