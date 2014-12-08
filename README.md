@@ -1,21 +1,20 @@
 #ElaoStrap
 
 ## Installation
----
 
 Clone the project in your workspace
 
 	$ git clone git@github.com:JeremyFagis/DefaultProject.git your-project
 	$ cd your-project
-	
+
 Download packages
 
 	$ (sudo) npm install
-	
+
 Compile assets
 
 	$ gulp
-	
+
 Your assets folder looks like this
 
 	assets/
@@ -27,23 +26,21 @@ Your assets folder looks like this
 	│   └── ...
 	├── sass/
 	│   └── ...
-	
+
 
 ## Compilation
----
 
 	#  compilation (watch & minification)
 	$ gulp
-	
+
 	# Prod compilation (minification)
 	$ gulp install
-	
+
 	# Dev compilation (watch & no-minification)
 	$ gulp dev
-	
-	
+
+
 ## Details
----
 
 ### Sass
 
@@ -61,4 +58,4 @@ Your assets folder looks like this
 	└── layout/
 	│   └─ forms, grid, layout
 	│
-	└── style.scss	
+	└── style.scss
