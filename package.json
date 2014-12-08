@@ -1,29 +1,45 @@
 {
-  "name": "Default-Project",
-  "version": "0.0.1",
-  "description": "Elao SCSS Framework",
-  "main": "index.html",
-  "homepage": "https://github.com/JeremyFagis/DefaultProject",
+  "name": "ElaoStrap",
   "author": {
     "name": "Jeremy FAGIS",
-    "email": "jeremy@fagis.fr",
-    "url": "http://fagis.fr"
+    "email": "jeremy@fagis.fr"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "private": false,
+  "dependencies": {
+    "jquery": "2.1.1",
+    "bootstrap-sass": "3.3.1"
   },
-  "license": "ISC",
+  "browser": {
+      "bootstrap.transition": "./node_modules/bootstrap-sass/assets/javascripts/bootstrap/transition.js",
+      "bootstrap.collapse"  : "./node_modules/bootstrap-sass/assets/javascripts/bootstrap/collapse.js",
+      "bootstrap.tab"       : "./node_modules/bootstrap-sass/assets/javascripts/bootstrap/tab.js",
+      "bootstrap.tooltip"   : "./node_modules/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js",
+      "simpleSelector"      : "./assets/js/vendors/jquery.simple-selector.js",
+      "simpleInputFile"     : "./assets/js/vendors/jquery.simple-input-file.js"
+  },
+  "browserify-shim": {
+      "bootstrap.transition": {
+          "depends": "jquery:jQuery"
+      },
+      "bootstrap.collapse": {
+          "depends": ["jquery:jQuery", "bootstrap.transition"]
+      },
+      "bootstrap.tab": {
+          "depends": "jquery:jQuery"
+      },
+      "bootstrap.tooltip": {
+          "depends": "jquery:jQuery"
+      }
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
   "devDependencies": {
-    "gulp": "^3.6.2",
-    "gulp-load-plugins": "^0.5.0",
-    "gulp-header": "^1.0.2",
-    "gulp-concat": "^2.2.0",
-    "gulp-plumber": "^0.5.6",
-    "gulp-rename": "^1.2.0",
-    "gulp-minify-css": "^0.3.0",
-    "gulp-sass": "^0.7.1",
-    "gulp-uglify": "^0.2.1",
-    "gulp-util": "^2.2.14",
-    "browser-sync": "^0.9.1"
+    "gulp": "~3.8.8",
+    "del": "0.1.*",
+    "elao-assets-gulp": "~0.1.13",
+    "browserify-shim": "3.8.*"
   }
 }
