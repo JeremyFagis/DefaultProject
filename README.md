@@ -4,7 +4,7 @@
 
 Clone the project in your workspace
 
-	$ git clone git@github.com:JeremyFagis/DefaultProject.git your-project
+	$ git clone git@github.com:JeremyFagis/ElaoStrap.git your-project
 	$ cd your-project
 	
 Download packages
