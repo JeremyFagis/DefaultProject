@@ -264,6 +264,23 @@ $tooltip-arrow-color: $tooltip-bg !default;
 
 
 ///////////////////////////
+/// POPOVERS
+///////////////////////////
+$zindex-popover:                      1060 !default;
+$popover-bg:                          #fff !default;
+$popover-width:                       300px !default;
+$popover-border-color:                rgba(0,0,0,.2) !default;
+$popover-fallback-border-color:       #ccc !default;
+$popover-title-bg:                    darken($popover-bg, 3%) !default;
+$popover-arrow-width:                 10px !default;
+$popover-arrow-color:                 $popover-bg !default;
+$popover-arrow-outer-width:           ($popover-arrow-width + 1) !default;
+$popover-arrow-outer-color:           fade_in($popover-border-color, 0.05) !default;
+$popover-arrow-outer-fallback-color:  darken($popover-fallback-border-color, 20%) !default;
+
+
+
+///////////////////////////
 /// INPUT GROUPS
 ///////////////////////////
 $input-group-addon-bg: #EEE !default;

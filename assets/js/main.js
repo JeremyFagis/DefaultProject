@@ -2,6 +2,7 @@ var $                = require('jquery'),
     tab              = require('bootstrap.tab'),
     collapse         = require('bootstrap.collapse'),
     tooltip          = require('bootstrap.tooltip'),
+    popover          = require('bootstrap.popover'),
     simpleSelector   = require('./vendors/jquery.simple-selector'),
     dropify          = require('./vendors/dropify');
 
@@ -19,16 +20,7 @@ $(document).ready(function(){
     $('.collapse').collapse();
 
     $('.has-tooltip, [data-toggle="tooltip"]').tooltip({ container: 'body' });
-
-    // $(".fancybox").fancybox({
-    //     padding: 10,
-    //     nextEffect: 'fade',
-    //     prevEffect: 'fade',
-    //     helpers: {
-    //         title: { type: 'inside' }
-    //     }
-    // });
-
+    $('.has-popover, [data-toggle="popover"]').popover({ trigger: 'hover' });
 });
 
 $(window).load(function(){
