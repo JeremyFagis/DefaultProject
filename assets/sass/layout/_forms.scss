@@ -421,6 +421,11 @@ input[type="checkbox"],
 		padding-top: ($padding-base-vertical + 1);
 		padding-bottom: ($padding-base-vertical + 1);
 	}
+
+	.control-label {
+		padding-top: 7px;
+	}
+
 	.control-label,
 	.control-field {
 		padding-bottom: 5px;
