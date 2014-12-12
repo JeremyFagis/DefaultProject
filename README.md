@@ -76,6 +76,9 @@ Your assets folder looks like this
 	└── layout/
 	│   └─ forms, grid, layout
 	│
+	└── pages/
+	│   └─ Specific styles for pages
+	│
 	└── style.scss	
 	
 
