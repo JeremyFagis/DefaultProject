@@ -1,5 +1,13 @@
 #ElaoStrap
 
+## Dependencies
+
+* [Gulp](https://github.com/gulpjs/gulp)
+* [elao-assets-gulp](https://github.com/Elao/node-module-assets-gulp)
+* [jQuery](https://github.com/jquery/jquery)
+* [Bootstrap SASS](https://github.com/twbs/bootstrap-sass)
+
+
 ## Installation
 
 Clone the project in your workspace
@@ -42,6 +50,16 @@ Your assets folder looks like this
 	
 ## Details
 
+### JS
+
+	js/
+	└── vendors/
+	│   └─ fancybox, dropify, simple select
+	│   └─ Add others vendors here if they are not in node_modules
+	│
+	└── main.js	
+	
+
 ### Sass
 
 	sass/
@@ -49,7 +67,7 @@ Your assets folder looks like this
 	│   └─ fonts, reset, headers, links, variables
 	│
 	└── components/
-	│   └─ fonts, reset, headers, links, variables
+	│   └─ alerts, buttons, tooltips, popovers, tables...
 	│   └─ If you include plugins, insert scss files here
 	│
 	└── helpers/
@@ -63,7 +81,6 @@ Your assets folder looks like this
 
 ### Fonts
 
-Use [fontello.com](http://fontello.com/) to generate fonts icons.
+Use [fontello.com](http://fontello.com/) to generate fonts icons. Move font files in assets/fonts/fontello, and update assets/sass/base/fonts.scss.
 
 
-### 
