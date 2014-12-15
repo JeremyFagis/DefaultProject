@@ -5,6 +5,8 @@
     border-radius: $alert-border-radius;
     font-weight: $alert-font-weight;
 
+    @include alert-variant($alert-default-bg, $alert-default-border, $alert-default-text);
+
     h4 {
         margin-top: 0;
         color: inherit;

@@ -48,10 +48,10 @@ $font-size-h6: 14px;
 $code-font-family: "Inconsolata", "Consolas", "Courier";
 $code-font-size:   16px;
 $code-line-height: $code-font-size * 1.5;
-$code-background:  #222;
+$code-background:  rgba(0, 0, 0, 0.7);
 $code-color:       #EEE;
 $code-padding:     10px 10px;
-$code-margin:      20px 0;
+$code-margin:      0;
 
 
 
@@ -231,6 +231,10 @@ $alert-padding:               15px 25px !default;
 $alert-border-radius:         $border-radius-base !default;
 $alert-font-weight:           400 !default;
 $alert-link-font-weight:      normal !default;
+
+$alert-default-bg:            #DDD!default;
+$alert-default-text:          $text-color !default;
+$alert-default-border:        #BBB !default;
 
 $alert-success-bg:            $state-success-bg !default;
 $alert-success-text:          $state-success-text !default;

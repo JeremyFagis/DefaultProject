@@ -1,0 +1,12 @@
+.code-button {
+    // float: right;
+    opacity: 0.5;
+    font-size: 22px;
+    color: $text-color;
+    margin-left: 5px;
+    vertical-align: middle;
+
+    &.collapsed {
+        opacity: 1;
+    }
+}

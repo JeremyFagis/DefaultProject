@@ -39,3 +39,24 @@ $(window).load(function(){
         $('body').removeClass('loading');
     }
 });
+
+
+/**
+ * DOC
+ */
+
+$(document).ready(function(){
+    $('pre code').each(function(){
+        $(this).html(htmlencode($(this).html()));
+    });
+
+    $('.code-button').on('click', function(e) {
+        e.preventDefault();
+    })
+});
+
+function htmlencode(str) {
+    return str.replace(/[&<>"']/g, function($0) {
+        return "&" + {"&":"amp", "<":"lt", ">":"gt", '"':"quot", "'":"#39"}[$0] + ";";
+    });
+}

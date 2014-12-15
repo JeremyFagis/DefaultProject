@@ -54,7 +54,8 @@
             <h2>Lists styles</h2>
             <div class="row">
                 <div class="col-xs-4">
-                    <h4>Default</h4>
+                    <h4>Default <a href="#ul-default" data-toggle="collapse" data-target="#ul-default" class="code-button"><i class="icon-code"></i></a></h4>
+                    <pre id="ul-default" class="collapse in"><code><ul>...</ul></code></pre>
                     <ul>
                         <li>Item 1</li>
                         <li>Item 2</li>
@@ -64,7 +65,8 @@
                     </ul>
                 </div>
                 <div class="col-xs-4">
-                    <h4>No bullet</h4>
+                    <h4>No bullet <a href="#ul-no-bullet" data-toggle="collapse" data-target="#ul-no-bullet" class="code-button"><i class="icon-code"></i></a></h4>
+                    <pre id="ul-no-bullet" class="collapse in"><code><ul class="no-bullet">...</ul></code></pre>
                     <ul class="no-bullet">
                         <li>Item 1</li>
                         <li>Item 2</li>
@@ -74,7 +76,8 @@
                     </ul>
                 </div>
                 <div class="col-xs-4">
-                    <h4>Inline</h4>
+                    <h4>Inline <a href="#ul-inline" data-toggle="collapse" data-target="#ul-inline" class="code-button"><i class="icon-code"></i></a></h4>
+                    <pre id="ul-inline" class="collapse in"><code><ul class="inline">...</ul></code></pre>
                     <ul class="inline">
                         <li>Item 1</li>
                         <li>Item 2</li>
@@ -85,7 +88,13 @@
                 </div>
             </div>
 
-            <h2>Definition style</h2>
+            <h2>Definition style <a href="#dl-dt-dd" data-toggle="collapse" data-target="#dl-dt-dd" class="code-button"><i class="icon-code"></i></a></h2>
+<pre id="dl-dt-dd" class="collapse in">
+<code><dl>
+    <dt>Title</dt>
+    <dd>Description</dd>
+</dl></code>
+</pre>
             <div class="row">
                 <div class="col-lg-12">
                     <dl>
@@ -106,6 +115,31 @@
             <h2>Forms style</h2>
             <div class="row">
                 <div class="col-sm-6">
+                    <h4>Label on top <a href="#default-form" data-toggle="collapse" data-target="#default-form" class="code-button"><i class="icon-code"></i></a></h4>
+<pre id="default-form" class="collapse in">
+<code><div class="form-group">
+    <label>My label</label>
+    <input class="form-control" type="text" />
+</div>
+
+<div class="form-group">
+    <label>My label</label>
+    <textarea class="form-control" rows="3"></textarea>
+</div>
+
+<div class="checkbox">
+    <label>
+        <input type="checkbox"> Check me out
+    </label>
+</div>
+
+<div class="radio">
+    <label>
+        <input type="radio" name="xxx" value="xxx1" checked>
+        Radio 1
+    </label>
+</div></code>
+</pre>
                     <form role="form">
                         <div class="form-group">
                             <label for="exampleInputEmail1">Email address</label>
@@ -122,12 +156,14 @@
                         </div>
                         <div class="form-group">
                             <label for="exampleTextarea">Textarea</label>
-                            <textarea class="form-control" rows="3" id="exampleTextarea"></textarea>
+                            <textarea class="form-control" id="exampleTextarea"></textarea>
                         </div>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox"> Check me out
-                            </label>
+                        <div class="form-group">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Check me out
+                                </label>
+                            </div>
                         </div>
                         <div class="form-group">
                             <div class="radio">
@@ -145,7 +181,7 @@
                         </div>
                         <div class="form-group">
                             <label>Select</label>
-                            <select class="form-control selector">
+                            <select class="selector">
                                 <option>Option 1</option>
                                 <option>Option 2</option>
                                 <option>Option 3</option>
@@ -161,6 +197,18 @@
                     </form>
                 </div>
                 <div class="col-sm-6">
+                    <h4>Label on left <a href="#horizontal-form" data-toggle="collapse" data-target="#horizontal-form" class="code-button"><i class="icon-code"></i></a></h4>
+<pre id="horizontal-form" class="collapse in">
+<code><form class="form-horizontal">
+    <div class="form-group">
+        <label class="control-label col-sm-3">My label</label>
+        <div class="col-sm-9 control-field">
+            <input class="form-control" type="text" />
+        </div>
+    </div>
+    ...
+</form></code>
+</pre>
                     <form role="form" class="form-horizontal">
                         <div class="form-group">
                             <label class="control-label col-sm-3" for="exampleInputEmail1">Email address</label>
@@ -188,9 +236,34 @@
                             </div>
                         </div>
                         <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Check me out
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                        Option one is this and that&mdash;be sure to include why it's great
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                        Option two can be something else and selecting it will deselect option one
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
                             <label class="control-label col-sm-3">Select</label>
                             <div class="col-sm-9 control-field">
-                                <select class="form-control selector">
+                                <select class="selector">
                                     <option>Option 1</option>
                                     <option>Option 2</option>
                                     <option>Option 3</option>
@@ -214,7 +287,17 @@
                 </div>
             </div>
 
-            <h2>Buttons</h2>
+            <h2>Buttons <a href="#buttons" data-toggle="collapse" data-target="#buttons" class="code-button"><i class="icon-code"></i></a></h2>
+<pre id="buttons" class="collapse in">
+<code><button type="button" class="btn btn-default">Default</button>
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-link">Link</button>
+</code>
+</pre>
             <div class="row">
                 <div class="col-lg-12">
                     <button type="button" class="btn btn-default">Default</button>
@@ -230,22 +313,87 @@
             <h2>Tables</h2>
             <div class="row">
                 <div class="col-sm-6">
+                    <h4>Default <a href="#table-default" data-toggle="collapse" data-target="#table-default" class="code-button"><i class="icon-code"></i></a></h4>
+<pre id="table-default" class="collapse in">
+<code><table class="table">
+    <thead><tr><th>...</th></tr></thead>
+    <tbody><tr><td>...</td></tr></tbody>
+</table>
+</code>
+</pre>
                     <table class="table"> <thead> <tr> <th>#</th> <th>First Name</th> <th>Last Name</th> <th>Username</th> </tr> </thead> <tbody> <tr> <td>1</td> <td>Mark</td> <td>Otto</td> <td>@mdo</td> </tr> <tr> <td>2</td> <td>Jacob</td> <td>Thornton</td> <td>@fat</td> </tr> <tr> <td>3</td> <td>Larry</td> <td>the Bird</td> <td>@twitter</td> </tr> </tbody> </table>
                 </div>
                 <div class="col-sm-6">
+                    <h4>Striped <a href="#table-striped" data-toggle="collapse" data-target="#table-striped" class="code-button"><i class="icon-code"></i></a></h4>
+<pre id="table-striped" class="collapse in">
+<code><table class="table table-striped">
+    <thead><tr><th>...</th></tr></thead>
+    <tbody><tr><td>...</td></tr></tbody>
+</table>
+</code>
+</pre>
                     <table class="table table-striped"> <thead> <tr> <th>#</th> <th>First Name</th> <th>Last Name</th> <th>Username</th> </tr> </thead> <tbody> <tr> <td>1</td> <td>Mark</td> <td>Otto</td> <td>@mdo</td> </tr> <tr> <td>2</td> <td>Jacob</td> <td>Thornton</td> <td>@fat</td> </tr> <tr> <td>3</td> <td>Larry</td> <td>the Bird</td> <td>@twitter</td> </tr> </tbody> </table>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-6">
+                    <h4>Bordered <a href="#table-bordered" data-toggle="collapse" data-target="#table-bordered" class="code-button"><i class="icon-code"></i></a></h4>
+<pre id="table-bordered" class="collapse in">
+<code><table class="table table-bordered">
+    <thead><tr><th>...</th></tr></thead>
+    <tbody><tr><td>...</td></tr></tbody>
+</table>
+</code>
+</pre>
                     <table class="table table-bordered"> <thead> <tr> <th>#</th> <th>First Name</th> <th>Last Name</th> <th>Username</th> </tr> </thead> <tbody> <tr> <td>1</td> <td>Mark</td> <td>Otto</td> <td>@mdo</td> </tr> <tr> <td>2</td> <td>Jacob</td> <td>Thornton</td> <td>@fat</td> </tr> <tr> <td>3</td> <td>Larry</td> <td>the Bird</td> <td>@twitter</td> </tr> </tbody> </table>
                 </div>
                 <div class="col-sm-6">
+                    <h4>Hover <a href="#table-hover" data-toggle="collapse" data-target="#table-hover" class="code-button"><i class="icon-code"></i></a></h4>
+<pre id="table-hover" class="collapse in">
+<code><table class="table table-hover">
+    <thead><tr><th>...</th></tr></thead>
+    <tbody><tr><td>...</td></tr></tbody>
+</table>
+</code>
+</pre>
                     <table class="table table-hover"> <thead> <tr> <th>#</th> <th>First Name</th> <th>Last Name</th> <th>Username</th> </tr> </thead> <tbody> <tr> <td>1</td> <td>Mark</td> <td>Otto</td> <td>@mdo</td> </tr> <tr> <td>2</td> <td>Jacob</td> <td>Thornton</td> <td>@fat</td> </tr> <tr> <td>3</td> <td>Larry</td> <td>the Bird</td> <td>@twitter</td> </tr> </tbody> </table>
                 </div>
             </div>
 
-            <h2>Input groups</h2>
+            <h2>Input groups <a href="#input-groups" data-toggle="collapse" data-target="#input-groups" class="code-button"><i class="icon-code"></i></a></h2>
+<pre id="input-groups" class="collapse in">
+<code><div class="input-group">
+    <span class="input-group-addon">@</span>
+    <input type="text" class="form-control">
+</div>
+
+<div class="input-group">
+    <input type="text" class="form-control">
+    <span class="input-group-addon">.00</span>
+</div>
+
+<div class="input-group">
+    <span class="input-group-addon">$</span>
+    <input type="text" class="form-control">
+    <span class="input-group-addon">.00</span>
+</div>
+
+<!-- Different sizes availables -->
+<div class="input-group input-group-lg">
+    <span class="input-group-addon">$</span>
+    <input type="text" class="form-control">
+    <span class="input-group-addon">.00</span>
+</div>
+
+<!-- Possible with a button -->
+<div class="input-group">
+    <input type="text" class="form-control">
+    <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+    </span>
+</div>
+</code>
+</pre>
             <div class="row">
                 <div class="col-sm-6">
                     <div class="form-group">
@@ -287,7 +435,22 @@
                 </div>
             </div>
 
-            <h2>Button groups</h2>
+            <h2>Button groups <a href="#btn-groups" data-toggle="collapse" data-target="#btn-groups" class="code-button"><i class="icon-code"></i></a></h2>
+<pre id="btn-groups" class="collapse in">
+<code><div class="btn-group"> <!-- Different sizes .btn-group-sm and .btn-group-lg -->
+    <button type="button" class="btn btn-default">Left</button>
+    <button type="button" class="btn btn-default">Middle</button>
+    <button type="button" class="btn btn-default">Right</button>
+</div>
+
+<!-- Full width -->
+<div class="btn-group btn-group-justified">
+    <a class="btn btn-default">Left</a>
+    <a class="btn btn-default">Middle</a>
+    <a class="btn btn-default">Right</a>
+</div>
+</code>
+</pre>
             <div class="row">
                 <div class="col-sm-6">
                     <p>
@@ -315,16 +478,25 @@
                 <div class="col-sm-6">
                     <h4>Full width</h4>
                     <div class="btn-group btn-group-justified">
-                        <a class="btn btn-default" role="button">Left</a>
-                        <a class="btn btn-default" role="button">Middle</a>
-                        <a class="btn btn-default" role="button">Right</a>
+                        <a class="btn btn-default">Left</a>
+                        <a class="btn btn-default">Middle</a>
+                        <a class="btn btn-default">Right</a>
                     </div>
                 </div>
             </div>
 
-            <h2>Alerts</h2>
+            <h2>Alerts <a href="#alerts" data-toggle="collapse" data-target="#alerts" class="code-button"><i class="icon-code"></i></a></h2>
+<pre id="alerts" class="collapse in">
+<code><div class="alert">...</div>
+<div class="alert alert-success">...</div>
+<div class="alert alert-info">...</div>
+<div class="alert alert-warning">...</div>
+<div class="alert alert-danger">...</div>
+</code>
+</pre>
             <div class="row">
                 <div class="col-lg-12">
+                    <div class="alert">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">Sint, mollitia, illum eum voluptate officia</a> tempora consequatur expedita aperiam iste aut totam excepturi quisquam deleniti quia dolores ratione maiores voluptatum. Perferendis.</div>
                     <div class="alert alert-success">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">Sint, mollitia, illum eum voluptate officia</a> tempora consequatur expedita aperiam iste aut totam excepturi quisquam deleniti quia dolores ratione maiores voluptatum. Perferendis.</div>
                     <div class="alert alert-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">Sint, mollitia, illum eum voluptate officia</a> tempora consequatur expedita aperiam iste aut totam excepturi quisquam deleniti quia dolores ratione maiores voluptatum. Perferendis.</div>
                     <div class="alert alert-warning">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">Sint, mollitia, illum eum voluptate officia</a> tempora consequatur expedita aperiam iste aut totam excepturi quisquam deleniti quia dolores ratione maiores voluptatum. Perferendis.</div>
@@ -335,7 +507,20 @@
             <h2>Tabs</h2>
             <div class="row">
                 <div class="col-sm-6">
-                    <h4>Default</h4>
+                    <h4>Default <a href="#tabs-default" data-toggle="collapse" data-target="#tabs-default" class="code-button"><i class="icon-code"></i></a></h4>
+<pre id="tabs-default" class="collapse in">
+<code><ul class="nav-tabs">
+    <li class="active"><a href="#tab-11">...</a></li>
+    <li><a href="#tab-12">...</a></li>
+    <li><a href="#tab-13">...</a></li>
+</ul>
+<div class="tab-content">
+    <div class="tab-pane active" id="tab-11">...</div>
+    <div class="tab-pane" id="tab-12">...</div>
+    <div class="tab-pane" id="tab-13">...</div>
+</div>
+</code>
+</pre>
                     <ul class="nav-tabs">
                         <li class="active"><a href="#tab-11">Active</a></li>
                         <li><a href="#tab-12">Default</a></li>
@@ -348,7 +533,20 @@
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <h4>Justified</h4>
+                    <h4>Justified <a href="#tabs-justified" data-toggle="collapse" data-target="#tabs-justified" class="code-button"><i class="icon-code"></i></a></h4>
+<pre id="tabs-justified" class="collapse in">
+<code><ul class="nav-tabs nav-justified">
+    <li class="active"><a href="#tab-21">...</a></li>
+    <li><a href="#tab-22">...</a></li>
+    <li><a href="#tab-23">...</a></li>
+</ul>
+<div class="tab-content">
+    <div class="tab-pane active" id="tab-21">...</div>
+    <div class="tab-pane" id="tab-22">...</div>
+    <div class="tab-pane" id="tab-23">...</div>
+</div>
+</code>
+</pre>
                     <ul class="nav-tabs nav-justified">
                         <li class="active"><a href="#tab-21">Active</a></li>
                         <li><a href="#tab-22">Default</a></li>
