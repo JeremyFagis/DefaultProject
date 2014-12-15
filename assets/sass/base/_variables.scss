@@ -43,6 +43,19 @@ $font-size-h6: 14px;
 
 
 ///////////////////////////
+/// CODE
+///////////////////////////
+$code-font-family: "Inconsolata", "Consolas", "Courier";
+$code-font-size:   16px;
+$code-line-height: $code-font-size * 1.5;
+$code-background:  #222;
+$code-color:       #EEE;
+$code-padding:     10px 10px;
+$code-margin:      20px 0;
+
+
+
+///////////////////////////
 /// GRID
 ///////////////////////////
 $grid-columns: 12;
