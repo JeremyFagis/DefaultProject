@@ -16,7 +16,6 @@
     border: 1px solid $popover-fallback-border-color;
     border: 1px solid $popover-border-color;
     border-radius: $border-radius-large;
-    // @include box-shadow(0 5px 10px rgba(0,0,0,.2));
     white-space: normal;
 
     &.top     { margin-top: -$popover-arrow-width; }

@@ -34,7 +34,7 @@
 .fancybox-opened {
     z-index: 8030;
     .fancybox-skin {
-        @include box-shadow($fancybox-shadow);
+        box-shadow: $fancybox-shadow;
     }
 }
 
@@ -225,7 +225,7 @@
     padding: 2px 20px;
     background: transparent; /* Fallback for web browsers that doesn't support RGBa */
     background: rgba(0, 0, 0, 0.8);
-    @include border-radius(15px);
+    border-radius: 15px;
     text-shadow: 0 1px 2px #222;
     color: #FFF;
     font-weight: bold;

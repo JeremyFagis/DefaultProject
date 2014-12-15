@@ -26,7 +26,7 @@
             transparent      75%,
             transparent
         );
-        @include animation(stripes 2s linear infinite);
+        animation: stripes 2s linear infinite;
     }
 
     input {
@@ -37,7 +37,7 @@
         left: 0;
         height: 100%;
         width: 100%;
-        @include opacity(0);
+        opacity: 0;
         cursor: pointer;
         z-index: 100;
     }
@@ -79,12 +79,12 @@
         .dropify-render {
             img {
                 top: 50%;
-                @include translate(0, -50%);
+                transform: translate(0, -50%);
                 position: relative;
                 max-width: 100%;
                 max-height: 100%;
                 background-color: $dropify-background;
-                @include transition(border-color 0.15s linear);
+                transition: border-color 0.15s linear;
             }
 
             .file-icon {
@@ -93,7 +93,7 @@
                 font-size: 40px;
                 top: 50%;
                 left: 50%;
-                @include translate(-50%, -50%);
+                transform: translate(-50%, -50%);
                 position: absolute;
                 color: #777;
             }
@@ -107,8 +107,8 @@
             bottom: 0;
             z-index: 90;
             background: rgba(0, 0, 0, 0.6);
-            @include opacity(0);
-            @include transition(opacity 0.15s linear);
+            opacity: 0;
+            transition: opacity 0.15s linear;
 
             .dropify-infos-inner {
                 position: absolute;
@@ -117,7 +117,7 @@
                 margin-top: -25px;
                 width: 100%;
                 padding: 0 20px;
-                @include transition(all 0.2s ease);
+                transition: all 0.2s ease;
 
                 p {
                     padding: 0;
@@ -142,17 +142,16 @@
                     &.dropify-infos-message {
                         margin-top: 15px;
                         padding-top: 15px;
-                        // text-transform: uppercase;
                         font-size: 12px;
                         position: relative;
-                        @include opacity(50);
+                        opacity: 0.5;
 
                         &::before {
                             content: '';
                             position: absolute;
                             top: 0;
                             left: 50%;
-                            @include translate(-50%, 0);
+                            transform: translate(-50%, 0);
                             background: #FFF;
                             width: 30px;
                             height: 2px;
@@ -167,20 +166,16 @@
     input:hover {
         &+.dropify-preview {
             .dropify-infos {
-                @include opacity(100);
+                opacity: 1;
 
                 .dropify-infos-inner {
-                    @include translate(0, -5px);
+                    transform: translate(0, -5px);
                 }
             }
         }
     }
 }
 
-@-webkit-keyframes stripes {
-  from { background-position: 0 0; }
-  to   { background-position: 60px 30px; }
-}
 @keyframes stripes {
   from { background-position: 0 0; }
   to   { background-position: 60px 30px; }
