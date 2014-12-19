@@ -24,6 +24,10 @@
 
     &.btn-ghost {
         border: $btn-ghost-border-width solid transparent;
+
+        &.btn-default {
+            @include button-variant($btn-ghost-default-color, $btn-ghost-default-bg, $btn-default-border);
+        }
     }
 
     &:hover {

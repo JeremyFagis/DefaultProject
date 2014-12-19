@@ -19,11 +19,11 @@ $link-hover-color: $main-color;
 $select-text-bg-color:   transparentize($main-color, 0.2);
 $select-text-color:      #FFF;
 
-$color-primary: #3e76a1 !default;
-$color-success: #66c757 !default;
-$color-info: #40bed6 !default;
-$color-warning: #eea94d !default;
-$color-danger: #de4242 !default;
+$color-primary: #607d8b !default;
+$color-success: #4caf50 !default;
+$color-info: #03a9f4 !default;
+$color-warning: #ff9800 !default;
+$color-danger: #f44336 !default;
 
 
 ///////////////////////////
@@ -181,8 +181,10 @@ $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !
 /// BUTTONS
 ///////////////////////////
 $btn-default-color:              $text-color !default;
-$btn-default-bg:                 #DDD !default;
-$btn-default-border:             #BBB !default;
+$btn-ghost-default-color:        #FFF !default;
+$btn-default-bg:                 #FFF !default;
+$btn-ghost-default-bg:           #AAA !default;
+$btn-default-border:             #CCC !default;
 $btn-font-family:                $base-font-family;
 
 $btn-primary-color:              #fff !default;
