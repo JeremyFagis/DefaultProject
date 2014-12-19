@@ -1,3 +1,25 @@
 @media (max-width: $screen-sm - 1) {
+    header#header {
+        font-size: 30px;
+        line-height: 40px;
+        padding: 100px 50px 20px;
+        margin: 0 0 30px 0;
+    }
 
+    footer#footer {
+        text-align: center;
+
+        .text-right {
+            text-align: center;
+        }
+    }
+
+    .navbar {
+        .navbar-inner {
+            .navbar-logo {
+                font-size: 20px;
+                font-weight: 400;
+            }
+        }
+    }
 }
