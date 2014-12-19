@@ -1,0 +1,39 @@
+.panel {
+    background-color: $panel-bg;
+    border: $panel-border-width solid transparent;
+    border-radius: $panel-radius;
+    margin: $panel-margin;
+
+    .panel-heading {
+        padding: $panel-padding;
+        font-size: $panel-heading-font-size;
+        text-transform: uppercase;
+        font-family: $headings-font-family;
+        font-weight: $headings-font-weight;
+        line-height: $headings-line-height;
+        letter-spacing: $headings-letter-spacing;
+    }
+
+    .panel-body {
+        padding: $panel-padding;
+    }
+
+    &.panel-default {
+        @include panel-variant($panel-default-color, $panel-default-heading-color);
+    }
+    &.panel-primary {
+        @include panel-variant($panel-primary-color, $panel-primary-heading-color);
+    }
+    &.panel-success {
+        @include panel-variant($panel-success-color, $panel-success-heading-color);
+    }
+    &.panel-info {
+        @include panel-variant($panel-info-color, $panel-info-heading-color);
+    }
+    &.panel-warning {
+        @include panel-variant($panel-warning-color, $panel-warning-heading-color);
+    }
+    &.panel-danger {
+        @include panel-variant($panel-danger-color, $panel-danger-heading-color);
+    }
+}
