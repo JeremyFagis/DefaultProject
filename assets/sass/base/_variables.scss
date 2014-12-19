@@ -332,7 +332,22 @@ $fancybox-shadow: 0 10px 25px rgba(0,0,0,0.5);
 $hr-border:                     #DDD;
 
 
-// Dropify
+///////////////////////////
+/// PROGRESS BARS
+///////////////////////////
+$progress-bg:                 #DDD !default;
+$progress-bar-height:         6px !default;
+$progress-border-radius:      6px !default;
+$progress-bar-bg:             $color-primary !default;
+$progress-bar-success-bg:     $color-success !default;
+$progress-bar-warning-bg:     $color-warning !default;
+$progress-bar-danger-bg:      $color-danger !default;
+$progress-bar-info-bg:        $color-info !default;
+
+
+///////////////////////////
+/// DROPIFY
+///////////////////////////
 $dropify-width:       100%;
 $dropify-height:      170px;
 $dropify-font-family: $text-font;

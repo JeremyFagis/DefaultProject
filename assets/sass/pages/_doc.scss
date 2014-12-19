@@ -1,11 +1,10 @@
 .code-button {
-    opacity: 0.5;
     font-size: 22px;
-    color: $text-color;
+    color: $main-color;
     margin-left: 5px;
     vertical-align: middle;
 
     &.collapsed {
-        opacity: 1;
+        color: $text-color;
     }
 }

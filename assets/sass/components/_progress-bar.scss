@@ -1,0 +1,52 @@
+@keyframes progress-bar-stripes {
+    from  { background-position: 40px 0; }
+    to    { background-position: 0 0; }
+}
+
+.progress {
+    overflow: hidden;
+    height: $progress-bar-height;
+    margin-bottom: $base-line-height;
+    background-color: $progress-bg;
+
+    &.rounded {
+        border-radius: $progress-border-radius;
+    }
+}
+
+.progress-bar {
+    float: left;
+    width: 0%;
+    height: 100%;
+    line-height: $base-line-height;
+    text-align: center;
+    background-color: $progress-bar-bg;
+    transition: width .6s ease;
+}
+
+.progress-striped .progress-bar,
+.progress-bar-striped {
+    @include gradient-striped;
+    background-size: 40px 40px;
+}
+
+.progress.active .progress-bar,
+.progress-bar.active {
+    animation: progress-bar-stripes 2s linear infinite;
+}
+
+.progress-bar-success {
+    @include progress-bar-variant($progress-bar-success-bg);
+}
+
+.progress-bar-info {
+    @include progress-bar-variant($progress-bar-info-bg);
+}
+
+.progress-bar-warning {
+    @include progress-bar-variant($progress-bar-warning-bg);
+}
+
+.progress-bar-danger {
+    @include progress-bar-variant($progress-bar-danger-bg);
+}
