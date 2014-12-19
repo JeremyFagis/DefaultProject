@@ -22,6 +22,10 @@
     user-select: none;
     transition: all 0.15s linear;
 
+    &.btn-ghost {
+        border: $btn-ghost-border-width solid transparent;
+    }
+
     &:hover {
         color: $btn-default-color;
         text-decoration: none;

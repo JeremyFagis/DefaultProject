@@ -181,8 +181,8 @@ $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !
 /// BUTTONS
 ///////////////////////////
 $btn-default-color:              $text-color !default;
-$btn-default-bg:                 #BBB !default;
-$btn-default-border:             rgba(0,0,0,0) !default;
+$btn-default-bg:                 #DDD !default;
+$btn-default-border:             #BBB !default;
 $btn-font-family:                $base-font-family;
 
 $btn-primary-color:              #fff !default;
@@ -210,7 +210,8 @@ $btn-link-disabled-color:        #CCC !default;
 $caret-width-base:               4px !default;
 $caret-width-large:              5px !default;
 
-$btn-border-width:               2px;
+$btn-border-width:               1px;
+$btn-ghost-border-width:         2px;
 
 $btn-default-padding-h:          20px;
 $btn-default-padding-v:          8px;
