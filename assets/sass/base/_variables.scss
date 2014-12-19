@@ -7,13 +7,16 @@ $base-font-family: $text-font;
 $base-font-size: 15px;
 $base-line-height: $base-font-size * 1.8; // 26px
 $text-color: #666;
-$link-color: $text-color;
-$link-hover-color: darken($text-color, 25%);
 $container-max-width: 1000px;
 $base-margin: 20px;
 $bold-font-weight: 700;
 
-$select-text-bg-color:   transparentize(#f34141, 0.2);
+$main-color: #f34141;
+
+$link-color: $text-color;
+$link-hover-color: $main-color;
+
+$select-text-bg-color:   transparentize($main-color, 0.2);
 $select-text-color:      #FFF;
 
 $color-primary: #3e76a1 !default;
@@ -91,9 +94,21 @@ $container-lg-desktop:        ((1140px + $grid-gutter-width));
 
 
 ///////////////////////////
+/// NAVBAR
+///////////////////////////
+$navbar-background: transparentize(#FFF, 0.05);
+$navbar-color: #000;
+$navbar-height: 80px;
+$navbar-border-width: 2px;
+$navbar-border-color: #EEE;
+$navbar-zindex: 1000;
+$navbar-active-color: $main-color;
+
+
+///////////////////////////
 /// HEADER
 ///////////////////////////
-$header-background: #f34141;
+$header-background: $main-color;
 $header-color: #FFF;
 
 

@@ -113,10 +113,48 @@ dd {
 a {
     &, &:visited {
         color: $link-color;
+        transition: color 0.15s linear;
+        text-decoration: none;
     }
 
     &:focus {
         outline: 0;
+    }
+
+    &:hover {
+        color: $link-hover-color;
+    }
+
+    &.line-hover {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: top;
+        white-space: nowrap;
+        padding-left: 2px;
+        padding-right: 2px;
+        text-decoration: none;
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            height: 2px;
+            margin-top: -1px;
+            background-color: $link-hover-color;
+            transform: translateX(-100%);
+            transition: transform 0.4s ease;
+            transition-delay: .05s;
+        }
+
+        &:hover {
+            &::after {
+                transform: translateX(100%);
+            }
+        }
     }
 }
 

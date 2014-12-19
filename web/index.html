@@ -27,6 +27,20 @@
 
         <section id="loading"><p>Chargement...</p></section>
 
+        <div class="navbar fixed">
+            <div class="navbar-inner">
+                <a href="#" class="navbar-logo">ElaoStrap</a>
+                <nav class="pull-right">
+                    <ul>
+                        <li><a href="#">Lien 1</a></li>
+                        <li class="active"><a href="#">Lien 2</a></li>
+                        <li><a href="#">Lien 3</a></li>
+                        <li><a href="#">Lien 4</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
         <header id="header">
             ElaoStrap
         </header>
@@ -41,6 +55,10 @@
                     <h4>I'm an h4 title</h4>
                     <h5>I'm an h5 title</h5>
                     <h6>I'm an h6 title</h6>
+
+                    <h4 class="mt40">Links</h4>
+                    <p><a href="#">Default link</a></p>
+                    <p><a href="#" class="line-hover">Animated link</a></p>
                 </div>
                 <div class="col-sm-8">
                     <p>Circa hos dies Lollianus primae lanuginis adulescens, Lampadi filius ex praefecto, exploratius causam Maximino spectante, convictus codicem noxiarum artium nondum per aetatem firmato consilio descripsisse, exulque mittendus, ut sperabatur, patris inpulsu provocavit ad principem, et iussus ad eius comitatum duci, de fumo, ut aiunt, in flammam traditus Phalangio Baeticae consulari cecidit funesti carnificis manu.</p>
@@ -85,6 +103,39 @@
                         <li>Item 4</li>
                         <li>Item 5</li>
                     </ul>
+                </div>
+            </div>
+
+            <h2>Navbar</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>By default, the navbar in <strong>not fixed</strong> and the content is <strong>centered</strong>.</p>
+<pre>
+<code><div class="navbar">
+    <div class="navbar-inner">
+        <a href="#" class="navbar-logo">ElaoStrap</a>
+        <nav class="pull-right">
+            <ul>
+                <li><a href="#">Lien 1</a></li>
+                <li class="active"><a href="#">Lien 2</a></li>
+                <li><a href="#">Lien 3</a></li>
+                <li><a href="#">Lien 4</a></li>
+            </ul>
+        </nav>
+    </div>
+</div></code>
+</pre>
+                </div>
+                <div class="col-md-6">
+                    <p>Multiple classes exists, you can <strong>combine</strong> them.</p>
+<pre>
+<code><!-- Fixed navbar -->
+<div class="navbar fixed">...</div>
+
+<!-- Full width navbar content -->
+<div class="navbar full">...</div>
+</code>
+</pre>
                 </div>
             </div>
 
@@ -617,6 +668,46 @@
                             <p>Quod si rectum statuerimus vel concedere amicis, quidquid velint, vel impetrare ab iis, quidquid velimus, perfecta quidem sapientia si simus, nihil habeat res vitii; sed loquimur de iis amicis qui ante oculos sunt, quos vidimus aut de quibus memoriam accepimus, quos novit vita communis. Ex hoc numero nobis exempla sumenda sunt, et eorum quidem maxime qui ad sapientiam proxime accedunt.</p>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <h2>Shortcuts</h2>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4>Margins &amp; paddings generator</h4>
+                    <p>5px by 5px you can use css class to add margins or paddings. <br/> Usable beetween 0 and 100px. You can <strong>combine</strong> them.</p>
+<pre>
+<code>.mXX == margin: XXpx;
+.mtXX == margin-top: XXpx;
+.mrXX == margin-right: XXpx;
+.mbXX == margin-bottom: XXpx;
+.mlXX == margin-left: XXpx;
+
+.pXX == padding: XXpx;
+.ptXX == padding-top: XXpx;
+.prXX == padding-right: XXpx;
+.pbXX == padding-bottom: XXpx;
+.plXX == padding-left: XXpx;</code>
+</pre>
+                </div>
+                <div class="col-sm-6">
+                    <h4>Text &amp; positionning</h4>
+<pre class="mt25">
+<code>.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+.text-justify { text-align: justify; }
+
+.strong, .bold { ... }
+.italic { ... }
+
+.pull-left { float: left; }
+.pull-right { float: right; }
+
+.hide-text { ... }
+.clearfix { ... }
+</code>
+</pre>
                 </div>
             </div>
         </main>
