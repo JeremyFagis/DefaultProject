@@ -20,6 +20,7 @@
     @include button-size($btn-default-padding-v, $btn-default-padding-h, $base-font-size, $base-line-height, $border-radius-base);
     @include antialiased();
     user-select: none;
+    transition: all 0.15s linear;
 
     &:hover {
         color: $btn-default-color;

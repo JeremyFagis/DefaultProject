@@ -181,36 +181,36 @@ $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !
 /// BUTTONS
 ///////////////////////////
 $btn-default-color:              $text-color !default;
-$btn-default-bg:                 #fff !default;
-$btn-default-border:             darken(#e9eae7, 10%) !default;
+$btn-default-bg:                 #BBB !default;
+$btn-default-border:             rgba(0,0,0,0) !default;
 $btn-font-family:                $base-font-family;
 
 $btn-primary-color:              #fff !default;
 $btn-primary-bg:                 $color-primary !default;
-$btn-primary-border:             darken($btn-primary-bg, 5%) !default;
+$btn-primary-border:             rgba(0,0,0,0) !default;
 
 $btn-success-color:              #fff !default;
 $btn-success-bg:                 $color-success !default;
-$btn-success-border:             darken($btn-success-bg, 5%) !default;
+$btn-success-border:             rgba(0,0,0,0) !default;
 
 $btn-info-color:                 #fff !default;
 $btn-info-bg:                    $color-info !default;
-$btn-info-border:                darken($btn-info-bg, 5%) !default;
+$btn-info-border:                rgba(0,0,0,0) !default;
 
 $btn-warning-color:              #fff !default;
 $btn-warning-bg:                 $color-warning !default;
-$btn-warning-border:             darken($btn-warning-bg, 5%) !default;
+$btn-warning-border:             rgba(0,0,0,0) !default;
 
 $btn-danger-color:               #fff !default;
 $btn-danger-bg:                  $color-danger !default;
-$btn-danger-border:              darken($btn-danger-bg, 5%) !default;
+$btn-danger-border:              rgba(0,0,0,0) !default;
 
 $btn-link-disabled-color:        #CCC !default;
 
 $caret-width-base:               4px !default;
 $caret-width-large:              5px !default;
 
-$btn-border-width:               1px;
+$btn-border-width:               2px;
 
 $btn-default-padding-h:          20px;
 $btn-default-padding-v:          8px;
