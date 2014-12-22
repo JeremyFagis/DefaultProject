@@ -7,6 +7,7 @@ var $              = require('jquery'),
     simpleSelector = require('./vendors/jquery.simple-selector'),
     dropify        = require('./vendors/dropify'),
     fancybox       = require('./vendors/jquery.fancybox.pack');
+    easing         = require('./vendors/jquery.easing');
 
 FastClick(document.body);
 
@@ -33,6 +34,29 @@ $(document).ready(function(){
         helpers: {
             title: { type: 'inside' }
         }
+    });
+
+    // Scroll top button
+    var scrollTopLimit = 150;
+    $(window).scroll(function(){
+        s = $(window).scrollTop();
+
+        if (s > scrollTopLimit) {
+            $('.scroll-to-top').addClass('visible');
+        } else {
+            $('.scroll-to-top').removeClass('visible');
+        }
+    });
+
+    if($(window).scrollTop() > scrollTopLimit) {
+        $('.scroll-to-top').addClass('visible');
+    } else {
+        $('.scroll-to-top').removeClass('visible');
+    }
+
+    $('.scroll-to-top').on('click', function(){
+        $('html, body').animate({scrollTop : 0}, 800, 'easeInOutExpo');
+        return false;
     });
 });
 
