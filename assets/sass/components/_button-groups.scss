@@ -206,7 +206,7 @@
     display: table;
     width: 100%;
     table-layout: fixed;
-    border-collapse: separate;
+    border-collapse: collapse;
 
     > .btn,
     > .btn-group {
