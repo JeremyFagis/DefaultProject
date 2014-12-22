@@ -206,13 +206,18 @@
     display: table;
     width: 100%;
     table-layout: fixed;
-    border-collapse: collapse;
+    border-collapse: separate;
 
     > .btn,
     > .btn-group {
         float: none;
         display: table-cell;
         width: 1%;
+        border-left-width: 0;
+
+        &:first-child {
+            border-left-width: $btn-border-width;
+        }
     }
 
     > .btn-group .btn {
