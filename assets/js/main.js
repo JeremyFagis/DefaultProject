@@ -28,11 +28,16 @@ $(document).ready(function(){
     $('.has-popover, [data-toggle="popover"]').popover({ trigger: 'hover' });
 
     $(".fancybox").fancybox({
-        padding: 10,
+        padding: 0,
         nextEffect: 'fade',
         prevEffect: 'fade',
+        tpl: {
+            closeBtn: '<a title="Fermer" class="fancybox-item fancybox-close" href="javascript:;">&times;</a>',
+            prev: '<a title="Précédent" class="fancybox-nav fancybox-prev" href="javascript:;"><span>&larr;</span></a>',
+            next: '<a title="Suivant" class="fancybox-nav fancybox-next" href="javascript:;"><span>&rarr;</span></a>'
+        },
         helpers: {
-            title: { type: 'inside' }
+            title: { type: 'over' }
         }
     });
 
