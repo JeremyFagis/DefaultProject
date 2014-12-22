@@ -1,4 +1,5 @@
 var $              = require('jquery'),
+    FastClick      = require('fastclick'),
     tab            = require('bootstrap.tab'),
     collapse       = require('bootstrap.collapse'),
     tooltip        = require('bootstrap.tooltip'),
@@ -6,6 +7,8 @@ var $              = require('jquery'),
     simpleSelector = require('./vendors/jquery.simple-selector'),
     dropify        = require('./vendors/dropify'),
     fancybox       = require('./vendors/jquery.fancybox.pack');
+
+FastClick(document.body);
 
 $(document).ready(function(){
 
