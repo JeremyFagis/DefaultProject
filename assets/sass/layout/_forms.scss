@@ -457,8 +457,10 @@ input[type="checkbox"],
 	}
 
 	&.right-label {
-		label {
-			text-align: right;
+		.form-group {
+			> label {
+				text-align: right;
+			}
 		}
 	}
 }
