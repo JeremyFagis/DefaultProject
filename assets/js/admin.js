@@ -10,6 +10,11 @@ $(document).ready(function(){
 
     $('.sidebar nav').find('li.active').parents('li').each(function(){
         $(this).addClass('opened');
-        $(this).children('a').append('<span class="caret"></span>');
+    });
+
+    $('.sidebar nav').find('li').each(function(){
+        if ($(this).children('ul').length > 0) {
+            $(this).children('a').append('<span class="caret"></span>');
+        }
     });
 });
