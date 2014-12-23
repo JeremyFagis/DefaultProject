@@ -21,10 +21,10 @@
             font-family: $headings-font-family;
             letter-spacing: $headings-letter-spacing;
             color: $navbar-active-color;
-            transition: opacity 0.15s linear;
+            transition: color 0.15s linear;
 
             &:hover {
-                opacity: 0.7;
+                color: transparentize($navbar-active-color, 0.3);
             }
         }
 

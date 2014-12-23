@@ -1,0 +1,115 @@
+.admin {
+    .container {
+        max-width: 100%;
+    }
+
+    .navbar {
+        @extend .fixed;
+        border: 0;
+
+        .navbar-inner {
+            padding: 0;
+
+            .navbar-logo {
+                line-height: $navbar-height;
+                width: 250px;
+                float: left;
+                background: $main-color;
+                color: #FFF;
+                text-align: center;
+
+                &:hover {
+                    color: transparentize(#FFF, 0.3);
+                }
+            }
+
+            .page-title {
+                float: left;
+                margin-left: 15px;
+                font-size: 22px;
+                font-family: $headings-font-family;
+                font-weight: $headings-font-weight;
+                color: $headings-color;
+                letter-spacing: $headings-letter-spacing;
+            }
+        }
+    }
+
+    .sidebar {
+        position: fixed;
+        top: $navbar-height;
+        left: 0;
+        bottom: 0;
+        width: 250px;
+        background: #293541;
+        padding: 10px 10px 60px 10px;
+        color: #FFF;
+        overflow-y: auto;
+
+        > nav {
+            > ul {
+                padding: 0;
+
+                li {
+                    margin-bottom: 2px;
+
+                    > a {
+                        display: block;
+                        color: #FFF;
+                        border-radius: 4px;
+                        padding: 10px 10px;
+                        transition: all 0.1s linear;
+
+                        &:hover {
+                            background: transparentize(#FFF, 0.9);
+                            color: transparentize(#FFF, 0.5);
+                        }
+                    }
+
+                    &.active {
+                        > a {
+                            &, &:hover {
+                                background: transparentize(#FFF, 0.9);
+                                color: transparentize(#FFF, 0.5);
+                                cursor: default;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 250px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            font-size: 13px;
+            color: mix(#293541, #FFFFFF, 50%);
+            background: #293541;
+
+            a {
+                &, &:visited {
+                    color: mix(#293541, #FFFFFF, 50%);
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .main-content {
+        padding-top: $navbar-height + $grid-gutter-width/2;
+        padding-bottom: $grid-gutter-width/2;
+        margin-left: 250px;
+
+        &.no-margin {
+
+        }
+    }
+}
