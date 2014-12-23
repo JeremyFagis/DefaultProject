@@ -202,6 +202,11 @@
         }
     }
 
+    .table-footer {
+        padding-left: $table-cell-padding;
+        padding-right: $table-cell-padding;
+    }
+
     form {
         > h3 {
             margin-bottom: 30px;
