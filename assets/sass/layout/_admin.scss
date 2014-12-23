@@ -8,7 +8,7 @@
         border: 0;
 
         .navbar-inner {
-            padding: 0;
+            padding: 0 $grid-gutter-width/2 0 0;
 
             .navbar-logo {
                 line-height: $navbar-height;
@@ -25,7 +25,7 @@
 
             .page-title {
                 float: left;
-                margin-left: 15px;
+                margin-left: $grid-gutter-width/2;
                 font-size: 22px;
                 font-family: $headings-font-family;
                 font-weight: $headings-font-weight;
