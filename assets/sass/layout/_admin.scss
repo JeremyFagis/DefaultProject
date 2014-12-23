@@ -1,6 +1,10 @@
 .admin {
     background: $admin-background-color;
 
+    #loading {
+        background: $admin-background-color;
+    }
+
     .container {
         max-width: 100%;
     }
