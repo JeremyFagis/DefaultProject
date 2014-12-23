@@ -1,4 +1,6 @@
 .admin {
+    background: $admin-background-color;
+
     .container {
         max-width: 100%;
     }
@@ -193,6 +195,12 @@
                     }
                 }
             }
+        }
+    }
+
+    form {
+        > h3 {
+            margin-bottom: 30px;
         }
     }
 }

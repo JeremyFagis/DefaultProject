@@ -449,6 +449,18 @@ input[type="checkbox"],
 		top: 0;
 		right: ($grid-gutter-width / 2);
 	}
+
+	&.centered {
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&.right-label {
+		label {
+			text-align: right;
+		}
+	}
 }
 
 
