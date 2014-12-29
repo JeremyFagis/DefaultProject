@@ -397,3 +397,31 @@ $dropify-line-height: 22px;
 $dropify-text-color:  #777;
 $dropify-background:  #FFF;
 $dropify-stripes:     #F9F9F9;
+
+
+///////////////////////////
+/// LABELS
+///////////////////////////
+$label-font-size:           13px;
+$label-font-weight:         700;
+$label-color:               $text-color;
+$label-border-radius:       3px;
+$label-padding:             4px 6px;
+
+$label-default-bg:          #DDD;
+$label-default-color:       $text-color;
+
+$label-primary-bg:          $state-primary-bg;
+$label-primary-color:       $state-primary-text;
+
+$label-success-bg:          $state-success-bg;
+$label-success-color:       $state-success-text;
+
+$label-info-bg:             $state-info-bg;
+$label-info-color:          $state-info-text;
+
+$label-warning-bg:          $state-warning-bg;
+$label-warning-color:       $state-warning-text;
+
+$label-danger-bg:           $state-danger-bg;
+$label-danger-color:        $state-danger-text;
