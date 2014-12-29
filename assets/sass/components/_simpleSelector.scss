@@ -51,4 +51,19 @@
         cursor: pointer;
         font-size: 12px;
     }
+
+    &.selector-sm {
+        span {
+            font-size: $font-size-small;
+            line-height: $input-height-small;
+            padding: 0 $padding-small-horizontal;
+        }
+
+        i {
+            height: $input-height-small;
+            line-height: $input-height-small;
+            padding: 0 4px;
+            font-size: $font-size-small;
+        }
+    }
 }

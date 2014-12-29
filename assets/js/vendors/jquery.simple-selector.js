@@ -27,7 +27,9 @@
                 var element = $(this.element);
                 var defaultText = element.data('default-text') || '---';
                 var value = element.find('option:selected').text() || defaultText;
-                element.wrap('<div class="' + this.settings.wrapperClass + '" />');
+                element.removeClass('selector');
+                element.wrap('<div class="' + this.settings.wrapperClass + ' ' + element.attr('class') +'" />');
+                element.removeAttr('class');
                 $('<span/>').text(value).prependTo(element.parent());
                 $('<i class="' + this.settings.caretClass + '"></i>').appendTo(element.parent());
                 element.on('change', function() {
