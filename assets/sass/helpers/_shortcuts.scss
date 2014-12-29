@@ -78,3 +78,7 @@ hr {
     overflow: hidden;
     transition: height .35s ease;
 }
+
+.lighter {
+    color: lighten($text-color, 20%);
+}

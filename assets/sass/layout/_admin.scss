@@ -227,6 +227,10 @@
     .table-footer {
         padding-left: $table-cell-padding;
         padding-right: $table-cell-padding;
+
+        .selector-wrapper {
+            margin-left: 10px;
+        }
     }
 
     form {
