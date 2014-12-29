@@ -425,3 +425,21 @@ $label-warning-color:       $state-warning-text;
 
 $label-danger-bg:           $state-danger-bg;
 $label-danger-color:        $state-danger-text;
+
+
+///////////////////////////
+/// DROPDOWNS
+///////////////////////////
+$zindex-dropdown:                1000 !default;
+$dropdown-bg:                    #fff !default;
+$dropdown-border:                rgba(0,0,0,.15) !default;
+$dropdown-divider-bg:            #e5e5e5 !default;
+$dropdown-link-color:            $link-color !default;
+$dropdown-link-hover-color:      darken($link-color, 5%) !default;
+$dropdown-link-hover-bg:         #f5f5f5 !default;
+$dropdown-link-active-color:     #fff !default;
+$dropdown-link-active-bg:        $color-primary !default;
+$dropdown-link-disabled-color:   #CCC !default;
+$dropdown-header-color:          #CCC !default;
+$dropdown-caret-color:           #000 !default;
+

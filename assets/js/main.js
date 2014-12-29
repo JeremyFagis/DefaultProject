@@ -4,6 +4,7 @@ var $              = require('jquery'),
     collapse       = require('bootstrap.collapse'),
     tooltip        = require('bootstrap.tooltip'),
     popover        = require('bootstrap.popover'),
+    dropdown       = require('bootstrap.dropdown'),
     simpleSelector = require('./vendors/jquery.simple-selector'),
     dropify        = require('./vendors/dropify'),
     fancybox       = require('./vendors/jquery.fancybox.pack');
@@ -26,6 +27,8 @@ $(document).ready(function(){
 
     $('.has-tooltip, [data-toggle="tooltip"]').tooltip({ container: 'body' });
     $('.has-popover, [data-toggle="popover"]').popover({ trigger: 'hover' });
+
+    $('.dropdown-toggle, [data-toggle="dropdown"]').dropdown()
 
     $(".fancybox").fancybox({
         padding: 0,
