@@ -28,7 +28,7 @@ $(document).ready(function(){
     $('.has-tooltip, [data-toggle="tooltip"]').tooltip({ container: 'body' });
     $('.has-popover, [data-toggle="popover"]').popover({ trigger: 'hover' });
 
-    $('.dropdown-toggle, [data-toggle="dropdown"]').dropdown()
+    $('.dropdown-toggle, [data-toggle="dropdown"]').dropdown();
 
     $(".fancybox").fancybox({
         padding: 0,

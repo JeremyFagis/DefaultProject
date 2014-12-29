@@ -14,7 +14,7 @@ $(document).ready(function(){
 
     $('.sidebar nav').find('li').each(function(){
         if ($(this).children('ul').length > 0) {
-            $(this).children('a').append('<span class="caret"></span>');
+            $(this).children('a').append('<span class="submenu-icon"></span>');
         }
     });
 });
