@@ -44,6 +44,59 @@
                 font-weight: $headings-font-weight;
                 color: $headings-color;
                 letter-spacing: $headings-letter-spacing;
+
+                &:hover, &.hover {
+                    .current {
+                        line-height: 105px;
+                    }
+                    .breadcrumb {
+                        transform: translateY(0);
+                    }
+                }
+
+                .current {
+                    transition: all 0.2s ease;
+                }
+
+                .breadcrumb {
+                    position: absolute;
+                    list-style: none;
+                    padding: 20px 0 0 0;
+                    line-height: 15px;
+                    font-size: $base-font-size;
+                    transition: all 0.2s ease;
+                    transform: translateY(-100%);
+
+                    li {
+                        list-style: none;
+                        display: inline-block;
+                        margin-left: 6px;
+                        line-height: 15px;
+                        font-size: $base-font-size;
+                        color: lighten($headings-color, 30%);
+
+                        &::before {
+                            content: '—';
+                            margin-right: 10px;
+                        }
+
+                        &:first-child {
+                            margin-left: 0;
+
+                            &::before {
+                                display: none;
+                            }
+                        }
+
+                        a {
+                            color: lighten($headings-color, 30%);
+
+                            &:hover {
+                                color: $link-hover-color;
+                            }
+                        }
+                    }
+                }
             }
 
             .btn-group {
