@@ -3,6 +3,10 @@
     color: $color;
 
     &[href] {
+        &, &:visited {
+            color: $color;
+        }
+
         &:hover,
         &:focus {
             background-color: darken($background, 10%);
