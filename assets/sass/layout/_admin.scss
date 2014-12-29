@@ -11,6 +11,7 @@
 
     .navbar {
         @extend .fixed;
+        overflow: visible;
         border: 0;
 
         .navbar-inner {
@@ -18,6 +19,7 @@
 
             .navbar-logo {
                 line-height: $navbar-height;
+                height: $navbar-height;
                 width: 250px;
                 float: left;
                 background: $main-color;
@@ -42,6 +44,10 @@
                 font-weight: $headings-font-weight;
                 color: $headings-color;
                 letter-spacing: $headings-letter-spacing;
+            }
+
+            .btn-group {
+                display: inline;
             }
         }
     }
@@ -223,14 +229,6 @@
                         padding-right: 5px;
                     }
                 }
-
-                .dropdown-menu {
-                    font-size: 13px;
-
-                    > li > a {
-                        padding: 3px 15px;
-                    }
-                }
             }
         }
     }
@@ -247,6 +245,14 @@
     form {
         > h3 {
             margin-bottom: 30px;
+        }
+    }
+
+    .dropdown-menu {
+        font-size: 13px;
+
+        > li > a {
+            padding: 3px 15px;
         }
     }
 }
