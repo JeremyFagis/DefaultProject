@@ -4653,11 +4653,13 @@ pre {
     width: 100%;
     max-width: 500px;
     overflow: hidden;
-    background: #F4F4F4; }
+    background: #F4F4F4;
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2); }
     .admin .login-box .navbar {
       position: relative; }
       .admin .login-box .navbar .navbar-inner .navbar-logo {
-        width: 200px; }
+        width: 100%;
+        max-width: 200px; }
       .admin .login-box .navbar .navbar-inner .page-title {
         margin-left: 25px; }
     .admin .login-box .login-box-inner {

@@ -354,13 +354,15 @@
         max-width: 500px;
         overflow: hidden;
         background: $admin-background-color;
+        box-shadow: 0 7px 15px rgba(0,0,0,0.2);
 
         .navbar {
             position: relative;
 
             .navbar-inner {
                 .navbar-logo {
-                    width: 200px;
+                    width: 100%;
+                    max-width: 200px;
                 }
 
                 .page-title {
