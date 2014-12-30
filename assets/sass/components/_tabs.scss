@@ -61,22 +61,13 @@
         width: 100%;
 
         > li {
-            float: left;
+            display: table-cell;
+            width: 1%;
+            float: none;
 
             > a {
+                margin-bottom: -1px;
                 text-align: center;
-            }
-        }
-
-        @media (min-width: $screen-sm-min) {
-            > li {
-                display: table-cell;
-                width: 1%;
-                float: none;
-
-                > a {
-                    margin-bottom: -1px;
-                }
             }
         }
     }
