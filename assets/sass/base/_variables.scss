@@ -430,16 +430,35 @@ $label-danger-color:        $state-danger-text;
 ///////////////////////////
 /// DROPDOWNS
 ///////////////////////////
-$zindex-dropdown:                1000 !default;
-$dropdown-bg:                    #fff !default;
-$dropdown-border:                rgba(0,0,0,.15) !default;
-$dropdown-divider-bg:            #e5e5e5 !default;
-$dropdown-link-color:            $link-color !default;
-$dropdown-link-hover-color:      darken($link-color, 5%) !default;
-$dropdown-link-hover-bg:         #f5f5f5 !default;
-$dropdown-link-active-color:     #fff !default;
-$dropdown-link-active-bg:        $color-primary !default;
-$dropdown-link-disabled-color:   #CCC !default;
-$dropdown-header-color:          #CCC !default;
-$dropdown-caret-color:           #000 !default;
+$zindex-dropdown:                1000;
+$dropdown-bg:                    #fff;
+$dropdown-border:                rgba(0,0,0,.15);
+$dropdown-divider-bg:            #e5e5e5;
+$dropdown-link-color:            $link-color;
+$dropdown-link-hover-color:      darken($link-color, 5%);
+$dropdown-link-hover-bg:         #f5f5f5;
+$dropdown-link-active-color:     #fff;
+$dropdown-link-active-bg:        $color-primary;
+$dropdown-link-disabled-color:   #CCC;
+$dropdown-header-color:          #CCC;
+$dropdown-caret-color:           #000;
 
+
+///////////////////////////
+/// PAGINATION
+///////////////////////////
+$pagination-color:                     $link-color;
+$pagination-bg:                        #fff;
+$pagination-border:                    #ccc;
+
+$pagination-hover-color:               $link-hover-color;
+$pagination-hover-bg:                  #F3F3F3;
+$pagination-hover-border:              #ccc;
+
+$pagination-active-color:              #fff;
+$pagination-active-bg:                 $main-color;
+$pagination-active-border:             $main-color;
+
+$pagination-disabled-color:            #BBB;
+$pagination-disabled-bg:               #fff;
+$pagination-disabled-border:           #ccc;
