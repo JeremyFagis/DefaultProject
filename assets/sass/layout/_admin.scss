@@ -76,7 +76,7 @@
                         color: lighten($headings-color, 30%);
 
                         &::before {
-                            content: '—';
+                            content: '>';
                             margin-right: 10px;
                         }
 
