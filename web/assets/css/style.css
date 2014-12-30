@@ -2536,34 +2536,34 @@ footer#footer {
       border-color: #FFF; }
 
 .btn-primary {
-  background-color: #34677f;
+  background-color: #44576a;
   border-color: rgba(0, 0, 0, 0); }
   .btn-primary, .btn-primary:visited {
     color: #fff; }
   .btn-primary:hover, .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #2b5669;
+    background-color: #384857;
     border-color: rgba(0, 0, 0, 0); }
   .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
     background-image: none; }
   .btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
-    background-color: #34677f;
+    background-color: #44576a;
     border-color: rgba(0, 0, 0, 0); }
   .btn-primary .badge {
-    color: #34677f;
+    color: #44576a;
     background-color: #fff; }
   .btn-primary.btn-ghost {
     background-color: transparent;
-    color: #34677f;
-    border-color: #34677f; }
+    color: #44576a;
+    border-color: #44576a; }
     .btn-primary.btn-ghost:hover, .btn-primary.btn-ghost:active, .btn-primary.btn-ghost.active, .open > .btn-primary.btn-ghost.dropdown-toggle {
       color: #fff;
-      background-color: #34677f;
-      border-color: #34677f; }
+      background-color: #44576a;
+      border-color: #44576a; }
     .btn-primary.btn-ghost.disabled, .btn-primary.btn-ghost.disabled:hover, .btn-primary.btn-ghost.disabled:active, .btn-primary.btn-ghost.disabled.active, .btn-primary.btn-ghost[disabled], .btn-primary.btn-ghost[disabled]:hover, .btn-primary.btn-ghost[disabled]:active, .btn-primary.btn-ghost[disabled].active, fieldset[disabled] .btn-primary.btn-ghost, fieldset[disabled] .btn-primary.btn-ghost:hover, fieldset[disabled] .btn-primary.btn-ghost:active, fieldset[disabled] .btn-primary.btn-ghost.active {
-      color: #34677f;
+      color: #44576a;
       background-color: transparent;
-      border-color: #34677f; }
+      border-color: #44576a; }
 
 .btn-success {
   background-color: #4caf50;
@@ -3074,8 +3074,8 @@ table td[class*="col-"], table th[class*="col-"] {
     color: inherit; }
 
 .alert-primary {
-  background-color: #34677f;
-  border-color: #2d636d;
+  background-color: #44576a;
+  border-color: #3a505a;
   color: #FFF; }
   .alert-primary a, .alert-primary a:visited {
     color: #FFF; }
@@ -3083,7 +3083,7 @@ table td[class*="col-"], table th[class*="col-"] {
     color: #FFF;
     text-decoration: underline; }
   .alert-primary hr {
-    border-top-color: #25535b; }
+    border-top-color: #30424b; }
 
 .alert-success {
   background-color: #4caf50;
@@ -3535,7 +3535,7 @@ table td[class*="col-"], table th[class*="col-"] {
   height: 100%;
   line-height: 27px;
   text-align: center;
-  background-color: #34677f;
+  background-color: #44576a;
   -webkit-transition: width 0.6s ease;
           transition: width 0.6s ease; }
 
@@ -3593,9 +3593,9 @@ table td[class*="col-"], table th[class*="col-"] {
       background-color: #DDD;
       color: #666; }
   .panel.panel-primary {
-    border-color: #34677f; }
+    border-color: #44576a; }
     .panel.panel-primary .panel-heading {
-      background-color: #34677f;
+      background-color: #44576a;
       color: #FFF; }
   .panel.panel-success {
     border-color: #4caf50; }
@@ -3642,12 +3642,12 @@ table td[class*="col-"], table th[class*="col-"] {
     display: none; }
 
 .label-primary {
-  background-color: #34677f;
+  background-color: #44576a;
   color: #FFF; }
   .label-primary[href], .label-primary[href]:visited {
     color: #FFF; }
   .label-primary[href]:hover, .label-primary[href]:focus {
-    background-color: #254a5b;
+    background-color: #303e4b;
     color: #FFF; }
 
 .label-success {
@@ -3743,7 +3743,7 @@ table td[class*="col-"], table th[class*="col-"] {
   color: #fff;
   text-decoration: none;
   outline: 0;
-  background-color: #34677f; }
+  background-color: #44576a; }
 
 .dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
   color: #CCC; }
@@ -4303,7 +4303,7 @@ p {
   margin: 0 0 10px; }
 
 .text-primary {
-  color: #34677f; }
+  color: #44576a; }
 
 .text-success {
   color: #4caf50; }
