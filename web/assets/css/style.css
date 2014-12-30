@@ -3515,7 +3515,7 @@ table td[class*="col-"], table th[class*="col-"] {
 
 .progress {
   overflow: hidden;
-  height: 10px;
+  height: 8px;
   margin-bottom: 27px;
   background-color: #DDD; }
   .progress.rounded {
