@@ -4469,7 +4469,7 @@ pre {
             font-size: 15px;
             color: #919191; }
             .admin .navbar .navbar-inner .page-title .breadcrumb li::before {
-              content: '—';
+              content: '>';
               margin-right: 10px; }
             .admin .navbar .navbar-inner .page-title .breadcrumb li:first-child {
               margin-left: 0; }
