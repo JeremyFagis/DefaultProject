@@ -25,10 +25,25 @@
         <div class="navbar">
             <div class="navbar-inner">
                 <a href="admin-dashboard.html" class="navbar-logo">ElaoStrap <small>ADMIN</small></a>
-                <div class="page-title">Liste des utilisateurs</div>
+                <div class="page-title">
+                    <ul class="breadcrumb">
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Parent 1</a></li>
+                        <li><a href="#">Parent 2</a></li>
+                    </ul>
+                    <span class="current">Liste des utilisateurs</span>
+                </div>
                 <nav class="pull-right">
                     <ul>
-                        <li><a href="index.html">Logout</a></li>
+                        <li>
+                            <div class="btn-group">
+                                <a href="#" class="line-hover dropdown-toggle" data-toggle="dropdown">Jeremy <i class="icon-arrow-down"></i></a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#">Mon profil</a></li>
+                                    <li><a href="index.html">Déconnexion</a></li>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
                 </nav>
             </div>
