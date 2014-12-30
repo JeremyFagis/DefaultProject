@@ -1,3 +1,7 @@
 /node_modules/
 /.sass-cache/
+<<<<<<< HEAD
+=======
+#/web/assets/
+>>>>>>> master
 npm-debug.log

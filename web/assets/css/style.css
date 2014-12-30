@@ -3171,16 +3171,12 @@ table td[class*="col-"], table th[class*="col-"] {
   .nav-tabs.nav-justified {
     width: 100%; }
     .nav-tabs.nav-justified > li {
-      float: left; }
+      display: table-cell;
+      width: 1%;
+      float: none; }
       .nav-tabs.nav-justified > li > a {
+        margin-bottom: -1px;
         text-align: center; }
-    @media (min-width: 768px) {
-      .nav-tabs.nav-justified > li {
-        display: table-cell;
-        width: 1%;
-        float: none; }
-        .nav-tabs.nav-justified > li > a {
-          margin-bottom: -1px; } }
 
 .tab-content > .tab-pane {
   display: none;
