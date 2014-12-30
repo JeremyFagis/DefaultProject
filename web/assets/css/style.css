@@ -509,6 +509,14 @@ table {
   content: '\e80c'; }
 
 /* '' */
+.icon-email:before {
+  content: '\e80e'; }
+
+/* '' */
+.icon-key:before {
+  content: '\e80f'; }
+
+/* '' */
 .text-left {
   text-align: left; }
 
@@ -4606,6 +4614,61 @@ pre {
     font-size: 13px; }
     .admin .dropdown-menu > li > a {
       padding: 3px 15px; }
+  .admin.login {
+    background: #293541;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+    .admin.login footer {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 10px 20px;
+      font-size: 13px;
+      color: #FFF;
+      opacity: 0.3;
+      -webkit-transition: all 0.1s linear;
+              transition: all 0.1s linear; }
+      .admin.login footer:hover {
+        opacity: 0.7; }
+      .admin.login footer a, .admin.login footer a:visited {
+        color: #FFF; }
+        .admin.login footer a:hover, .admin.login footer a:visited:hover {
+          color: #f34141; }
+  .admin .login-box {
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+    background: #F4F4F4; }
+    .admin .login-box .navbar {
+      position: relative; }
+      .admin .login-box .navbar .navbar-inner .navbar-logo {
+        width: 200px; }
+      .admin .login-box .navbar .navbar-inner .page-title {
+        margin-left: 25px; }
+    .admin .login-box .login-box-inner {
+      padding: 20px 20px 10px 20px; }
+      .admin .login-box .login-box-inner .form-group {
+        margin-bottom: 10px; }
+      .admin .login-box .login-box-inner .btn-submit {
+        font-size: 20px;
+        font-family: "Roboto Condensed", "Helvetica Neue", "Helvetica";
+        font-weight: 400;
+        letter-spacing: -0.04em; }
 
 /*------------------------------------*\
     Responsive style.
