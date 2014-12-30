@@ -379,7 +379,8 @@
             }
 
             .btn-submit {
-                // text-transform: uppercase;
+                @extend .btn-primary;
+                @extend .btn-block;
                 font-size: 20px;
                 font-family: $headings-font-family;
                 font-weight: $headings-font-weight;

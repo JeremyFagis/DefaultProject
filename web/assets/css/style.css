@@ -2535,32 +2535,32 @@ footer#footer {
       background-color: transparent;
       border-color: #FFF; }
 
-.btn-primary {
+.btn-primary, .admin .login-box .login-box-inner .btn-submit {
   background-color: #44576a;
   border-color: rgba(0, 0, 0, 0); }
-  .btn-primary, .btn-primary:visited {
+  .btn-primary, .admin .login-box .login-box-inner .btn-submit, .btn-primary:visited, .admin .login-box .login-box-inner .btn-submit:visited {
     color: #fff; }
-  .btn-primary:hover, .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
+  .btn-primary:hover, .admin .login-box .login-box-inner .btn-submit:hover, .btn-primary:active, .admin .login-box .login-box-inner .btn-submit:active, .btn-primary.active, .admin .login-box .login-box-inner .active.btn-submit, .open > .btn-primary.dropdown-toggle, .open > .admin .login-box .login-box-inner .dropdown-toggle.btn-submit, .admin .login-box .login-box-inner .open > .dropdown-toggle.btn-submit {
     color: #fff;
     background-color: #384857;
     border-color: rgba(0, 0, 0, 0); }
-  .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
+  .btn-primary:active, .admin .login-box .login-box-inner .btn-submit:active, .btn-primary.active, .admin .login-box .login-box-inner .active.btn-submit, .open > .btn-primary.dropdown-toggle, .open > .admin .login-box .login-box-inner .dropdown-toggle.btn-submit, .admin .login-box .login-box-inner .open > .dropdown-toggle.btn-submit {
     background-image: none; }
-  .btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
+  .btn-primary.disabled, .admin .login-box .login-box-inner .disabled.btn-submit, .btn-primary.disabled:hover, .admin .login-box .login-box-inner .disabled.btn-submit:hover, .btn-primary.disabled:active, .admin .login-box .login-box-inner .disabled.btn-submit:active, .btn-primary.disabled.active, .admin .login-box .login-box-inner .disabled.active.btn-submit, .btn-primary[disabled], .admin .login-box .login-box-inner [disabled].btn-submit, .btn-primary[disabled]:hover, .admin .login-box .login-box-inner [disabled].btn-submit:hover, .btn-primary[disabled]:active, .admin .login-box .login-box-inner [disabled].btn-submit:active, .btn-primary[disabled].active, .admin .login-box .login-box-inner [disabled].active.btn-submit, fieldset[disabled] .btn-primary, fieldset[disabled] .admin .login-box .login-box-inner .btn-submit, .admin .login-box .login-box-inner fieldset[disabled] .btn-submit, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .admin .login-box .login-box-inner .btn-submit:hover, .admin .login-box .login-box-inner fieldset[disabled] .btn-submit:hover, fieldset[disabled] .btn-primary:active, fieldset[disabled] .admin .login-box .login-box-inner .btn-submit:active, .admin .login-box .login-box-inner fieldset[disabled] .btn-submit:active, fieldset[disabled] .btn-primary.active, fieldset[disabled] .admin .login-box .login-box-inner .active.btn-submit, .admin .login-box .login-box-inner fieldset[disabled] .active.btn-submit {
     background-color: #44576a;
     border-color: rgba(0, 0, 0, 0); }
-  .btn-primary .badge {
+  .btn-primary .badge, .btn-primary .admin .login-box .login-box-inner .btn-submit, .admin .login-box .login-box-inner .btn-primary .btn-submit {
     color: #44576a;
     background-color: #fff; }
-  .btn-primary.btn-ghost {
+  .btn-primary.btn-ghost, .admin .login-box .login-box-inner .btn-ghost.btn-submit {
     background-color: transparent;
     color: #44576a;
     border-color: #44576a; }
-    .btn-primary.btn-ghost:hover, .btn-primary.btn-ghost:active, .btn-primary.btn-ghost.active, .open > .btn-primary.btn-ghost.dropdown-toggle {
+    .btn-primary.btn-ghost:hover, .admin .login-box .login-box-inner .btn-ghost.btn-submit:hover, .btn-primary.btn-ghost:active, .admin .login-box .login-box-inner .btn-ghost.btn-submit:active, .btn-primary.btn-ghost.active, .admin .login-box .login-box-inner .btn-ghost.active.btn-submit, .open > .btn-primary.btn-ghost.dropdown-toggle, .open > .admin .login-box .login-box-inner .btn-ghost.dropdown-toggle.btn-submit, .admin .login-box .login-box-inner .open > .btn-ghost.dropdown-toggle.btn-submit {
       color: #fff;
       background-color: #44576a;
       border-color: #44576a; }
-    .btn-primary.btn-ghost.disabled, .btn-primary.btn-ghost.disabled:hover, .btn-primary.btn-ghost.disabled:active, .btn-primary.btn-ghost.disabled.active, .btn-primary.btn-ghost[disabled], .btn-primary.btn-ghost[disabled]:hover, .btn-primary.btn-ghost[disabled]:active, .btn-primary.btn-ghost[disabled].active, fieldset[disabled] .btn-primary.btn-ghost, fieldset[disabled] .btn-primary.btn-ghost:hover, fieldset[disabled] .btn-primary.btn-ghost:active, fieldset[disabled] .btn-primary.btn-ghost.active {
+    .btn-primary.btn-ghost.disabled, .admin .login-box .login-box-inner .btn-ghost.disabled.btn-submit, .btn-primary.btn-ghost.disabled:hover, .admin .login-box .login-box-inner .btn-ghost.disabled.btn-submit:hover, .btn-primary.btn-ghost.disabled:active, .admin .login-box .login-box-inner .btn-ghost.disabled.btn-submit:active, .btn-primary.btn-ghost.disabled.active, .admin .login-box .login-box-inner .btn-ghost.disabled.active.btn-submit, .btn-primary.btn-ghost[disabled], .admin .login-box .login-box-inner .btn-ghost[disabled].btn-submit, .btn-primary.btn-ghost[disabled]:hover, .admin .login-box .login-box-inner .btn-ghost[disabled].btn-submit:hover, .btn-primary.btn-ghost[disabled]:active, .admin .login-box .login-box-inner .btn-ghost[disabled].btn-submit:active, .btn-primary.btn-ghost[disabled].active, .admin .login-box .login-box-inner .btn-ghost[disabled].active.btn-submit, fieldset[disabled] .btn-primary.btn-ghost, fieldset[disabled] .admin .login-box .login-box-inner .btn-ghost.btn-submit, .admin .login-box .login-box-inner fieldset[disabled] .btn-ghost.btn-submit, fieldset[disabled] .btn-primary.btn-ghost:hover, fieldset[disabled] .admin .login-box .login-box-inner .btn-ghost.btn-submit:hover, .admin .login-box .login-box-inner fieldset[disabled] .btn-ghost.btn-submit:hover, fieldset[disabled] .btn-primary.btn-ghost:active, fieldset[disabled] .admin .login-box .login-box-inner .btn-ghost.btn-submit:active, .admin .login-box .login-box-inner fieldset[disabled] .btn-ghost.btn-submit:active, fieldset[disabled] .btn-primary.btn-ghost.active, fieldset[disabled] .admin .login-box .login-box-inner .btn-ghost.active.btn-submit, .admin .login-box .login-box-inner fieldset[disabled] .btn-ghost.active.btn-submit {
       color: #44576a;
       background-color: transparent;
       border-color: #44576a; }
@@ -2721,16 +2721,16 @@ footer#footer {
   line-height: 20.25px;
   border-radius: 3px; }
 
-.btn-block {
+.btn-block, .admin .login-box .login-box-inner .btn-submit {
   display: block;
   width: 100%;
   padding-left: 0;
   padding-right: 0; }
 
-.btn-block + .btn-block {
+.btn-block + .btn-block, .btn-block + .admin .login-box .login-box-inner .btn-submit, .admin .login-box .login-box-inner .btn-block + .btn-submit, .btn-block + .admin .login-box .login-box-inner .btn-submit, .admin .login-box .login-box-inner .btn-block + .btn-submit {
   margin-top: 5px; }
 
-input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="button"].btn-block {
+input[type="submit"].btn-block, .admin .login-box .login-box-inner input[type="submit"].btn-submit, input[type="reset"].btn-block, .admin .login-box .login-box-inner input[type="reset"].btn-submit, input[type="button"].btn-block, .admin .login-box .login-box-inner input[type="button"].btn-submit {
   width: 100%; }
 
 .btn-group, .btn-group-vertical {
