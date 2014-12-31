@@ -8,3 +8,13 @@
         color: $text-color;
     }
 }
+
+table.responsive-utilities {
+    .is-visible {
+        color: $color-success;
+        background-color: transparentize($color-success, 0.85)!important;
+    }
+    .is-hidden {
+        color: #BBB;
+    }
+}
