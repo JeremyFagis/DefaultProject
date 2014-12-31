@@ -25,6 +25,16 @@ $color-info: #43b2e4;
 $color-warning: #f0a435;
 $color-danger: #e5554b;
 
+$loading-background: #DDD;
+$loading-text-color: #888;
+
+$loader-trace: darken($loading-background, 10%);
+$loader-fill: $loading-text-color;
+$loader-opacity: 0.8;
+$loader-size: 50px;
+$loader-size-sm: 20px;
+$loader-size-lg: 80px;
+
 $admin-sidebar-background: #293541;
 $admin-sidebar-width: 250px;
 

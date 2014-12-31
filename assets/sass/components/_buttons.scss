@@ -1,17 +1,10 @@
-//
-// Buttons
-// --------------------------------------------------
-
-
-// Base styles
-// --------------------------------------------------
 .btn {
     display: inline-block;
-    margin-bottom: 0; // For input.btn
+    margin-bottom: 0;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
-    background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+    background-image: none;
     border: $btn-border-width solid transparent;
     white-space: nowrap;
     font-family: $btn-font-family;
@@ -45,7 +38,7 @@
     &[disabled],
     fieldset[disabled] & {
         cursor: not-allowed;
-        pointer-events: none; // Future-proof disabling of clicks
+        pointer-events: none;
         opacity: 0.65;
     }
 }
@@ -113,9 +106,6 @@
     }
 }
 
-
-// Button Sizes
-// --------------------------------------------------
 .btn-lg {
     @include button-size($btn-lg-padding-v, $btn-lg-padding-h, $font-size-large, $line-height-large, $border-radius-large);
 }
@@ -127,8 +117,6 @@
 }
 
 
-// Block button
-// --------------------------------------------------
 .btn-block {
     display: block;
     width: 100%;
@@ -136,12 +124,10 @@
     padding-right: 0;
 }
 
-// Vertically space out multiple block buttons
 .btn-block + .btn-block {
     margin-top: 5px;
 }
 
-// Specificity overrides
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
