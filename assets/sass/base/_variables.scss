@@ -8,7 +8,6 @@ $base-font-family: $text-font;
 $base-font-size: 15px;
 $base-line-height: $base-font-size * 1.8; // 26px
 $text-color: #666;
-$container-max-width: 1000px;
 $base-margin: 20px;
 $bold-font-weight: 700;
 
@@ -79,11 +78,11 @@ $screen-sm:                  768px;
 $screen-sm-min:              $screen-sm;
 $screen-tablet:              $screen-sm-min;
 
-$screen-md:                  900px;
+$screen-md:                  992px;
 $screen-md-min:              $screen-md;
 $screen-desktop:             $screen-md-min;
 
-$screen-lg:                  1024px;
+$screen-lg:                  1140px;
 $screen-lg-min:              $screen-lg;
 $screen-lg-desktop:          $screen-lg-min;
 
@@ -91,10 +90,11 @@ $screen-xs-max:              ($screen-sm-min - 1);
 $screen-sm-max:              ($screen-md-min - 1);
 $screen-md-max:              ($screen-lg-min - 1);
 
-$container-tablet:            ((720px + $grid-gutter-width));
-$container-desktop:           ((940px + $grid-gutter-width));
-$container-lg-desktop:        ((1140px + $grid-gutter-width));
+$container-tablet:           ((720px + $grid-gutter-width));
+$container-desktop:          ((940px + $grid-gutter-width));
+$container-lg-desktop:       ((1140px + $grid-gutter-width));
 
+$container-max-width:        $screen-lg;
 
 ///////////////////////////
 /// NAVBAR
