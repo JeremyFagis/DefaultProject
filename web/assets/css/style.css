@@ -2278,6 +2278,8 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
     content: ""; }
   .form-horizontal .form-group:after {
     clear: both; }
+.form-horizontal .form-action {
+  margin-top: 15px; }
 .form-horizontal .form-control-static {
   padding-top: 7px;
   padding-bottom: 7px; }
@@ -2300,7 +2302,9 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
     float: none;
     margin-bottom: 0; }
   .form-horizontal.right-label .form-group > label {
-    text-align: left; } }
+    text-align: left; }
+  .form-horizontal .form-group {
+    margin-bottom: 0; } }
 
 html.lt-ie9 .form-control {
   height: 55px; }
