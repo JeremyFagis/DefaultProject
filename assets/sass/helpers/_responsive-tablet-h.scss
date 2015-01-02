@@ -15,6 +15,12 @@
             }
         }
 
+        &.login {
+            .navbar .navbar-inner .navbar-logo {
+                font-size: 28px;
+            }
+        }
+
         .mobile-nav-toggle {
             display: block;
         }

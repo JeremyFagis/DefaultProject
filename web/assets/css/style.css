@@ -4928,6 +4928,8 @@ table.responsive-utilities .is-hidden {
     font-size: 20px; }
   .admin .navbar .navbar-inner .user-nav {
     display: none; }
+  .admin.login .navbar .navbar-inner .navbar-logo {
+    font-size: 28px; }
   .admin .mobile-nav-toggle {
     display: block; }
   .admin .sidebar {
