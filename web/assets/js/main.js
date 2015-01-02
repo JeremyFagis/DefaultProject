@@ -577,7 +577,12 @@ d[0].offsetTop||15===d[0].offsetTop;d.remove();a.fixedPosition=e}f.extend(b.defa
 }(function ($) {
 
     var pluginName = "mobileNav",
-        defaults = { target: '#mobile-nav', toggle: '.mobile-nav-toggle' };
+        defaults = {
+            target: '#mobile-nav',
+            toggle: '.mobile-nav-toggle',
+            toggleClass: 'push-toleft',
+            elementsToSlide: 'body, .navbar'
+        };
 
     function Plugin ( element, options ) {
         this.element = element;
@@ -585,20 +590,21 @@ d[0].offsetTop||15===d[0].offsetTop;d.remove();a.fixedPosition=e}f.extend(b.defa
         this.settings = $.extend( {}, defaults, options );
         this._defaults = defaults;
         this._name = pluginName;
-        this.isIE = !!window.ActiveXObject;
 
         this.init();
     }
 
     Plugin.prototype = {
         init: function () {
-            var target = $(this.settings.target);
+            var _this = this,
+                target = $(this.settings.target);
+
             target.find('nav').append(this.menu.html());
 
             $(this.settings.toggle).on('click',function(e) {
                 e.preventDefault();
                 $(this).toggleClass('active');
-                $('body, .navbar').toggleClass('push-toleft');
+                $(_this.settings.elementsToSlide).toggleClass(_this.settings.toggleClass);
                 target.toggleClass('opened');
             });
         }
