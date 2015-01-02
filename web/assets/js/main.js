@@ -2,7 +2,7 @@
  * =============================================================
  * ElaoStrap
  *
- * (c) 2014 Jeremy FAGIS <jeremy@fagis.fr>
+ * (c) 2015 Jeremy FAGIS <jeremy@fagis.fr>
  * =============================================================
  */
 
@@ -16,7 +16,7 @@ var $              = require('jquery'),
     dropdown       = require('bootstrap.dropdown'),
     simpleSelector = require('./vendors/jquery.simple-selector'),
     dropify        = require('./vendors/dropify'),
-    fancybox       = require('./vendors/jquery.fancybox.pack');
+    fancybox       = require('./vendors/jquery.fancybox.pack'),
     easing         = require('./vendors/jquery.easing');
 
 FastClick(document.body);
