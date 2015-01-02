@@ -29,7 +29,17 @@ $(document).ready(function(){
 
     if($('.page-title').length > 0) {
         $('.page-title').addClass('hover');
+        $('.page-title-mobile').html($('.page-title').html());
+        $('.page-title-mobile').find('.breadcrumb').remove();
     }
+
+    $('.mobile-nav-toggle').on('click', function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+        $('.sidebar').toggleClass('active');
+        $('body').toggleClass('nav-opened');
+    });
+
 });
 
 $(window).load(function(){

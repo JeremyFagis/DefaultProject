@@ -36,11 +36,12 @@
                     </ul>
                     <span class="current">Liste des utilisateurs</span>
                 </div>
-                <nav class="pull-right">
+                <a href="#" class="mobile-nav-toggle"><span class="line-1"></span><span class="line-2"></span><span class="line-3"></span></a>
+                <nav class="user-nav">
                     <ul>
                         <li>
                             <div class="btn-group">
-                                <a href="#" class="line-hover dropdown-toggle" data-toggle="dropdown">Jeremy <i class="icon-arrow-down"></i></a>
+                                <a href="#" class="line-hover dropdown-toggle" data-toggle="dropdown"><img src="https://s.gravatar.com/avatar/a9e1cf01cd07f1d2fb7fcbc7db00079e?s=24" alt="" /> Jeremy <i class="icon-arrow-down"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-right">
                                     <li><a href="#">Mon profil</a></li>
                                     <li><a href="admin-login.html">Connexion</a></li>
@@ -53,6 +54,18 @@
             </div>
         </div>
         <div class="sidebar">
+            <nav class="user-nav">
+                <ul>
+                    <li>
+                        <a href="#"><img src="https://s.gravatar.com/avatar/a9e1cf01cd07f1d2fb7fcbc7db00079e?s=24" alt="" /> Jeremy</a>
+                        <ul>
+                            <li><a href="#">Mon profil</a></li>
+                            <li><a href="admin-login.html">Connexion</a></li>
+                            <li><a href="index.html">Déconnexion</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
             <nav>
                 <ul>
                     <li>
@@ -100,22 +113,23 @@
         </div>
         <div class="main-content">
             <div class="container">
+                <div class="page-title-mobile"></div>
                 <table class="table table-hover table-striped">
                     <thead>
                         <tr>
                             <th>Utilisateur</th>
-                            <th>Email</th>
-                            <th>Dernière connexion</th>
-                            <th>Actif ?</th>
+                            <th class="hidden-xs">Email</th>
+                            <th class="hidden-xs">Dernière connexion</th>
+                            <th class="hidden-xs">Actif ?</th>
                             <th class="col-actions"><a href="admin-add.html" class="btn btn-ghost btn-success"><i class="icon-plus"></i> Ajouter</a></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>Francky Vincent</td>
-                            <td>droit-de-reponse@francky.fr</td>
-                            <td>23/12/2014 11:43</td>
-                            <td><i class="icon-check text-success"></i></td>
+                            <td class="hidden-xs">droit-de-reponse@francky.fr</td>
+                            <td class="hidden-xs">23/12/2014 11:43</td>
+                            <td class="hidden-xs"><i class="icon-check text-success"></i></td>
                             <td class="col-actions">
                                 <div class="btn-group">
                                     <a href="admin-edit.html" class="btn btn-default">Editer</a>
@@ -129,9 +143,9 @@
                         </tr>
                         <tr>
                             <td>Francky Vincent</td>
-                            <td>droit-de-reponse@francky.fr</td>
-                            <td>23/12/2014 11:43</td>
-                            <td><i class="icon-check text-success"></i></td>
+                            <td class="hidden-xs">droit-de-reponse@francky.fr</td>
+                            <td class="hidden-xs">23/12/2014 11:43</td>
+                            <td class="hidden-xs"><i class="icon-check text-success"></i></td>
                             <td class="col-actions">
                                 <div class="btn-group">
                                     <a href="admin-edit.html" class="btn btn-default">Editer</a>
@@ -145,9 +159,9 @@
                         </tr>
                         <tr>
                             <td>Francky Vincent</td>
-                            <td>droit-de-reponse@francky.fr</td>
-                            <td>23/12/2014 11:43</td>
-                            <td><i class="icon-check text-success"></i></td>
+                            <td class="hidden-xs">droit-de-reponse@francky.fr</td>
+                            <td class="hidden-xs">23/12/2014 11:43</td>
+                            <td class="hidden-xs"><i class="icon-check text-success"></i></td>
                             <td class="col-actions">
                                 <div class="btn-group">
                                     <a href="admin-edit.html" class="btn btn-default">Editer</a>
@@ -161,9 +175,9 @@
                         </tr>
                         <tr>
                             <td>Francky Vincent</td>
-                            <td>droit-de-reponse@francky.fr</td>
-                            <td>23/12/2014 11:43</td>
-                            <td><i class="icon-check text-success"></i></td>
+                            <td class="hidden-xs">droit-de-reponse@francky.fr</td>
+                            <td class="hidden-xs">23/12/2014 11:43</td>
+                            <td class="hidden-xs"><i class="icon-check text-success"></i></td>
                             <td class="col-actions">
                                 <div class="btn-group">
                                     <a href="admin-edit.html" class="btn btn-default">Editer</a>
@@ -177,9 +191,9 @@
                         </tr>
                         <tr>
                             <td>Francky Vincent</td>
-                            <td>droit-de-reponse@francky.fr</td>
-                            <td>23/12/2014 11:43</td>
-                            <td><i class="icon-remove text-danger"></i></td>
+                            <td class="hidden-xs">droit-de-reponse@francky.fr</td>
+                            <td class="hidden-xs">23/12/2014 11:43</td>
+                            <td class="hidden-xs"><i class="icon-remove text-danger"></i></td>
                             <td class="col-actions">
                                 <div class="btn-group">
                                     <a href="admin-edit.html" class="btn btn-default">Editer</a>
@@ -193,9 +207,9 @@
                         </tr>
                         <tr>
                             <td>Francky Vincent</td>
-                            <td>droit-de-reponse@francky.fr</td>
-                            <td>23/12/2014 11:43</td>
-                            <td><i class="icon-check text-success"></i></td>
+                            <td class="hidden-xs">droit-de-reponse@francky.fr</td>
+                            <td class="hidden-xs">23/12/2014 11:43</td>
+                            <td class="hidden-xs"><i class="icon-check text-success"></i></td>
                             <td class="col-actions">
                                 <div class="btn-group">
                                     <a href="admin-edit.html" class="btn btn-default">Editer</a>
