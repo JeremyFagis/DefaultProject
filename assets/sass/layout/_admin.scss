@@ -1,6 +1,10 @@
 .admin {
     background: $admin-background-color;
 
+    &.nav-opened {
+        overflow: hidden;
+    }
+
     #loading {
         background: $admin-background-color;
     }
@@ -39,11 +43,6 @@
             .page-title {
                 float: left;
                 margin-left: $grid-gutter-width/2;
-                font-size: 22px;
-                font-family: $headings-font-family;
-                font-weight: $headings-font-weight;
-                color: $headings-color;
-                letter-spacing: $headings-letter-spacing;
 
                 &:hover, &.hover {
                     .current {
@@ -53,60 +52,87 @@
                         transform: translateY(0);
                     }
                 }
-
-                .current {
-                    transition: all 0.2s ease;
-                }
-
-                .breadcrumb {
-                    position: absolute;
-                    list-style: none;
-                    padding: 20px 0 0 0;
-                    line-height: 15px;
-                    font-size: $base-font-size;
-                    transition: all 0.2s ease;
-                    transform: translateY(-100%);
-
-                    li {
-                        list-style: none;
-                        display: inline-block;
-                        margin-left: 6px;
-                        line-height: 15px;
-                        font-size: $base-font-size;
-                        color: lighten($headings-color, 30%);
-
-                        &::before {
-                            content: '>';
-                            margin-right: 10px;
-                        }
-
-                        &:first-child {
-                            margin-left: 0;
-
-                            &::before {
-                                display: none;
-                            }
-                        }
-
-                        a {
-                            color: lighten($headings-color, 30%);
-
-                            &:hover {
-                                color: $link-hover-color;
-                            }
-                        }
-                    }
-                }
             }
 
             .btn-group {
                 display: inline;
             }
+
+            .user-nav {
+                float: right;
+            }
+        }
+    }
+
+    .page-title, .page-title-mobile {
+        font-size: 22px;
+        font-family: $headings-font-family;
+        font-weight: $headings-font-weight;
+        color: $headings-color;
+        letter-spacing: $headings-letter-spacing;
+
+        .current {
+            transition: all 0.2s ease;
+        }
+
+        .breadcrumb {
+            position: absolute;
+            list-style: none;
+            padding: 20px 0 0 0;
+            line-height: 15px;
+            font-size: $base-font-size;
+            transition: all 0.2s ease;
+            transform: translateY(-100%);
+
+            li {
+                list-style: none;
+                display: inline-block;
+                margin-left: 6px;
+                line-height: 15px;
+                font-size: $base-font-size;
+                color: lighten($headings-color, 30%);
+
+                &::before {
+                    content: '>';
+                    margin-right: 10px;
+                }
+
+                &:first-child {
+                    margin-left: 0;
+
+                    &::before {
+                        display: none;
+                    }
+                }
+
+                a {
+                    color: lighten($headings-color, 30%);
+
+                    &:hover {
+                        color: $link-hover-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .page-title-mobile {
+        display: none;
+        margin: 10px 0;
+    }
+
+    .user-nav {
+        img {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 5px;
+            border-radius: 50%;
         }
     }
 
     .sidebar {
         position: fixed;
+        z-index: 1000;
         top: $navbar-height;
         left: 0;
         bottom: 0;
@@ -213,6 +239,10 @@
                     }
                 }
             }
+        }
+
+        .user-nav {
+            display: none;
         }
 
         footer {

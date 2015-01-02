@@ -304,14 +304,6 @@ input[type="checkbox"],
 		padding-bottom: 5px;
 	}
 
-	@media (max-width: $screen-sm-min) {
-		.control-label {
-			text-align: left;
-			float: none;
-			margin-bottom: 5px;
-		}
-	}
-
 	.has-feedback .form-control-feedback {
 		top: 0;
 		right: ($grid-gutter-width / 2);
@@ -327,6 +319,22 @@ input[type="checkbox"],
 		.form-group {
 			> label {
 				text-align: right;
+			}
+		}
+	}
+
+	@media (max-width: $screen-sm-min - 1px) {
+		.control-label {
+			text-align: left;
+			float: none;
+			margin-bottom: 0;
+		}
+
+		&.right-label {
+			.form-group {
+				> label {
+					text-align: left;
+				}
 			}
 		}
 	}
