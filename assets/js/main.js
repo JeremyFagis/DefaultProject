@@ -7,8 +7,9 @@ var $              = require('jquery'),
     dropdown       = require('bootstrap.dropdown'),
     simpleSelector = require('./vendors/jquery.simple-selector'),
     dropify        = require('./vendors/dropify'),
-    fancybox       = require('./vendors/jquery.fancybox.pack');
-    easing         = require('./vendors/jquery.easing');
+    fancybox       = require('./vendors/jquery.fancybox.pack'),
+    easing         = require('./vendors/jquery.easing'),
+    mobileNav      = require('./vendors/mobile-nav');
 
 FastClick(document.body);
 
@@ -66,6 +67,8 @@ $(document).ready(function(){
         $('html, body').animate({scrollTop : 0}, 800, 'easeInOutExpo');
         return false;
     });
+
+    $('#main-nav').mobileNav();
 });
 
 $(window).load(function(){
