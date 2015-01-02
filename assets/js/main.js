@@ -7,7 +7,7 @@ var $              = require('jquery'),
     dropdown       = require('bootstrap.dropdown'),
     simpleSelector = require('./vendors/jquery.simple-selector'),
     dropify        = require('./vendors/dropify'),
-    fancybox       = require('./vendors/jquery.fancybox.pack');
+    fancybox       = require('./vendors/jquery.fancybox.pack'),
     easing         = require('./vendors/jquery.easing');
 
 FastClick(document.body);
