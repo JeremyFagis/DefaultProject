@@ -1,14 +1,24 @@
 {
-  "name": "ElaoStrap",
+  "name": "elaostrap",
+  "description": "ElaoStrap is a SCSS Framework",
+  "version": "0.1.0",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.githubusercontent.com/JeremyFagis/ElaoStrap/master/LICENSE"
+    }
+  ],
+  "homepage": "https://github.com/JeremyFagis/ElaoStrap",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JeremyFagis/ElaoStrap"
+  },
+  "bugs": {
+    "url": "https://github.com/JeremyFagis/ElaoStrap/issues"
+  },
   "author": {
     "name": "Jeremy FAGIS",
     "email": "jeremy@fagis.fr"
-  },
-  "private": false,
-  "dependencies": {
-    "jquery": "2.1.1",
-    "bootstrap-sass": "3.3.1",
-    "fastclick": "1.0.3"
   },
   "browser": {
       "bootstrap.transition": "./node_modules/bootstrap-sass/assets/javascripts/bootstrap/transition.js",
@@ -44,6 +54,9 @@
     ]
   },
   "devDependencies": {
+    "jquery": "2.1.1",
+    "bootstrap-sass": "3.3.1",
+    "fastclick": "1.0.3",
     "gulp": "~3.8.8",
     "del": "0.1.*",
     "elao-assets-gulp": "~0.1.13",
