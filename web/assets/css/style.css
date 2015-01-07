@@ -3514,8 +3514,6 @@ table td[class*="col-"], table th[class*="col-"] {
           padding: 0 10px; }
           .navbar .navbar-inner nav > ul > li > a {
             text-decoration: none; }
-            .navbar .navbar-inner nav > ul > li > a::after {
-              background-color: #F34141; }
           .navbar .navbar-inner nav > ul > li.active > a {
             color: #F34141;
             font-weight: bold; }
@@ -4547,7 +4545,7 @@ a:focus {
   outline: 0; }
 a:hover {
   color: #F34141; }
-a.line-hover, .navbar .navbar-inner nav > ul > li > a, .admin .sidebar footer a, .admin .sidebar footer a:visited {
+a.line-hover, .admin .sidebar footer a, .admin .sidebar footer a:visited {
   position: relative;
   overflow: hidden;
   display: inline-block;
@@ -4556,7 +4554,7 @@ a.line-hover, .navbar .navbar-inner nav > ul > li > a, .admin .sidebar footer a,
   padding-left: 2px;
   padding-right: 2px;
   text-decoration: none; }
-  a.line-hover::after, .navbar .navbar-inner nav > ul > li > a::after, .admin .sidebar footer a::after, .admin .sidebar footer a:visited::after {
+  a.line-hover::after, .admin .sidebar footer a::after, .admin .sidebar footer a:visited::after {
     content: '';
     display: block;
     position: absolute;
@@ -4573,7 +4571,7 @@ a.line-hover, .navbar .navbar-inner nav > ul > li > a, .admin .sidebar footer a,
             transition: transform 0.4s ease;
     -webkit-transition-delay: 0.05s;
             transition-delay: 0.05s; }
-  a.line-hover:hover::after, .navbar .navbar-inner nav > ul > li > a:hover::after, .admin .sidebar footer a:hover::after, .admin .sidebar footer a:visited:hover::after {
+  a.line-hover:hover::after, .admin .sidebar footer a:hover::after, .admin .sidebar footer a:visited:hover::after {
     -webkit-transform: translateX(101%);
         -ms-transform: translateX(101%);
             transform: translateX(101%); }
