@@ -4625,14 +4625,16 @@ a.line-hover, .admin .sidebar footer a, .admin .sidebar footer a:visited {
         -ms-transform: translateX(101%);
             transform: translateX(101%); }
 
+code {
+  font-family: "Inconsolata", "Consolas", "Courier";
+  font-size: 16px;
+  line-height: 24px; }
+
 pre {
   margin: 0;
   overflow: hidden; }
   pre code {
     display: block;
-    font-family: "Inconsolata", "Consolas", "Courier";
-    font-size: 16px;
-    line-height: 24px;
     background-color: rgba(0, 0, 0, 0.7);
     color: #EEE;
     padding: 10px 10px;
