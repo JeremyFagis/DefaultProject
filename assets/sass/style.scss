@@ -7,7 +7,8 @@
 \*------------------------------------*/
 @import "base/reset";
 @import "base/font";
-@import "base/variables";
+@import "variables/base";
+@import "variables/default";
 @import "helpers/mixins";
 @import "helpers/shortcuts";
 @import "layout/grid";

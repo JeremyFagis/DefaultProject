@@ -25,7 +25,7 @@ h2, .h2,
 h3, .h3 {
     margin-top: $headings-margin;
     margin-bottom: ($headings-margin / 2);
-    text-transform: uppercase;
+    text-transform: $headings-text-transform;
 
     small,
     .small {

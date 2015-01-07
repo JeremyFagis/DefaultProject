@@ -1,0 +1,75 @@
+///////////////////////////
+/// BASE
+///////////////////////////
+$background-color: #F8F8F8 !default;
+$base-font-family: "Roboto", "Helvetica Neue", "Helvetica" !default;
+$base-font-size:   15px !default;
+$base-line-height: $base-font-size * 1.8 !default;
+$text-color:       #666 !default;
+$base-margin:      20px !default;
+$bold-font-weight: 700 !default;
+
+$main-color: #F34141 !default;
+
+$link-color:       $text-color !default;
+$link-hover-color: $main-color !default;
+
+$color-primary: #44576A !default;
+$color-success: #4CAf50 !default;
+$color-info:    #43B2E4 !default;
+$color-warning: #F0A435 !default;
+$color-danger:  #E5554b !default;
+
+$loading-background: #DDD !default;
+$loading-text-color: #888 !default;
+
+
+///////////////////////////
+/// CODE
+///////////////////////////
+$code-font-size: 16px !default;
+
+///////////////////////////
+/// GRID
+///////////////////////////
+$grid-columns:      12 !default;
+$grid-gutter-width: 30px !default;
+
+
+///////////////////////////
+/// MEDIA QUERIES
+///////////////////////////
+$screen-xs: 480px !default;
+$screen-sm: 768px !default;
+$screen-md: 992px !default;
+$screen-lg: 1140px !default;
+
+///////////////////////////
+/// FORMS
+///////////////////////////
+$legend-color:             $text-color !default;
+$legend-border-color:      $text-color !default;
+
+$font-size-small:          $base-font-size * 0.75 !default;
+$font-size-large:          $base-font-size * 1.5 !default;
+
+$line-height-small:        $base-line-height * 0.75 !default;
+$line-height-large:        $base-line-height * 1.5 !default;
+
+$padding-base-vertical:    6px !default;
+$padding-base-horizontal:  12px !default;
+
+$padding-large-vertical:   10px !default;
+$padding-large-horizontal: 16px !default;
+
+$padding-small-vertical:   5px !default;
+$padding-small-horizontal: 10px !default;
+
+$padding-xs-vertical:      1px !default;
+$padding-xs-horizontal:    5px !default;
+
+$border-radius-base:       4px !default;
+$border-radius-large:      6px !default;
+$border-radius-small:      3px !default;
+
+$input-border:             darken(#E9EAE7, 10%) !default;
