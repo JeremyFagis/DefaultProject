@@ -18,6 +18,30 @@
     &.btn-ghost {
         border: $btn-ghost-border-width solid transparent;
 
+        &.with-anim {
+            position: relative;
+            overflow: hidden;
+            backface-visibility: hidden;
+
+            &::after {
+                content: "";
+                position: absolute;
+                background: #444;
+                height: 0%;
+                left: 50%;
+                top: 50%;
+                width: 150%;
+                z-index:-1;
+                transition: all 0.4s ease 0;
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+            &:hover {
+                &::after {
+                    height: 300%;
+                }
+            }
+        }
+
         &.btn-default {
             @include button-variant($btn-ghost-default-color, $btn-ghost-default-bg, $btn-default-border);
         }
