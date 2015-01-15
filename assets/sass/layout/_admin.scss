@@ -44,12 +44,14 @@
                 float: left;
                 margin-left: $grid-gutter-width/2;
 
-                &:hover, &.hover {
-                    .current {
-                        line-height: 105px;
-                    }
-                    .breadcrumb {
-                        transform: translateY(0);
+                &.has-breadcrumb {
+                    &:hover, &.hover {
+                        .current {
+                            line-height: 105px;
+                        }
+                        .breadcrumb {
+                            transform: translateY(0);
+                        }
                     }
                 }
             }

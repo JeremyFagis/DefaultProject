@@ -4680,9 +4680,9 @@ table.responsive-utilities .is-hidden {
       .admin .navbar .navbar-inner .page-title {
         float: left;
         margin-left: 15px; }
-        .admin .navbar .navbar-inner .page-title:hover .current, .admin .navbar .navbar-inner .page-title.hover .current {
+        .admin .navbar .navbar-inner .page-title.has-breadcrumb:hover .current, .admin .navbar .navbar-inner .page-title.has-breadcrumb.hover .current {
           line-height: 105px; }
-        .admin .navbar .navbar-inner .page-title:hover .breadcrumb, .admin .navbar .navbar-inner .page-title.hover .breadcrumb {
+        .admin .navbar .navbar-inner .page-title.has-breadcrumb:hover .breadcrumb, .admin .navbar .navbar-inner .page-title.has-breadcrumb.hover .breadcrumb {
           -webkit-transform: translateY(0);
               -ms-transform: translateY(0);
                   transform: translateY(0); }
