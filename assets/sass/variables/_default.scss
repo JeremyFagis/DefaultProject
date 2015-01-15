@@ -1,8 +1,6 @@
 ///////////////////////////
 /// BASE
 ///////////////////////////
-$admin-background-color: #F4F4F4 !default;
-
 $select-text-bg-color:   transparentize($main-color, 0.2) !default;
 $select-text-color:      #FFF !default;
 
@@ -12,9 +10,6 @@ $loader-opacity: 0.8 !default;
 $loader-size:    50px !default;
 $loader-size-sm: 20px !default;
 $loader-size-lg: 80px !default;
-
-$admin-sidebar-background: #293541 !default;
-$admin-sidebar-width:      250px !default;
 
 ///////////////////////////
 /// HEADINGS

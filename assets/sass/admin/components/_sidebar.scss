@@ -8,7 +8,7 @@ body.admin {
         width: $admin-sidebar-width;
         background: $admin-sidebar-background;
         padding: 10px 10px 60px 10px;
-        color: #FFF;
+        color: $admin-sidebar-text-color;
         overflow-y: auto;
 
         > nav {
@@ -23,14 +23,14 @@ body.admin {
 
                     > a {
                         display: block;
-                        color: #FFF;
+                        color: $admin-sidebar-text-color;
                         border-radius: 4px;
                         padding: 10px 10px;
                         transition: all 0.1s linear;
                     }
 
                     &:hover, &.active, &.opened {
-                        background: transparentize(#FFF, 0.9);
+                        background: transparentize($admin-sidebar-text-color, 0.9);
                     }
 
                     ul {
@@ -44,7 +44,7 @@ body.admin {
 
                         li {
                             a {
-                                color: transparentize(#FFF, 0.5);
+                                color: transparentize($admin-sidebar-text-color, 0.5);
                                 display: block;
                                 padding: 4px 0;
                                 transition: all 0.1s linear;
@@ -52,14 +52,14 @@ body.admin {
                                 line-height: 20px;
 
                                 &:hover {
-                                    color: #FFF;
+                                    color: $admin-sidebar-text-color;
                                 }
                             }
 
                             &.active, &.opened {
                                 > a {
                                     &, &:hover {
-                                        color: #FFF;
+                                        color: $admin-sidebar-text-color;
                                         cursor: default;
                                     }
                                 }
@@ -124,12 +124,12 @@ body.admin {
             padding: 15px 5px;
             text-align: center;
             font-size: 13px;
-            color: mix(#293541, #FFFFFF, 50%);
-            background: #293541;
+            color: mix($admin-sidebar-background, $admin-sidebar-text-color, 50%);
+            background: $admin-sidebar-background;
 
             a {
                 &, &:visited {
-                    color: mix(#293541, #FFFFFF, 50%);
+                    color: mix($admin-sidebar-background, $admin-sidebar-text-color, 50%);
                     @extend .line-hover;
                 }
             }
