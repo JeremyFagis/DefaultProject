@@ -122,25 +122,20 @@ $input-border-focus:      darken($input-border, 15%) !default;
 $input-border-radius:     $border-radius-base !default;
 $input-bg-disabled:       #EEE !default;
 
-$state-primary-text:   #FFF !default;
-$state-primary-bg:     $color-primary !default;
-$state-primary-border: darken(adjust-hue($state-primary-bg, -10), 5%) !default;
+$state-primary-text:   $color-primary !default;
+$state-primary-border: $color-primary !default;
 
-$state-success-text:   #FFF !default;
-$state-success-bg:     $color-success !default;
-$state-success-border: darken(adjust-hue($state-success-bg, -10), 5%) !default;
+$state-success-text:   $color-success !default;
+$state-success-border: $color-success !default;
 
-$state-info-text:      #FFF !default;
-$state-info-bg:        $color-info !default;
-$state-info-border:    darken(adjust-hue($state-info-bg, -10), 7%) !default;
+$state-info-text:      $color-info !default;
+$state-info-border:    $color-info !default;
 
-$state-warning-text:   #FFF !default;
-$state-warning-bg:     $color-warning !default;
-$state-warning-border: darken($state-warning-bg, 5%) !default;
+$state-warning-text:   $color-warning !default;
+$state-warning-border: $color-warning !default;
 
-$state-danger-text:    #FFF !default;
-$state-danger-bg:      $color-danger !default;
-$state-danger-border:  darken(adjust-hue($state-danger-bg, -10), 5%) !default;
+$state-danger-text:    $color-danger !default;
+$state-danger-border:  $color-danger !default;
 
 $help-block-color:     lighten($text-color, 25%);
 
@@ -222,25 +217,25 @@ $alert-default-bg:       #DDD !default;
 $alert-default-text:     $text-color !default;
 $alert-default-border:   #BBB !default;
 
-$alert-primary-bg:       $state-primary-bg !default;
-$alert-primary-text:     $state-primary-text !default;
-$alert-primary-border:   $state-primary-border !default;
+$alert-primary-bg:       $color-primary !default;
+$alert-primary-text:     $color-primary-inverse !default;
+$alert-primary-border:   $color-primary !default;
 
-$alert-success-bg:       $state-success-bg !default;
-$alert-success-text:     $state-success-text !default;
-$alert-success-border:   $state-success-border !default;
+$alert-success-bg:       $color-success !default;
+$alert-success-text:     $color-success-inverse !default;
+$alert-success-border:   $color-success !default;
 
-$alert-info-bg:          $state-info-bg !default;
-$alert-info-text:        $state-info-text !default;
-$alert-info-border:      $state-info-border !default;
+$alert-info-bg:          $color-info !default;
+$alert-info-text:        $color-info-inverse !default;
+$alert-info-border:      $color-info !default;
 
-$alert-warning-bg:       $state-warning-bg !default;
-$alert-warning-text:     $state-warning-text !default;
-$alert-warning-border:   $state-warning-border !default;
+$alert-warning-bg:       $color-warning !default;
+$alert-warning-text:     $color-warning-inverse !default;
+$alert-warning-border:   $color-warning !default;
 
-$alert-danger-bg:        $state-danger-bg !default;
-$alert-danger-text:      $state-danger-text !default;
-$alert-danger-border:    $state-danger-border !default;
+$alert-danger-bg:        $color-danger !default;
+$alert-danger-text:      $color-danger-inverse !default;
+$alert-danger-border:    $color-danger !default;
 
 
 ///////////////////////////
@@ -333,20 +328,20 @@ $panel-heading-font-size:     20px !default;
 $panel-default-color:         #DDD !default;
 $panel-default-heading-color: $text-color !default;
 
-$panel-primary-color:         $state-primary-bg !default;
-$panel-primary-heading-color: $state-primary-text !default;
+$panel-primary-color:         $color-primary !default;
+$panel-primary-heading-color: $color-primary-inverse !default;
 
-$panel-success-color:         $state-success-bg !default;
-$panel-success-heading-color: $state-success-text !default;
+$panel-success-color:         $color-success !default;
+$panel-success-heading-color: $color-success-inverse !default;
 
-$panel-info-color:            $state-info-bg !default;
-$panel-info-heading-color:    $state-info-text !default;
+$panel-info-color:            $color-info !default;
+$panel-info-heading-color:    $color-info-inverse !default;
 
-$panel-warning-color:         $state-warning-bg !default;
-$panel-warning-heading-color: $state-warning-text !default;
+$panel-warning-color:         $color-warning !default;
+$panel-warning-heading-color: $color-warning-inverse !default;
 
-$panel-danger-color:          $state-danger-bg !default;
-$panel-danger-heading-color:  $state-danger-text !default;
+$panel-danger-color:          $color-danger !default;
+$panel-danger-heading-color:  $color-danger-inverse !default;
 
 
 ///////////////////////////
@@ -374,20 +369,20 @@ $label-padding:       4px 6px !default;
 $label-default-bg:    #DDD !default;
 $label-default-color: $text-color !default;
 
-$label-primary-bg:    $state-primary-bg !default;
-$label-primary-color: $state-primary-text !default;
+$label-primary-bg:    $color-primary !default;
+$label-primary-color: $color-primary-inverse !default;
 
-$label-success-bg:    $state-success-bg !default;
-$label-success-color: $state-success-text !default;
+$label-success-bg:    $color-success !default;
+$label-success-color: $color-success-inverse !default;
 
-$label-info-bg:       $state-info-bg !default;
-$label-info-color:    $state-info-text !default;
+$label-info-bg:       $color-info !default;
+$label-info-color:    $color-info-inverse !default;
 
-$label-warning-bg:    $state-warning-bg !default;
-$label-warning-color: $state-warning-text !default;
+$label-warning-bg:    $color-warning !default;
+$label-warning-color: $color-warning-inverse !default;
 
-$label-danger-bg:     $state-danger-bg !default;
-$label-danger-color:  $state-danger-text !default;
+$label-danger-bg:     $color-danger !default;
+$label-danger-color:  $color-danger-inverse !default;
 
 
 ///////////////////////////

@@ -14,11 +14,20 @@ $main-color: #F34141 !default;
 $link-color:       $text-color !default;
 $link-hover-color: $main-color !default;
 
-$color-primary: #44576A !default;
-$color-success: #4CAf50 !default;
-$color-info:    #43B2E4 !default;
-$color-warning: #F0A435 !default;
-$color-danger:  #E5554b !default;
+$color-primary:         #44576A !default;
+$color-primary-inverse: #FFF !default;
+
+$color-success:         #4CAf50 !default;
+$color-success-inverse: #FFF !default;
+
+$color-info:            #43B2E4 !default;
+$color-info-inverse:    #FFF !default;
+
+$color-warning:         #F0A435 !default;
+$color-warning-inverse: #FFF !default;
+
+$color-danger:          #E5554b !default;
+$color-danger-inverse:  #FFF !default;
 
 $loading-background: #DDD !default;
 $loading-text-color: #888 !default;
@@ -72,4 +81,4 @@ $border-radius-base:       4px !default;
 $border-radius-large:      6px !default;
 $border-radius-small:      3px !default;
 
-$input-border:             darken(#E9EAE7, 10%) !default;
+$input-border:             #D4D4D4 !default;
