@@ -1,0 +1,17 @@
+// ------------------------------------
+//   Default style
+// ------------------------------------
+@import "style";
+
+// ------------------------------------
+//   Admin Pages
+// ------------------------------------
+@import "admin/layout/layout";
+@import "admin/layout/form";
+
+@import "admin/components/navbar";
+@import "admin/components/sidebar";
+@import "admin/components/tables";
+@import "admin/components/dropdowns";
+
+@import "admin/pages/login";

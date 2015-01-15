@@ -1,10 +1,9 @@
 // Architecture based on http://www.sitepoint.com/architecture-sass-project/
-
 @charset "UTF-8";
 
-/*------------------------------------*\
-    Basics
-\*------------------------------------*/
+// ------------------------------------
+//   Basics
+// ------------------------------------
 @import "base/reset";
 @import "base/font";
 @import "variables/base";
@@ -16,9 +15,9 @@
 @import "layout/layout";
 
 
-/*------------------------------------*\
-    Remove unused components
-\*------------------------------------*/
+// ------------------------------------
+//   Remove unused components
+// ------------------------------------
 @import "components/buttons";
 @import "components/button-groups";
 @import "components/simpleSelector";
@@ -42,26 +41,20 @@
 @import "components/mobile-nav";
 
 
-/*------------------------------------*\
-    Contains Headings, p, hr... style.
-\*------------------------------------*/
+// ------------------------------------
+//   Contains Headings, p, hr... style.
+// ------------------------------------
 @import "base/typography";
 
 
-/*------------------------------------*\
-    Contains Pages
-\*------------------------------------*/
+// ------------------------------------
+//   Contains Pages
+// ------------------------------------
 @import "pages/doc";
 
 
-/*------------------------------------*\
-    Admin Pages
-\*------------------------------------*/
-@import "layout/admin";
-
-
-/*------------------------------------*\
-    Responsive style.
-\*------------------------------------*/
+// ------------------------------------
+//   Responsive style.
+// ------------------------------------
 @import "helpers/responsive";
 @import "helpers/responsive-utilities";

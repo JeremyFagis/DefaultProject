@@ -430,7 +430,7 @@ table {
     }
 }
 */
-[class^="icon-"]:before, [class*=" icon-"]:before, .fontello:before, .dropify-wrapper .dropify-message span.file-icon:before, .dropify-wrapper .dropify-preview .dropify-render .file-icon:before, .dropify-wrapper .dropify-preview .dropify-infos .dropify-infos-inner p.dropify-filename span.file-icon:before {
+[class^="icon-"]:before, [class*=" icon-"]:before, .fontello:before, .dropify-wrapper .dropify-message span.file-icon:before, .dropify-wrapper .dropify-preview .dropify-render .file-icon:before, .dropify-wrapper .dropify-preview .dropify-infos .dropify-infos-inner p.dropify-filename span.file-icon:before, body.admin .sidebar > nav > ul li > a span.submenu-icon:before {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
@@ -490,11 +490,11 @@ table {
   content: '\e808'; }
 
 /* '' */
-.icon-arrow-right:before {
+.icon-arrow-right:before, body.admin .sidebar > nav > ul li > a span.submenu-icon:before {
   content: '\e809'; }
 
 /* '' */
-.icon-arrow-down:before {
+.icon-arrow-down:before, body.admin .sidebar > nav > ul li.opened > a span.submenu-icon:before {
   content: '\e80a'; }
 
 /* '' */
@@ -2570,36 +2570,36 @@ footer#footer {
       background-color: transparent;
       border-color: #FFF; }
 
-.btn-primary {
+.btn-primary, body.admin .login-box .login-box-inner .btn-submit {
   background-color: #44576A;
   border-color: rgba(0, 0, 0, 0); }
-  .btn-primary, .btn-primary:visited {
+  .btn-primary, body.admin .login-box .login-box-inner .btn-submit, .btn-primary:visited, body.admin .login-box .login-box-inner .btn-submit:visited {
     color: #FFF; }
-  .btn-primary:hover, .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
+  .btn-primary:hover, body.admin .login-box .login-box-inner .btn-submit:hover, .btn-primary:active, body.admin .login-box .login-box-inner .btn-submit:active, .btn-primary.active, body.admin .login-box .login-box-inner .active.btn-submit, .open > .btn-primary.dropdown-toggle, .open > body.admin .login-box .login-box-inner .dropdown-toggle.btn-submit, body.admin .login-box .login-box-inner .open > .dropdown-toggle.btn-submit {
     color: #FFF;
     background-color: #384857;
     border-color: rgba(0, 0, 0, 0); }
-  .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
+  .btn-primary:active, body.admin .login-box .login-box-inner .btn-submit:active, .btn-primary.active, body.admin .login-box .login-box-inner .active.btn-submit, .open > .btn-primary.dropdown-toggle, .open > body.admin .login-box .login-box-inner .dropdown-toggle.btn-submit, body.admin .login-box .login-box-inner .open > .dropdown-toggle.btn-submit {
     background-image: none; }
-  .btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
+  .btn-primary.disabled, body.admin .login-box .login-box-inner .disabled.btn-submit, .btn-primary.disabled:hover, body.admin .login-box .login-box-inner .disabled.btn-submit:hover, .btn-primary.disabled:active, body.admin .login-box .login-box-inner .disabled.btn-submit:active, .btn-primary.disabled.active, body.admin .login-box .login-box-inner .disabled.active.btn-submit, .btn-primary[disabled], body.admin .login-box .login-box-inner [disabled].btn-submit, .btn-primary[disabled]:hover, body.admin .login-box .login-box-inner [disabled].btn-submit:hover, .btn-primary[disabled]:active, body.admin .login-box .login-box-inner [disabled].btn-submit:active, .btn-primary[disabled].active, body.admin .login-box .login-box-inner [disabled].active.btn-submit, fieldset[disabled] .btn-primary, fieldset[disabled] body.admin .login-box .login-box-inner .btn-submit, body.admin .login-box .login-box-inner fieldset[disabled] .btn-submit, fieldset[disabled] .btn-primary:hover, fieldset[disabled] body.admin .login-box .login-box-inner .btn-submit:hover, body.admin .login-box .login-box-inner fieldset[disabled] .btn-submit:hover, fieldset[disabled] .btn-primary:active, fieldset[disabled] body.admin .login-box .login-box-inner .btn-submit:active, body.admin .login-box .login-box-inner fieldset[disabled] .btn-submit:active, fieldset[disabled] .btn-primary.active, fieldset[disabled] body.admin .login-box .login-box-inner .active.btn-submit, body.admin .login-box .login-box-inner fieldset[disabled] .active.btn-submit {
     background-color: #44576A;
     border-color: rgba(0, 0, 0, 0); }
-  .btn-primary .badge {
+  .btn-primary .badge, .btn-primary body.admin .login-box .login-box-inner .btn-submit, body.admin .login-box .login-box-inner .btn-primary .btn-submit {
     color: #44576A;
     background-color: #FFF; }
-  .btn-primary.btn-ghost {
+  .btn-primary.btn-ghost, body.admin .login-box .login-box-inner .btn-ghost.btn-submit {
     background-color: transparent;
     color: #44576A;
     border-color: #44576A; }
-    .btn-primary.btn-ghost:hover, .btn-primary.btn-ghost:active, .btn-primary.btn-ghost.active, .open > .btn-primary.btn-ghost.dropdown-toggle {
+    .btn-primary.btn-ghost:hover, body.admin .login-box .login-box-inner .btn-ghost.btn-submit:hover, .btn-primary.btn-ghost:active, body.admin .login-box .login-box-inner .btn-ghost.btn-submit:active, .btn-primary.btn-ghost.active, body.admin .login-box .login-box-inner .btn-ghost.active.btn-submit, .open > .btn-primary.btn-ghost.dropdown-toggle, .open > body.admin .login-box .login-box-inner .btn-ghost.dropdown-toggle.btn-submit, body.admin .login-box .login-box-inner .open > .btn-ghost.dropdown-toggle.btn-submit {
       color: #FFF;
       background-color: #44576A;
       border-color: #44576A; }
-    .btn-primary.btn-ghost.with-anim:hover, .btn-primary.btn-ghost.with-anim:active, .btn-primary.btn-ghost.with-anim.active, .open > .btn-primary.btn-ghost.with-anim.dropdown-toggle {
+    .btn-primary.btn-ghost.with-anim:hover, body.admin .login-box .login-box-inner .btn-ghost.with-anim.btn-submit:hover, .btn-primary.btn-ghost.with-anim:active, body.admin .login-box .login-box-inner .btn-ghost.with-anim.btn-submit:active, .btn-primary.btn-ghost.with-anim.active, body.admin .login-box .login-box-inner .btn-ghost.with-anim.active.btn-submit, .open > .btn-primary.btn-ghost.with-anim.dropdown-toggle, .open > body.admin .login-box .login-box-inner .btn-ghost.with-anim.dropdown-toggle.btn-submit, body.admin .login-box .login-box-inner .open > .btn-ghost.with-anim.dropdown-toggle.btn-submit {
       background-color: transparent; }
-    .btn-primary.btn-ghost.with-anim::after {
+    .btn-primary.btn-ghost.with-anim::after, body.admin .login-box .login-box-inner .btn-ghost.with-anim.btn-submit::after {
       background-color: #44576A; }
-    .btn-primary.btn-ghost.disabled, .btn-primary.btn-ghost.disabled:hover, .btn-primary.btn-ghost.disabled:active, .btn-primary.btn-ghost.disabled.active, .btn-primary.btn-ghost[disabled], .btn-primary.btn-ghost[disabled]:hover, .btn-primary.btn-ghost[disabled]:active, .btn-primary.btn-ghost[disabled].active, fieldset[disabled] .btn-primary.btn-ghost, fieldset[disabled] .btn-primary.btn-ghost:hover, fieldset[disabled] .btn-primary.btn-ghost:active, fieldset[disabled] .btn-primary.btn-ghost.active {
+    .btn-primary.btn-ghost.disabled, body.admin .login-box .login-box-inner .btn-ghost.disabled.btn-submit, .btn-primary.btn-ghost.disabled:hover, body.admin .login-box .login-box-inner .btn-ghost.disabled.btn-submit:hover, .btn-primary.btn-ghost.disabled:active, body.admin .login-box .login-box-inner .btn-ghost.disabled.btn-submit:active, .btn-primary.btn-ghost.disabled.active, body.admin .login-box .login-box-inner .btn-ghost.disabled.active.btn-submit, .btn-primary.btn-ghost[disabled], body.admin .login-box .login-box-inner .btn-ghost[disabled].btn-submit, .btn-primary.btn-ghost[disabled]:hover, body.admin .login-box .login-box-inner .btn-ghost[disabled].btn-submit:hover, .btn-primary.btn-ghost[disabled]:active, body.admin .login-box .login-box-inner .btn-ghost[disabled].btn-submit:active, .btn-primary.btn-ghost[disabled].active, body.admin .login-box .login-box-inner .btn-ghost[disabled].active.btn-submit, fieldset[disabled] .btn-primary.btn-ghost, fieldset[disabled] body.admin .login-box .login-box-inner .btn-ghost.btn-submit, body.admin .login-box .login-box-inner fieldset[disabled] .btn-ghost.btn-submit, fieldset[disabled] .btn-primary.btn-ghost:hover, fieldset[disabled] body.admin .login-box .login-box-inner .btn-ghost.btn-submit:hover, body.admin .login-box .login-box-inner fieldset[disabled] .btn-ghost.btn-submit:hover, fieldset[disabled] .btn-primary.btn-ghost:active, fieldset[disabled] body.admin .login-box .login-box-inner .btn-ghost.btn-submit:active, body.admin .login-box .login-box-inner fieldset[disabled] .btn-ghost.btn-submit:active, fieldset[disabled] .btn-primary.btn-ghost.active, fieldset[disabled] body.admin .login-box .login-box-inner .btn-ghost.active.btn-submit, body.admin .login-box .login-box-inner fieldset[disabled] .btn-ghost.active.btn-submit {
       color: #44576A;
       background-color: transparent;
       border-color: #44576A; }
@@ -2764,7 +2764,7 @@ footer#footer {
   line-height: 40.5px;
   border-radius: 6px; }
 
-.btn-sm, .btn-group-sm > .btn {
+.btn-sm, .btn-group-sm > .btn, body.admin .table th.col-actions .btn {
   padding: 5px 16px;
   font-size: 11.25px;
   line-height: 20.25px;
@@ -2776,16 +2776,16 @@ footer#footer {
   line-height: 20.25px;
   border-radius: 3px; }
 
-.btn-block {
+.btn-block, body.admin .login-box .login-box-inner .btn-submit {
   display: block;
   width: 100%;
   padding-left: 0;
   padding-right: 0; }
 
-.btn-block + .btn-block {
+.btn-block + .btn-block, .btn-block + body.admin .login-box .login-box-inner .btn-submit, body.admin .login-box .login-box-inner .btn-block + .btn-submit, .btn-block + body.admin .login-box .login-box-inner .btn-submit, body.admin .login-box .login-box-inner .btn-block + .btn-submit {
   margin-top: 5px; }
 
-input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="button"].btn-block {
+input[type="submit"].btn-block, body.admin .login-box .login-box-inner input[type="submit"].btn-submit, input[type="reset"].btn-block, body.admin .login-box .login-box-inner input[type="reset"].btn-submit, input[type="button"].btn-block, body.admin .login-box .login-box-inner input[type="button"].btn-submit {
   width: 100%; }
 
 .btn-group, .btn-group-vertical {
@@ -3507,7 +3507,7 @@ table td[class*="col-"], table th[class*="col-"] {
     padding: 6px 12px; }
     .input-group-btn > .btn.btn-lg, .input-group-btn > .btn-group-lg > .btn, .btn-group-lg > .input-group-btn > .btn {
       padding: 10px 16px; }
-    .input-group-btn > .btn.btn-sm, .input-group-btn > .btn-group-sm > .btn, .btn-group-sm > .input-group-btn > .btn {
+    .input-group-btn > .btn.btn-sm, .input-group-btn > .btn-group-sm > .btn, .btn-group-sm > .input-group-btn > .btn, .input-group-btn > body.admin .table th.col-actions .btn, body.admin .table th.col-actions .input-group-btn > .btn {
       padding: 5px 10px; }
     .input-group-btn > .btn + .btn {
       margin-left: -1px; }
@@ -3555,7 +3555,7 @@ table td[class*="col-"], table th[class*="col-"] {
           .navbar .navbar-inner nav > ul > li.active > a {
             color: #F34141;
             font-weight: bold; }
-  .navbar.fixed {
+  .navbar.fixed, body.admin .navbar {
     position: fixed; }
   .navbar.full .navbar-inner {
     max-width: 100%; }
@@ -4573,7 +4573,7 @@ a:focus {
   outline: 0; }
 a:hover {
   color: #F34141; }
-a.line-hover {
+a.line-hover, body.admin .sidebar footer a, body.admin .sidebar footer a:visited {
   position: relative;
   overflow: hidden;
   display: inline-block;
@@ -4582,7 +4582,7 @@ a.line-hover {
   padding-left: 2px;
   padding-right: 2px;
   text-decoration: none; }
-  a.line-hover::after {
+  a.line-hover::after, body.admin .sidebar footer a::after, body.admin .sidebar footer a:visited::after {
     content: '';
     display: block;
     position: absolute;
@@ -4599,7 +4599,7 @@ a.line-hover {
             transition: transform 0.4s ease;
     -webkit-transition-delay: 0.05s;
             transition-delay: 0.05s; }
-  a.line-hover:hover::after {
+  a.line-hover:hover::after, body.admin .sidebar footer a:hover::after, body.admin .sidebar footer a:visited:hover::after {
     -webkit-transform: translateX(101%);
         -ms-transform: translateX(101%);
             transform: translateX(101%); }
@@ -4847,4 +4847,284 @@ table.responsive-utilities .is-hidden {
 @media print {
   .hidden-print {
     display: none !important; } }
+
+body.admin {
+  background: #F4F4F4; }
+  body.admin.nav-opened {
+    overflow: hidden; }
+  body.admin #loading {
+    background: #F4F4F4; }
+  body.admin .container, body.admin .navbar .navbar-inner, .navbar body.admin .navbar-inner {
+    max-width: 100%; }
+  body.admin .main-content {
+    padding-top: 95px;
+    padding-bottom: 15px;
+    margin-left: 250px; }
+    body.admin .main-content.no-padding {
+      padding-top: 80px;
+      padding-bottom: 0; }
+
+body.admin form > h3 {
+  margin-bottom: 30px; }
+
+body.admin .navbar {
+  overflow: visible;
+  border: 0; }
+  body.admin .navbar .navbar-inner {
+    padding: 0 15px 0 0; }
+    body.admin .navbar .navbar-inner .navbar-logo {
+      line-height: 80px;
+      height: 80px;
+      width: 250px;
+      float: left;
+      background: #F34141;
+      color: #FFF;
+      text-align: center; }
+      body.admin .navbar .navbar-inner .navbar-logo small {
+        font-size: 15px;
+        font-weight: 400; }
+      body.admin .navbar .navbar-inner .navbar-logo:hover {
+        color: rgba(255, 255, 255, 0.7); }
+    body.admin .navbar .navbar-inner .page-title {
+      float: left;
+      margin-left: 15px; }
+      body.admin .navbar .navbar-inner .page-title.has-breadcrumb:hover .current, body.admin .navbar .navbar-inner .page-title.has-breadcrumb.hover .current {
+        line-height: 105px; }
+      body.admin .navbar .navbar-inner .page-title.has-breadcrumb:hover .breadcrumb, body.admin .navbar .navbar-inner .page-title.has-breadcrumb.hover .breadcrumb {
+        -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+                transform: translateY(0); }
+    body.admin .navbar .navbar-inner .btn-group {
+      display: inline; }
+    body.admin .navbar .navbar-inner .user-nav {
+      float: right; }
+body.admin .page-title, body.admin .page-title-mobile {
+  font-size: 22px;
+  font-family: "Roboto Condensed", "Helvetica Neue", "Helvetica";
+  font-weight: 400;
+  color: #444;
+  letter-spacing: -0.04em; }
+  body.admin .page-title .current, body.admin .page-title-mobile .current {
+    -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease; }
+  body.admin .page-title .breadcrumb, body.admin .page-title-mobile .breadcrumb {
+    position: absolute;
+    list-style: none;
+    padding: 20px 0 0 0;
+    line-height: 15px;
+    font-size: 15px;
+    -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+    -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+            transform: translateY(-100%); }
+    body.admin .page-title .breadcrumb li, body.admin .page-title-mobile .breadcrumb li {
+      list-style: none;
+      display: inline-block;
+      margin-left: 6px;
+      line-height: 15px;
+      font-size: 15px;
+      color: #919191; }
+      body.admin .page-title .breadcrumb li::before, body.admin .page-title-mobile .breadcrumb li::before {
+        content: '>';
+        margin-right: 10px; }
+      body.admin .page-title .breadcrumb li:first-child, body.admin .page-title-mobile .breadcrumb li:first-child {
+        margin-left: 0; }
+        body.admin .page-title .breadcrumb li:first-child::before, body.admin .page-title-mobile .breadcrumb li:first-child::before {
+          display: none; }
+      body.admin .page-title .breadcrumb li a, body.admin .page-title-mobile .breadcrumb li a {
+        color: #919191; }
+        body.admin .page-title .breadcrumb li a:hover, body.admin .page-title-mobile .breadcrumb li a:hover {
+          color: #F34141; }
+body.admin .page-title-mobile {
+  display: none;
+  margin: 10px 0; }
+body.admin .user-nav img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  border-radius: 50%; }
+
+body.admin .sidebar {
+  position: fixed;
+  z-index: 1000;
+  top: 80px;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  background: #293541;
+  padding: 10px 10px 60px 10px;
+  color: #FFF;
+  overflow-y: auto; }
+  body.admin .sidebar > nav > ul {
+    padding: 0; }
+    body.admin .sidebar > nav > ul > li {
+      border-radius: 4px;
+      margin-bottom: 2px;
+      overflow: hidden;
+      -webkit-transition: all 0.1s linear;
+              transition: all 0.1s linear; }
+      body.admin .sidebar > nav > ul > li > a {
+        display: block;
+        color: #FFF;
+        border-radius: 4px;
+        padding: 10px 10px;
+        -webkit-transition: all 0.1s linear;
+                transition: all 0.1s linear; }
+      body.admin .sidebar > nav > ul > li:hover, body.admin .sidebar > nav > ul > li.active, body.admin .sidebar > nav > ul > li.opened {
+        background: rgba(255, 255, 255, 0.1); }
+      body.admin .sidebar > nav > ul > li ul {
+        padding: 0 10px 0 15px;
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: visibility 0s linear 0.5s, opacity 0.5s linear, height 0.2s linear;
+                transition: visibility 0s linear 0.5s, opacity 0.5s linear, height 0.2s linear;
+        -webkit-transition: all 0.2s linear;
+                transition: all 0.2s linear;
+        -webkit-transform: translateX(10px);
+            -ms-transform: translateX(10px);
+                transform: translateX(10px); }
+        body.admin .sidebar > nav > ul > li ul li a {
+          color: rgba(255, 255, 255, 0.5);
+          display: block;
+          padding: 4px 0;
+          -webkit-transition: all 0.1s linear;
+                  transition: all 0.1s linear;
+          font-size: 13px;
+          line-height: 20px; }
+          body.admin .sidebar > nav > ul > li ul li a:hover {
+            color: #FFF; }
+        body.admin .sidebar > nav > ul > li ul li.active > a, body.admin .sidebar > nav > ul > li ul li.active > a:hover, body.admin .sidebar > nav > ul > li ul li.opened > a, body.admin .sidebar > nav > ul > li ul li.opened > a:hover {
+          color: #FFF;
+          cursor: default; }
+      body.admin .sidebar > nav > ul > li > ul {
+        padding-left: 35px; }
+      body.admin .sidebar > nav > ul > li.opened > ul {
+        padding-bottom: 10px; }
+    body.admin .sidebar > nav > ul li {
+      overflow: hidden; }
+      body.admin .sidebar > nav > ul li > a span.submenu-icon {
+        float: right;
+        margin-left: 5px;
+        opacity: 0.7;
+        -webkit-transition: opacity 0.1s linear;
+                transition: opacity 0.1s linear; }
+      body.admin .sidebar > nav > ul li.opened > ul {
+        height: auto;
+        visibility: visible;
+        opacity: 1;
+        -webkit-transition-delay: 0s;
+                transition-delay: 0s;
+        -webkit-transform: translateX(0px);
+            -ms-transform: translateX(0px);
+                transform: translateX(0px); }
+      body.admin .sidebar > nav > ul li.opened > a span.submenu-icon {
+        opacity: 1; }
+  body.admin .sidebar .user-nav {
+    display: none; }
+  body.admin .sidebar footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+    height: 50px;
+    line-height: 20px;
+    padding: 15px 5px;
+    text-align: center;
+    font-size: 13px;
+    color: #949aa0;
+    background: #293541; }
+    body.admin .sidebar footer a, body.admin .sidebar footer a:visited {
+      color: #949aa0; }
+
+body.admin .table .col-actions {
+  width: 150px;
+  text-align: right; }
+body.admin .table th.col-actions .btn {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-left: 7px; }
+  body.admin .table th.col-actions .btn i {
+    font-size: 14px; }
+body.admin .table td {
+  vertical-align: middle; }
+  body.admin .table td.col-actions .btn {
+    padding: 2px 10px;
+    font-size: 13px;
+    text-transform: uppercase; }
+    body.admin .table td.col-actions .btn.dropdown-toggle {
+      padding-left: 5px;
+      padding-right: 5px; }
+body.admin .table-footer {
+  padding-left: 8px;
+  padding-right: 8px; }
+  body.admin .table-footer .selector-wrapper {
+    margin-left: 10px; }
+  body.admin .table-footer .pagination {
+    margin: 0; }
+
+body.admin .dropdown-menu {
+  font-size: 13px; }
+  body.admin .dropdown-menu > li > a {
+    padding: 3px 15px; }
+
+body.admin.login {
+  background: #293541;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+  body.admin.login footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px 20px;
+    font-size: 13px;
+    color: #FFF;
+    opacity: 0.3;
+    -webkit-transition: all 0.1s linear;
+            transition: all 0.1s linear; }
+    body.admin.login footer:hover {
+      opacity: 0.7; }
+    body.admin.login footer a, body.admin.login footer a:visited {
+      color: #FFF; }
+      body.admin.login footer a:hover, body.admin.login footer a:visited:hover {
+        color: #F34141; }
+body.admin .login-box {
+  width: 100%;
+  max-width: 500px;
+  overflow: hidden;
+  background: #F4F4F4;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2); }
+  body.admin .login-box .navbar {
+    position: relative; }
+    body.admin .login-box .navbar .navbar-inner .navbar-logo {
+      width: 100%;
+      max-width: 200px; }
+    body.admin .login-box .navbar .navbar-inner .page-title {
+      margin-left: 25px; }
+  body.admin .login-box .login-box-inner {
+    padding: 20px 20px 10px 20px; }
+    body.admin .login-box .login-box-inner .form-group {
+      margin-bottom: 10px; }
+    body.admin .login-box .login-box-inner .btn-submit {
+      font-size: 20px;
+      font-family: "Roboto Condensed", "Helvetica Neue", "Helvetica";
+      font-weight: 400;
+      letter-spacing: -0.04em; }
 
