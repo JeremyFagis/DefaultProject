@@ -47,9 +47,9 @@
                 </a>
                 <nav id="main-nav" class="pull-right">
                     <ul>
-                        <li><a href="admin-login.html">Admin login</a></li>
-                        <li><a href="admin-dashboard.html">Admin layout</a></li>
-                        <li><a href="https://github.com/JeremyFagis/ElaoStrap" target="_blank"><i class="icon-github"></i> Github repository</a></li>
+                        <li><a href="admin-login.html" class="line-hover">Admin login</a></li>
+                        <li><a href="admin-dashboard.html" class="line-hover">Admin layout</a></li>
+                        <li><a href="https://github.com/JeremyFagis/ElaoStrap" target="_blank" class="line-hover"><i class="icon-github"></i> Github repository</a></li>
                     </ul>
                 </nav>
             </div>
@@ -277,10 +277,11 @@
 </form></code>
 </pre>
                     <form role="form" class="form-horizontal">
-                        <div class="form-group">
+                        <div class="form-group has-error">
                             <label class="control-label col-sm-3" for="exampleInputEmail1">Email address</label>
                             <div class="col-sm-9 control-field">
                                 <input type="email" class="form-control " id="exampleInputEmail1" placeholder="Enter email">
+                                <ul class="errors-list"><li>Cette valeur n'est pas une adresse email valide.</li></ul>
                             </div>
                         </div>
                         <div class="form-group">
@@ -392,6 +393,23 @@
                     <button type="button" class="btn btn-ghost btn-info">Info</button>
                     <button type="button" class="btn btn-ghost btn-warning">Warning</button>
                     <button type="button" class="btn btn-ghost btn-danger">Danger</button>
+
+                    <h4 class="mt30">Ghost with animation <a href="#buttons-ghost-anim" data-toggle="collapse" data-target="#buttons-ghost-anim" class="code-button"><i class="icon-code"></i></a></h4>
+<pre id="buttons-ghost-anim" class="collapse in">
+<code><button type="button" class="btn btn-ghost with-anim btn-default">Default</button>
+<button type="button" class="btn btn-ghost with-anim btn-primary">Primary</button>
+<button type="button" class="btn btn-ghost with-anim btn-success">Success</button>
+<button type="button" class="btn btn-ghost with-anim btn-info">Info</button>
+<button type="button" class="btn btn-ghost with-anim btn-warning">Warning</button>
+<button type="button" class="btn btn-ghost with-anim btn-danger">Danger</button>
+</code>
+</pre>
+                    <button type="button" class="btn btn-ghost with-anim btn-default">Default</button>
+                    <button type="button" class="btn btn-ghost with-anim btn-primary">Primary</button>
+                    <button type="button" class="btn btn-ghost with-anim btn-success">Success</button>
+                    <button type="button" class="btn btn-ghost with-anim btn-info">Info</button>
+                    <button type="button" class="btn btn-ghost with-anim btn-warning">Warning</button>
+                    <button type="button" class="btn btn-ghost with-anim btn-danger">Danger</button>
                 </div>
             </div>
 

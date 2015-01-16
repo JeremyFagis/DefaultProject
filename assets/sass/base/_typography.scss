@@ -25,7 +25,7 @@ h2, .h2,
 h3, .h3 {
     margin-top: $headings-margin;
     margin-bottom: ($headings-margin / 2);
-    text-transform: uppercase;
+    text-transform: $headings-text-transform;
 
     small,
     .small {
@@ -167,15 +167,18 @@ a {
 
 // Code, pre
 // -------------------------
+code {
+    font-family: $code-font-family;
+    font-size: $code-font-size;
+    line-height: $code-line-height;
+}
+
 pre {
     margin: 0;
     overflow: hidden;
 
     code {
         display: block;
-        font-family: $code-font-family;
-        font-size: $code-font-size;
-        line-height: $code-line-height;
         background-color: $code-background;
         color: $code-color;
         padding: $code-padding;

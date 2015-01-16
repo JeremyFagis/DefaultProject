@@ -1,6 +1,6 @@
 /*
  * =============================================================
- * ElaoStrap
+ * elaostrap
  *
  * (c) 2015 Jeremy FAGIS <jeremy@fagis.fr>
  * =============================================================
@@ -28,7 +28,9 @@ $(document).ready(function(){
     });
 
     if($('.page-title').length > 0) {
-        $('.page-title').addClass('hover');
+        if ($('.page-title').find('.breadcrumb').length > 0) {
+            $('.page-title').addClass('has-breadcrumb hover');
+        }
         $('.page-title-mobile').html($('.page-title').html());
         $('.page-title-mobile').find('.breadcrumb').remove();
     }

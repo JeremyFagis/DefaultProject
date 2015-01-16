@@ -1,0 +1,427 @@
+///////////////////////////
+/// BASE
+///////////////////////////
+$select-text-bg-color:   transparentize($main-color, 0.2) !default;
+$select-text-color:      #FFF !default;
+
+$loader-trace:   darken($loading-background, 10%) !default;
+$loader-fill:    $loading-text-color !default;
+$loader-opacity: 0.8 !default;
+$loader-size:    50px !default;
+$loader-size-sm: 20px !default;
+$loader-size-lg: 80px !default;
+
+///////////////////////////
+/// HEADINGS
+///////////////////////////
+$headings-font-family:    "Roboto Condensed", "Helvetica Neue", "Helvetica" !default;
+$headings-font-weight:    400 !default;
+$headings-line-height:    1.4 !default;
+$headings-letter-spacing: -0.04em !default;
+$headings-text-transform: uppercase !default;
+$headings-color:          #444 !default;
+$headings-small-color:    lighten($text-color, 30%) !default;
+$headings-margin:         $base-margin !default;
+
+$font-size-h1: 40px !default;
+$font-size-h2: 30px !default;
+$font-size-h3: 26px !default;
+$font-size-h4: 20px !default;
+$font-size-h5: 16px !default;
+$font-size-h6: 14px !default;
+
+
+///////////////////////////
+/// CODE
+///////////////////////////
+$code-font-family: "Inconsolata", "Consolas", "Courier" !default;
+$code-line-height: $code-font-size * 1.5 !default;
+$code-background:  rgba(0, 0, 0, 0.7) !default;
+$code-color:       #EEE !default;
+$code-padding:     10px 10px !default;
+$code-margin:      0 !default;
+
+
+///////////////////////////
+/// MEDIA QUERIES
+///////////////////////////
+$screen-xs-min:              $screen-xs !default;
+$screen-phone:               $screen-xs-min !default;
+
+$screen-sm-min:              $screen-sm !default;
+$screen-tablet:              $screen-sm-min !default;
+
+$screen-md-min:              $screen-md !default;
+$screen-desktop:             $screen-md-min !default;
+
+$screen-lg-min:              $screen-lg !default;
+$screen-lg-desktop:          $screen-lg-min !default;
+
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+$container-tablet:           ((720px + $grid-gutter-width)) !default;
+$container-desktop:          ((940px + $grid-gutter-width)) !default;
+$container-lg-desktop:       ((1140px + $grid-gutter-width)) !default;
+
+$container-max-width:        $screen-lg !default;
+
+
+///////////////////////////
+/// NAVBAR
+///////////////////////////
+$navbar-background:   transparentize(#FFF, 0.05) !default;
+$navbar-color:        #000 !default;
+$navbar-height:       80px !default;
+$navbar-border-width: 2px !default;
+$navbar-border-color: #EEE !default;
+$navbar-zindex:       2000 !default;
+$navbar-active-color: $main-color !default;
+
+
+///////////////////////////
+/// HEADER
+///////////////////////////
+$header-background: $main-color !default;
+$header-color:      #FFF !default;
+
+
+///////////////////////////
+/// FOOTER
+///////////////////////////
+$footer-background: darken($background-color, 15%) !default;
+$footer-color:      darken($footer-background, 30%) !default;
+
+
+///////////////////////////
+/// FORMS
+///////////////////////////
+$legend-color: $text-color !default;
+$legend-border-color: $text-color !default;
+
+$font-size-small: $base-font-size * 0.75 !default;
+$font-size-large: $base-font-size * 1.5 !default;
+
+$line-height-small:  $base-line-height * 0.75 !default;
+$line-height-large:  $base-line-height * 1.5 !default;
+
+$input-height-base:  ceil($base-line-height + ($padding-base-vertical * 2) + 2) !default;
+$input-height-small: ceil($base-line-height*0.75 + ($padding-small-vertical * 2) + 2) !default;
+$input-height-large: ceil($base-line-height*1.5 + ($padding-large-vertical * 2) + 2) !default;
+
+$input-color:             $text-color !default;
+$input-color-placeholder: lighten($text-color, 40%) !default;
+$input-bg:                #FFF !default;
+$input-border-focus:      darken($input-border, 15%) !default;
+$input-border-radius:     $border-radius-base !default;
+$input-bg-disabled:       #EEE !default;
+
+$state-primary-text:   $color-primary !default;
+$state-primary-border: $color-primary !default;
+
+$state-success-text:   $color-success !default;
+$state-success-border: $color-success !default;
+
+$state-info-text:      $color-info !default;
+$state-info-border:    $color-info !default;
+
+$state-warning-text:   $color-warning !default;
+$state-warning-border: $color-warning !default;
+
+$state-danger-text:    $color-danger !default;
+$state-danger-border:  $color-danger !default;
+
+$help-block-color:     lighten($text-color, 25%);
+
+
+///////////////////////////
+/// BUTTONS
+///////////////////////////
+$btn-default-color:       $text-color !default;
+$btn-ghost-default-color: #FFF !default;
+$btn-default-bg:          #FFF !default;
+$btn-ghost-default-bg:    #AAA !default;
+$btn-default-border:      #CCC !default;
+$btn-font-family:         $base-font-family !default;
+
+$btn-primary-color:       #FFF !default;
+$btn-primary-bg:          $color-primary !default;
+$btn-primary-border:      rgba(0,0,0,0) !default;
+
+$btn-success-color:       #FFF !default;
+$btn-success-bg:          $color-success !default;
+$btn-success-border:      rgba(0,0,0,0) !default;
+
+$btn-info-color:          #FFF !default;
+$btn-info-bg:             $color-info !default;
+$btn-info-border:         rgba(0,0,0,0) !default;
+
+$btn-warning-color:       #FFF !default;
+$btn-warning-bg:          $color-warning !default;
+$btn-warning-border:      rgba(0,0,0,0) !default;
+
+$btn-danger-color:        #FFF !default;
+$btn-danger-bg:           $color-danger !default;
+$btn-danger-border:       rgba(0,0,0,0) !default;
+
+$btn-link-disabled-color: #CCC !default;
+
+$caret-width-base:        4px !default;
+$caret-width-large:       5px !default;
+
+$btn-border-width:        1px !default;
+$btn-ghost-border-width:  2px !default;
+
+$btn-default-padding-h:   20px !default;
+$btn-default-padding-v:   8px !default;
+
+$btn-lg-padding-h:        30px !default;
+$btn-lg-padding-v:        12px !default;
+
+$btn-sm-padding-h:        16px !default;
+$btn-sm-padding-v:        5px !default;
+
+$btn-xs-padding-h:        12px !default;
+$btn-xs-padding-v:        5px !default;
+
+
+///////////////////////////
+/// TABLES
+///////////////////////////
+$table-cell-padding:           8px !default;
+$table-condensed-cell-padding: 5px !default;
+
+$table-bg:                     transparent !default;
+$table-bg-accent:              darken($background-color, 5%) !default;
+$table-bg-hover:               darken($table-bg-accent, 3%) !default;
+$table-bg-active:              $table-bg-hover !default;
+
+$table-border-color:           $table-bg-hover !default;
+
+
+///////////////////////////
+/// ALERTS
+///////////////////////////
+$alert-padding:          15px 25px !default;
+$alert-border-radius:    $border-radius-base !default;
+$alert-font-weight:      400 !default;
+$alert-link-font-weight: normal !default;
+
+$alert-default-bg:       #DDD !default;
+$alert-default-text:     $text-color !default;
+$alert-default-border:   #BBB !default;
+
+$alert-primary-bg:       $color-primary !default;
+$alert-primary-text:     $color-primary-inverse !default;
+$alert-primary-border:   $color-primary !default;
+
+$alert-success-bg:       $color-success !default;
+$alert-success-text:     $color-success-inverse !default;
+$alert-success-border:   $color-success !default;
+
+$alert-info-bg:          $color-info !default;
+$alert-info-text:        $color-info-inverse !default;
+$alert-info-border:      $color-info !default;
+
+$alert-warning-bg:       $color-warning !default;
+$alert-warning-text:     $color-warning-inverse !default;
+$alert-warning-border:   $color-warning !default;
+
+$alert-danger-bg:        $color-danger !default;
+$alert-danger-text:      $color-danger-inverse !default;
+$alert-danger-border:    $color-danger !default;
+
+
+///////////////////////////
+/// NAVS
+///////////////////////////
+$nav-link-padding:                        10px 15px !default;
+$nav-link-hover-bg:                       darken($background-color, 5%) !default;
+$nav-disabled-link-color:                 lighten($text-color, 35%) !default;
+$nav-open-link-hover-color:               #FFF !default;
+$nav-tabs-border-color:                   darken(#E9EAE7, 10%) !default;
+$nav-tabs-link-hover-border-color:        transparent !default;
+$nav-tabs-active-link-hover-bg:           $background-color !default;
+$nav-tabs-active-link-hover-color:        lighten($text-color, 20%) !default;
+$nav-tabs-active-link-hover-border-color: darken($nav-tabs-border-color, 5%) !default;
+$tab-content-padding:                     10px 0 !default;
+
+
+///////////////////////////
+/// TOOLTIPS
+///////////////////////////
+$zindex-tooltip:      1070 !default;
+$tooltip-max-width:   200px !default;
+$tooltip-color:       #FFF !default;
+$tooltip-bg:          #000 !default;
+$tooltip-opacity:     80 !default;
+$tooltip-arrow-width: 5px !default;
+$tooltip-arrow-color: $tooltip-bg !default;
+
+
+///////////////////////////
+/// POPOVERS
+///////////////////////////
+$zindex-popover:                     1060 !default;
+$popover-bg:                         #FFF !default;
+$popover-width:                      300px !default;
+$popover-border-color:               rgba(0,0,0,.2) !default;
+$popover-fallback-border-color:      #ccc !default;
+$popover-title-bg:                   darken($popover-bg, 3%) !default;
+$popover-arrow-width:                10px !default;
+$popover-arrow-color:                $popover-bg !default;
+$popover-arrow-outer-width:          ($popover-arrow-width + 1) !default;
+$popover-arrow-outer-color:          fade_in($popover-border-color, 0.05) !default;
+$popover-arrow-outer-fallback-color: darken($popover-fallback-border-color, 20%) !default;
+
+
+
+///////////////////////////
+/// INPUT GROUPS
+///////////////////////////
+$input-group-addon-bg:           #EEE !default;
+$input-group-addon-border-color: $input-border !default;
+
+
+///////////////////////////
+/// FANCYBOX
+///////////////////////////
+$fancybox-background: rgba(0,0,0,0.7) !default;
+$fancybox-shadow:     0 10px 25px rgba(0,0,0,0.5) !default;
+
+
+///////////////////////////
+/// MISC
+///////////////////////////
+$hr-border: #DDD !default;
+
+
+///////////////////////////
+/// PROGRESS BARS
+///////////////////////////
+$progress-bg:             #DDD !default;
+$progress-bar-height:     8px !default;
+$progress-border-radius:  6px !default;
+$progress-bar-bg:         $color-primary !default;
+$progress-bar-success-bg: $color-success !default;
+$progress-bar-warning-bg: $color-warning !default;
+$progress-bar-danger-bg:  $color-danger !default;
+$progress-bar-info-bg:    $color-info !default;
+
+
+///////////////////////////
+/// PANELS
+///////////////////////////
+$panel-bg:                    #FFF !default;
+$panel-border-width:          2px !default;
+$panel-padding:               10px 15px !default;
+$panel-margin:                0 0 20px 0 !default;
+$panel-radius:                5px !default;
+$panel-heading-font-size:     20px !default;
+
+$panel-default-color:         #DDD !default;
+$panel-default-heading-color: $text-color !default;
+
+$panel-primary-color:         $color-primary !default;
+$panel-primary-heading-color: $color-primary-inverse !default;
+
+$panel-success-color:         $color-success !default;
+$panel-success-heading-color: $color-success-inverse !default;
+
+$panel-info-color:            $color-info !default;
+$panel-info-heading-color:    $color-info-inverse !default;
+
+$panel-warning-color:         $color-warning !default;
+$panel-warning-heading-color: $color-warning-inverse !default;
+
+$panel-danger-color:          $color-danger !default;
+$panel-danger-heading-color:  $color-danger-inverse !default;
+
+
+///////////////////////////
+/// DROPIFY
+///////////////////////////
+$dropify-width:       100% !default;
+$dropify-height:      170px !default;
+$dropify-font-family: $base-font-family !default;
+$dropify-font-size:   14px !default;
+$dropify-line-height: 22px !default;
+$dropify-text-color:  #777 !default;
+$dropify-background:  #FFF !default;
+$dropify-stripes:     #F9F9F9 !default;
+
+
+///////////////////////////
+/// LABELS
+///////////////////////////
+$label-font-size:     13px !default;
+$label-font-weight:   700 !default;
+$label-color:         $text-color !default;
+$label-border-radius: 3px !default;
+$label-padding:       4px 6px !default;
+
+$label-default-bg:    #DDD !default;
+$label-default-color: $text-color !default;
+
+$label-primary-bg:    $color-primary !default;
+$label-primary-color: $color-primary-inverse !default;
+
+$label-success-bg:    $color-success !default;
+$label-success-color: $color-success-inverse !default;
+
+$label-info-bg:       $color-info !default;
+$label-info-color:    $color-info-inverse !default;
+
+$label-warning-bg:    $color-warning !default;
+$label-warning-color: $color-warning-inverse !default;
+
+$label-danger-bg:     $color-danger !default;
+$label-danger-color:  $color-danger-inverse !default;
+
+
+///////////////////////////
+/// DROPDOWNS
+///////////////////////////
+$zindex-dropdown:              1000 !default;
+$dropdown-bg:                  #FFF !default;
+$dropdown-border:              rgba(0,0,0,.15) !default;
+$dropdown-divider-bg:          #e5e5e5 !default;
+$dropdown-link-color:          $link-color !default;
+$dropdown-link-hover-color:    darken($link-color, 5%) !default;
+$dropdown-link-hover-bg:       #F5F5F5 !default;
+$dropdown-link-active-color:   #FFF !default;
+$dropdown-link-active-bg:      $color-primary !default;
+$dropdown-link-disabled-color: #CCC !default;
+$dropdown-header-color:        #CCC !default;
+$dropdown-caret-color:         #000 !default;
+
+
+///////////////////////////
+/// PAGINATION
+///////////////////////////
+$pagination-color:           $link-color !default;
+$pagination-bg:              #FFF !default;
+$pagination-border:          #CCC !default;
+
+$pagination-hover-color:     $link-hover-color !default;
+$pagination-hover-bg:        #F3F3F3 !default;
+$pagination-hover-border:    #CCC !default;
+
+$pagination-active-color:    #FFF !default;
+$pagination-active-bg:       $main-color !default;
+$pagination-active-border:   $main-color !default;
+
+$pagination-disabled-color:  #BBB !default;
+$pagination-disabled-bg:     #FFF !default;
+$pagination-disabled-border: #CCC !default;
+
+
+///////////////////////////
+/// MOBILE NAV
+///////////////////////////
+$mobile-nav-width:             250px !default;
+$mobile-nav-background:        #293541 !default;
+$mobile-nav-color:             #FFF !default;
+$mobile-nav-toggle-size:       40px !default;
+$mobile-nav-toggle-lines-size: 22px !default;

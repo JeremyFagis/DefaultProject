@@ -189,13 +189,19 @@ input[type="checkbox"],
 }
 
 .has-success {
-	@include form-control-validation($state-success-text, $state-success-text, $state-success-bg);
+	@include form-control-validation($state-success-text, $state-success-border);
 }
 .has-warning {
-	@include form-control-validation($state-warning-text, $state-warning-text, $state-warning-bg);
+	@include form-control-validation($state-warning-text, $state-warning-border);
 }
 .has-error {
-	@include form-control-validation($state-danger-text, $state-danger-text, $state-danger-bg);
+	@include form-control-validation($state-danger-text, $state-danger-border);
+}
+
+.errors-list {
+	list-style: none;
+	padding-left: 0;
+	margin: 5px 0;
 }
 
 
@@ -209,9 +215,8 @@ input[type="checkbox"],
 
 .help-block {
 	display: block;
-	margin-top: 5px;
-	margin-bottom: 10px;
-	color: lighten($text-color, 25%);
+	margin: 5px 0;
+	color: $help-block-color;
 }
 
 .form-inline {

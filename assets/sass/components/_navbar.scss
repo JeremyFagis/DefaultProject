@@ -41,11 +41,6 @@
 
                     > a {
                         text-decoration: none;
-                        @extend .line-hover;
-
-                        &::after {
-                            background-color: $navbar-active-color;
-                        }
                     }
 
                     &.active {

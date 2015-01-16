@@ -1,0 +1,9 @@
+body.admin {
+    .dropdown-menu {
+        font-size: 13px;
+
+        > li > a {
+            padding: 3px 15px;
+        }
+    }
+}
