@@ -518,7 +518,7 @@ d[0].offsetTop||15===d[0].offsetTop;d.remove();a.fixedPosition=e}f.extend(b.defa
     var pluginName = "simpleSelector",
         defaults = {
             wrapperClass: "selector-wrapper",
-            caretClass: 'icon-arrow'
+            caretClass: 'elaostrap-font-arrow'
         },
         isIE = '\v'=='v';
 
