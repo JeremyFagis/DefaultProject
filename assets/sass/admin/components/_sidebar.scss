@@ -81,7 +81,7 @@ body.admin {
 
                     > a {
                         span.submenu-icon {
-                            @extend .fontello;
+                            @extend .elaostrap-font;
                             @extend .icon-arrow-right;
                             float: right;
                             margin-left: 5px;

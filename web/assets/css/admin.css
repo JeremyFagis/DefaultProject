@@ -414,9 +414,9 @@ table {
   border-spacing: 0; }
 
 @font-face {
-  font-family: 'fontello';
-  src: url('../fonts/fontello/fontello.eot?7988104');
-  src: url('../fonts/fontello/fontello.eot?7988104#iefix') format('embedded-opentype'), url('../fonts/fontello/fontello.woff?7988104') format('woff'), url('../fonts/fontello/fontello.ttf?7988104') format('truetype'), url('../fonts/fontello/fontello.svg?7988104#fontello') format('svg');
+  font-family: 'elaostrap';
+  src: url('../fonts/elaostrap/elaostrap.eot?80726701');
+  src: url('../fonts/elaostrap/elaostrap.eot?80726701#iefix') format('embedded-opentype'), url('../fonts/elaostrap/elaostrap.woff?80726701') format('woff'), url('../fonts/elaostrap/elaostrap.ttf?80726701') format('truetype'), url('../fonts/elaostrap/elaostrap.svg?80726701#elaostrap') format('svg');
   font-weight: normal;
   font-style: normal; }
 
@@ -425,13 +425,13 @@ table {
 /*
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     @font-face {
-        font-family: 'fontello';
-        src: url('../font/fontello.svg?7988104#fontello') format('svg');
+        font-family: 'elaostrap';
+        src: url('../font/elaostrap.svg?80726701#elaostrap') format('svg');
     }
 }
 */
-[class^="icon-"]:before, [class*=" icon-"]:before, .fontello:before, .dropify-wrapper .dropify-message span.file-icon:before, .dropify-wrapper .dropify-preview .dropify-render .file-icon:before, .dropify-wrapper .dropify-preview .dropify-infos .dropify-infos-inner p.dropify-filename span.file-icon:before, body.admin .sidebar > nav > ul li > a span.submenu-icon:before {
-  font-family: "fontello";
+[class^="icon-"]:before, [class*=" icon-"]:before, .elaostrap-font:before, .dropify-wrapper .dropify-message span.file-icon:before, .dropify-wrapper .dropify-preview .dropify-render .file-icon:before, .dropify-wrapper .dropify-preview .dropify-infos .dropify-infos-inner p.dropify-filename span.file-icon:before, body.admin .sidebar > nav > ul li > a span.submenu-icon:before {
+  font-family: "elaostrap";
   font-style: normal;
   font-weight: normal;
   speak: none;
@@ -507,13 +507,13 @@ table {
 
 /* '' */
 .icon-email:before {
+  content: '\e80d'; }
+
+/* '' */
+.icon-key:before {
   content: '\e80e'; }
 
 /* '' */
-.icon-key:before {
-  content: '\e80f'; }
-
-/* '' */
 .text-left {
   text-align: left; }
 
