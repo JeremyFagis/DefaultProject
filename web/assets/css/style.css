@@ -2051,7 +2051,6 @@ select[multiple], select[size] {
   border-radius: 4px;
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
           transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-  -webkit-appearance: none;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased; }
   .form-control:focus {
@@ -2064,6 +2063,8 @@ select[multiple], select[size] {
     color: #cccccc; }
   .form-control::-webkit-input-placeholder {
     color: #cccccc; }
+  .form-control:not(select) {
+    -webkit-appearance: none; }
   .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
     cursor: not-allowed;
     background-color: #EEE;

@@ -430,7 +430,7 @@ table {
     }
 }
 */
-[class^="elaostrap-font-"]:before, [class*="elaostrap-font-"]:before, .elaostrap-font:before, .dropify-wrapper .dropify-message span.file-icon:before, .dropify-wrapper .dropify-preview .dropify-render .file-icon:before, .dropify-wrapper .dropify-preview .dropify-infos .dropify-infos-inner p.dropify-filename span.file-icon:before, body.admin .sidebar > nav > ul li > a span.submenu-icon:before {
+[class^="elaostrap-font-"]:before, [class*="elaostrap-font-"]:before, .elaostrap-font:before, .dropify-wrapper .dropify-message span.file-icon:before, .dropify-wrapper .dropify-preview .dropify-render .file-icon:before, .dropify-wrapper .dropify-preview .dropify-infos .dropify-infos-inner p.dropify-filename span.file-icon:before, body.admin .sidebar > nav > ul li > a span.submenu-icon:before, body.admin .filters h5 a .collapse-icon:before {
   font-family: "elaostrap";
   font-style: normal;
   font-weight: normal;
@@ -490,11 +490,11 @@ table {
   content: '\e808'; }
 
 /* '' */
-.elaostrap-font-arrow-right:before, body.admin .sidebar > nav > ul li > a span.submenu-icon:before {
+.elaostrap-font-arrow-right:before, body.admin .sidebar > nav > ul li > a span.submenu-icon:before, body.admin .filters h5 a.collapsed .collapse-icon:before {
   content: '\e809'; }
 
 /* '' */
-.elaostrap-font-arrow-down:before, body.admin .sidebar > nav > ul li.opened > a span.submenu-icon:before {
+.elaostrap-font-arrow-down:before, body.admin .sidebar > nav > ul li.opened > a span.submenu-icon:before, body.admin .filters h5 a .collapse-icon:before {
   content: '\e80a'; }
 
 /* '' */
@@ -2051,7 +2051,6 @@ select[multiple], select[size] {
   border-radius: 4px;
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
           transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-  -webkit-appearance: none;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased; }
   .form-control:focus {
@@ -2064,6 +2063,8 @@ select[multiple], select[size] {
     color: #cccccc; }
   .form-control::-webkit-input-placeholder {
     color: #cccccc; }
+  .form-control:not(select) {
+    -webkit-appearance: none; }
   .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
     cursor: not-allowed;
     background-color: #EEE;
@@ -5021,6 +5022,52 @@ body.admin .dropdown-menu {
   body.admin .dropdown-menu > li > a {
     padding: 3px 15px; }
 
+body.admin .filters {
+  display: block;
+  margin-bottom: 10px;
+  background: #e7e7e7;
+  padding: 10px 15px;
+  border-left: 2px solid #F34141; }
+  body.admin .filters h5 {
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin: 0; }
+    body.admin .filters h5 a {
+      color: #F34141;
+      display: block;
+      -webkit-transition: all 0.1s linear;
+              transition: all 0.1s linear; }
+      body.admin .filters h5 a .collapse-icon {
+        font-size: 18px;
+        line-height: 22px; }
+      body.admin .filters h5 a:hover {
+        color: rgba(243, 65, 65, 0.7); }
+  body.admin .filters .row {
+    margin-left: -7px;
+    margin-right: -7px; }
+  body.admin .filters [class^="col-"] {
+    padding-bottom: 0;
+    padding-left: 7px;
+    padding-right: 7px; }
+  body.admin .filters .col-actions {
+    padding-top: 28px;
+    text-align: right; }
+    body.admin .filters .col-actions .btn {
+      line-height: 22px;
+      font-size: 13px;
+      text-transform: uppercase;
+      margin-left: 5px;
+      margin-bottom: 5px; }
+  body.admin .filters label {
+    margin-bottom: 0;
+    font-size: 14px; }
+  body.admin .filters .form-group {
+    margin-bottom: 0; }
+
+body.admin .nav-tabs > li.active > a {
+  background: #F4F4F4; }
+
 body.admin.login {
   background: #293541;
   display: -webkit-box;
@@ -5096,6 +5143,15 @@ body.admin .login-box {
     display: none; }
   body.admin .page-title-mobile {
     display: block; }
+  body.admin .filters {
+    margin-top: 20px;
+    margin-bottom: 15px; }
+    body.admin .filters .col-actions {
+      text-align: left;
+      padding-top: 15px; }
+      body.admin .filters .col-actions .btn {
+        margin-left: 0;
+        margin-right: 5px; }
   body.admin .table-footer {
     text-align: center; }
     body.admin .table-footer .text-right {
