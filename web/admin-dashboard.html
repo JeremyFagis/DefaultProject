@@ -37,20 +37,10 @@
                     <span class="current">Liste des utilisateurs</span>
                 </div>
                 <a href="#" class="mobile-nav-toggle"><span class="line-1"></span><span class="line-2"></span><span class="line-3"></span></a>
-                <nav class="user-nav">
-                    <ul>
-                        <li>
-                            <div class="btn-group">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="https://s.gravatar.com/avatar/a9e1cf01cd07f1d2fb7fcbc7db00079e?s=24" alt="" /> Jeremy <i class="elaostrap-font-arrow-down"></i></a>
-                                <ul class="dropdown-menu dropdown-menu-right">
-                                    <li><a href="#">Mon profil</a></li>
-                                    <li><a href="admin-login.html">Connexion</a></li>
-                                    <li><a href="index.html">Déconnexion</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="list-actions">
+                    <a href="admin-add.html" class="btn btn-ghost btn-success"><i class="elaostrap-font-plus"></i> Ajouter</a>
+                    <a href="admin-add.html" class="btn btn-ghost btn-success"><i class="elaostrap-font-plus"></i> Ajouter</a>
+                </div>
             </div>
         </div>
         <div class="sidebar">
@@ -113,6 +103,7 @@
         </div>
         <div class="main-content">
             <div class="container">
+                <div class="list-actions-mobile"></div>
                 <div class="page-title-mobile"></div>
 
                 <div class="filters">
@@ -150,7 +141,7 @@
                             <th class="hidden-xs">Email</th>
                             <th class="hidden-xs">Dernière connexion</th>
                             <th class="hidden-xs">Actif ?</th>
-                            <th class="col-actions"><a href="admin-add.html" class="btn btn-ghost btn-success"><i class="elaostrap-font-plus"></i> Ajouter</a></th>
+                            <th class="col-actions"></th>
                         </tr>
                     </thead>
                     <tbody>
