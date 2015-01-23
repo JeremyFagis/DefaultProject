@@ -514,6 +514,10 @@ table {
   content: '\e80e'; }
 
 /* '' */
+.elaostrap-font-filters:before {
+  content: '\e80f'; }
+
+/* '' */
 .text-left {
   text-align: left; }
 
@@ -531,6 +535,9 @@ table {
 
 .pull-left {
   float: left !important; }
+
+.hidden {
+  display: none; }
 
 .hide-text {
   font: 0/0 a;
@@ -3261,7 +3268,7 @@ table td[class*="col-"], table th[class*="col-"] {
 
 .tooltip {
   position: absolute;
-  z-index: 1070;
+  z-index: 2050;
   display: block;
   visibility: visible;
   font-size: 11.25px;
@@ -4483,6 +4490,71 @@ body, #header, .navbar {
     display: none; }
   .push-toleft {
     left: -250px !important; } }
+
+.datepicker {
+  padding: 4px; }
+  .datepicker > div {
+    display: none; }
+  .datepicker.days div.datepicker-days {
+    display: block; }
+  .datepicker.months div.datepicker-months {
+    display: block; }
+  .datepicker.years div.datepicker-years {
+    display: block; }
+  .datepicker table {
+    margin: 0;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    width: 100%; }
+    .datepicker table tr td, .datepicker table tr th {
+      text-align: center;
+      width: 35px;
+      height: 35px;
+      padding: 0;
+      border-radius: 4px;
+      border: none; }
+  .datepicker table tr td.day:hover, .datepicker table tr td.day.focused {
+    background: #EEE;
+    cursor: pointer; }
+  .datepicker table tr td.old, .datepicker table tr td.new {
+    color: #AAA; }
+  .datepicker table tr td.disabled, .datepicker table tr td.disabled:hover {
+    background: none;
+    color: #AAA;
+    cursor: default; }
+  .datepicker table tr td.today, .datepicker table tr td.today:hover, .datepicker table tr td.today.disabled, .datepicker table tr td.today.disabled:hover {
+    background: #E5E5E5;
+    font-weight: bold; }
+  .datepicker table tr td.range, .datepicker table tr td.range:hover, .datepicker table tr td.range.disabled, .datepicker table tr td.range.disabled:hover {
+    background: #EEE;
+    border-radius: 0; }
+  .datepicker table tr td.active, .datepicker table tr td.active:hover, .datepicker table tr td.active.disabled, .datepicker table tr td.active.disabled:hover {
+    background: #F34141;
+    color: #FFF;
+    font-weight: bold; }
+  .datepicker table tr td span {
+    display: block;
+    width: 23%;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    margin: 1%;
+    cursor: pointer;
+    border-radius: 4px; }
+    .datepicker table tr td span:hover {
+      background: #EEE; }
+    .datepicker table tr td span.disabled, .datepicker table tr td span.disabled:hover {
+      background: none;
+      color: #AAA;
+      cursor: default; }
+    .datepicker table tr td span.old, .datepicker table tr td span.new {
+      color: #AAA; }
+  .datepicker thead tr:first-child th, .datepicker tfoot tr th {
+    cursor: pointer; }
+    .datepicker thead tr:first-child th:hover, .datepicker tfoot tr th:hover {
+      background: #EEE; }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Roboto Condensed", "Helvetica Neue", "Helvetica";

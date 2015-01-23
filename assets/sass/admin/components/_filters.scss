@@ -1,9 +1,10 @@
 body.admin {
     .filters {
         display: block;
-        margin-bottom: 10px;
+        position: relative;
         background: darken($admin-background-color, 5%);
         padding: 10px 15px;
+        margin-bottom: 10px;
         border-left: 2px solid $main-color;
 
         h5 {
@@ -11,29 +12,7 @@ body.admin {
             line-height: 22px;
             text-transform: uppercase;
             margin: 0;
-
-            a {
-                color: $main-color;
-                display: block;
-                transition: all 0.1s linear;
-
-                .collapse-icon {
-                    @extend .elaostrap-font;
-                    @extend .elaostrap-font-arrow-down;
-                    font-size: 18px;
-                    line-height: 22px;
-                }
-
-                &.collapsed {
-                    .collapse-icon {
-                        @extend .elaostrap-font-arrow-right;
-                    }
-                }
-
-                &:hover {
-                    color: transparentize($main-color, 0.3);
-                }
-            }
+            color: $main-color;
         }
 
         .row {

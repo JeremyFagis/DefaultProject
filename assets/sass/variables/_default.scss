@@ -251,7 +251,7 @@ $tab-content-padding:                     10px 0 !default;
 ///////////////////////////
 /// TOOLTIPS
 ///////////////////////////
-$zindex-tooltip:      1070 !default;
+$zindex-tooltip:      2050 !default;
 $tooltip-max-width:   200px !default;
 $tooltip-color:       #FFF !default;
 $tooltip-bg:          #000 !default;
@@ -425,3 +425,13 @@ $mobile-nav-background:        #293541 !default;
 $mobile-nav-color:             #FFF !default;
 $mobile-nav-toggle-size:       40px !default;
 $mobile-nav-toggle-lines-size: 22px !default;
+
+
+///////////////////////////
+/// DATEPICKER
+///////////////////////////
+$datepicker-today:             #E5E5E5 !default;
+$datepicker-day-hover:         #EEE !default;
+$datepicker-day-disabled:      #AAA !default;
+$datepicker-day-active-bg:     $main-color !default;
+$datepicker-day-active-color:  #FFF !default;

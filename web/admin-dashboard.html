@@ -38,7 +38,7 @@
                 </div>
                 <a href="#" class="mobile-nav-toggle"><span class="line-1"></span><span class="line-2"></span><span class="line-3"></span></a>
                 <div class="list-actions">
-                    <a href="admin-add.html" class="btn btn-ghost btn-success"><i class="elaostrap-font-plus"></i> Ajouter</a>
+                    <a href="#" class="filters-button has-tooltip" data-toggle="collapse" data-target="#filters" aria-expanded="false" title="Filtrer la liste" data-placement="left"><i class="elaostrap-font-filters"></i></a>
                     <a href="admin-add.html" class="btn btn-ghost btn-success"><i class="elaostrap-font-plus"></i> Ajouter</a>
                 </div>
             </div>
@@ -106,30 +106,32 @@
                 <div class="list-actions-mobile"></div>
                 <div class="page-title-mobile"></div>
 
-                <div class="filters">
-                    <h5><a href="#" data-toggle="collapse" data-target="#filters-cols" aria-expanded="false">Filtres <span class="collapse-icon"></span></a></h5>
-                    <div id="filters-cols" class="row collapse in" aria-expanded="false">
-                        <div class="col-sm-3">
-                            <div class="form-group">
-                                <label>My label</label>
-                                <select id="" name="" class="form-control"><option value="">Tous ...</option></select>
+                <div id="filters" class="collapse in" aria-expanded="false">
+                    <div class="filters">
+                        <h5>Filtres</h5>
+                        <div id="filters-cols" class="row">
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>My label</label>
+                                    <select id="" name="" class="form-control"><option value="">Tous ...</option></select>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="form-group">
-                                <label>My label</label>
-                                <input class="form-control" type="text">
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>My label</label>
+                                    <input class="form-control" type="text">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="form-group">
-                                <label>My label</label>
-                                <input class="form-control" type="text">
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>My label</label>
+                                    <input class="form-control" type="text">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-sm-3 col-actions">
-                            <button type="submit" class="btn btn-primary">Filtrer</button>
-                            <button type="button" class="btn btn-default">Effacer</button>
+                            <div class="col-sm-3 col-actions">
+                                <button type="submit" class="btn btn-primary">Filtrer</button>
+                                <button type="button" class="btn btn-default">Effacer</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -263,7 +265,6 @@
                 </div>
             </div>
         </div>
-        <script src="assets/js/main.js"></script>
         <script src="assets/js/admin.js"></script>
     </body>
 </html>

@@ -9,7 +9,8 @@ var $              = require('jquery'),
     dropify        = require('./vendors/dropify'),
     fancybox       = require('./vendors/jquery.fancybox.pack'),
     easing         = require('./vendors/jquery.easing'),
-    mobileNav      = require('./vendors/mobile-nav');
+    mobileNav      = require('./vendors/mobile-nav'),
+    datepicker     = require('./vendors/datepicker');
 
 FastClick(document.body);
 
@@ -69,6 +70,11 @@ $(document).ready(function(){
     });
 
     $('#main-nav').mobileNav();
+
+    $('[datepicker]').datepicker({
+        language: "fr",
+        todayHighlight: true
+    });
 });
 
 $(window).load(function(){

@@ -430,7 +430,7 @@ table {
     }
 }
 */
-[class^="elaostrap-font-"]:before, [class*="elaostrap-font-"]:before, .elaostrap-font:before, .dropify-wrapper .dropify-message span.file-icon:before, .dropify-wrapper .dropify-preview .dropify-render .file-icon:before, .dropify-wrapper .dropify-preview .dropify-infos .dropify-infos-inner p.dropify-filename span.file-icon:before, body.admin .sidebar > nav > ul li > a span.submenu-icon:before, body.admin .filters h5 a .collapse-icon:before {
+[class^="elaostrap-font-"]:before, [class*="elaostrap-font-"]:before, .elaostrap-font:before, .dropify-wrapper .dropify-message span.file-icon:before, .dropify-wrapper .dropify-preview .dropify-render .file-icon:before, .dropify-wrapper .dropify-preview .dropify-infos .dropify-infos-inner p.dropify-filename span.file-icon:before, body.admin .sidebar > nav > ul li > a span.submenu-icon:before {
   font-family: "elaostrap";
   font-style: normal;
   font-weight: normal;
@@ -490,11 +490,11 @@ table {
   content: '\e808'; }
 
 /* '' */
-.elaostrap-font-arrow-right:before, body.admin .sidebar > nav > ul li > a span.submenu-icon:before, body.admin .filters h5 a.collapsed .collapse-icon:before {
+.elaostrap-font-arrow-right:before, body.admin .sidebar > nav > ul li > a span.submenu-icon:before {
   content: '\e809'; }
 
 /* '' */
-.elaostrap-font-arrow-down:before, body.admin .sidebar > nav > ul li.opened > a span.submenu-icon:before, body.admin .filters h5 a .collapse-icon:before {
+.elaostrap-font-arrow-down:before, body.admin .sidebar > nav > ul li.opened > a span.submenu-icon:before {
   content: '\e80a'; }
 
 /* '' */
@@ -514,6 +514,10 @@ table {
   content: '\e80e'; }
 
 /* '' */
+.elaostrap-font-filters:before {
+  content: '\e80f'; }
+
+/* '' */
 .text-left {
   text-align: left; }
 
@@ -531,6 +535,9 @@ table {
 
 .pull-left {
   float: left !important; }
+
+.hidden {
+  display: none; }
 
 .hide-text {
   font: 0/0 a;
@@ -3261,7 +3268,7 @@ table td[class*="col-"], table th[class*="col-"] {
 
 .tooltip {
   position: absolute;
-  z-index: 1070;
+  z-index: 2050;
   display: block;
   visibility: visible;
   font-size: 11.25px;
@@ -4484,6 +4491,71 @@ body, #header, .navbar {
   .push-toleft {
     left: -250px !important; } }
 
+.datepicker {
+  padding: 4px; }
+  .datepicker > div {
+    display: none; }
+  .datepicker.days div.datepicker-days {
+    display: block; }
+  .datepicker.months div.datepicker-months {
+    display: block; }
+  .datepicker.years div.datepicker-years {
+    display: block; }
+  .datepicker table {
+    margin: 0;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    width: 100%; }
+    .datepicker table tr td, .datepicker table tr th {
+      text-align: center;
+      width: 35px;
+      height: 35px;
+      padding: 0;
+      border-radius: 4px;
+      border: none; }
+  .datepicker table tr td.day:hover, .datepicker table tr td.day.focused {
+    background: #EEE;
+    cursor: pointer; }
+  .datepicker table tr td.old, .datepicker table tr td.new {
+    color: #AAA; }
+  .datepicker table tr td.disabled, .datepicker table tr td.disabled:hover {
+    background: none;
+    color: #AAA;
+    cursor: default; }
+  .datepicker table tr td.today, .datepicker table tr td.today:hover, .datepicker table tr td.today.disabled, .datepicker table tr td.today.disabled:hover {
+    background: #E5E5E5;
+    font-weight: bold; }
+  .datepicker table tr td.range, .datepicker table tr td.range:hover, .datepicker table tr td.range.disabled, .datepicker table tr td.range.disabled:hover {
+    background: #EEE;
+    border-radius: 0; }
+  .datepicker table tr td.active, .datepicker table tr td.active:hover, .datepicker table tr td.active.disabled, .datepicker table tr td.active.disabled:hover {
+    background: #F34141;
+    color: #FFF;
+    font-weight: bold; }
+  .datepicker table tr td span {
+    display: block;
+    width: 23%;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    margin: 1%;
+    cursor: pointer;
+    border-radius: 4px; }
+    .datepicker table tr td span:hover {
+      background: #EEE; }
+    .datepicker table tr td span.disabled, .datepicker table tr td span.disabled:hover {
+      background: none;
+      color: #AAA;
+      cursor: default; }
+    .datepicker table tr td span.old, .datepicker table tr td span.new {
+      color: #AAA; }
+  .datepicker thead tr:first-child th, .datepicker tfoot tr th {
+    cursor: pointer; }
+    .datepicker thead tr:first-child th:hover, .datepicker tfoot tr th:hover {
+      background: #EEE; }
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Roboto Condensed", "Helvetica Neue", "Helvetica";
   font-weight: 400;
@@ -4860,7 +4932,9 @@ body.admin .navbar {
     body.admin .navbar .navbar-inner .btn-group {
       display: inline; }
     body.admin .navbar .navbar-inner .list-actions {
-      float: right; }
+      float: right;
+      max-width: 500px;
+      text-align: right; }
       body.admin .navbar .navbar-inner .list-actions .btn {
         font-size: 12px;
         font-weight: bold;
@@ -4869,6 +4943,27 @@ body.admin .navbar {
         margin-left: 3px; }
         body.admin .navbar .navbar-inner .list-actions .btn i {
           font-size: 14px; }
+      body.admin .navbar .navbar-inner .list-actions .filters-button {
+        display: inline-block;
+        font-size: 20px;
+        line-height: 35px;
+        height: 35px;
+        width: 35px;
+        text-align: center;
+        color: #999;
+        border-radius: 3px;
+        border: 2px solid tranparent;
+        vertical-align: middle;
+        -webkit-transition: all 0.1s linear;
+                transition: all 0.1s linear; }
+        body.admin .navbar .navbar-inner .list-actions .filters-button:not(.collapsed), body.admin .navbar .navbar-inner .list-actions .filters-button:not(.collapsed):hover {
+          border-color: #F34141;
+          background: #F34141;
+          color: #FFF; }
+        body.admin .navbar .navbar-inner .list-actions .filters-button.collapsed:hover {
+          border-color: rgba(249, 249, 249, 0.95);
+          background: rgba(249, 249, 249, 0.95);
+          color: #F34141; }
 body.admin .page-title, body.admin .page-title-mobile {
   font-size: 22px;
   font-family: "Roboto Condensed", "Helvetica Neue", "Helvetica";
@@ -5034,25 +5129,17 @@ body.admin .dropdown-menu {
 
 body.admin .filters {
   display: block;
-  margin-bottom: 10px;
+  position: relative;
   background: #e7e7e7;
   padding: 10px 15px;
+  margin-bottom: 10px;
   border-left: 2px solid #F34141; }
   body.admin .filters h5 {
     font-size: 16px;
     line-height: 22px;
     text-transform: uppercase;
-    margin: 0; }
-    body.admin .filters h5 a {
-      color: #F34141;
-      display: block;
-      -webkit-transition: all 0.1s linear;
-              transition: all 0.1s linear; }
-      body.admin .filters h5 a .collapse-icon {
-        font-size: 18px;
-        line-height: 22px; }
-      body.admin .filters h5 a:hover {
-        color: rgba(243, 65, 65, 0.7); }
+    margin: 0;
+    color: #F34141; }
   body.admin .filters .row {
     margin-left: -7px;
     margin-right: -7px; }

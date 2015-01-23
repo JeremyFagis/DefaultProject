@@ -18,6 +18,10 @@
     float: left !important;
 }
 
+.hidden {
+    display: none;
+}
+
 .hide-text {
     font: #{0/0} a;
     color: transparent;
