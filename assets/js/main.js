@@ -10,7 +10,10 @@ var $              = require('jquery'),
     fancybox       = require('./vendors/jquery.fancybox.pack'),
     easing         = require('./vendors/jquery.easing'),
     mobileNav      = require('./vendors/mobile-nav'),
-    datepicker     = require('./vendors/datepicker');
+    datepicker     = require('./vendors/datepicker'),
+    select2        = require('select2');
+
+require('select2.fr');
 
 FastClick(document.body);
 
@@ -75,6 +78,8 @@ $(document).ready(function(){
         language: "fr",
         todayHighlight: true
     });
+
+    $(".select2").select2();
 });
 
 $(window).load(function(){

@@ -9,7 +9,10 @@ var $              = require('jquery'),
     dropify        = require('./vendors/dropify'),
     fancybox       = require('./vendors/jquery.fancybox.pack'),
     easing         = require('./vendors/jquery.easing'),
-    datepicker     = require('./vendors/datepicker');
+    datepicker     = require('./vendors/datepicker'),
+    select2        = require('select2');
+
+require('select2.fr');
 
 $(document).ready(function(){
     $(".selector").simpleSelector();
@@ -65,10 +68,17 @@ $(document).ready(function(){
         return false;
     });
 
-    $('[datepicker]').datepicker({
+    $('.filters-button').on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop : 0}, 300, 'easeInOutExpo');
+    });
+
+    $('[datepicker], .input-group.date').datepicker({
         language: "fr",
         todayHighlight: true
     });
+
+    $(".select2").select2();
 
     $('.sidebar nav').find('a').on('click', function(e){
         if ($(this).siblings('ul').length > 0) {
