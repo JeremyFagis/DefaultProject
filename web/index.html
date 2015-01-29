@@ -49,7 +49,7 @@
                     <ul>
                         <li><a href="admin-login.html" class="line-hover">Admin login</a></li>
                         <li><a href="admin-dashboard.html" class="line-hover">Admin layout</a></li>
-                        <li><a href="https://github.com/JeremyFagis/ElaoStrap" target="_blank" class="line-hover"><i class="icon-github"></i> Github repository</a></li>
+                        <li><a href="https://github.com/JeremyFagis/ElaoStrap" target="_blank" class="line-hover"><i class="elaostrap-font-github"></i> Github repository</a></li>
                     </ul>
                 </nav>
             </div>
@@ -86,7 +86,7 @@
             <h2>Lists styles</h2>
             <div class="row">
                 <div class="col-xs-4">
-                    <h4>Default <a href="#ul-default" data-toggle="collapse" data-target="#ul-default" class="code-button"><i class="icon-code"></i></a></h4>
+                    <h4>Default <a href="#ul-default" data-toggle="collapse" data-target="#ul-default" class="code-button"><i class="elaostrap-font-code"></i></a></h4>
                     <pre id="ul-default" class="collapse in"><code><ul>...</ul></code></pre>
                     <ul>
                         <li>Item 1</li>
@@ -97,7 +97,7 @@
                     </ul>
                 </div>
                 <div class="col-xs-4">
-                    <h4>No bullet <a href="#ul-no-bullet" data-toggle="collapse" data-target="#ul-no-bullet" class="code-button"><i class="icon-code"></i></a></h4>
+                    <h4>No bullet <a href="#ul-no-bullet" data-toggle="collapse" data-target="#ul-no-bullet" class="code-button"><i class="elaostrap-font-code"></i></a></h4>
                     <pre id="ul-no-bullet" class="collapse in"><code><ul class="no-bullet">...</ul></code></pre>
                     <ul class="no-bullet">
                         <li>Item 1</li>
@@ -108,7 +108,7 @@
                     </ul>
                 </div>
                 <div class="col-xs-4">
-                    <h4>Inline <a href="#ul-inline" data-toggle="collapse" data-target="#ul-inline" class="code-button"><i class="icon-code"></i></a></h4>
+                    <h4>Inline <a href="#ul-inline" data-toggle="collapse" data-target="#ul-inline" class="code-button"><i class="elaostrap-font-code"></i></a></h4>
                     <pre id="ul-inline" class="collapse in"><code><ul class="inline">...</ul></code></pre>
                     <ul class="inline">
                         <li>Item 1</li>
@@ -153,7 +153,7 @@
                 </div>
             </div>
 
-            <h2>Definition style <a href="#dl-dt-dd" data-toggle="collapse" data-target="#dl-dt-dd" class="code-button"><i class="icon-code"></i></a></h2>
+            <h2>Definition style <a href="#dl-dt-dd" data-toggle="collapse" data-target="#dl-dt-dd" class="code-button"><i class="elaostrap-font-code"></i></a></h2>
 <pre id="dl-dt-dd" class="collapse in">
 <code><dl>
     <dt>Title</dt>
@@ -180,7 +180,7 @@
             <h2>Forms style</h2>
             <div class="row">
                 <div class="col-sm-6">
-                    <h4>Label on top <a href="#default-form" data-toggle="collapse" data-target="#default-form" class="code-button"><i class="icon-code"></i></a></h4>
+                    <h4>Label on top <a href="#default-form" data-toggle="collapse" data-target="#default-form" class="code-button"><i class="elaostrap-font-code"></i></a></h4>
 <pre id="default-form" class="collapse in">
 <code><div class="form-group">
     <label>My label</label>
@@ -255,8 +255,87 @@
                             </select>
                         </div>
                         <div class="form-group">
+                            <label>Select 2</label>
+                            <select class="select2">
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                                <option>Option 4</option>
+                                <option>Option 5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Multiple select</label>
+                            <select multiple="" class="select2">
+                                <optgroup label="Alaskan/Hawaiian Time Zone">
+                                    <option value="AK">Alaska</option>
+                                    <option value="HI">Hawaii</option>
+                                </optgroup>
+                                <optgroup label="Pacific Time Zone">
+                                    <option value="CA">California</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="WA">Washington</option>
+                                </optgroup>
+                                <optgroup label="Mountain Time Zone">
+                                    <option value="AZ">Arizona</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="MT">Montana</option>
+                                    <option value="NE">Nebraska</option>
+                                    <option value="NM">New Mexico</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="WY">Wyoming</option>
+                                </optgroup>
+                                <optgroup label="Central Time Zone">
+                                    <option value="AL">Alabama</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="IL">Illinois</option>
+                                    <option value="IA">Iowa</option>
+                                    <option value="KS">Kansas</option>
+                                    <option value="KY">Kentucky</option>
+                                    <option value="LA">Louisiana</option>
+                                    <option value="MN">Minnesota</option>
+                                    <option value="MS">Mississippi</option>
+                                    <option value="MO">Missouri</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="WI">Wisconsin</option>
+                                </optgroup>
+                                <optgroup label="Eastern Time Zone">
+                                <option value="CT">Connecticut</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="IN">Indiana</option>
+                                    <option value="ME">Maine</option>
+                                    <option value="MD">Maryland</option>
+                                    <option value="MA">Massachusetts</option>
+                                    <option value="MI">Michigan</option>
+                                    <option value="NH">New Hampshire</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="NY">New York</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WV">West Virginia</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="form-group">
                             <label>Disabled</label>
                             <input type="text" class="form-control" disabled placeholder="I'm disabled">
+                        </div>
+                        <div class="form-group">
+                            <label>Datepicker</label>
+                            <input type="text" class="form-control" datepicker="datepicker">
                         </div>
                         <div class="form-action">
                                 <button type="submit" class="btn btn-primary">Submit</button>
@@ -264,7 +343,7 @@
                     </form>
                 </div>
                 <div class="col-sm-6">
-                    <h4>Label on left <a href="#horizontal-form" data-toggle="collapse" data-target="#horizontal-form" class="code-button"><i class="icon-code"></i></a></h4>
+                    <h4>Label on left <a href="#horizontal-form" data-toggle="collapse" data-target="#horizontal-form" class="code-button"><i class="elaostrap-font-code"></i></a></h4>
 <pre id="horizontal-form" class="collapse in">
 <code><form class="form-horizontal">
     <div class="form-group">
@@ -341,9 +420,94 @@
                             </div>
                         </div>
                         <div class="form-group">
+                            <label class="control-label col-sm-3">Select 2</label>
+                            <div class="col-sm-9 control-field">
+                                <select class="select2">
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                    <option>Option 4</option>
+                                    <option>Option 5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">Multiple select</label>
+                            <div class="col-sm-9 control-field">
+                                <select multiple="" class="select2">
+                                    <optgroup label="Alaskan/Hawaiian Time Zone">
+                                        <option value="AK">Alaska</option>
+                                        <option value="HI">Hawaii</option>
+                                    </optgroup>
+                                    <optgroup label="Pacific Time Zone">
+                                        <option value="CA">California</option>
+                                        <option value="NV">Nevada</option>
+                                        <option value="OR">Oregon</option>
+                                        <option value="WA">Washington</option>
+                                    </optgroup>
+                                    <optgroup label="Mountain Time Zone">
+                                        <option value="AZ">Arizona</option>
+                                        <option value="CO">Colorado</option>
+                                        <option value="ID">Idaho</option>
+                                        <option value="MT">Montana</option>
+                                        <option value="NE">Nebraska</option>
+                                        <option value="NM">New Mexico</option>
+                                        <option value="ND">North Dakota</option>
+                                        <option value="UT">Utah</option>
+                                        <option value="WY">Wyoming</option>
+                                    </optgroup>
+                                    <optgroup label="Central Time Zone">
+                                        <option value="AL">Alabama</option>
+                                        <option value="AR">Arkansas</option>
+                                        <option value="IL">Illinois</option>
+                                        <option value="IA">Iowa</option>
+                                        <option value="KS">Kansas</option>
+                                        <option value="KY">Kentucky</option>
+                                        <option value="LA">Louisiana</option>
+                                        <option value="MN">Minnesota</option>
+                                        <option value="MS">Mississippi</option>
+                                        <option value="MO">Missouri</option>
+                                        <option value="OK">Oklahoma</option>
+                                        <option value="SD">South Dakota</option>
+                                        <option value="TX">Texas</option>
+                                        <option value="TN">Tennessee</option>
+                                        <option value="WI">Wisconsin</option>
+                                    </optgroup>
+                                    <optgroup label="Eastern Time Zone">
+                                    <option value="CT">Connecticut</option>
+                                        <option value="DE">Delaware</option>
+                                        <option value="FL">Florida</option>
+                                        <option value="GA">Georgia</option>
+                                        <option value="IN">Indiana</option>
+                                        <option value="ME">Maine</option>
+                                        <option value="MD">Maryland</option>
+                                        <option value="MA">Massachusetts</option>
+                                        <option value="MI">Michigan</option>
+                                        <option value="NH">New Hampshire</option>
+                                        <option value="NJ">New Jersey</option>
+                                        <option value="NY">New York</option>
+                                        <option value="NC">North Carolina</option>
+                                        <option value="OH">Ohio</option>
+                                        <option value="PA">Pennsylvania</option>
+                                        <option value="RI">Rhode Island</option>
+                                        <option value="SC">South Carolina</option>
+                                        <option value="VT">Vermont</option>
+                                        <option value="VA">Virginia</option>
+                                        <option value="WV">West Virginia</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
                             <label class="control-label col-sm-3">Disabled</label>
                             <div class="col-sm-9 control-field">
                                 <input type="text" class="form-control" disabled placeholder="I'm disabled">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">Datepicker</label>
+                            <div class="col-sm-9 control-field">
+                                <input type="text" class="form-control" datepicker="datepicker">
                             </div>
                         </div>
                         <div class="form-group form-action">
@@ -358,7 +522,7 @@
             <h2>Buttons</h2>
             <div class="row">
                 <div class="col-lg-12">
-                    <h4>Classic <a href="#buttons" data-toggle="collapse" data-target="#buttons" class="code-button"><i class="icon-code"></i></a></h4>
+                    <h4>Classic <a href="#buttons" data-toggle="collapse" data-target="#buttons" class="code-button"><i class="elaostrap-font-code"></i></a></h4>
 <pre id="buttons" class="collapse in">
 <code><button type="button" class="btn btn-default">Default</button>
 <button type="button" class="btn btn-primary">Primary</button>
@@ -377,7 +541,7 @@
                     <button type="button" class="btn btn-danger">Danger</button>
                     <button type="button" class="btn btn-link">Link</button>
 
-                    <h4 class="mt30">Ghost <a href="#buttons-ghost" data-toggle="collapse" data-target="#buttons-ghost" class="code-button"><i class="icon-code"></i></a></h4>
+                    <h4 class="mt30">Ghost <a href="#buttons-ghost" data-toggle="collapse" data-target="#buttons-ghost" class="code-button"><i class="elaostrap-font-code"></i></a></h4>
 <pre id="buttons-ghost" class="collapse in">
 <code><button type="button" class="btn btn-ghost btn-default">Default</button>
 <button type="button" class="btn btn-ghost btn-primary">Primary</button>
@@ -394,7 +558,7 @@
                     <button type="button" class="btn btn-ghost btn-warning">Warning</button>
                     <button type="button" class="btn btn-ghost btn-danger">Danger</button>
 
-                    <h4 class="mt30">Ghost with animation <a href="#buttons-ghost-anim" data-toggle="collapse" data-target="#buttons-ghost-anim" class="code-button"><i class="icon-code"></i></a></h4>
+                    <h4 class="mt30">Ghost with animation <a href="#buttons-ghost-anim" data-toggle="collapse" data-target="#buttons-ghost-anim" class="code-button"><i class="elaostrap-font-code"></i></a></h4>
 <pre id="buttons-ghost-anim" class="collapse in">
 <code><button type="button" class="btn btn-ghost with-anim btn-default">Default</button>
 <button type="button" class="btn btn-ghost with-anim btn-primary">Primary</button>
@@ -416,7 +580,7 @@
             <h2>Labels</h2>
             <div class="row">
                 <div class="col-sm-6">
-                    <h4>Default <a href="#labels" data-toggle="collapse" data-target="#labels" class="code-button"><i class="icon-code"></i></a></h4>
+                    <h4>Default <a href="#labels" data-toggle="collapse" data-target="#labels" class="code-button"><i class="elaostrap-font-code"></i></a></h4>
 <pre id="labels" class="collapse in">
 <code><span class="label">Mon label</span>
 <span class="label label-primary">Mon label</span>
@@ -434,7 +598,7 @@
                     <span class="label label-danger">Mon label</span>
                 </div>
                 <div class="col-sm-6">
-                    <h4>Links <a href="#labels-links" data-toggle="collapse" data-target="#labels-links" class="code-button"><i class="icon-code"></i></a></h4>
+                    <h4>Links <a href="#labels-links" data-toggle="collapse" data-target="#labels-links" class="code-button"><i class="elaostrap-font-code"></i></a></h4>
 <pre id="labels-links" class="collapse in">
 <code><a href="#" class="label">Mon lien</a>
 <a href="#" class="label label-primary">Mon lien</a>
@@ -456,7 +620,7 @@
             <h2>Tables</h2>
             <div class="row">
                 <div class="col-sm-6">
-                    <h4>Default <a href="#table-default" data-toggle="collapse" data-target="#table-default" class="code-button"><i class="icon-code"></i></a></h4>
+                    <h4>Default <a href="#table-default" data-toggle="collapse" data-target="#table-default" class="code-button"><i class="elaostrap-font-code"></i></a></h4>
 <pre id="table-default" class="collapse in">
 <code><table class="table">
     <thead><tr><th>...</th></tr></thead>
@@ -467,7 +631,7 @@
                     <table class="table"> <thead> <tr> <th>#</th> <th>First Name</th> <th>Last Name</th> <th>Username</th> </tr> </thead> <tbody> <tr> <td>1</td> <td>Lorem ipsum</td> <td>Lorem ipsum</td> <td>Lorem ipsum</td> </tr> <tr> <td>2</td> <td>Lorem ipsum</td> <td>Lorem ipsum</td> <td>Lorem ipsum</td> </tr> <tr> <td>3</td> <td>Lorem ipsum</td> <td>Lorem ipsum</td> <td>Lorem ipsum</td> </tr> </tbody> </table>
                 </div>
                 <div class="col-sm-6">
-                    <h4>Striped <a href="#table-striped" data-toggle="collapse" data-target="#table-striped" class="code-button"><i class="icon-code"></i></a></h4>
+                    <h4>Striped <a href="#table-striped" data-toggle="collapse" data-target="#table-striped" class="code-button"><i class="elaostrap-font-code"></i></a></h4>
 <pre id="table-striped" class="collapse in">
 <code><table class="table table-striped">
     <thead><tr><th>...</th></tr></thead>
@@ -480,7 +644,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-6">
-                    <h4>Bordered <a href="#table-bordered" data-toggle="collapse" data-target="#table-bordered" class="code-button"><i class="icon-code"></i></a></h4>
+                    <h4>Bordered <a href="#table-bordered" data-toggle="collapse" data-target="#table-bordered" class="code-button"><i class="elaostrap-font-code"></i></a></h4>
 <pre id="table-bordered" class="collapse in">
 <code><table class="table table-bordered">
     <thead><tr><th>...</th></tr></thead>
@@ -491,7 +655,7 @@
                     <table class="table table-bordered"> <thead> <tr> <th>#</th> <th>First Name</th> <th>Last Name</th> <th>Username</th> </tr> </thead> <tbody> <tr> <td>1</td> <td>Lorem ipsum</td> <td>Lorem ipsum</td> <td>Lorem ipsum</td> </tr> <tr> <td>2</td> <td>Lorem ipsum</td> <td>Lorem ipsum</td> <td>Lorem ipsum</td> </tr> <tr> <td>3</td> <td>Lorem ipsum</td> <td>Lorem ipsum</td> <td>Lorem ipsum</td> </tr> </tbody> </table>
                 </div>
                 <div class="col-sm-6">
-                    <h4>Hover <a href="#table-hover" data-toggle="collapse" data-target="#table-hover" class="code-button"><i class="icon-code"></i></a></h4>
+                    <h4>Hover <a href="#table-hover" data-toggle="collapse" data-target="#table-hover" class="code-button"><i class="elaostrap-font-code"></i></a></h4>
 <pre id="table-hover" class="collapse in">
 <code><table class="table table-hover">
     <thead><tr><th>...</th></tr></thead>
@@ -503,7 +667,7 @@
                 </div>
             </div>
 
-            <h2>Input groups <a href="#input-groups" data-toggle="collapse" data-target="#input-groups" class="code-button"><i class="icon-code"></i></a></h2>
+            <h2>Input groups <a href="#input-groups" data-toggle="collapse" data-target="#input-groups" class="code-button"><i class="elaostrap-font-code"></i></a></h2>
 <pre id="input-groups" class="collapse in">
 <code><div class="input-group">
     <span class="input-group-addon">@</span>
@@ -578,7 +742,7 @@
                 </div>
             </div>
 
-            <h2>Button groups <a href="#btn-groups" data-toggle="collapse" data-target="#btn-groups" class="code-button"><i class="icon-code"></i></a></h2>
+            <h2>Button groups <a href="#btn-groups" data-toggle="collapse" data-target="#btn-groups" class="code-button"><i class="elaostrap-font-code"></i></a></h2>
 <pre id="btn-groups" class="collapse in">
 <code><div class="btn-group"> <!-- Different sizes .btn-group-sm and .btn-group-lg -->
     <button type="button" class="btn btn-default">Left</button>
@@ -628,7 +792,7 @@
                 </div>
             </div>
 
-            <h2>Pagination <a href="#pagination" data-toggle="collapse" data-target="#pagination" class="code-button"><i class="icon-code"></i></a></h2>
+            <h2>Pagination <a href="#pagination" data-toggle="collapse" data-target="#pagination" class="code-button"><i class="elaostrap-font-code"></i></a></h2>
 <pre id="pagination" class="collapse in">
 <code><nav>
     <ul class="pagination">
@@ -714,7 +878,7 @@
                 </div>
             </div>
 
-            <h2>Progress bars  <a href="#progress" data-toggle="collapse" data-target="#progress" class="code-button"><i class="icon-code"></i></a></h2>
+            <h2>Progress bars  <a href="#progress" data-toggle="collapse" data-target="#progress" class="code-button"><i class="elaostrap-font-code"></i></a></h2>
 <pre id="progress" class="collapse in">
 <code><div class="progress">
     <div class="progress-bar" style="width: 60%;" data-original-title="60%" data-toggle="tooltip" data-placement="right"></div>
@@ -802,7 +966,7 @@
                 </div>
             </div>
 
-            <h2>Alerts <a href="#alerts" data-toggle="collapse" data-target="#alerts" class="code-button"><i class="icon-code"></i></a></h2>
+            <h2>Alerts <a href="#alerts" data-toggle="collapse" data-target="#alerts" class="code-button"><i class="elaostrap-font-code"></i></a></h2>
 <pre id="alerts" class="collapse in">
 <code><div class="alert">...</div>
 <div class="alert alert-primary">...</div>
@@ -823,7 +987,7 @@
                 </div>
             </div>
 
-            <h2>Panels <a href="#panels" data-toggle="collapse" data-target="#panels" class="code-button"><i class="icon-code"></i></a></h2>
+            <h2>Panels <a href="#panels" data-toggle="collapse" data-target="#panels" class="code-button"><i class="elaostrap-font-code"></i></a></h2>
 <pre id="panels" class="collapse in">
 <code><div class="panel panel-default">
     <div class="panel-heading">Panel title</div>
@@ -882,7 +1046,7 @@
             <h2>Tabs</h2>
             <div class="row">
                 <div class="col-sm-6">
-                    <h4>Default <a href="#tabs-default" data-toggle="collapse" data-target="#tabs-default" class="code-button"><i class="icon-code"></i></a></h4>
+                    <h4>Default <a href="#tabs-default" data-toggle="collapse" data-target="#tabs-default" class="code-button"><i class="elaostrap-font-code"></i></a></h4>
 <pre id="tabs-default" class="collapse in">
 <code><ul class="nav-tabs">
     <li class="active"><a href="#tab-11">...</a></li>
@@ -908,7 +1072,7 @@
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <h4>Justified <a href="#tabs-justified" data-toggle="collapse" data-target="#tabs-justified" class="code-button"><i class="icon-code"></i></a></h4>
+                    <h4>Justified <a href="#tabs-justified" data-toggle="collapse" data-target="#tabs-justified" class="code-button"><i class="elaostrap-font-code"></i></a></h4>
 <pre id="tabs-justified" class="collapse in">
 <code><ul class="nav-tabs nav-justified">
     <li class="active"><a href="#tab-21">...</a></li>
@@ -935,7 +1099,7 @@
                 </div>
             </div>
 
-            <h2>Dropdowns <a href="#dropdowns" data-toggle="collapse" data-target="#dropdowns" class="code-button"><i class="icon-code"></i></a></h2>
+            <h2>Dropdowns <a href="#dropdowns" data-toggle="collapse" data-target="#dropdowns" class="code-button"><i class="elaostrap-font-code"></i></a></h2>
 <pre id="dropdowns" class="collapse in">
 <code><div class="btn-group">
     <a href="#" class="dropdown-toggle btn btn-success" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
@@ -1095,7 +1259,7 @@
 
             <div class="row">
                 <div class="col-sm-6">
-                    <h2>Medias list <a href="#medias-list" data-toggle="collapse" data-target="#medias-list" class="code-button"><i class="icon-code"></i></a></h2>
+                    <h2>Medias list <a href="#medias-list" data-toggle="collapse" data-target="#medias-list" class="code-button"><i class="elaostrap-font-code"></i></a></h2>
 <pre id="medias-list" class="collapse in">
 <code><div class="media">
     <div class="media-left">
@@ -1136,7 +1300,7 @@
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <h2>Loaders <a href="#loader" data-toggle="collapse" data-target="#loader" class="code-button"><i class="icon-code"></i></a></h2>
+                    <h2>Loaders <a href="#loader" data-toggle="collapse" data-target="#loader" class="code-button"><i class="elaostrap-font-code"></i></a></h2>
 <pre id="loader" class="collapse in">
 <code><div class="loader"></div>
 <div class="loader loader-sm"></div>
@@ -1294,7 +1458,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-8 no-padding-bottom">
-                        <i class="icon-github"></i> <a href="https://github.com/JeremyFagis/ElaoStrap" target="_blank">Github repository</a>
+                        <i class="elaostrap-font-github"></i> <a href="https://github.com/JeremyFagis/ElaoStrap" target="_blank">Github repository</a>
                     </div>
                     <div class="col-sm-4 text-right no-padding-bottom">2015 &copy; <a href="http://www.fagis.fr" target="_blank">Jeremy FAGIS</a> for <a href="http://www.elao.com" target="_blank">Elao</a></div>
                 </div>

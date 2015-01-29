@@ -1,0 +1,116 @@
+.datepicker {
+    padding: 4px;
+
+    > div {
+        display: none;
+    }
+
+    &.days div.datepicker-days {
+        display: block;
+    }
+
+    &.months div.datepicker-months {
+        display: block;
+    }
+
+    &.years div.datepicker-years {
+        display: block;
+    }
+
+    table {
+        margin: 0;
+        user-select: none;
+        width: 100%;
+
+        tr {
+            td, th {
+                text-align: center;
+                width: 35px;
+                height: 35px;
+                padding: 0;
+                border-radius: 4px;
+                border: none;
+            }
+        }
+    }
+
+    table tr td {
+        &.day:hover, &.day.focused {
+            background: $datepicker-day-hover;
+            cursor: pointer;
+        }
+
+        &.old,
+        &.new {
+            color: $datepicker-day-disabled;
+        }
+
+        &.disabled,
+        &.disabled:hover {
+            background: none;
+            color: $datepicker-day-disabled;
+            cursor: default;
+        }
+
+        &.today,
+        &.today:hover,
+        &.today.disabled,
+        &.today.disabled:hover {
+            background: $datepicker-today;
+            font-weight: bold;
+        }
+
+        &.range,
+        &.range:hover,
+        &.range.disabled,
+        &.range.disabled:hover {
+            background: $datepicker-day-hover;
+            border-radius: 0;
+        }
+
+        &.active,
+        &.active:hover,
+        &.active.disabled,
+        &.active.disabled:hover {
+            background: $datepicker-day-active-bg;
+            color: $datepicker-day-active-color;
+            font-weight: bold;
+        }
+
+        span {
+            display: block;
+            width: 23%;
+            height: 50px;
+            line-height: 50px;
+            float: left;
+            margin: 1%;
+            cursor: pointer;
+            border-radius: 4px;
+
+            &:hover {
+                background: $datepicker-day-hover;
+            }
+
+            &.disabled,
+            &.disabled:hover {
+                background: none;
+                color: $datepicker-day-disabled;
+                cursor: default;
+            }
+
+            &.old,
+            &.new {
+                color: $datepicker-day-disabled;
+            }
+        }
+    }
+
+    thead tr:first-child th,
+    tfoot tr th {
+        cursor: pointer;
+
+        &:hover {
+            background: $datepicker-day-hover;
+        }
+    }
+}

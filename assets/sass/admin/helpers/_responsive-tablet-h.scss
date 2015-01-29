@@ -23,6 +23,14 @@
             display: block;
         }
 
+        .navbar .list-actions {
+            display: none;
+        }
+
+        .list-actions-mobile {
+            display: block;
+        }
+
         .sidebar {
             width: 100%;
             left: -100%;

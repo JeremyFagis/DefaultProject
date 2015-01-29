@@ -34,6 +34,26 @@
             display: block;
         }
 
+        .list-actions-mobile {
+            float: right;
+            margin-top: 5px;
+        }
+
+        .filters {
+            margin-top: 20px;
+            margin-bottom: 15px;
+
+            .col-actions {
+                text-align: left;
+                padding-top: 15px;
+
+                .btn {
+                    margin-left: 0;
+                    margin-right: 5px;
+                }
+            }
+        }
+
         .table-footer {
             text-align: center;
 

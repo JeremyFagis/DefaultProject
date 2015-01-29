@@ -129,3 +129,20 @@ footer#footer {
     }
 }
 
+
+.list-actions-mobile {
+    margin: 0 0 10px 0;
+    display: none;
+
+    .btn {
+        @extend .btn-sm;
+        font-size: 12px !important;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-left: 7px !important;
+
+        i {
+            font-size: 14px;
+        }
+    }
+}

@@ -18,7 +18,7 @@
     var pluginName = "simpleSelector",
         defaults = {
             wrapperClass: "selector-wrapper",
-            caretClass: 'icon-arrow'
+            caretClass: 'elaostrap-font-arrow'
         },
         isIE = '\v'=='v';
 

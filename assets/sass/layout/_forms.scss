@@ -62,10 +62,13 @@ select[size] {
 	border: 1px solid $input-border;
 	border-radius: $input-border-radius;
 	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-	-webkit-appearance: none;
     @include antialiased();
 	@include form-control-focus();
 	@include placeholder();
+
+	&:not(select) {
+		-webkit-appearance: none;
+	}
 
 	&[disabled],
 	&[readonly],

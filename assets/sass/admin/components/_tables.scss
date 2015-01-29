@@ -5,21 +5,6 @@ body.admin {
             text-align: right;
         }
 
-        th {
-            &.col-actions {
-                .btn {
-                    @extend .btn-sm;
-                    font-size: 12px;
-                    font-weight: bold;
-                    text-transform: uppercase;
-                    padding-left: 7px;
-
-                    i {
-                        font-size: 14px;
-                    }
-                }
-            }
-        }
         td {
             vertical-align: middle;
 

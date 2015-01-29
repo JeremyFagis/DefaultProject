@@ -49,8 +49,8 @@
         margin-top: -40px;
 
         span.file-icon {
-            @extend .fontello;
-            @extend .icon-upload;
+            @extend .elaostrap-font;
+            @extend .elaostrap-font-upload;
             font-size: 50px;
             color: rgba(0, 0, 0, 0.2);
         }
@@ -89,8 +89,8 @@
             }
 
             .file-icon {
-                @extend .fontello;
-                @extend .icon-file;
+                @extend .elaostrap-font;
+                @extend .elaostrap-font-file;
                 font-size: 40px;
                 top: 50%;
                 left: 50%;
@@ -134,8 +134,8 @@
 
                     &.dropify-filename {
                         span.file-icon {
-                            @extend .fontello;
-                            @extend .icon-file;
+                            @extend .elaostrap-font;
+                            @extend .elaostrap-font-file;
                             margin-right: 2px;
                         }
                     }
