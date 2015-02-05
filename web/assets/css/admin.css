@@ -2492,12 +2492,12 @@ footer#footer {
     border: 2px solid transparent; }
     .btn.btn-ghost.with-anim {
       position: relative;
-      overflow: hidden;
-      -webkit-backface-visibility: hidden;
-              backface-visibility: hidden; }
+      overflow: hidden; }
       .btn.btn-ghost.with-anim::after {
         content: "";
         position: absolute;
+        -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
         background: #444;
         height: 0%;
         left: 50%;
@@ -2510,7 +2510,7 @@ footer#footer {
             -ms-transform: translate(-50%, -50%) rotate(-45deg);
                 transform: translate(-50%, -50%) rotate(-45deg); }
       .btn.btn-ghost.with-anim:hover::after {
-        height: 300%; }
+        height: 350%; }
     .btn.btn-ghost.btn-default {
       background-color: #AAA;
       border-color: #CCC; }
