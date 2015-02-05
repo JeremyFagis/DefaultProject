@@ -21,11 +21,12 @@
         &.with-anim {
             position: relative;
             overflow: hidden;
-            backface-visibility: hidden;
+            // backface-visibility: hidden;
 
             &::after {
                 content: "";
                 position: absolute;
+                backface-visibility: hidden;
                 background: #444;
                 height: 0%;
                 left: 50%;
@@ -37,7 +38,7 @@
             }
             &:hover {
                 &::after {
-                    height: 300%;
+                    height: 350%;
                 }
             }
         }
