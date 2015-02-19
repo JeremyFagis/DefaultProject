@@ -4,10 +4,10 @@
 // ------------------------------------
 //   Basics
 // ------------------------------------
-@import "base/reset";
-@import "base/font";
 @import "variables/base";
 @import "variables/default";
+@import "base/reset";
+@import "base/font";
 @import "helpers/mixins";
 @import "helpers/shortcuts";
 @import "layout/grid";
