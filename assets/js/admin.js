@@ -116,6 +116,12 @@ $(document).ready(function(){
         $('.list-actions-mobile').html($('.navbar').find('.list-actions').html());
     }
 
+    $('.fullscreen-btn').on('click', function(e) {
+        e.preventDefault();
+        $('body').toggleClass('fullscreen');
+        $(this).toggleClass('active');
+    });
+
 });
 
 $(window).load(function(){
