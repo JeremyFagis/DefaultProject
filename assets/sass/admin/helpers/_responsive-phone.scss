@@ -34,7 +34,12 @@
             display: block;
         }
 
+        .navbar .list-actions {
+            display: none;
+        }
+
         .list-actions-mobile {
+            display: block;
             float: right;
             margin-top: 5px;
         }

@@ -5895,7 +5895,10 @@ body.admin .login-box {
     display: none; }
   body.admin .page-title-mobile {
     display: block; }
+  body.admin .navbar .list-actions {
+    display: none; }
   body.admin .list-actions-mobile {
+    display: block;
     float: right;
     margin-top: 5px; }
   body.admin .filters {
@@ -5930,13 +5933,14 @@ body.admin .login-box {
   body.admin .mobile-nav-toggle {
     display: block; }
   body.admin .navbar .list-actions {
-    display: none; }
-  body.admin .list-actions-mobile {
-    display: block; }
+    margin-right: 15px; }
   body.admin .sidebar {
     width: 100%;
     left: -100%;
     padding: 10px;
+    -webkit-transform: translateX(0) !important;
+        -ms-transform: translateX(0) !important;
+            transform: translateX(0) !important;
     -webkit-transition: all 0.2s ease;
             transition: all 0.2s ease; }
     body.admin .sidebar.active {
@@ -5947,5 +5951,7 @@ body.admin .login-box {
       position: relative;
       width: 100%; }
   body.admin .main-content {
-    margin-left: 0; } }
+    margin-left: 0; }
+  body.admin .fullscreen-btn {
+    display: none; } }
 
