@@ -19,6 +19,13 @@ assets.config({
     ].join('\n'),
     autoprefixer: {
         browsers: ['> 1%', 'last 2 versions', 'Firefox ESR', 'Opera 12.1']
+    },
+    assets: {
+        fonts: {
+            groups: {
+                'dropify': {src: 'dropify/src/fonts/**', dest: 'dropify'},
+            }
+        }
     }
 });
 

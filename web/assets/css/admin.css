@@ -430,7 +430,7 @@ table {
     }
 }
 */
-[class^="elaostrap-font-"]:before, [class*="elaostrap-font-"]:before, .elaostrap-font:before, .dropify-wrapper .dropify-message span.file-icon:before, .dropify-wrapper .dropify-preview .dropify-render .file-icon:before, .dropify-wrapper .dropify-preview .dropify-infos .dropify-infos-inner p.dropify-filename span.file-icon:before, .select2-container .select2-choice .select2-arrow b:before, .select2-search-choice-close:before, body.admin .sidebar > nav > ul li > a span.submenu-icon:before {
+[class^="elaostrap-font-"]:before, [class*="elaostrap-font-"]:before, .elaostrap-font:before, .select2-container .select2-choice .select2-arrow b:before, .select2-search-choice-close:before, body.admin .sidebar > nav > ul li > a span.submenu-icon:before {
   font-family: "elaostrap";
   font-style: normal;
   font-weight: normal;
@@ -458,7 +458,7 @@ table {
   content: '\e800'; }
 
 /* '' */
-.elaostrap-font-upload:before, .dropify-wrapper .dropify-message span.file-icon:before {
+.elaostrap-font-upload:before {
   content: '\e801'; }
 
 /* '' */
@@ -470,7 +470,7 @@ table {
   content: '\e803'; }
 
 /* '' */
-.elaostrap-font-file:before, .dropify-wrapper .dropify-preview .dropify-render .file-icon:before, .dropify-wrapper .dropify-preview .dropify-infos .dropify-infos-inner p.dropify-filename span.file-icon:before {
+.elaostrap-font-file:before {
   content: '\e804'; }
 
 /* '' */
@@ -4238,6 +4238,37 @@ table td[class*="col-"], table th[class*="col-"] {
     background-size: 24px 24px;
     /*The size of the normal image, half the size of the hi-res image*/ } }
 
+@font-face {
+  font-family: 'dropify';
+  src: url('../fonts/dropify/dropify.eot?57239411');
+  src: url('../fonts/dropify/dropify.eot?57239411#iefix') format('embedded-opentype'), url('../fonts/dropify/dropify.woff?57239411') format('woff'), url('../fonts/dropify/dropify.ttf?57239411') format('truetype'), url('../fonts/dropify/dropify.svg?57239411#dropify') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="dropify-font-"]:before, [class*=" dropify-font-"]:before, .dropify-font:before, .dropify-wrapper .dropify-message span.file-icon:before, .dropify-wrapper .dropify-preview .dropify-render .file-icon:before, .dropify-wrapper .dropify-preview .dropify-infos .dropify-infos-inner p.dropify-filename span.file-icon:before {
+  font-family: "dropify";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: 0.2em; }
+
+.dropify-font-upload:before, .dropify-wrapper .dropify-message span.file-icon:before {
+  content: '\e800'; }
+
+.dropify-font-picture:before {
+  content: '\e801'; }
+
+.dropify-font-file:before, .dropify-wrapper .dropify-preview .dropify-render .file-icon:before, .dropify-wrapper .dropify-preview .dropify-infos .dropify-infos-inner p.dropify-filename span.file-icon:before {
+  content: '\e802'; }
+
 .dropify-wrapper {
   display: block;
   position: relative;
@@ -4246,19 +4277,33 @@ table td[class*="col-"], table th[class*="col-"] {
   width: 100%;
   max-width: 100%;
   height: 170px;
+  padding: 5px 10px;
   font-family: "Roboto", "Helvetica Neue", "Helvetica";
   font-size: 14px;
   line-height: 22px;
   color: #777;
   background-color: #FFF;
   background-image: none;
-  text-align: center; }
+  text-align: center;
+  border: 2px solid #DDD; }
   .dropify-wrapper:hover {
     background-size: 30px 30px;
     background-image: -webkit-linear-gradient(135deg, #F9F9F9 25%, transparent 25%, transparent 50%, #F9F9F9 50%, #F9F9F9 75%, transparent 75%, transparent);
     background-image: linear-gradient(-45deg, #F9F9F9 25%, transparent 25%, transparent 50%, #F9F9F9 50%, #F9F9F9 75%, transparent 75%, transparent);
     -webkit-animation: stripes 2s linear infinite;
             animation: stripes 2s linear infinite; }
+  .dropify-wrapper.has-preview .dropify-clear {
+    display: block; }
+  .dropify-wrapper.disabled input {
+    cursor: not-allowed; }
+  .dropify-wrapper.disabled:hover {
+    background-image: none;
+    -webkit-animation: none;
+            animation: none; }
+  .dropify-wrapper.disabled .dropify-message {
+    opacity: 0.5; }
+  .dropify-wrapper.disabled .dropify-infos-message {
+    display: none; }
   .dropify-wrapper input {
     position: absolute;
     top: 0;
@@ -4272,21 +4317,40 @@ table td[class*="col-"], table th[class*="col-"] {
     z-index: 100; }
   .dropify-wrapper .dropify-message {
     position: relative;
-    height: 80px;
     top: 50%;
-    margin-top: -40px; }
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
     .dropify-wrapper .dropify-message span.file-icon {
       font-size: 50px;
       color: rgba(0, 0, 0, 0.2); }
     .dropify-wrapper .dropify-message p {
       margin: 5px 0 0 0; }
+  .dropify-wrapper .dropify-clear {
+    display: none;
+    position: absolute;
+    opacity: 0;
+    z-index: 110;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: 2px solid #FFF;
+    text-transform: uppercase;
+    font-family: "Roboto", "Helvetica Neue", "Helvetica";
+    font-size: 11px;
+    padding: 4px 8px;
+    font-weight: bold;
+    color: #FFF;
+    -webkit-transition: all 0.15s linear;
+            transition: all 0.15s linear; }
+    .dropify-wrapper .dropify-clear:hover {
+      background: rgba(255, 255, 255, 0.2); }
   .dropify-wrapper .dropify-preview {
     display: none;
     position: absolute;
     z-index: 50;
     background-color: #FFF;
     padding: 5px;
-    border-radius: 4px;
     width: 100%;
     height: 100%;
     top: 0;
@@ -4328,9 +4392,12 @@ table td[class*="col-"], table th[class*="col-"] {
               transition: opacity 0.15s linear; }
       .dropify-wrapper .dropify-preview .dropify-infos .dropify-infos-inner {
         position: absolute;
-        height: 80px;
         top: 50%;
-        margin-top: -25px;
+        -webkit-transform: translate(0, -40%);
+            -ms-transform: translate(0, -40%);
+                transform: translate(0, -40%);
+        -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
         width: 100%;
         padding: 0 20px;
         -webkit-transition: all 0.2s ease;
@@ -4365,12 +4432,85 @@ table td[class*="col-"], table th[class*="col-"] {
               background: #FFF;
               width: 30px;
               height: 2px; }
-  .dropify-wrapper input:hover + .dropify-preview .dropify-infos {
+  .dropify-wrapper:hover .dropify-clear {
     opacity: 1; }
-    .dropify-wrapper input:hover + .dropify-preview .dropify-infos .dropify-infos-inner {
-      -webkit-transform: translate(0, -5px);
-          -ms-transform: translate(0, -5px);
-              transform: translate(0, -5px); }
+  .dropify-wrapper:hover .dropify-preview .dropify-infos {
+    opacity: 1; }
+    .dropify-wrapper:hover .dropify-preview .dropify-infos .dropify-infos-inner {
+      margin-top: -5px; }
+  .dropify-wrapper.touch-fallback {
+    height: auto !important; }
+    .dropify-wrapper.touch-fallback:hover {
+      background-image: none;
+      -webkit-animation: none;
+              animation: none; }
+    .dropify-wrapper.touch-fallback .dropify-preview {
+      position: relative;
+      padding: 0; }
+      .dropify-wrapper.touch-fallback .dropify-preview .dropify-render {
+        display: block; }
+        .dropify-wrapper.touch-fallback .dropify-preview .dropify-render .file-icon {
+          position: relative;
+          -webkit-transform: translate(0, 0);
+              -ms-transform: translate(0, 0);
+                  transform: translate(0, 0);
+          top: 0;
+          left: 0; }
+          .dropify-wrapper.touch-fallback .dropify-preview .dropify-render .file-icon::before {
+            margin-top: 30px;
+            margin-bottom: 30px; }
+        .dropify-wrapper.touch-fallback .dropify-preview .dropify-render img {
+          position: relative;
+          -webkit-transform: translate(0, 0);
+              -ms-transform: translate(0, 0);
+                  transform: translate(0, 0); }
+      .dropify-wrapper.touch-fallback .dropify-preview .dropify-infos {
+        position: relative;
+        opacity: 1;
+        background: transparent; }
+        .dropify-wrapper.touch-fallback .dropify-preview .dropify-infos .dropify-infos-inner {
+          position: relative;
+          top: 0;
+          -webkit-transform: translate(0, 0);
+              -ms-transform: translate(0, 0);
+                  transform: translate(0, 0);
+          padding: 5px 90px 5px 0; }
+          .dropify-wrapper.touch-fallback .dropify-preview .dropify-infos .dropify-infos-inner p {
+            padding: 0;
+            margin: 0;
+            position: relative;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: #777;
+            text-align: left;
+            line-height: 25px; }
+            .dropify-wrapper.touch-fallback .dropify-preview .dropify-infos .dropify-infos-inner p.dropify-filename {
+              font-weight: bold; }
+            .dropify-wrapper.touch-fallback .dropify-preview .dropify-infos .dropify-infos-inner p.dropify-infos-message {
+              margin-top: 0;
+              padding-top: 0;
+              font-size: 11px;
+              position: relative;
+              opacity: 1; }
+              .dropify-wrapper.touch-fallback .dropify-preview .dropify-infos .dropify-infos-inner p.dropify-infos-message::before {
+                display: none; }
+    .dropify-wrapper.touch-fallback .dropify-message {
+      -webkit-transform: translate(0, 0);
+          -ms-transform: translate(0, 0);
+              transform: translate(0, 0);
+      padding: 40px 0; }
+    .dropify-wrapper.touch-fallback .dropify-clear {
+      top: auto;
+      bottom: 23px;
+      opacity: 1;
+      border-color: rgba(119, 119, 119, 0.7);
+      color: #777; }
+    .dropify-wrapper.touch-fallback.has-preview .dropify-message {
+      display: none; }
+    .dropify-wrapper.touch-fallback:hover .dropify-preview .dropify-infos .dropify-infos-inner {
+      margin-top: 0; }
 
 @-webkit-keyframes stripes {
   from {

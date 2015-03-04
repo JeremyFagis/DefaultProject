@@ -14,8 +14,8 @@ var $              = require('jquery'),
     tooltip        = require('bootstrap.tooltip'),
     popover        = require('bootstrap.popover'),
     dropdown       = require('bootstrap.dropdown'),
+    dropify        = require('dropify'),
     simpleSelector = require('./vendors/jquery.simple-selector'),
-    dropify        = require('./vendors/dropify'),
     fancybox       = require('./vendors/jquery.fancybox.pack'),
     easing         = require('./vendors/jquery.easing'),
     mobileNav      = require('./vendors/mobile-nav'),
@@ -119,7 +119,7 @@ function htmlencode(str) {
     });
 }
 
-},{"./vendors/datepicker":"/Volumes/Elao/workspace/misc/ElaoStrap/assets/js/vendors/datepicker.js","./vendors/dropify":"/Volumes/Elao/workspace/misc/ElaoStrap/assets/js/vendors/dropify.js","./vendors/jquery.easing":"/Volumes/Elao/workspace/misc/ElaoStrap/assets/js/vendors/jquery.easing.js","./vendors/jquery.fancybox.pack":"/Volumes/Elao/workspace/misc/ElaoStrap/assets/js/vendors/jquery.fancybox.pack.js","./vendors/jquery.simple-selector":"/Volumes/Elao/workspace/misc/ElaoStrap/assets/js/vendors/jquery.simple-selector.js","./vendors/mobile-nav":"/Volumes/Elao/workspace/misc/ElaoStrap/assets/js/vendors/mobile-nav.js","bootstrap.collapse":"/Volumes/Elao/workspace/misc/ElaoStrap/node_modules/bootstrap-sass/assets/javascripts/bootstrap/collapse.js","bootstrap.dropdown":"/Volumes/Elao/workspace/misc/ElaoStrap/node_modules/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js","bootstrap.popover":"/Volumes/Elao/workspace/misc/ElaoStrap/node_modules/bootstrap-sass/assets/javascripts/bootstrap/popover.js","bootstrap.tab":"/Volumes/Elao/workspace/misc/ElaoStrap/node_modules/bootstrap-sass/assets/javascripts/bootstrap/tab.js","bootstrap.tooltip":"/Volumes/Elao/workspace/misc/ElaoStrap/node_modules/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js","fastclick":"/Volumes/Elao/workspace/misc/ElaoStrap/node_modules/fastclick/lib/fastclick.js","jquery":"/Volumes/Elao/workspace/misc/ElaoStrap/node_modules/jquery/dist/jquery.js","select2":"/Volumes/Elao/workspace/misc/ElaoStrap/node_modules/select2/index.js","select2.fr":"/Volumes/Elao/workspace/misc/ElaoStrap/node_modules/select2/select2_locale_fr.js"}],"/Volumes/Elao/workspace/misc/ElaoStrap/assets/js/vendors/datepicker.js":[function(require,module,exports){
+},{"./vendors/datepicker":"/Volumes/Elao/workspace/misc/ElaoStrap/assets/js/vendors/datepicker.js","./vendors/jquery.easing":"/Volumes/Elao/workspace/misc/ElaoStrap/assets/js/vendors/jquery.easing.js","./vendors/jquery.fancybox.pack":"/Volumes/Elao/workspace/misc/ElaoStrap/assets/js/vendors/jquery.fancybox.pack.js","./vendors/jquery.simple-selector":"/Volumes/Elao/workspace/misc/ElaoStrap/assets/js/vendors/jquery.simple-selector.js","./vendors/mobile-nav":"/Volumes/Elao/workspace/misc/ElaoStrap/assets/js/vendors/mobile-nav.js","bootstrap.collapse":"/Volumes/Elao/workspace/misc/ElaoStrap/node_modules/bootstrap-sass/assets/javascripts/bootstrap/collapse.js","bootstrap.dropdown":"/Volumes/Elao/workspace/misc/ElaoStrap/node_modules/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js","bootstrap.popover":"/Volumes/Elao/workspace/misc/ElaoStrap/node_modules/bootstrap-sass/assets/javascripts/bootstrap/popover.js","bootstrap.tab":"/Volumes/Elao/workspace/misc/ElaoStrap/node_modules/bootstrap-sass/assets/javascripts/bootstrap/tab.js","bootstrap.tooltip":"/Volumes/Elao/workspace/misc/ElaoStrap/node_modules/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js","dropify":"/Volumes/Elao/workspace/misc/ElaoStrap/node_modules/dropify/dist/js/dropify.js","fastclick":"/Volumes/Elao/workspace/misc/ElaoStrap/node_modules/fastclick/lib/fastclick.js","jquery":"/Volumes/Elao/workspace/misc/ElaoStrap/node_modules/jquery/dist/jquery.js","select2":"/Volumes/Elao/workspace/misc/ElaoStrap/node_modules/select2/index.js","select2.fr":"/Volumes/Elao/workspace/misc/ElaoStrap/node_modules/select2/select2_locale_fr.js"}],"/Volumes/Elao/workspace/misc/ElaoStrap/assets/js/vendors/datepicker.js":[function(require,module,exports){
 /* =========================================================
  * bootstrap-datepicker.js
  * Repo: https://github.com/eternicode/bootstrap-datepicker/
@@ -1822,152 +1822,7 @@ function htmlencode(str) {
 }(jQuery));
 
 
-},{}],"/Volumes/Elao/workspace/misc/ElaoStrap/assets/js/vendors/dropify.js":[function(require,module,exports){
-(function (factory) {
-    if (typeof define === 'function' && define.amd) {
-        // AMD. Register as an anonymous module.
-        define(['jquery'], factory);
-    } else if (typeof exports === 'object') {
-        // Node/CommonJS
-        factory(require('jquery'));
-    } else {
-        // Browser globals
-        factory(jQuery);
-    }
-}(function ($) {
-
-    var pluginName = "dropify",
-        defaults = {
-            tpl: {
-                wrap: '<div class="dropify-wrapper form-control"></div>',
-                message: '<div class="dropify-message"><span class="file-icon" /> <p>Glissez-déposez un fichier ici</p></div>',
-                preview: '<div class="dropify-preview"><span class="dropify-render"></span><div class="dropify-infos"><div class="dropify-infos-inner"><p class="dropify-infos-message">Glissez-déposez ou cliquez pour remplacer</p></div></div></div>',
-                filename: '<p class="dropify-filename"><span class="file-icon"></span> <span class="dropify-filename-inner"></span></p>'
-            }
-        };
-
-    function Plugin ( element, options ) {
-        this.element = element;
-        this.settings = $.extend( {}, defaults, options );
-        this._defaults = defaults;
-        this._name = pluginName;
-        this.imgFileFormats = ['png', 'jpg', 'jpeg', 'gif', 'bpm'],
-        this.filename = null,
-        this.filenameElt = null,
-        this.preview = null,
-        this.isIE = !!window.ActiveXObject;
-
-        this.init();
-    }
-
-    Plugin.prototype = {
-        init: function () {
-            if (!this.isIE) {
-                var _this = this,
-                    element = $(this.element),
-                    defaultText = element.data('default-text') || this.settings.defaultText;
-
-                _this.createElements();
-
-                element.on('change', function(){
-                    _this.filename = _this.getFilename($(this).val());
-                    _this.filename = (_this.filename != '') ? _this.filename : defaultText;
-                    _this.setFilename(_this.filename);
-                    _this.readUrl(this);
-                });
-            }
-        },
-        createElements: function() {
-            var element = $(this.element),
-                defaultText = element.data('default-text') || this.settings.defaultText,
-                value = element.val() || defaultText,
-                defaultImage = element.data('default-image') || '';
-
-            element.wrap($(this.settings.tpl.wrap));
-            $(this.settings.tpl.message).insertBefore(element);
-
-            this.preview = $(this.settings.tpl.preview);
-            this.preview.insertAfter(element);
-
-            if (defaultImage != '') {
-                this.filename = defaultImage;
-                this.setPreview(defaultImage)
-            }
-
-            this.filenameElt = $(this.settings.tpl.filename);
-            this.filenameElt.prependTo(this.preview.find('.dropify-infos-inner'));
-
-            if (defaultImage != '') {
-                this.setFilename(this.getFilename(defaultImage));
-                this.preview.show();
-            }
-        },
-        getFilename: function(src) {
-            var filename = src.split('\\').pop();
-            if (filename == src) {
-                filename = src.split('/').pop();
-            }
-
-            return src != "" ? filename : '';
-        },
-        setFilename: function(filename) {
-            this.filenameElt.children('.dropify-filename-inner').html(filename);
-        },
-        isImage: function() {
-            var ext = this.filename.split('.').pop().toLowerCase();
-            if ($.inArray(ext, this.imgFileFormats) != "-1") {
-                return true;
-            }
-
-            return false;
-        },
-        readUrl: function(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader(),
-                    _this = this;
-
-                reader.onload = function(e) {
-                    _this.setPreview(e.target.result, input.files[0].name);
-                }
-
-                reader.readAsDataURL(input.files[0]);
-            } else {
-                this.resetPreview();
-            }
-        },
-        setPreview: function(src) {
-            var render = this.preview.children('.dropify-render');
-            this.resetPreview();
-
-            if (this.isImage() === true) {
-                $('<img />').attr('src', src).appendTo(render);
-            } else {
-                $('<i />').attr('class', 'file-icon').appendTo(this.preview.children('.dropify-render'));
-            }
-
-            this.preview.fadeIn();
-        },
-        resetPreview: function() {
-            var render = this.preview.children('.dropify-render');
-            render.find('i').remove();
-            render.find('img').remove();
-        }
-
-    };
-
-    $.fn[ pluginName ] = function ( options ) {
-        this.each(function() {
-            if ( !$.data( this, "plugin_" + pluginName ) ) {
-                $.data( this, "plugin_" + pluginName, new Plugin( this, options ) );
-            }
-        });
-
-        return this;
-    };
-
-}));
-
-},{"jquery":"/Volumes/Elao/workspace/misc/ElaoStrap/node_modules/jquery/dist/jquery.js"}],"/Volumes/Elao/workspace/misc/ElaoStrap/assets/js/vendors/jquery.easing.js":[function(require,module,exports){
+},{}],"/Volumes/Elao/workspace/misc/ElaoStrap/assets/js/vendors/jquery.easing.js":[function(require,module,exports){
 /*
  * jQuery Easing v1.3 - http://gsgd.co.uk/sandbox/jquery/easing/
  *
@@ -3568,6 +3423,224 @@ require("/Volumes/Elao/workspace/misc/ElaoStrap/node_modules/bootstrap-sass/asse
   })
 
 }(jQuery);
+
+}).call(global, module, undefined, undefined);
+
+}).call(this,typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{"jquery":"/Volumes/Elao/workspace/misc/ElaoStrap/node_modules/jquery/dist/jquery.js"}],"/Volumes/Elao/workspace/misc/ElaoStrap/node_modules/dropify/dist/js/dropify.js":[function(require,module,exports){
+(function (global){
+
+; jQuery = global.jQuery = require("jquery");
+;__browserify_shim_require__=require;(function browserifyShim(module, define, require) {
+/*!
+ * =============================================================
+ * dropify v0.0.5 | Customize easily your basic HTML input files.
+ * https://github.com/JeremyFagis/dropify
+ *
+ * (c) 2015  <> | 
+ * =============================================================
+ */
+
+(function(root, factory) {
+  if (typeof define === 'function' && define.amd) {
+    define(['jquery'], factory);
+  } else if (typeof exports === 'object') {
+    module.exports = factory(__browserify_shim_require__('jquery'));
+  } else {
+    root.Dropify = factory(root.$);
+  }
+}(this, function($) {
+
+var pluginName = "dropify";
+
+function Dropify (element, options) {
+    defaults = {
+        defaultFile: '',
+        messages: {
+            defaultMessage: 'Drag and drop a file here',
+            replaceMessage: 'Drag and drop or click to replace',
+            removeMessage:  'Remove'
+        },
+        tpl: {
+            wrap:        '<div class="dropify-wrapper"></div>',
+            message:     '<div class="dropify-message"><span class="file-icon" /> <p>defaultMessage</p></div>',
+            preview:     '<div class="dropify-preview"><span class="dropify-render"></span><div class="dropify-infos"><div class="dropify-infos-inner"><p class="dropify-infos-message">replaceMessage</p></div></div></div>',
+            filename:    '<p class="dropify-filename"><span class="file-icon"></span> <span class="dropify-filename-inner"></span></p>',
+            clearButton: '<button type="button" class="dropify-clear">removeMessage</button>'
+        }
+    };
+
+    this.element        = element;
+    this.settings       = $.extend(true, defaults, options, $(this.element).data());
+    this._name          = pluginName;
+    this.imgFileFormats = ['png', 'jpg', 'jpeg', 'gif', 'bpm'],
+    this.filename       = null,
+    this.filenameElt    = null,
+    this.wrap           = null,
+    this.preview        = null,
+    this.isIE           = document.all && !window.atob;
+    this.isDisabled     = false;
+
+    this.translate();
+    this.init();
+}
+
+Dropify.prototype = {
+    init: function () {
+        if (!this.isIE) {
+            var _this = this;
+
+            _this.createElements();
+            _this.setSize();
+
+            $(this.element).on('change', function(){
+                _this.resetPreview();
+                _this.filename = _this.getFilename($(this).val());
+                _this.setFilename(_this.filename);
+                _this.readUrl(this);
+            });
+        }
+    },
+
+    createElements: function() {
+        var element = $(this.element),
+            value = element.val() || '',
+            defaultFile = this.settings.defaultFile || '';
+
+        element.wrap($(this.settings.tpl.wrap));
+        this.wrap = element.parent();
+
+        if (this.isTouchDevice() === true) {
+            this.wrap.addClass('touch-fallback');
+        }
+
+        if (element.attr('disabled')) {
+            this.isDisabled = true;
+            this.wrap.addClass('disabled');
+        }
+
+        $(this.settings.tpl.message).insertBefore(element);
+
+        this.preview = $(this.settings.tpl.preview);
+        this.preview.insertAfter(element);
+
+        if (this.isDisabled === false) {
+            this.clearButton = $(this.settings.tpl.clearButton);
+            this.clearButton.insertAfter(this.element);
+
+            var _this = this;
+            this.clearButton.on('click', function(e){
+                _this.clearElement();
+            });
+        }
+
+
+        this.filenameElt = $(this.settings.tpl.filename);
+        this.filenameElt.prependTo(this.preview.find('.dropify-infos-inner'));
+
+        if (defaultFile != '') {
+            this.filename = defaultFile;
+            this.setPreview(defaultFile);
+            this.setFilename(this.getFilename(defaultFile));
+        }
+    },
+
+    readUrl: function(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader(),
+                _this = this;
+
+            reader.onload = function(e) {
+                _this.setPreview(e.target.result, input.files[0].name);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    },
+
+    setPreview: function(src) {
+        this.wrap.addClass('has-preview');
+        var render = this.preview.children('.dropify-render');
+
+        if (this.isImage() === true) {
+            $('<img />').attr('src', src).appendTo(render);
+        } else {
+            $('<i />').attr('class', 'file-icon').appendTo(render);
+        }
+
+        this.preview.fadeIn();
+    },
+
+    resetPreview: function() {
+        this.wrap.removeClass('has-preview');
+        var render = this.preview.children('.dropify-render');
+        render.find('i').remove();
+        render.find('img').remove();
+        this.preview.hide();
+    },
+
+    getFilename: function(src) {
+        var filename = src.split('\\').pop();
+        if (filename == src) {
+            filename = src.split('/').pop();
+        }
+
+        return src != "" ? filename : '';
+    },
+
+    setFilename: function(filename) {
+        this.filenameElt.children('.dropify-filename-inner').html(filename);
+    },
+
+    clearElement: function() {
+        $(this.element).replaceWith($(this.element).val('').clone(true));
+        this.resetPreview();
+    },
+
+    setSize: function() {
+        if (this.settings.height) {
+            this.wrap.height(this.settings.height);
+        }
+    },
+
+    isTouchDevice: function() {
+        return (('ontouchstart' in window)
+             || (navigator.MaxTouchPoints > 0)
+             || (navigator.msMaxTouchPoints > 0));
+    },
+
+    isImage: function() {
+        var ext = this.filename.split('.').pop().toLowerCase();
+        if ($.inArray(ext, this.imgFileFormats) != "-1") {
+            return true;
+        }
+
+        return false;
+    },
+
+    translate: function() {
+        for (var name in this.settings.tpl) {
+            for (var key in this.settings.messages) {
+                this.settings.tpl[name] = this.settings.tpl[name].replace(key, this.settings.messages[key]);
+            }
+        }
+    }
+
+};
+
+$.fn[ pluginName ] = function ( options ) {
+    this.each(function() {
+        if ( !$.data( this, "plugin_" + pluginName ) ) {
+            $.data( this, "plugin_" + pluginName, new Dropify( this, options ) );
+        }
+    });
+
+    return this;
+};
+
+
+return Dropify;
+}));
 
 }).call(global, module, undefined, undefined);
 
