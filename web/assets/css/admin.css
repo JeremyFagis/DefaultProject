@@ -5592,27 +5592,27 @@ body.admin .navbar {
         margin-left: 3px; }
         body.admin .navbar .navbar-inner .list-actions .btn i {
           font-size: 14px; }
-      body.admin .navbar .navbar-inner .list-actions .filters-button {
-        display: inline-block;
-        font-size: 20px;
-        line-height: 35px;
-        height: 35px;
-        width: 35px;
-        text-align: center;
-        color: #999;
-        border-radius: 3px;
-        border: 2px solid tranparent;
-        vertical-align: middle;
-        -webkit-transition: all 0.1s linear;
-                transition: all 0.1s linear; }
-        body.admin .navbar .navbar-inner .list-actions .filters-button:not(.collapsed), body.admin .navbar .navbar-inner .list-actions .filters-button:not(.collapsed):hover {
-          border-color: #F34141;
-          background: #F34141;
-          color: #FFF; }
-        body.admin .navbar .navbar-inner .list-actions .filters-button.collapsed:hover {
-          border-color: rgba(249, 249, 249, 0.95);
-          background: rgba(249, 249, 249, 0.95);
-          color: #F34141; }
+body.admin .filters-button {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 35px;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  color: #999;
+  border-radius: 3px;
+  border: 2px solid tranparent;
+  vertical-align: middle;
+  -webkit-transition: all 0.1s linear;
+          transition: all 0.1s linear; }
+  body.admin .filters-button:not(.collapsed), body.admin .filters-button:not(.collapsed):hover {
+    border-color: #F34141;
+    background: #F34141;
+    color: #FFF; }
+  body.admin .filters-button.collapsed:hover {
+    border-color: rgba(249, 249, 249, 0.95);
+    background: rgba(249, 249, 249, 0.95);
+    color: #F34141; }
 body.admin .page-title, body.admin .page-title-mobile {
   font-size: 22px;
   font-family: "Roboto Condensed", "Helvetica Neue", "Helvetica";
@@ -5901,15 +5901,12 @@ body.admin .login-box {
     display: block;
     float: right;
     margin-top: 5px; }
-  body.admin .filters {
-    margin-top: 20px;
-    margin-bottom: 15px; }
-    body.admin .filters .col-actions {
-      text-align: left;
-      padding-top: 15px; }
-      body.admin .filters .col-actions .btn {
-        margin-left: 0;
-        margin-right: 5px; }
+  body.admin .filters .col-actions {
+    text-align: left;
+    padding-top: 15px; }
+    body.admin .filters .col-actions .btn {
+      margin-left: 0;
+      margin-right: 5px; }
   body.admin .table-footer {
     text-align: center; }
     body.admin .table-footer .text-right {

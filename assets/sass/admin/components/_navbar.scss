@@ -63,38 +63,37 @@ body.admin {
                         font-size: 14px;
                     }
                 }
-
-                .filters-button {
-                    display: inline-block;
-                    font-size: 20px;
-                    line-height: 35px;
-                    height: 35px;
-                    width: 35px;
-                    text-align: center;
-                    color: #999;
-                    border-radius: 3px;
-                    border: 2px solid tranparent;
-                    vertical-align: middle;
-                    transition: all 0.1s linear;
-
-                    &:not(.collapsed) {
-                        &, &:hover {
-                            border-color: $main-color;
-                            background: $main-color;
-                            color: #FFF;
-                        }
-                    }
-
-                    &.collapsed:hover {
-                        border-color: darken($navbar-background, 2%);
-                        background: darken($navbar-background, 2%);
-                        color: $main-color;
-                    }
-                }
             }
         }
     }
 
+    .filters-button {
+        display: inline-block;
+        font-size: 20px;
+        line-height: 35px;
+        height: 35px;
+        width: 35px;
+        text-align: center;
+        color: #999;
+        border-radius: 3px;
+        border: 2px solid tranparent;
+        vertical-align: middle;
+        transition: all 0.1s linear;
+
+        &:not(.collapsed) {
+            &, &:hover {
+                border-color: $main-color;
+                background: $main-color;
+                color: #FFF;
+            }
+        }
+
+        &.collapsed:hover {
+            border-color: darken($navbar-background, 2%);
+            background: darken($navbar-background, 2%);
+            color: $main-color;
+        }
+    }
 
     .page-title, .page-title-mobile {
         font-size: 22px;
