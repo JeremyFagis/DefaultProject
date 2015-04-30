@@ -1,7 +1,7 @@
 {
   "name": "elaostrap",
   "description": "ElaoStrap is a SCSS Framework",
-  "version": "0.1.12",
+  "version": "0.2.1",
   "licenses": [
     {
       "type": "MIT",
@@ -59,14 +59,14 @@
     ]
   },
   "devDependencies": {
-    "jquery": "2.1.1",
-    "bootstrap-sass": "3.3.1",
-    "fastclick": "1.0.3",
-    "select2": "3.5.2-browserify",
-    "gulp": "~3.8.8",
-    "del": "0.1.*",
-    "elao-assets-gulp": "~0.1.13",
-    "dropify": "0.0.5",
-    "browserify-shim": "3.8.*"
+    "jquery": "^2.1.*",
+    "bootstrap-sass": "^3.3.*",
+    "fastclick": "^1.0.*",
+    "select2": "^3.5.*",
+    "gulp": "^3.8.*",
+    "del": "^1.1.*",
+    "elao-assets-gulp": "^0.1.*",
+    "dropify": "^0.0.*",
+    "browserify-shim": "^3.8.*"
   }
 }

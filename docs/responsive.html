@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <title>ElaoStrap</title>
+        <meta name="description" content="">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <meta name="format-detection" content="telephone=no">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,900|Roboto+Condensed:400,300,700|Inconsolata:400' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../dist/css/style.css">
+        <!--[if lt IE 9]>
+        <script src="../dist/js/vendors/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+    <body class="loading">
+        <!--[if lt IE 8]>
+            <div id="browsehappy">
+                <div id="browsehappy-inner">
+                    Vous utilisez un navigateur internet trop vieux.<br/>Merci de le <a href="http://browsehappy.com/">mettre à jour</a> afin d'améliorer votre navigation.
+                </div>
+            </div>
+        <![endif]-->
+
+        <section id="loading">
+            <div class="loader"></div>
+            <p>Loading</p>
+        </section>
+
+        <a href="#" class="scroll-to-top">&uarr;</a>
+
+        <div id="mobile-nav">
+            <div class="mobile-nav-title">Navigation</div>
+            <nav></nav>
+        </div>
+
+        <div class="navbar fixed">
+            <div class="navbar-inner">
+                <a href="index.html" class="navbar-logo">ElaoStrap</a>
+                <a href="#" class="mobile-nav-toggle">
+                    <span class="line-1"></span>
+                    <span class="line-2"></span>
+                    <span class="line-3"></span>
+                </a>
+                <nav id="main-nav" class="pull-right">
+                    <ul>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Documentation<i class="elaostrap-font-arrow-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="layout.html">Layout</a></li>
+                                <li><a href="typography.html">Typography</a></li>
+                                <li><a href="tables.html">Tables</a></li>
+                                <li><a href="buttons.html">Buttons</a></li>
+                                <li><a href="forms.html">Forms</a></li>
+                                <li><a href="js-plugins.html">JS Plugins</a></li>
+                                <li><a href="fonts.html">Fonts</a></li>
+                                <li><a href="responsive.html">Responsive</a></li>
+                                <li><a href="misc.html">Misc</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Admin<i class="elaostrap-font-arrow-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="admin/login.html">Login</a></li>
+                                <li><a href="admin/dashboard.html">Dashboard</a></li>
+                                <li><a href="admin/add.html">Add item</a></li>
+                                <li><a href="admin/edit.html">Edit item</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://github.com/JeremyFagis/ElaoStrap" target="_blank" class="line-hover"><i class="elaostrap-font-github"></i> Github repository</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="page-header">
+                <h1>Responsive</h1>
+            </div>
+
+            <h2>Responsive classes</h2>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>You can add classes for each breakpoint come in three variations, one for each CSS display property value : <strong>.visible-*-block, .visible-*-inline, .visible-*-inline-block</strong></p>
+                    <div class="table-responsive">
+                        <table class="table table-bordered responsive-utilities">
+                            <thead>
+                                <tr>
+                                    <th style="width: 160px;"></th>
+                                    <th>
+                                        Extra small devices<br/>
+                                        <small>Phones (&lt;768px)</small>
+                                    </th>
+                                    <th>
+                                        Small devices<br/>
+                                        <small>Tablets (≥768px)</small>
+                                    </th>
+                                    <th>
+                                        Medium devices<br/>
+                                        <small>Desktops (≥900px)</small>
+                                    </th>
+                                    <th>
+                                        Large devices<br/>
+                                        <small>Desktops (≥1024px)</small>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><code>.visible-xs-*</code></th>
+                                    <td class="is-visible">Visible</td>
+                                    <td class="is-hidden">Hidden</td>
+                                    <td class="is-hidden">Hidden</td>
+                                    <td class="is-hidden">Hidden</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><code>.visible-sm-*</code></th>
+                                    <td class="is-hidden">Hidden</td>
+                                    <td class="is-visible">Visible</td>
+                                    <td class="is-hidden">Hidden</td>
+                                    <td class="is-hidden">Hidden</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><code>.visible-md-*</code></th>
+                                    <td class="is-hidden">Hidden</td>
+                                    <td class="is-hidden">Hidden</td>
+                                    <td class="is-visible">Visible</td>
+                                    <td class="is-hidden">Hidden</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><code>.visible-lg-*</code></th>
+                                    <td class="is-hidden">Hidden</td>
+                                    <td class="is-hidden">Hidden</td>
+                                    <td class="is-hidden">Hidden</td>
+                                    <td class="is-visible">Visible</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><code>.hidden-xs</code></th>
+                                    <td class="is-hidden">Hidden</td>
+                                    <td class="is-visible">Visible</td>
+                                    <td class="is-visible">Visible</td>
+                                    <td class="is-visible">Visible</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><code>.hidden-sm</code></th>
+                                    <td class="is-visible">Visible</td>
+                                    <td class="is-hidden">Hidden</td>
+                                    <td class="is-visible">Visible</td>
+                                    <td class="is-visible">Visible</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><code>.hidden-md</code></th>
+                                    <td class="is-visible">Visible</td>
+                                    <td class="is-visible">Visible</td>
+                                    <td class="is-hidden">Hidden</td>
+                                    <td class="is-visible">Visible</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><code>.hidden-lg</code></th>
+                                    <td class="is-visible">Visible</td>
+                                    <td class="is-visible">Visible</td>
+                                    <td class="is-visible">Visible</td>
+                                    <td class="is-hidden">Hidden</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 no-padding-bottom">
+                        <i class="elaostrap-font-github"></i> <a href="https://github.com/JeremyFagis/ElaoStrap" target="_blank">Github repository</a>
+                    </div>
+                    <div class="col-sm-4 text-right no-padding-bottom">2015 &copy; <a href="http://www.fagis.fr" target="_blank">Jeremy FAGIS</a> for <a href="http://www.elao.com" target="_blank">Elao</a></div>
+                </div>
+            </div>
+
+        </footer>
+
+        <script src="../dist/js/main.js"></script>
+    </body>
+</html>

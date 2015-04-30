@@ -14,15 +14,15 @@ Clone the project in your workspace
 
 	$ git clone git@github.com:JeremyFagis/ElaoStrap.git your-project
 	$ cd your-project
-	
+
 Download packages
 
 	$ (sudo) npm install
-	
+
 Compile assets
 
 	$ gulp
-	
+
 Your assets folder looks like this
 
 	assets/
@@ -34,20 +34,20 @@ Your assets folder looks like this
 	│   └── ...
 	├── sass/
 	│   └── ...
-	
+
 
 ## Compilation
 
 	#  compilation (watch & minification)
 	$ gulp
-	
+
 	# Prod compilation (minification)
 	$ gulp install
-	
+
 	# Dev compilation (watch & no-minification)
 	$ gulp dev
-	
-	
+
+
 ## Details
 
 ### JS
@@ -57,8 +57,8 @@ Your assets folder looks like this
 	│   └─ fancybox, dropify, simple select
 	│   └─ Add others vendors here if they are not in node_modules
 	│
-	└── main.js	
-	
+	└── main.js
+
 
 ### Sass
 
@@ -79,11 +79,11 @@ Your assets folder looks like this
 	└── pages/
 	│   └─ Specific styles for pages
 	│
-	└── style.scss	
-	
+	└── style.scss
+
 
 ### Fonts
 
-Use [fontello.com](http://fontello.com/) to generate fonts icons. Move font files in assets/fonts/fontello, and update assets/sass/base/fonts.scss.
+Use [fontello.com](http://fontello.com/) to generate fonts icons. Move font files in assets/fonts/fontello, and update assets/sass/base/_font.scss.
 
 

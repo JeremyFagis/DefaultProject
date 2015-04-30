@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <title>ElaoStrap</title>
+        <meta name="description" content="">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <meta name="format-detection" content="telephone=no">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,900|Roboto+Condensed:400,300,700|Inconsolata:400' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../dist/css/style.css">
+        <!--[if lt IE 9]>
+        <script src="../dist/js/vendors/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+    <body class="loading">
+        <!--[if lt IE 8]>
+            <div id="browsehappy">
+                <div id="browsehappy-inner">
+                    Vous utilisez un navigateur internet trop vieux.<br/>Merci de le <a href="http://browsehappy.com/">mettre à jour</a> afin d'améliorer votre navigation.
+                </div>
+            </div>
+        <![endif]-->
+
+        <section id="loading">
+            <div class="loader"></div>
+            <p>Loading</p>
+        </section>
+
+        <a href="#" class="scroll-to-top">&uarr;</a>
+
+        <div id="mobile-nav">
+            <div class="mobile-nav-title">Navigation</div>
+            <nav></nav>
+        </div>
+
+        <div class="navbar fixed">
+            <div class="navbar-inner">
+                <a href="index.html" class="navbar-logo">ElaoStrap</a>
+                <a href="#" class="mobile-nav-toggle">
+                    <span class="line-1"></span>
+                    <span class="line-2"></span>
+                    <span class="line-3"></span>
+                </a>
+                <nav id="main-nav" class="pull-right">
+                    <ul>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Documentation<i class="elaostrap-font-arrow-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="layout.html">Layout</a></li>
+                                <li><a href="typography.html">Typography</a></li>
+                                <li><a href="tables.html">Tables</a></li>
+                                <li><a href="buttons.html">Buttons</a></li>
+                                <li><a href="forms.html">Forms</a></li>
+                                <li><a href="js-plugins.html">JS Plugins</a></li>
+                                <li><a href="fonts.html">Fonts</a></li>
+                                <li><a href="responsive.html">Responsive</a></li>
+                                <li><a href="misc.html">Misc</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Admin<i class="elaostrap-font-arrow-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="admin/login.html">Login</a></li>
+                                <li><a href="admin/dashboard.html">Dashboard</a></li>
+                                <li><a href="admin/add.html">Add item</a></li>
+                                <li><a href="admin/edit.html">Edit item</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://github.com/JeremyFagis/ElaoStrap" target="_blank" class="line-hover"><i class="elaostrap-font-github"></i> Github repository</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="page-header">
+                <h1>Miscellaneous</h1>
+            </div>
+
+            <h2>Navbar</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>By default, the navbar in <strong>not fixed</strong> and the content is <strong>centered</strong>.</p>
+<pre>
+<code><div class="navbar">
+    <div class="navbar-inner">
+        <a href="#" class="navbar-logo">ElaoStrap</a>
+        <nav class="pull-right">
+            <ul>
+                <li><a href="#">Lien 1</a></li>
+                <li class="active"><a href="#">Lien 2</a></li>
+                <li><a href="#">Lien 3</a></li>
+                <li><a href="#">Lien 4</a></li>
+            </ul>
+        </nav>
+    </div>
+</div></code>
+</pre>
+                </div>
+                <div class="col-md-6">
+                    <p>Multiple classes exists, you can <strong>combine</strong> them.</p>
+<pre>
+<code><!-- Fixed navbar -->
+<div class="navbar fixed">...</div>
+
+<!-- Full width navbar content -->
+<div class="navbar full">...</div>
+</code>
+</pre>
+                </div>
+            </div>
+
+            <h2>Labels</h2>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4>Default <a href="#labels" data-toggle="collapse" data-target="#labels" class="code-button"><i class="elaostrap-font-code"></i></a></h4>
+<pre id="labels" class="collapse in">
+<code><span class="label">Mon label</span>
+<span class="label label-primary">Mon label</span>
+<span class="label label-success">Mon label</span>
+<span class="label label-info">Mon label</span>
+<span class="label label-warning">Mon label</span>
+<span class="label label-danger">Mon label</span>
+</code>
+</pre>
+                    <span class="label">Mon label</span>
+                    <span class="label label-primary">Mon label</span>
+                    <span class="label label-success">Mon label</span>
+                    <span class="label label-info">Mon label</span>
+                    <span class="label label-warning">Mon label</span>
+                    <span class="label label-danger">Mon label</span>
+                </div>
+                <div class="col-sm-6">
+                    <h4>Links <a href="#labels-links" data-toggle="collapse" data-target="#labels-links" class="code-button"><i class="elaostrap-font-code"></i></a></h4>
+<pre id="labels-links" class="collapse in">
+<code><a href="#" class="label">Mon lien</a>
+<a href="#" class="label label-primary">Mon lien</a>
+<a href="#" class="label label-success">Mon lien</a>
+<a href="#" class="label label-info">Mon lien</a>
+<a href="#" class="label label-warning">Mon lien</a>
+<a href="#" class="label label-danger">Mon lien</a>
+</code>
+</pre>
+                    <a href="#" class="label">Mon lien</a>
+                    <a href="#" class="label label-primary">Mon lien</a>
+                    <a href="#" class="label label-success">Mon lien</a>
+                    <a href="#" class="label label-info">Mon lien</a>
+                    <a href="#" class="label label-warning">Mon lien</a>
+                    <a href="#" class="label label-danger">Mon lien</a>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-sm-6">
+
+                    <h2>Pagination <a href="#pagination" data-toggle="collapse" data-target="#pagination" class="code-button"><i class="elaostrap-font-code"></i></a></h2>
+<pre id="pagination" class="collapse in">
+<code><nav>
+    <ul class="pagination">
+        <li class="disabled"><a href="#"><span>&laquo;</span></a></li>
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        ...
+        <li><a href="#"><span>&raquo;</span></a></li>
+    </ul>
+</nav>
+
+<nav>
+    <ul class="pagination pagination-lg">...</ul>
+</nav>
+
+<nav>
+    <ul class="pagination pagination-sm">...</ul>
+</nav>
+</code>
+</pre>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <nav>
+                                <ul class="pagination">
+                                    <li class="disabled">
+                                        <a href="#">
+                                        <span>&laquo;</span>
+                                    </a>
+                                    </li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li>
+                                        <a href="#">
+                                        <span>&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                            <nav>
+                                <ul class="pagination pagination-lg">
+                                    <li class="disabled">
+                                        <a href="#">
+                                        <span>&laquo;</span>
+                                    </a>
+                                    </li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li>
+                                        <a href="#">
+                                        <span>&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                            <nav>
+                                <ul class="pagination pagination-sm">
+                                    <li class="disabled">
+                                        <a href="#">
+                                        <span>&laquo;</span>
+                                    </a>
+                                    </li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li>
+                                        <a href="#">
+                                        <span>&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h2>Loaders <a href="#loader" data-toggle="collapse" data-target="#loader" class="code-button"><i class="elaostrap-font-code"></i></a></h2>
+<pre id="loader" class="collapse in">
+<code><div class="loader"></div>
+<div class="loader loader-sm"></div>
+<div class="loader loader-lg"></div>
+</code>
+</pre>
+                    <div>
+                        <h4>Default</h4>
+                        <span class="loader"></span>
+                    </div>
+                    <div>
+                        <h4>Smaller</h4>
+                        <span class="loader loader-sm"></span>
+                    </div>
+                    <div>
+                        <h4>Larger</h4>
+                        <span class="loader loader-lg"></span>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Progress bars  <a href="#progress" data-toggle="collapse" data-target="#progress" class="code-button"><i class="elaostrap-font-code"></i></a></h2>
+<pre id="progress" class="collapse in">
+<code><div class="progress">
+    <div class="progress-bar" style="width: 60%;" data-original-title="60%" data-toggle="tooltip" data-placement="right"></div>
+</div>
+
+<!-- Rounded corners -->
+<div class="progress rounded">...</div>
+
+<!-- Different colors -->
+<div class="progress">
+    <div class="progress-bar progress-bar-success"></div>
+</div>
+<div class="progress">
+    <div class="progress-bar progress-bar-info"></div>
+</div>
+<div class="progress">
+    <div class="progress-bar progress-bar-warning"></div>
+</div>
+<div class="progress">
+    <div class="progress-bar progress-bar-danger"></div>
+</div></code>
+</pre>
+            <div class="row">
+                <div class="col-sm-4">
+<pre>
+<code>.progress-bar
+ </code>
+</pre>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 60%;" title="60%" data-toggle="tooltip" data-placement="right"></div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" style="width: 23%;" title="23%" data-toggle="tooltip" data-placement="right"></div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info" style="width: 82%;" title="82%" data-toggle="tooltip" data-placement="right"></div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-warning" style="width: 44%;" title="44%" data-toggle="tooltip" data-placement="right"></div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger" style="width: 95%;" title="95%" data-toggle="tooltip" data-placement="right"></div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+<pre>
+<code>.progress-bar.progress-bar-striped
+ </code>
+</pre>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped" style="width: 60%;" title="60%" data-toggle="tooltip" data-placement="right"></div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success progress-bar-striped" style="width: 23%;" title="23%" data-toggle="tooltip" data-placement="right"></div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info progress-bar-striped" style="width: 82%;" title="82%" data-toggle="tooltip" data-placement="right"></div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 44%;" title="44%" data-toggle="tooltip" data-placement="right"></div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger progress-bar-striped" style="width: 95%;" title="95%" data-toggle="tooltip" data-placement="right"></div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+<pre>
+<code>.progress-bar.progress-bar-striped.active</code>
+</pre>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped active" style="width: 60%;" title="60%" data-toggle="tooltip" data-placement="right"></div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success progress-bar-striped active" style="width: 23%;" title="23%" data-toggle="tooltip" data-placement="right"></div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info progress-bar-striped active" style="width: 82%;" title="82%" data-toggle="tooltip" data-placement="right"></div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width: 44%;" title="44%" data-toggle="tooltip" data-placement="right"></div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: 95%;" title="95%" data-toggle="tooltip" data-placement="right"></div>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Alerts <a href="#alerts" data-toggle="collapse" data-target="#alerts" class="code-button"><i class="elaostrap-font-code"></i></a></h2>
+<pre id="alerts" class="collapse in">
+<code><div class="alert">...</div>
+<div class="alert alert-primary">...</div>
+<div class="alert alert-success">...</div>
+<div class="alert alert-info">...</div>
+<div class="alert alert-warning">...</div>
+<div class="alert alert-danger">...</div>
+</code>
+</pre>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="alert">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">Sint, mollitia, illum eum voluptate officia</a> tempora consequatur expedita aperiam iste aut totam excepturi quisquam deleniti quia dolores ratione maiores voluptatum. Perferendis.</div>
+                    <div class="alert alert-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">Sint, mollitia, illum eum voluptate officia</a> tempora consequatur expedita aperiam iste aut totam excepturi quisquam deleniti quia dolores ratione maiores voluptatum. Perferendis.</div>
+                    <div class="alert alert-success">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">Sint, mollitia, illum eum voluptate officia</a> tempora consequatur expedita aperiam iste aut totam excepturi quisquam deleniti quia dolores ratione maiores voluptatum. Perferendis.</div>
+                    <div class="alert alert-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">Sint, mollitia, illum eum voluptate officia</a> tempora consequatur expedita aperiam iste aut totam excepturi quisquam deleniti quia dolores ratione maiores voluptatum. Perferendis.</div>
+                    <div class="alert alert-warning">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">Sint, mollitia, illum eum voluptate officia</a> tempora consequatur expedita aperiam iste aut totam excepturi quisquam deleniti quia dolores ratione maiores voluptatum. Perferendis.</div>
+                    <div class="alert alert-danger">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">Sint, mollitia, illum eum voluptate officia</a> tempora consequatur expedita aperiam iste aut totam excepturi quisquam deleniti quia dolores ratione maiores voluptatum. Perferendis.</div>
+                </div>
+            </div>
+
+            <h2>Panels <a href="#panels" data-toggle="collapse" data-target="#panels" class="code-button"><i class="elaostrap-font-code"></i></a></h2>
+<pre id="panels" class="collapse in">
+<code><div class="panel panel-default">
+    <div class="panel-heading">Panel title</div>
+    <div class="panel-body">...</div>
+</div>
+
+<div class="panel panel-primary">...</div>
+<div class="panel panel-success">...</div>
+<div class="panel panel-info">...</div>
+<div class="panel panel-warning">...</div>
+<div class="panel panel-danger">...</div></code>
+</pre>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Panel title</div>
+                        <div class="panel-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel laudantium placeat, accusamus quia. Aliquid quibusdam expedita, earum, error molestiae libero.
+                        </div>
+                    </div>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">Panel title</div>
+                        <div class="panel-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel laudantium placeat, accusamus quia. Aliquid quibusdam expedita, earum, error molestiae libero.
+                        </div>
+                    </div>
+                    <div class="panel panel-success">
+                        <div class="panel-heading">Panel title</div>
+                        <div class="panel-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel laudantium placeat, accusamus quia. Aliquid quibusdam expedita, earum, error molestiae libero.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">Panel title</div>
+                        <div class="panel-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel laudantium placeat, accusamus quia. Aliquid quibusdam expedita, earum, error molestiae libero.
+                        </div>
+                    </div>
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">Panel title</div>
+                        <div class="panel-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel laudantium placeat, accusamus quia. Aliquid quibusdam expedita, earum, error molestiae libero.
+                        </div>
+                    </div>
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">Panel title</div>
+                        <div class="panel-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel laudantium placeat, accusamus quia. Aliquid quibusdam expedita, earum, error molestiae libero.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <h2>Shortcuts</h2>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4>Margins &amp; paddings generator</h4>
+                    <p><strong>5px by 5px</strong> you can use css class to add margins or paddings. <br/> Usable beetween 0 and 100px. You can <strong>combine</strong> them.</p>
+<pre>
+<code>.mXX == margin: XXpx;
+.mtXX == margin-top: XXpx;
+.mrXX == margin-right: XXpx;
+.mbXX == margin-bottom: XXpx;
+.mlXX == margin-left: XXpx;
+
+.pXX == padding: XXpx;
+.ptXX == padding-top: XXpx;
+.prXX == padding-right: XXpx;
+.pbXX == padding-bottom: XXpx;
+.plXX == padding-left: XXpx;</code>
+</pre>
+                </div>
+                <div class="col-sm-6">
+                    <h4>Text &amp; positionning</h4>
+<pre class="mt25">
+<code>.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+.text-justify { text-align: justify; }
+
+.strong, .bold { ... }
+.italic { ... }
+
+.pull-left { float: left; }
+.pull-right { float: right; }
+
+.hide-text { ... }
+.clearfix { ... }
+</code>
+</pre>
+                </div>
+            </div>
+
+        </div>
+
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 no-padding-bottom">
+                        <i class="elaostrap-font-github"></i> <a href="https://github.com/JeremyFagis/ElaoStrap" target="_blank">Github repository</a>
+                    </div>
+                    <div class="col-sm-4 text-right no-padding-bottom">2015 &copy; <a href="http://www.fagis.fr" target="_blank">Jeremy FAGIS</a> for <a href="http://www.elao.com" target="_blank">Elao</a></div>
+                </div>
+            </div>
+
+        </footer>
+
+        <script src="../dist/js/main.js"></script>
+    </body>
+</html>

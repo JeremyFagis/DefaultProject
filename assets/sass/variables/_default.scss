@@ -71,13 +71,14 @@ $container-max-width:        $screen-lg !default;
 ///////////////////////////
 /// NAVBAR
 ///////////////////////////
-$navbar-background:   transparentize(#FFF, 0.05) !default;
-$navbar-color:        #000 !default;
-$navbar-height:       80px !default;
-$navbar-border-width: 2px !default;
-$navbar-border-color: #EEE !default;
-$navbar-zindex:       2000 !default;
-$navbar-active-color: $main-color !default;
+$navbar-background:        transparentize(#FFF, 0.05) !default;
+$navbar-color:             #000 !default;
+$navbar-height:            80px !default;
+$navbar-border-width:      2px !default;
+$navbar-border-color:      #EEE !default;
+$navbar-zindex:            2000 !default;
+$navbar-active-color:      $main-color !default;
+$navbar-active-background: #F2F2F2 !default;
 
 
 ///////////////////////////
