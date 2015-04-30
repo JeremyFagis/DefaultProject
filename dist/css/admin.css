@@ -5513,7 +5513,8 @@ table.responsive-utilities .is-hidden {
     display: none !important; } }
 
 body.admin {
-  background: #F4F4F4; }
+  background: #F4F4F4;
+  padding-top: 0; }
   body.admin.nav-opened {
     overflow: hidden; }
   body.admin.fullscreen .sidebar {
