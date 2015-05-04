@@ -191,3 +191,22 @@ pre {
     }
 }
 
+
+.intro {
+    font-size: $intro-font-size;
+    line-height: $intro-line-height;
+    text-align: center;
+    padding: $intro-padding;
+    margin: $intro-margin;
+    letter-spacing: $intro-letter-spacing;
+
+    a {
+        &, &:visited {
+            color: $intro-links-color;
+        }
+
+        &:hover {
+            color: $intro-links-color-hover;
+        }
+    }
+}
