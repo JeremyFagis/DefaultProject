@@ -67,6 +67,7 @@
     "del": "^1.1.*",
     "elao-assets-gulp": "^0.1.*",
     "dropify": "^0.0.*",
+    "font-awesome": "^4.3.*",
     "browserify-shim": "^3.8.*"
   }
 }

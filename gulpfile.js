@@ -25,6 +25,7 @@ assets.config({
         fonts: {
             groups: {
                 'dropify': {src: 'dropify/src/fonts/**', dest: 'dropify'},
+                'font-awesome': {src: 'font-awesome/fonts/**', dest: 'font-awesome'}
             }
         }
     }
