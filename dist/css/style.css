@@ -4568,7 +4568,8 @@ body, #header, .navbar {
     left: -250px !important; } }
 
 .datepicker {
-  padding: 4px; }
+  padding: 4px;
+  width: 260px; }
   .datepicker > div {
     display: none; }
   .datepicker.days div.datepicker-days {
