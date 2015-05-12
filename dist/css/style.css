@@ -7105,6 +7105,13 @@ pre {
     border-radius: 5px; }
     pre code.inline {
       display: inline-block; }
+  pre.only {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #EEE;
+    padding: 10px 10px;
+    margin: 0;
+    border-radius: 5px; }
 
 .intro {
   font-size: 20px;

@@ -189,6 +189,15 @@ pre {
             display: inline-block;
         }
     }
+
+    &.only {
+        display: block;
+        background-color: $code-background;
+        color: $code-color;
+        padding: $code-padding;
+        margin: $code-margin;
+        border-radius: 5px;
+    }
 }
 
 
