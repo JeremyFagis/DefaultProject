@@ -4776,7 +4776,7 @@ Version: 3.5.2
 .select2-container .select2-choice {
   display: block;
   height: 41px;
-  padding: 0 0 0 10px;
+  padding: 0 0 0 12px;
   overflow: hidden;
   position: relative;
   border: 1px solid #D4D4D4;
@@ -4799,10 +4799,10 @@ html[dir="rtl"] .select2-container .select2-choice {
   border-radius: 0 0 4px 4px; }
 
 .select2-container.select2-allowclear .select2-choice .select2-chosen {
-  margin-right: 42px; }
+  margin-right: 51px; }
 
 .select2-container .select2-choice > .select2-chosen {
-  margin-right: 44px;
+  margin-right: 53px;
   display: block;
   overflow: hidden;
   white-space: nowrap;
@@ -4877,8 +4877,9 @@ html[dir="rtl"] .select2-container .select2-choice > .select2-chosen {
   display: inline-block;
   line-height: 41px;
   height: 41px;
-  width: auto;
-  padding: 0 6px;
+  width: 41px;
+  padding: 0;
+  text-align: center;
   height: 100%;
   position: absolute;
   right: 0;
@@ -4947,13 +4948,7 @@ html[dir="rtl"] .select2-search input {
   border-top-color: transparent; }
 
 .select2-dropdown-open .select2-choice .select2-arrow {
-  background: transparent;
-  border-left: none;
-  -webkit-filter: none;
-          filter: none; }
-
-html[dir="rtl"] .select2-dropdown-open .select2-choice .select2-arrow {
-  border-right: none; }
+  opacity: 0.5; }
 
 .select2-dropdown-open .select2-choice .select2-arrow b {
   background-position: -18px 1px; }
