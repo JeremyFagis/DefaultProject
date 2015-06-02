@@ -4589,6 +4589,13 @@ table td[class*="col-"], table th[class*="col-"] {
   to {
     background-position: 60px 30px; } }
 
+.dropify-wrapper {
+  border-width: 1px;
+  border-color: #D4D4D4;
+  border-radius: 4px; }
+  .dropify-wrapper .dropify-preview {
+    border-radius: 4px; }
+
 body, #header, .navbar {
   left: 0;
   transition: all 0.2s ease;
