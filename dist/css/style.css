@@ -4016,9 +4016,11 @@ table td[class*="col-"], table th[class*="col-"] {
     vertical-align: middle; }
   .media .media-bottom {
     vertical-align: bottom; }
-  .media .media-body .media {
-    border: 0;
-    padding: 10px 0; }
+  .media .media-body {
+    width: 10000px; }
+    .media .media-body .media {
+      border: 0;
+      padding: 10px 0; }
   .media .media-title {
     margin: 0 0 5px 0; }
 
@@ -7152,7 +7154,7 @@ table.responsive-utilities .is-hidden {
     margin-bottom: 50px;
     font-size: 35px;
     position: relative;
-    font-weight: bold; }
+    font-weight: 400; }
     .page-header h1::after {
       content: '';
       width: 60px;
