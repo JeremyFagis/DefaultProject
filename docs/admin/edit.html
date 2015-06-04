@@ -30,11 +30,11 @@
                 <a href="dashboard.html" class="navbar-logo">ElaoStrap <small>ADMIN</small></a>
                 <div class="page-title">
                     <ul class="breadcrumb">
-                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Dashboard</a></li>
                         <li><a href="#">Parent 1</a></li>
                         <li><a href="#">Parent 2</a></li>
                     </ul>
-                    <span class="current">Liste des utilisateurs</span>
+                    <span class="current">Users</span>
                 </div>
                 <a href="#" class="mobile-nav-toggle"><span class="line-1"></span><span class="line-2"></span><span class="line-3"></span></a>
             </div>
@@ -45,52 +45,40 @@
                     <li>
                         <a href="#"><img src="https://s.gravatar.com/avatar/a9e1cf01cd07f1d2fb7fcbc7db00079e?s=24" alt="" /> Jeremy</a>
                         <ul>
-                            <li><a href="#">Mon profil</a></li>
-                            <li><a href="login.html">Connexion</a></li>
-                            <li><a href="../index.html">Déconnexion</a></li>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="../index.html">Logout</a></li>
                         </ul>
                     </li>
                 </ul>
             </nav>
             <nav>
                 <ul>
+                    <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
                     <li>
-                        <a href="#"><i class="fa fa-github"></i> Un lien d'exemple</a>
+                        <a href="#"><i class="fa fa-users"></i> Users</a>
                         <ul>
-                            <li><a href="#">Sous lien</a></li>
-                            <li><a href="#">Sous lien</a></li>
-                            <li>
-                                <a href="#">Sous lien</a>
-                                <ul>
-                                    <li><a href="#">Sous lien</a></li>
-                                    <li><a href="#">Sous lien</a></li>
-                                    <li><a href="#">Le titre de ma page est supeeer looonng</a></li>
-                                    <li><a href="#">Sous lien</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Sous lien</a></li>
+                            <li class="active"><a href="#"><i class="fa fa-user"></i> Users</a></li>
+                            <li><a href="#"><i class="fa fa-lock"></i> Permissions</a></li>
                         </ul>
                     </li>
-                    <li><a href="#"><i class="fa fa-github"></i> Un lien d'exemple</a></li>
                     <li>
-                        <a href="#"><i class="fa fa-github"></i> Un lien d'exemple</a>
+                        <a href="#"><i class="fa fa-cog"></i> Settings</a>
                         <ul>
-                            <li><a href="#">Sous lien</a></li>
-                            <li><a href="#">Sous lien</a></li>
+                            <li><a href="#">Setting 1</a></li>
+                            <li><a href="#">Setting 2</a></li>
                             <li>
-                                <a href="#">Sous lien</a>
+                                <a href="#">Setting 3</a>
                                 <ul>
-                                    <li><a href="#">Sous lien</a></li>
-                                    <li><a href="#">Sous lien</a></li>
-                                    <li class="active"><a href="#">Le titre de ma page est supeeer looonng</a></li>
-                                    <li><a href="#">Sous lien</a></li>
+                                    <li><a href="#">Setting 3 1</a></li>
+                                    <li><a href="#">Setting 3 2</a></li>
+                                    <li><a href="#">Setting 3 3</a></li>
+                                    <li><a href="#">Setting 3 4</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Sous lien</a></li>
+                            <li><a href="#">Setting 4</a></li>
                         </ul>
                     </li>
-                    <li><a href="#"><i class="fa fa-github"></i> Un lien d'exemple</a></li>
-                    <li><a href="#"><i class="fa fa-github"></i> Un lien d'exemple</a></li>
                 </ul>
             </nav>
             <footer>
@@ -104,50 +92,56 @@
             </a>
             <div class="container">
                 <form class="form-horizontal centered right-label">
-                    <h3>Editer un utilisateur</h3>
+                    <h3>Edit an user</h3>
                     <div class="form-group">
-                        <label class="control-label col-sm-3">Nom</label>
+                        <label class="control-label col-sm-3">Lastname</label>
                         <div class="col-sm-9 control-field">
-                            <input class="form-control" type="text" value="Vincent" />
+                            <input class="form-control" type="text" value="Mills" />
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label col-sm-3">Prénom</label>
+                        <label class="control-label col-sm-3">Firstname</label>
                         <div class="col-sm-9 control-field">
-                            <input class="form-control" type="text" value="Francky" />
+                            <input class="form-control" type="text" value="Erik" />
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="control-label col-sm-3">Email</label>
                         <div class="col-sm-9 control-field">
-                            <input class="form-control" type="text" value="droit-de-reponse@francky.fr" />
+                            <input class="form-control" type="text" value="erik.mills12@example.com" />
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label col-sm-3">Mot de passe</label>
+                        <label class="control-label col-sm-3">Password</label>
                         <div class="col-sm-9 control-field">
-                            <input class="form-control" type="password" value="tuveuxmonzizi" />
+                            <input class="form-control" type="password" value="user-password" />
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label col-sm-3">Datepicker</label>
+                        <label class="control-label col-sm-3">Birthdate</label>
                         <div class="col-sm-9 control-field">
-                            <input type="text" class="form-control" datepicker="datepicker">
+                            <input type="text" class="form-control" datepicker="datepicker" value="26/12/1988" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">Last login</label>
+                        <div class="col-sm-9 form-control-static">
+                            22/05/2015 11:43
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-sm-offset-3 col-sm-9 no-pb">
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" checked="checked" /> Actif ?
+                                    <input type="checkbox" checked="checked" /> Is active ?
                                 </label>
                             </div>
                         </div>
                     </div>
                     <div class="form-group form-action">
                         <div class="col-sm-offset-3 col-sm-9">
-                            <button type="submit" class="btn btn-primary">Modifier</button>
-                            <a href="dashboard.html" class="btn btn-link">Annuler</a>
+                            <button type="submit" class="btn btn-primary">Save</button>
+                            <a href="dashboard.html" class="btn btn-link">Cancel</a>
                         </div>
                     </div>
                 </form>

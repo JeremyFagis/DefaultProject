@@ -30,16 +30,16 @@
                 <a href="dashboard.html" class="navbar-logo">ElaoStrap <small>ADMIN</small></a>
                 <div class="page-title">
                     <ul class="breadcrumb">
-                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Dashboard</a></li>
                         <li><a href="#">Parent 1</a></li>
                         <li><a href="#">Parent 2</a></li>
                     </ul>
-                    <span class="current">Liste des utilisateurs</span>
+                    <span class="current">Users list</span>
                 </div>
                 <a href="#" class="mobile-nav-toggle"><span class="line-1"></span><span class="line-2"></span><span class="line-3"></span></a>
                 <div class="list-actions">
-                    <a href="#" class="filters-button has-tooltip" data-toggle="collapse" data-target="#filters" aria-expanded="false" title="Filtrer la liste" data-placement="left"><i class="elaostrap-font-filters"></i></a>
-                    <a href="add.html" class="btn btn-ghost btn-success"><i class="elaostrap-font-plus"></i> Ajouter</a>
+                    <a href="#" class="filters-button has-tooltip" data-toggle="collapse" data-target="#filters" aria-expanded="false" title="Filter" data-placement="left"><i class="elaostrap-font-filters"></i></a>
+                    <a href="add.html" class="btn btn-ghost btn-success"><i class="elaostrap-font-plus"></i> Add a new item</a>
                 </div>
             </div>
         </div>
@@ -49,52 +49,40 @@
                     <li>
                         <a href="#"><img src="https://s.gravatar.com/avatar/a9e1cf01cd07f1d2fb7fcbc7db00079e?s=24" alt="" /> Jeremy</a>
                         <ul>
-                            <li><a href="#">Mon profil</a></li>
-                            <li><a href="login.html">Connexion</a></li>
-                            <li><a href="../index.html">Déconnexion</a></li>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="../index.html">Logout</a></li>
                         </ul>
                     </li>
                 </ul>
             </nav>
             <nav>
                 <ul>
+                    <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
                     <li>
-                        <a href="#"><i class="fa fa-github"></i> Un lien d'exemple</a>
+                        <a href="#"><i class="fa fa-users"></i> Users</a>
                         <ul>
-                            <li><a href="#">Sous lien</a></li>
-                            <li><a href="#">Sous lien</a></li>
-                            <li>
-                                <a href="#">Sous lien</a>
-                                <ul>
-                                    <li><a href="#">Sous lien</a></li>
-                                    <li><a href="#">Sous lien</a></li>
-                                    <li><a href="#">Le titre de ma page est supeeer looonng</a></li>
-                                    <li><a href="#">Sous lien</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Sous lien</a></li>
+                            <li class="active"><a href="#"><i class="fa fa-user"></i> Users</a></li>
+                            <li><a href="#"><i class="fa fa-lock"></i> Permissions</a></li>
                         </ul>
                     </li>
-                    <li><a href="#"><i class="fa fa-github"></i> Un lien d'exemple</a></li>
                     <li>
-                        <a href="#"><i class="fa fa-github"></i> Un lien d'exemple</a>
+                        <a href="#"><i class="fa fa-cog"></i> Settings</a>
                         <ul>
-                            <li><a href="#">Sous lien</a></li>
-                            <li><a href="#">Sous lien</a></li>
+                            <li><a href="#">Setting 1</a></li>
+                            <li><a href="#">Setting 2</a></li>
                             <li>
-                                <a href="#">Sous lien</a>
+                                <a href="#">Setting 3</a>
                                 <ul>
-                                    <li><a href="#">Sous lien</a></li>
-                                    <li><a href="#">Sous lien</a></li>
-                                    <li class="active"><a href="#">Le titre de ma page est supeeer looonng</a></li>
-                                    <li><a href="#">Sous lien</a></li>
+                                    <li><a href="#">Setting 3 1</a></li>
+                                    <li><a href="#">Setting 3 2</a></li>
+                                    <li><a href="#">Setting 3 3</a></li>
+                                    <li><a href="#">Setting 3 4</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Sous lien</a></li>
+                            <li><a href="#">Setting 4</a></li>
                         </ul>
                     </li>
-                    <li><a href="#"><i class="fa fa-github"></i> Un lien d'exemple</a></li>
-                    <li><a href="#"><i class="fa fa-github"></i> Un lien d'exemple</a></li>
                 </ul>
             </nav>
             <footer>
@@ -108,7 +96,7 @@
             </a>
             <div id="filters" class="collapse in" aria-expanded="false">
                 <div class="filters">
-                    <h5>Filtres</h5>
+                    <h5>Filters</h5>
                     <div id="filters-cols" class="row">
                         <div class="col-sm-3">
                             <div class="form-group">
@@ -190,8 +178,8 @@
                             </div>
                         </div>
                         <div class="col-sm-3 col-actions">
-                            <button type="button" class="btn btn-link">Effacer</button>
-                            <button type="submit" class="btn btn-primary">Filtrer</button>
+                            <button type="button" class="btn btn-link">Reset</button>
+                            <button type="submit" class="btn btn-primary">Filter</button>
                         </div>
                     </div>
                 </div>
@@ -203,106 +191,170 @@
                 <table class="table table-hover table-striped">
                     <thead>
                         <tr>
-                            <th>Utilisateur</th>
+                            <th>User</th>
                             <th class="hidden-xs">Email</th>
-                            <th class="hidden-xs">Dernière connexion</th>
-                            <th class="hidden-xs">Actif ?</th>
+                            <th class="hidden-xs">Last login</th>
+                            <th class="hidden-xs">Is active?</th>
                             <th class="col-actions"></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Francky Vincent</td>
-                            <td class="hidden-xs">droit-de-reponse@francky.fr</td>
-                            <td class="hidden-xs">23/12/2014 11:43</td>
+                            <td>Erik Mills</td>
+                            <td class="hidden-xs">erik.mills12@example.com</td>
+                            <td class="hidden-xs">22/05/2015 11:43</td>
                             <td class="hidden-xs"><i class="elaostrap-font-check text-success"></i></td>
                             <td class="col-actions">
                                 <div class="btn-group">
-                                    <a href="edit.html" class="btn btn-default">Editer</a>
+                                    <a href="edit.html" class="btn btn-default">Edit</a>
                                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
                                     <ul class="dropdown-menu dropdown-menu-right">
-                                        <li><a href="#">Dupliquer</a></li>
-                                        <li><a href="#">Supprimer</a></li>
+                                        <li><a href="#">Duplicate</a></li>
+                                        <li><a href="#">Delete</a></li>
                                     </ul>
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <td>Francky Vincent</td>
-                            <td class="hidden-xs">droit-de-reponse@francky.fr</td>
-                            <td class="hidden-xs">23/12/2014 11:43</td>
+                            <td>Seth Rodriguez</td>
+                            <td class="hidden-xs">seth.rodriguez36@example.com</td>
+                            <td class="hidden-xs">22/05/2015 11:43</td>
                             <td class="hidden-xs"><i class="elaostrap-font-check text-success"></i></td>
                             <td class="col-actions">
                                 <div class="btn-group">
-                                    <a href="edit.html" class="btn btn-default">Editer</a>
+                                    <a href="edit.html" class="btn btn-default">Edit</a>
                                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
                                     <ul class="dropdown-menu dropdown-menu-right">
-                                        <li><a href="#">Dupliquer</a></li>
-                                        <li><a href="#">Supprimer</a></li>
+                                        <li><a href="#">Duplicate</a></li>
+                                        <li><a href="#">Delete</a></li>
                                     </ul>
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <td>Francky Vincent</td>
-                            <td class="hidden-xs">droit-de-reponse@francky.fr</td>
-                            <td class="hidden-xs">23/12/2014 11:43</td>
+                            <td>Kristen Graham</td>
+                            <td class="hidden-xs">kristen.graham16@example.com</td>
+                            <td class="hidden-xs">22/05/2015 11:43</td>
                             <td class="hidden-xs"><i class="elaostrap-font-check text-success"></i></td>
                             <td class="col-actions">
                                 <div class="btn-group">
-                                    <a href="edit.html" class="btn btn-default">Editer</a>
+                                    <a href="edit.html" class="btn btn-default">Edit</a>
                                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
                                     <ul class="dropdown-menu dropdown-menu-right">
-                                        <li><a href="#">Dupliquer</a></li>
-                                        <li><a href="#">Supprimer</a></li>
+                                        <li><a href="#">Duplicate</a></li>
+                                        <li><a href="#">Delete</a></li>
                                     </ul>
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <td>Francky Vincent</td>
-                            <td class="hidden-xs">droit-de-reponse@francky.fr</td>
-                            <td class="hidden-xs">23/12/2014 11:43</td>
+                            <td>Toni Payne</td>
+                            <td class="hidden-xs">toni.payne88@example.com</td>
+                            <td class="hidden-xs">22/05/2015 11:43</td>
                             <td class="hidden-xs"><i class="elaostrap-font-check text-success"></i></td>
                             <td class="col-actions">
                                 <div class="btn-group">
-                                    <a href="edit.html" class="btn btn-default">Editer</a>
+                                    <a href="edit.html" class="btn btn-default">Edit</a>
                                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
                                     <ul class="dropdown-menu dropdown-menu-right">
-                                        <li><a href="#">Dupliquer</a></li>
-                                        <li><a href="#">Supprimer</a></li>
+                                        <li><a href="#">Duplicate</a></li>
+                                        <li><a href="#">Delete</a></li>
                                     </ul>
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <td>Francky Vincent</td>
-                            <td class="hidden-xs">droit-de-reponse@francky.fr</td>
-                            <td class="hidden-xs">23/12/2014 11:43</td>
-                            <td class="hidden-xs"><i class="elaostrap-font-remove text-danger"></i></td>
+                            <td>Erik Mills</td>
+                            <td class="hidden-xs">erik.mills12@example.com</td>
+                            <td class="hidden-xs">22/05/2015 11:43</td>
+                            <td class="hidden-xs"><i class="elaostrap-font-check text-success"></i></td>
                             <td class="col-actions">
                                 <div class="btn-group">
-                                    <a href="edit.html" class="btn btn-default">Editer</a>
+                                    <a href="edit.html" class="btn btn-default">Edit</a>
                                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
                                     <ul class="dropdown-menu dropdown-menu-right">
-                                        <li><a href="#">Dupliquer</a></li>
-                                        <li><a href="#">Supprimer</a></li>
+                                        <li><a href="#">Duplicate</a></li>
+                                        <li><a href="#">Delete</a></li>
                                     </ul>
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <td>Francky Vincent</td>
-                            <td class="hidden-xs">droit-de-reponse@francky.fr</td>
-                            <td class="hidden-xs">23/12/2014 11:43</td>
+                            <td>Seth Rodriguez</td>
+                            <td class="hidden-xs">seth.rodriguez36@example.com</td>
+                            <td class="hidden-xs">22/05/2015 11:43</td>
                             <td class="hidden-xs"><i class="elaostrap-font-check text-success"></i></td>
                             <td class="col-actions">
                                 <div class="btn-group">
-                                    <a href="edit.html" class="btn btn-default">Editer</a>
+                                    <a href="edit.html" class="btn btn-default">Edit</a>
                                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
                                     <ul class="dropdown-menu dropdown-menu-right">
-                                        <li><a href="#">Dupliquer</a></li>
-                                        <li><a href="#">Supprimer</a></li>
+                                        <li><a href="#">Duplicate</a></li>
+                                        <li><a href="#">Delete</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Kristen Graham</td>
+                            <td class="hidden-xs">kristen.graham16@example.com</td>
+                            <td class="hidden-xs">22/05/2015 11:43</td>
+                            <td class="hidden-xs"><i class="elaostrap-font-check text-success"></i></td>
+                            <td class="col-actions">
+                                <div class="btn-group">
+                                    <a href="edit.html" class="btn btn-default">Edit</a>
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
+                                    <ul class="dropdown-menu dropdown-menu-right">
+                                        <li><a href="#">Duplicate</a></li>
+                                        <li><a href="#">Delete</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Toni Payne</td>
+                            <td class="hidden-xs">toni.payne88@example.com</td>
+                            <td class="hidden-xs">22/05/2015 11:43</td>
+                            <td class="hidden-xs"><i class="elaostrap-font-check text-success"></i></td>
+                            <td class="col-actions">
+                                <div class="btn-group">
+                                    <a href="edit.html" class="btn btn-default">Edit</a>
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
+                                    <ul class="dropdown-menu dropdown-menu-right">
+                                        <li><a href="#">Duplicate</a></li>
+                                        <li><a href="#">Delete</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Erik Mills</td>
+                            <td class="hidden-xs">erik.mills12@example.com</td>
+                            <td class="hidden-xs">22/05/2015 11:43</td>
+                            <td class="hidden-xs"><i class="elaostrap-font-check text-success"></i></td>
+                            <td class="col-actions">
+                                <div class="btn-group">
+                                    <a href="edit.html" class="btn btn-default">Edit</a>
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
+                                    <ul class="dropdown-menu dropdown-menu-right">
+                                        <li><a href="#">Duplicate</a></li>
+                                        <li><a href="#">Delete</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Seth Rodriguez</td>
+                            <td class="hidden-xs">seth.rodriguez36@example.com</td>
+                            <td class="hidden-xs">22/05/2015 11:43</td>
+                            <td class="hidden-xs"><i class="elaostrap-font-check text-success"></i></td>
+                            <td class="col-actions">
+                                <div class="btn-group">
+                                    <a href="edit.html" class="btn btn-default">Edit</a>
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
+                                    <ul class="dropdown-menu dropdown-menu-right">
+                                        <li><a href="#">Duplicate</a></li>
+                                        <li><a href="#">Delete</a></li>
                                     </ul>
                                 </div>
                             </td>
@@ -311,7 +363,7 @@
                 </table>
                 <div class="table-footer row">
                     <div class="col-sm-6">
-                        <strong>6</strong> résultats <span class="lighter"><select class="selector selector-sm"><option value="10">10</option><option value="20">20</option><option value="50">50</option></select> résultats par page.</span>
+                        <strong>52</strong> results <span class="lighter"><select class="selector selector-sm"><option value="10">10</option><option value="20">20</option><option value="50">50</option></select> results per page.</span>
                     </div>
                     <div class="col-sm-6 text-right">
                         <nav>
