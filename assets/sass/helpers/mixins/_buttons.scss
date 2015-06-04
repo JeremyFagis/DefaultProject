@@ -15,6 +15,10 @@
         border-color: darken($border, 5%);
     }
 
+    &:focus {
+        box-shadow: 0 0 8px transparentize($background, 0.3);
+    }
+
     &:active,
     &.active,
     .open > &.dropdown-toggle {
