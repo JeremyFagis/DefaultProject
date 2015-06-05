@@ -3858,6 +3858,9 @@ table td[class*="col-"], table th[class*="col-"] {
   position: relative;
   display: inline; }
 
+.dropdown-toggle.with-caret .caret {
+  margin: 0 3px; }
+
 .dropdown-toggle:focus {
   outline: 0; }
 
