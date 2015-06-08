@@ -17,10 +17,9 @@ var $              = require('jquery'),
     dropify        = require('dropify'),
     simpleSelector = require('./vendors/jquery.simple-selector'),
     fancybox       = require('./vendors/jquery.fancybox.pack'),
-    easing         = require('./vendors/jquery.easing'),
     mobileNav      = require('./vendors/mobile-nav'),
     datepicker     = require('./vendors/datepicker'),
-    scrollTop      = require('./vendors/scrollTop'),
+    ScrollTop      = require('./vendors/ScrollTop'),
     select2        = require('select2');
 
 require('select2.fr');
@@ -59,7 +58,7 @@ $(document).ready(function(){
         }
     });
 
-    new scrollTop();
+    new ScrollTop();
 
     $('#main-nav').mobileNav();
 
@@ -99,7 +98,67 @@ function htmlencode(str) {
     });
 }
 
-},{"./vendors/datepicker":"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/assets/js/vendors/datepicker.js","./vendors/jquery.easing":"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/assets/js/vendors/jquery.easing.js","./vendors/jquery.fancybox.pack":"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/assets/js/vendors/jquery.fancybox.pack.js","./vendors/jquery.simple-selector":"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/assets/js/vendors/jquery.simple-selector.js","./vendors/mobile-nav":"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/assets/js/vendors/mobile-nav.js","./vendors/scrollTop":"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/assets/js/vendors/scrollTop.js","bootstrap.collapse":"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/node_modules/bootstrap-sass/assets/javascripts/bootstrap/collapse.js","bootstrap.dropdown":"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/node_modules/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js","bootstrap.popover":"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/node_modules/bootstrap-sass/assets/javascripts/bootstrap/popover.js","bootstrap.tab":"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/node_modules/bootstrap-sass/assets/javascripts/bootstrap/tab.js","bootstrap.tooltip":"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/node_modules/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js","dropify":"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/node_modules/dropify/dist/js/dropify.js","fastclick":"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/node_modules/fastclick/lib/fastclick.js","jquery":"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/node_modules/jquery/dist/jquery.js","select2":"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/node_modules/select2/select2.js","select2.fr":"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/node_modules/select2/select2_locale_fr.js"}],"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/assets/js/vendors/datepicker.js":[function(require,module,exports){
+},{"./vendors/ScrollTop":"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/assets/js/vendors/ScrollTop.js","./vendors/datepicker":"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/assets/js/vendors/datepicker.js","./vendors/jquery.fancybox.pack":"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/assets/js/vendors/jquery.fancybox.pack.js","./vendors/jquery.simple-selector":"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/assets/js/vendors/jquery.simple-selector.js","./vendors/mobile-nav":"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/assets/js/vendors/mobile-nav.js","bootstrap.collapse":"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/node_modules/bootstrap-sass/assets/javascripts/bootstrap/collapse.js","bootstrap.dropdown":"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/node_modules/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js","bootstrap.popover":"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/node_modules/bootstrap-sass/assets/javascripts/bootstrap/popover.js","bootstrap.tab":"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/node_modules/bootstrap-sass/assets/javascripts/bootstrap/tab.js","bootstrap.tooltip":"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/node_modules/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js","dropify":"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/node_modules/dropify/dist/js/dropify.js","fastclick":"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/node_modules/fastclick/lib/fastclick.js","jquery":"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/node_modules/jquery/dist/jquery.js","select2":"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/node_modules/select2/select2.js","select2.fr":"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/node_modules/select2/select2_locale_fr.js"}],"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/assets/js/vendors/ScrollTop.js":[function(require,module,exports){
+var $ = require('jquery'),
+    easing = require('./jquery.easing');
+
+function ScrollTop(options)
+{
+    options = typeof(options) !== 'undefined' ? options : {};
+
+    this.limit        = typeof(options.limit) !== 'undefined' ? options.limit : 150;
+    this.tpl          = typeof(options.tpl) !== 'undefined' ? options.tpl : '<a href="#"></a>';
+    this.content      = typeof(options.content) !== 'undefined' ? options.content : '&uarr;';
+    this.btnClass     = typeof(options.btnClass) !== 'undefined' ? options.btnClass : 'scroll-to-top';
+    this.visibleClass = typeof(options.visibleClass) !== 'undefined' ? options.visibleClass : 'visible';
+    this.easing       = typeof(options.easing) !== 'undefined' ? options.easing : 'easeInOutExpo';
+    this.duration     = typeof(options.duration) !== 'undefined' ? options.duration : 800;
+    this.window       = $(window);
+    this.btn          = null;
+
+    this.onScroll = this.onScroll.bind(this);
+    this.onClick  = this.onClick.bind(this);
+
+    this.createButton();
+    this.onScroll();
+    this.initEvents();
+}
+
+ScrollTop.prototype.createButton = function()
+{
+    this.btn = $(this.tpl)
+                .html(this.content)
+                .addClass(this.btnClass)
+                .prependTo('body');
+};
+
+ScrollTop.prototype.checkScroll = function(scroll)
+{
+    if(scroll > this.limit) {
+        this.btn.addClass(this.visibleClass);
+    } else {
+        this.btn.removeClass(this.visibleClass);
+    }
+};
+
+ScrollTop.prototype.initEvents = function()
+{
+    this.window.scroll(this.onScroll);
+    this.btn.on('click', this.onClick);
+};
+
+ScrollTop.prototype.onScroll = function(event) {
+    this.checkScroll(this.window.scrollTop());
+};
+
+ScrollTop.prototype.onClick = function(event) {
+    $('html, body').animate({scrollTop : 0}, this.duration, this.easing);
+    return false;
+};
+
+module.exports = ScrollTop;
+
+},{"./jquery.easing":"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/assets/js/vendors/jquery.easing.js","jquery":"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/node_modules/jquery/dist/jquery.js"}],"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/assets/js/vendors/datepicker.js":[function(require,module,exports){
 /* =========================================================
  * bootstrap-datepicker.js
  * Repo: https://github.com/eternicode/bootstrap-datepicker/
@@ -2170,49 +2229,6 @@ d[0].offsetTop||15===d[0].offsetTop;d.remove();a.fixedPosition=e}f.extend(b.defa
     };
 
 }));
-
-},{"jquery":"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/node_modules/jquery/dist/jquery.js"}],"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/assets/js/vendors/scrollTop.js":[function(require,module,exports){
-var $ = require('jquery');
-
-function scrollTop(options)
-{
-    options = typeof(options) !== 'undefined' ? options : {};
-
-    this.limit       = typeof(options.limit) !== 'undefined' ? options.limit : 150;
-    this.btn         = typeof(options.btn) !== 'undefined' ? options.btn : '.scroll-to-top';
-    this.toggleClass = typeof(options.toggleClass) !== 'undefined' ? options.toggleClass : 'visible';
-    this.easing      = typeof(options.easing) !== 'undefined' ? options.easing : 'easeInOutExpo';
-    this.duration    = typeof(options.duration) !== 'undefined' ? options.duration : 800;
-
-    this.checkScroll($(window).scrollTop());
-    this.initEvents();
-}
-
-scrollTop.prototype.constructor = scrollTop;
-
-scrollTop.prototype.initEvents = function()
-{
-    var _this = this;
-    $(window).scroll(function() {
-        _this.checkScroll($(window).scrollTop());
-    });
-
-    $(this.btn).on('click', function(){
-        $('html, body').animate({scrollTop : 0}, _this.duration, _this.easing);
-        return false;
-    });
-};
-
-scrollTop.prototype.checkScroll = function(scroll)
-{
-    if(scroll > this.limit) {
-        $(this.btn).addClass(this.toggleClass);
-    } else {
-        $(this.btn).removeClass(this.toggleClass);
-    }
-};
-
-module.exports = scrollTop;
 
 },{"jquery":"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/node_modules/jquery/dist/jquery.js"}],"/Volumes/Elao/workspace/JeremyFagis/ElaoStrap/node_modules/bootstrap-sass/assets/javascripts/bootstrap/collapse.js":[function(require,module,exports){
 (function (global){

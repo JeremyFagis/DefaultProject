@@ -8,10 +8,9 @@ var $              = require('jquery'),
     dropify        = require('dropify'),
     simpleSelector = require('./vendors/jquery.simple-selector'),
     fancybox       = require('./vendors/jquery.fancybox.pack'),
-    easing         = require('./vendors/jquery.easing'),
     mobileNav      = require('./vendors/mobile-nav'),
     datepicker     = require('./vendors/datepicker'),
-    scrollTop      = require('./vendors/scrollTop'),
+    ScrollTop      = require('./vendors/ScrollTop'),
     select2        = require('select2');
 
 require('select2.fr');
@@ -50,7 +49,7 @@ $(document).ready(function(){
         }
     });
 
-    new scrollTop();
+    new ScrollTop();
 
     $('#main-nav').mobileNav();
 
