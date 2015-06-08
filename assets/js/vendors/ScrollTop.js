@@ -50,7 +50,8 @@ ScrollTop.prototype.onScroll = function(event) {
     this.checkScroll(this.window.scrollTop());
 };
 
-ScrollTop.prototype.onClick = function(event) {
+ScrollTop.prototype.onClick = function(e) {
+    e.preventDefault();
     $('html, body').animate({scrollTop : 0}, this.duration, this.easing);
     return false;
 };
