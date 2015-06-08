@@ -10,6 +10,7 @@ var $              = require('jquery'),
     fancybox       = require('./vendors/jquery.fancybox.pack'),
     easing         = require('./vendors/jquery.easing'),
     datepicker     = require('./vendors/datepicker'),
+    scrollTop      = require('./vendors/scrollTop'),
     select2        = require('select2');
 
 require('select2.fr');
@@ -45,28 +46,7 @@ $(document).ready(function(){
         }
     });
 
-    // Scroll top button
-    var scrollTopLimit = 150;
-    $(window).scroll(function(){
-        s = $(window).scrollTop();
-
-        if (s > scrollTopLimit) {
-            $('.scroll-to-top').addClass('visible');
-        } else {
-            $('.scroll-to-top').removeClass('visible');
-        }
-    });
-
-    if($(window).scrollTop() > scrollTopLimit) {
-        $('.scroll-to-top').addClass('visible');
-    } else {
-        $('.scroll-to-top').removeClass('visible');
-    }
-
-    $('.scroll-to-top').on('click', function(){
-        $('html, body').animate({scrollTop : 0}, 800, 'easeInOutExpo');
-        return false;
-    });
+    new scrollTop();
 
     $('.filters-button').on('click', function(e) {
         e.preventDefault();

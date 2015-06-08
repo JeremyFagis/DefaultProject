@@ -195,7 +195,9 @@ pre {
         background-color: $code-background;
         color: $code-color;
         padding: $code-padding;
-        margin: $code-margin;
+        font-family: $code-font-family;
+        font-size: $code-font-size;
+        line-height: $code-line-height;
         border-radius: 5px;
     }
 }

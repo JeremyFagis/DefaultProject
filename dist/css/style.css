@@ -7131,7 +7131,9 @@ pre {
     background-color: rgba(0, 0, 0, 0.7);
     color: #EEE;
     padding: 10px 10px;
-    margin: 0;
+    font-family: "Inconsolata", "Consolas", "Courier";
+    font-size: 16px;
+    line-height: 24px;
     border-radius: 5px; }
 
 .intro {

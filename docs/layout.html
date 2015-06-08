@@ -85,7 +85,7 @@
             </div>
 
             <h2>Basic template</h2>
-<pre class="only">
+            <pre class="only">
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
@@ -106,6 +106,39 @@
 &lt;/body&gt;
 &lt;/html&gt;
 </pre>
+
+            <div class="row mt25">
+                <div class="col-sm-6">
+                    <h3>Loading class</h3>
+                    <p>You can add a loading screen on you website. You just have to :</p>
+                    <ul class="no-bullet">
+                        <li class="pb15">
+                            <strong>Add "loading" class on the body tag.</strong>
+                            <pre class="only">&lt;body class="loading"&gt;...&lt;/body&gt;</pre>
+                        </li>
+                        <li class="pb15">
+                            <strong>Add "loading" section in the template :</strong>
+                            <pre><code><section id="loading">
+        <div class="loader"></div>
+        <p>Loading</p>
+    </section></code></pre>
+                </li>
+                <li><strong>Add JS code :</strong>
+                    <pre class="only">$(window).load(function(){
+        if($('#loading').length &gt; 0) {
+            $('#loading').delay(200).fadeOut(400);
+            $('body').removeClass('loading');
+        }
+    });
+    </pre></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <h3>Admin layout</h3>
+                    An admin layout is already designed. You can see it in action <a href="admin/dashboard.html" target="_blank">here</a>, it also include a <a href="admin/login.html" taget="_blank">login page</a>.
+                </div>
+            </div>
+
         </div>
 
         <footer id="footer">
