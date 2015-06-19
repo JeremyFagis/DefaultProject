@@ -46,11 +46,13 @@ ScrollTop.prototype.initEvents = function()
     this.btn.on('click', this.onClick);
 };
 
-ScrollTop.prototype.onScroll = function(event) {
+ScrollTop.prototype.onScroll = function()
+{
     this.checkScroll(this.window.scrollTop());
 };
 
-ScrollTop.prototype.onClick = function(e) {
+ScrollTop.prototype.onClick = function(e)
+{
     e.preventDefault();
     $('html, body').animate({scrollTop : 0}, this.duration, this.easing);
     return false;
