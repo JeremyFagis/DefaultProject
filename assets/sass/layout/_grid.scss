@@ -43,29 +43,21 @@
 .col-xs-12 { width: 100%; }
 
 
-@media (min-width: $screen-sm) {
-    .container {
-        max-width: $container-tablet;
-    }
+@media (min-width: $screen-xs) {
+    @include row-sizes('xs');
+}
 
+@media (min-width: $screen-sm) {
     @include row-sizes('sm');
 }
 
 
 @media (min-width: $screen-md) {
-    .container {
-        max-width: $container-desktop;
-    }
-
     @include row-sizes('md');
 }
 
 
 @media (min-width: $screen-lg-desktop) {
-    .container {
-        max-width: $container-lg-desktop;
-    }
-
     @include row-sizes('lg');
 }
 

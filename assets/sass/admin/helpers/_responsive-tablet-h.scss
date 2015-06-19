@@ -24,17 +24,14 @@
         }
 
         .navbar .list-actions {
-            display: none;
-        }
-
-        .list-actions-mobile {
-            display: block;
+            margin-right: 15px;
         }
 
         .sidebar {
             width: 100%;
             left: -100%;
             padding: 10px;
+            transform: translateX(0) !important;
             transition: all 0.2s ease;
 
             &.active {
@@ -53,6 +50,10 @@
 
         .main-content {
             margin-left: 0;
+        }
+
+        .fullscreen-btn {
+            display: none;
         }
     }
 }

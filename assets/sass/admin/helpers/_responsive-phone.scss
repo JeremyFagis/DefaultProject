@@ -34,15 +34,17 @@
             display: block;
         }
 
+        .navbar .list-actions {
+            display: none;
+        }
+
         .list-actions-mobile {
+            display: block;
             float: right;
             margin-top: 5px;
         }
 
         .filters {
-            margin-top: 20px;
-            margin-bottom: 15px;
-
             .col-actions {
                 text-align: left;
                 padding-top: 15px;

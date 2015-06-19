@@ -1,13 +1,12 @@
-// Architecture based on http://www.sitepoint.com/architecture-sass-project/
 @charset "UTF-8";
 
 // ------------------------------------
 //   Basics
 // ------------------------------------
-@import "base/reset";
-@import "base/font";
 @import "variables/base";
 @import "variables/default";
+@import "base/reset";
+@import "base/font";
 @import "helpers/mixins";
 @import "helpers/shortcuts";
 @import "layout/grid";
@@ -41,6 +40,7 @@
 @import "components/mobile-nav";
 @import "components/datepicker";
 @import "components/select2";
+@import "components/font-awesome";
 
 
 // ------------------------------------

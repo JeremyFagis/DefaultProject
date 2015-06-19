@@ -1,8 +1,65 @@
 body.admin {
     background: $admin-background-color;
+    padding-top: 0;
 
     &.nav-opened {
         overflow: hidden;
+    }
+
+
+    &.fullscreen {
+        .sidebar {
+            transform: translateX(-$admin-sidebar-width);
+        }
+
+        .main-content {
+            margin-left: 0;
+        }
+    }
+
+    .fullscreen-btn {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 22px;
+        position: fixed;
+        bottom: 0;
+        left: $admin-sidebar-width - 50px;
+        z-index: 1100;
+        color: $admin-background-color;
+        border-radius: 25px;
+        opacity: 0.3;
+        transition: all 0.15s ease;
+
+        &:hover {
+            padding-right: 15px;
+            opacity: 0.7;
+        }
+
+        .closed {
+            display: none;
+        }
+
+        &.active {
+            left: 15px;
+            bottom: 20px;
+            background-color: $main-color;
+            opacity: 0.75;
+
+            .original {
+                display: none;
+            }
+
+            .closed {
+                display: block;
+            }
+
+            &:hover {
+                padding-right: 0;
+                opacity: 1;
+            }
+        }
     }
 
     #loading {

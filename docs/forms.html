@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<!--[if IE 7]>         <html lang="en" class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+    <head>
+        <title>ElaoStrap — Forms</title>
+        <meta name="description" content="">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <meta name="format-detection" content="telephone=no">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,900|Roboto+Condensed:400,300,700|Inconsolata:400' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../dist/css/style.css">
+        <!--[if lt IE 9]>
+        <script src="../dist/js/vendors/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+    <body class="loading">
+        <!--[if lt IE 8]>
+            <div id="browsehappy">
+                <div id="browsehappy-inner">
+                    Vous utilisez un navigateur internet trop vieux.<br/>Merci de le <a href="http://browsehappy.com/">mettre à jour</a> afin d'améliorer votre navigation.
+                </div>
+            </div>
+        <![endif]-->
+
+        <section id="loading">
+            <div class="loader"></div>
+            <p>Loading</p>
+        </section>
+
+        <div id="mobile-nav">
+            <div class="mobile-nav-title">Navigation</div>
+            <nav></nav>
+        </div>
+
+        <div class="navbar fixed">
+            <div class="navbar-inner">
+                <a href="index.html" class="navbar-logo">ElaoStrap</a>
+                <a href="#" class="mobile-nav-toggle">
+                    <span class="line-1"></span>
+                    <span class="line-2"></span>
+                    <span class="line-3"></span>
+                </a>
+                <nav id="main-nav" class="pull-right">
+                    <ul>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Documentation<i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="layout.html">Layout</a></li>
+                                <li><a href="typography.html">Typography</a></li>
+                                <li><a href="tables.html">Tables</a></li>
+                                <li><a href="buttons.html">Buttons</a></li>
+                                <li><a href="forms.html">Forms</a></li>
+                                <li><a href="js-plugins.html">JS Plugins</a></li>
+                                <li><a href="fonts.html">Fonts</a></li>
+                                <li><a href="responsive.html">Responsive</a></li>
+                                <li><a href="misc.html">Misc</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Admin<i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="admin/login.html">Login</a></li>
+                                <li><a href="admin/dashboard.html">Dashboard</a></li>
+                                <li><a href="admin/add.html">Add item</a></li>
+                                <li><a href="admin/edit.html">Edit item</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://github.com/JeremyFagis/ElaoStrap" target="_blank" class="line-hover"><i class="fa fa-github"></i> Github repository</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="page-header">
+                <h1>Forms</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4>Label on top <a href="#default-form" data-toggle="collapse" data-target="#default-form" class="code-button"><i class="fa fa-code"></i></a></h4>
+<pre id="default-form" class="collapse in">
+<code><div class="form-group">
+    <label>My label</label>
+    <input class="form-control" type="text" />
+</div>
+
+<div class="form-group">
+    <label>My label</label>
+    <textarea class="form-control" rows="3"></textarea>
+</div>
+
+<div class="checkbox">
+    <label>
+        <input type="checkbox"> Check me out
+    </label>
+</div>
+
+<div class="radio">
+    <label>
+        <input type="radio" name="xxx" value="xxx1" checked>
+        Radio 1
+    </label>
+</div></code>
+</pre>
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control " id="exampleInputEmail1" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputFile1">File input</label>
+                            <input type="file" id="exampleInputFile1" data-default-image="http://www.elao.com/images/corpo/logo_red_small.png">
+                            <p class="help-block">Example block-level help text here.</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleTextarea">Textarea</label>
+                            <textarea class="form-control" id="exampleTextarea"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Check me out
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                    Option one is this and that&mdash;be sure to include why it's great
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                    Option two can be something else and selecting it will deselect option one
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Select</label>
+                            <select class="selector">
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                                <option>Option 4</option>
+                                <option>Option 5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Select 2</label>
+                            <select class="select2">
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                                <option>Option 4</option>
+                                <option>Option 5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Multiple select</label>
+                            <select multiple="" class="select2">
+                                <optgroup label="Alaskan/Hawaiian Time Zone">
+                                    <option value="AK">Alaska</option>
+                                    <option value="HI">Hawaii</option>
+                                </optgroup>
+                                <optgroup label="Pacific Time Zone">
+                                    <option value="CA">California</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="WA">Washington</option>
+                                </optgroup>
+                                <optgroup label="Mountain Time Zone">
+                                    <option value="AZ">Arizona</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="MT">Montana</option>
+                                    <option value="NE">Nebraska</option>
+                                    <option value="NM">New Mexico</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="WY">Wyoming</option>
+                                </optgroup>
+                                <optgroup label="Central Time Zone">
+                                    <option value="AL">Alabama</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="IL">Illinois</option>
+                                    <option value="IA">Iowa</option>
+                                    <option value="KS">Kansas</option>
+                                    <option value="KY">Kentucky</option>
+                                    <option value="LA">Louisiana</option>
+                                    <option value="MN">Minnesota</option>
+                                    <option value="MS">Mississippi</option>
+                                    <option value="MO">Missouri</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="WI">Wisconsin</option>
+                                </optgroup>
+                                <optgroup label="Eastern Time Zone">
+                                <option value="CT">Connecticut</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="IN">Indiana</option>
+                                    <option value="ME">Maine</option>
+                                    <option value="MD">Maryland</option>
+                                    <option value="MA">Massachusetts</option>
+                                    <option value="MI">Michigan</option>
+                                    <option value="NH">New Hampshire</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="NY">New York</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WV">West Virginia</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Disabled</label>
+                            <input type="text" class="form-control" disabled placeholder="I'm disabled">
+                        </div>
+                        <div class="form-group">
+                            <label>Datepicker</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" datepicker="datepicker">
+                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                            </div>
+                        </div>
+                        <div class="form-action">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-6">
+                    <h4>Label on left <a href="#horizontal-form" data-toggle="collapse" data-target="#horizontal-form" class="code-button"><i class="fa fa-code"></i></a></h4>
+<pre id="horizontal-form" class="collapse in">
+<code><form class="form-horizontal">
+    <div class="form-group">
+        <label class="control-label col-sm-3">My label</label>
+        <div class="col-sm-9 control-field">
+            <input class="form-control" type="text" />
+        </div>
+    </div>
+    ...
+</form></code>
+</pre>
+                    <form role="form" class="form-horizontal">
+                        <div class="form-group has-error">
+                            <label class="control-label col-sm-3" for="exampleInputEmail1">Email address</label>
+                            <div class="col-sm-9 control-field">
+                                <input type="email" class="form-control " id="exampleInputEmail1" placeholder="Enter email">
+                                <ul class="errors-list"><li>Cette valeur n'est pas une adresse email valide.</li></ul>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3" for="exampleInputPassword1">Password</label>
+                            <div class="col-sm-9 control-field">
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3" for="exampleInputFile2">File input</label>
+                            <div class="col-sm-9 control-field">
+                                <input type="file" id="exampleInputFile2">
+                                <p class="help-block">Example block-level help text here.</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3" for="exampleTextarea">Textarea</label>
+                            <div class="col-sm-9 control-field">
+                                <textarea class="form-control" rows="3" id="exampleTextarea"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Check me out
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                        Option one is this and that&mdash;be sure to include why it's great
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                        Option two can be something else and selecting it will deselect option one
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">Select</label>
+                            <div class="col-sm-9 control-field">
+                                <select class="selector">
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                    <option>Option 4</option>
+                                    <option>Option 5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">Select 2</label>
+                            <div class="col-sm-9 control-field">
+                                <select class="select2">
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                    <option>Option 4</option>
+                                    <option>Option 5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">Multiple select</label>
+                            <div class="col-sm-9 control-field">
+                                <select multiple="" class="select2">
+                                    <optgroup label="Alaskan/Hawaiian Time Zone">
+                                        <option value="AK">Alaska</option>
+                                        <option value="HI">Hawaii</option>
+                                    </optgroup>
+                                    <optgroup label="Pacific Time Zone">
+                                        <option value="CA">California</option>
+                                        <option value="NV">Nevada</option>
+                                        <option value="OR">Oregon</option>
+                                        <option value="WA">Washington</option>
+                                    </optgroup>
+                                    <optgroup label="Mountain Time Zone">
+                                        <option value="AZ">Arizona</option>
+                                        <option value="CO">Colorado</option>
+                                        <option value="ID">Idaho</option>
+                                        <option value="MT">Montana</option>
+                                        <option value="NE">Nebraska</option>
+                                        <option value="NM">New Mexico</option>
+                                        <option value="ND">North Dakota</option>
+                                        <option value="UT">Utah</option>
+                                        <option value="WY">Wyoming</option>
+                                    </optgroup>
+                                    <optgroup label="Central Time Zone">
+                                        <option value="AL">Alabama</option>
+                                        <option value="AR">Arkansas</option>
+                                        <option value="IL">Illinois</option>
+                                        <option value="IA">Iowa</option>
+                                        <option value="KS">Kansas</option>
+                                        <option value="KY">Kentucky</option>
+                                        <option value="LA">Louisiana</option>
+                                        <option value="MN">Minnesota</option>
+                                        <option value="MS">Mississippi</option>
+                                        <option value="MO">Missouri</option>
+                                        <option value="OK">Oklahoma</option>
+                                        <option value="SD">South Dakota</option>
+                                        <option value="TX">Texas</option>
+                                        <option value="TN">Tennessee</option>
+                                        <option value="WI">Wisconsin</option>
+                                    </optgroup>
+                                    <optgroup label="Eastern Time Zone">
+                                    <option value="CT">Connecticut</option>
+                                        <option value="DE">Delaware</option>
+                                        <option value="FL">Florida</option>
+                                        <option value="GA">Georgia</option>
+                                        <option value="IN">Indiana</option>
+                                        <option value="ME">Maine</option>
+                                        <option value="MD">Maryland</option>
+                                        <option value="MA">Massachusetts</option>
+                                        <option value="MI">Michigan</option>
+                                        <option value="NH">New Hampshire</option>
+                                        <option value="NJ">New Jersey</option>
+                                        <option value="NY">New York</option>
+                                        <option value="NC">North Carolina</option>
+                                        <option value="OH">Ohio</option>
+                                        <option value="PA">Pennsylvania</option>
+                                        <option value="RI">Rhode Island</option>
+                                        <option value="SC">South Carolina</option>
+                                        <option value="VT">Vermont</option>
+                                        <option value="VA">Virginia</option>
+                                        <option value="WV">West Virginia</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">Disabled</label>
+                            <div class="col-sm-9 control-field">
+                                <input type="text" class="form-control" disabled placeholder="I'm disabled">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">Datepicker</label>
+                            <div class="col-sm-9 control-field">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" datepicker="datepicker">
+                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group form-action">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+            <h2>Input groups <a href="#input-groups" data-toggle="collapse" data-target="#input-groups" class="code-button"><i class="fa fa-code"></i></a></h2>
+<pre id="input-groups" class="collapse in">
+<code><div class="input-group">
+    <span class="input-group-addon">@</span>
+    <input type="text" class="form-control">
+</div>
+
+<div class="input-group">
+    <input type="text" class="form-control">
+    <span class="input-group-addon">.00</span>
+</div>
+
+<div class="input-group">
+    <span class="input-group-addon">$</span>
+    <input type="text" class="form-control">
+    <span class="input-group-addon">.00</span>
+</div>
+
+<!-- Different sizes availables -->
+<div class="input-group input-group-lg">
+    <span class="input-group-addon">$</span>
+    <input type="text" class="form-control">
+    <span class="input-group-addon">.00</span>
+</div>
+
+<!-- Possible with a button -->
+<div class="input-group">
+    <input type="text" class="form-control">
+    <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+    </span>
+</div>
+</code>
+</pre>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon">@</span>
+                            <input type="text" class="form-control" placeholder="Username">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control">
+                            <span class="input-group-addon">.00</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon">$</span>
+                            <input type="text" class="form-control">
+                            <span class="input-group-addon">.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon">$</span>
+                            <input type="text" class="form-control">
+                            <span class="input-group-addon">.00</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">Go!</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 no-padding-bottom">
+                        <i class="fa fa-github"></i> <a href="https://github.com/JeremyFagis/ElaoStrap" target="_blank">Github repository</a>
+                    </div>
+                    <div class="col-sm-4 text-right no-padding-bottom">2015 &copy; <a href="http://www.fagis.fr" target="_blank">Jeremy FAGIS</a> for <a href="http://www.elao.com" target="_blank">Elao</a></div>
+                </div>
+            </div>
+
+        </footer>
+
+        <script src="../dist/js/main.js"></script>
+    </body>
+</html>
