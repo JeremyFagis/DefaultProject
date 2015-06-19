@@ -81,10 +81,11 @@ body.admin {
 
                     > a {
                         span.submenu-icon {
-                            @extend .elaostrap-font;
-                            @extend .elaostrap-font-arrow-right;
+                            @extend .fa;
+                            @extend .fa-angle-right;
                             float: right;
                             margin-left: 5px;
+                            margin-top: 6px;
                             opacity: 0.7;
                             transition: opacity 0.1s linear;
                         }
@@ -101,7 +102,7 @@ body.admin {
 
                         > a {
                             span.submenu-icon {
-                                @extend .elaostrap-font-arrow-down;
+                                @extend .fa-angle-down;
                                 opacity: 1;
                             }
                         }

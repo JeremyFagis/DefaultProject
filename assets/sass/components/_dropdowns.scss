@@ -14,6 +14,12 @@
     display: inline;
 }
 
+.dropdown-toggle.with-caret {
+    .caret {
+        margin: 0 3px;
+    }
+}
+
 .dropdown-toggle:focus {
     outline: 0;
 }

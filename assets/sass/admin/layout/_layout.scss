@@ -1,5 +1,6 @@
 body.admin {
     background: $admin-background-color;
+    padding-top: 0;
 
     &.nav-opened {
         overflow: hidden;

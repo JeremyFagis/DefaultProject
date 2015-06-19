@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--[if IE 7]>         <html lang="en" class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+    <head>
+        <title>ElaoStrap — Layout</title>
+        <meta name="description" content="">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <meta name="format-detection" content="telephone=no">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,900|Roboto+Condensed:400,300,700|Inconsolata:400' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../dist/css/style.css">
+        <!--[if lt IE 9]>
+        <script src="../dist/js/vendors/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+    <body class="loading">
+        <!--[if lt IE 8]>
+            <div id="browsehappy">
+                <div id="browsehappy-inner">
+                    Vous utilisez un navigateur internet trop vieux.<br/>Merci de le <a href="http://browsehappy.com/">mettre à jour</a> afin d'améliorer votre navigation.
+                </div>
+            </div>
+        <![endif]-->
+
+        <section id="loading">
+            <div class="loader"></div>
+            <p>Loading</p>
+        </section>
+
+        <div id="mobile-nav">
+            <div class="mobile-nav-title">Navigation</div>
+            <nav></nav>
+        </div>
+
+        <div class="navbar fixed">
+            <div class="navbar-inner">
+                <a href="index.html" class="navbar-logo">ElaoStrap</a>
+                <a href="#" class="mobile-nav-toggle">
+                    <span class="line-1"></span>
+                    <span class="line-2"></span>
+                    <span class="line-3"></span>
+                </a>
+                <nav id="main-nav" class="pull-right">
+                    <ul>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Documentation<i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="layout.html">Layout</a></li>
+                                <li><a href="typography.html">Typography</a></li>
+                                <li><a href="tables.html">Tables</a></li>
+                                <li><a href="buttons.html">Buttons</a></li>
+                                <li><a href="forms.html">Forms</a></li>
+                                <li><a href="js-plugins.html">JS Plugins</a></li>
+                                <li><a href="fonts.html">Fonts</a></li>
+                                <li><a href="responsive.html">Responsive</a></li>
+                                <li><a href="misc.html">Misc</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Admin<i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="admin/login.html">Login</a></li>
+                                <li><a href="admin/dashboard.html">Dashboard</a></li>
+                                <li><a href="admin/add.html">Add item</a></li>
+                                <li><a href="admin/edit.html">Edit item</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://github.com/JeremyFagis/ElaoStrap" target="_blank" class="line-hover"><i class="fa fa-github"></i> Github repository</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="page-header">
+                <h1>Layout</h1>
+            </div>
+
+            <h2>Basic template</h2>
+            <pre class="only">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;ElaoStrap — Layout&lt;/title&gt;
+    &lt;meta name="description" content=""&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" /&gt;
+    &lt;meta name="format-detection" content="telephone=no"&gt;
+    &lt;link rel="stylesheet" href="dist/css/style.css"&gt;
+    &lt;!--[if lt IE 9]&gt;
+    &lt;script src="dist/js/vendors/html5shiv.js"&gt;&lt;/script&gt;
+    &lt;![endif]--&gt;
+&lt;/head&gt;
+&lt;body class="loading"&gt;
+    ...
+    &lt;script src="dist/js/main.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+            <div class="row mt25">
+                <div class="col-sm-6">
+                    <h3>Loading screen</h3>
+                    <p>You can add a loading screen on your website. You just have to :</p>
+                    <ul class="no-bullet">
+                        <li class="pb15">
+                            <strong>Add "loading" class on the body tag.</strong>
+                            <pre class="only">&lt;body class="loading"&gt;...&lt;/body&gt;</pre>
+                        </li>
+                        <li class="pb15">
+                            <strong>Add "loading" section in the template :</strong>
+                            <pre><code><section id="loading">
+    <div class="loader"></div>
+    <p>Loading</p>
+</section></code></pre>
+                </li>
+                <li><strong>Add JS code :</strong>
+                    <pre class="only">$(window).load(function(){
+    if($('#loading').length &gt; 0) {
+        $('#loading').delay(200).fadeOut(400);
+        $('body').removeClass('loading');
+    }
+});</pre></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <h3>Scroll top button</h3>
+                    <p>You can easily add a scroll top button on your website. You just have to add this line to your main JS file. It will create the button automatically in your DOM and add events on it.</p>
+                    <pre class="only">new ScrollTop();</pre>
+                    <h3 class="mt35">Admin layout</h3>
+                    <p>An admin layout is already designed. You can see it in action <a href="admin/dashboard.html" target="_blank">here</a>, it also include a <a href="admin/login.html" taget="_blank">login page</a>.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 no-padding-bottom">
+                        <i class="fa fa-github"></i> <a href="https://github.com/JeremyFagis/ElaoStrap" target="_blank">Github repository</a>
+                    </div>
+                    <div class="col-sm-4 text-right no-padding-bottom">2015 &copy; <a href="http://www.fagis.fr" target="_blank">Jeremy FAGIS</a> for <a href="http://www.elao.com" target="_blank">Elao</a></div>
+                </div>
+            </div>
+
+        </footer>
+
+        <script src="../dist/js/main.js"></script>
+    </body>
+</html>

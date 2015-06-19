@@ -189,5 +189,35 @@ pre {
             display: inline-block;
         }
     }
+
+    &.only {
+        display: block;
+        background-color: $code-background;
+        color: $code-color;
+        padding: $code-padding;
+        font-family: $code-font-family;
+        font-size: $code-font-size;
+        line-height: $code-line-height;
+        border-radius: 5px;
+    }
 }
 
+
+.intro {
+    font-size: $intro-font-size;
+    line-height: $intro-line-height;
+    text-align: center;
+    padding: $intro-padding;
+    margin: $intro-margin;
+    letter-spacing: $intro-letter-spacing;
+
+    a {
+        &, &:visited {
+            color: $intro-links-color;
+        }
+
+        &:hover {
+            color: $intro-links-color-hover;
+        }
+    }
+}

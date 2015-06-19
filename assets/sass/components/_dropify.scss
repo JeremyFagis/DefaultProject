@@ -1,0 +1,11 @@
+@import "dropify/src/sass/dropify";
+
+.dropify-wrapper {
+    border-width: 1px;
+    border-color: $input-border;
+    border-radius: $border-radius-base;
+
+    .dropify-preview {
+        border-radius: $border-radius-base;
+    }
+}

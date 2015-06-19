@@ -1,7 +1,7 @@
 ///////////////////////////
 /// BASE
 ///////////////////////////
-$select-text-bg-color:   transparentize($main-color, 0.2) !default;
+$select-text-bg-color:   transparentize(#000, 0.6) !default;
 $select-text-color:      #FFF !default;
 
 $loader-trace:   darken($loading-background, 10%) !default;
@@ -29,6 +29,19 @@ $font-size-h3: 26px !default;
 $font-size-h4: 20px !default;
 $font-size-h5: 16px !default;
 $font-size-h6: 14px !default;
+
+
+///////////////////////////
+/// INTRO
+///////////////////////////
+$intro-font-family:       $base-font-family !default;
+$intro-font-size:         20px !default;
+$intro-line-height:       36px !default;
+$intro-letter-spacing:    -0.02em !default;
+$intro-padding:           30px 0 40px !default;
+$intro-margin:            0 !default;
+$intro-links-color:       $main-color !default;
+$intro-links-color-hover: lighten($text-color, 20%) !default;
 
 
 ///////////////////////////
@@ -71,13 +84,14 @@ $container-max-width:        $screen-lg !default;
 ///////////////////////////
 /// NAVBAR
 ///////////////////////////
-$navbar-background:   transparentize(#FFF, 0.05) !default;
-$navbar-color:        #000 !default;
-$navbar-height:       80px !default;
-$navbar-border-width: 2px !default;
-$navbar-border-color: #EEE !default;
-$navbar-zindex:       2000 !default;
-$navbar-active-color: $main-color !default;
+$navbar-background:        transparentize(#FFF, 0.05) !default;
+$navbar-color:             #000 !default;
+$navbar-height:            80px !default;
+$navbar-border-width:      2px !default;
+$navbar-border-color:      #EEE !default;
+$navbar-zindex:            2000 !default;
+$navbar-active-color:      $main-color !default;
+$navbar-active-background: #F2F2F2 !default;
 
 
 ///////////////////////////
@@ -448,3 +462,4 @@ $select2-active:               #E5E5E5 !default;
 ///////////////////////////
 $fonts-folder-path:            "../fonts" !default;
 $dropify-font-path:            "../fonts/dropify" !default;
+$fa-font-path:                 "../fonts/font-awesome" !default;
